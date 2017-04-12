@@ -110,16 +110,18 @@
             if (paintFlag) {
                 prevX = currX;
                 prevY = currY;
-                if (e.pageX != undefined && e.pageY != undefined) {
-                    currX = e.pageX - _canvas.offsetLeft;
-                    currY = e.pageY - _canvas.offsetTop;
-                } else {
-                    currX = e.clientX + document.body.scrollLeft
-                        + document.documentElement.scrollLeft
-                        - _canvas.offsetLeft;
-                    currY = e.clientY + document.body.scrollTop
-                        + document.documentElement.scrollTop
-                        - _canvas.offsetTop;
+
+                var pageX = e.pageX;
+                var pageY = e.pageY;
+
+                if(e.touches && e.touches.length){
+                    pageX = e.touches[0].pageX;
+                    pageY = e.touches[0].pageY;
+                }
+
+                if (pageX !== undefined && pageY !== undefined) {
+                    currX = pageX - _canvas.offsetLeft;
+                    currY = pageY - _canvas.offsetTop;
                 }
 
                 _paths[_paths.length - 1][0].push(currX);
@@ -161,7 +163,7 @@
         }
 
         _canvas.addEventListener("mousemove", _moveHandler, false);
-        _canvas.addEventListener("touchstart", _moveHandler, false);
+        _canvas.addEventListener("touchmove", _moveHandler, false);
 
         _canvas.addEventListener("mousedown", _startHandler, false);
         _canvas.addEventListener("touchstart", _startHandler, false);
