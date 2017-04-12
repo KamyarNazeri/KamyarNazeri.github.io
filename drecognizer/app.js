@@ -106,7 +106,7 @@
         _canvas = document.getElementById('canvas_text');
         _context = _canvas.getContext("2d");
 
-        _canvas.addEventListener("mousemove", function (e) {
+        function _moveHandler(e) {
             if (paintFlag) {
                 prevX = currX;
                 prevY = currY;
@@ -127,10 +127,9 @@
 
                 draw(_context, LINE_COLOR, LINE_WIDTH, prevX, prevY, currX, currY);
             }
-        }, false);
+        }
 
-        _canvas.addEventListener("mousedown", function (e) {
-
+        function _startHandler(e) {
             if (e.pageX != undefined && e.pageY != undefined) {
                 currX = e.pageX - _canvas.offsetLeft;
                 currY = e.pageY - _canvas.offsetTop;
@@ -155,15 +154,23 @@
 
             _paths.push([[currX], [currY]]);
             paintFlag = true;
-        }, false);
+        };
 
-        _canvas.addEventListener("mouseup", function (e) {
+        function _endHandler(e) {
             paintFlag = false;
-        }, false);
+        }
 
-        _canvas.addEventListener("mouseout", function (e) {
-            paintFlag = false;
-        }, false);
+        _canvas.addEventListener("mousemove", _moveHandler, false);
+        _canvas.addEventListener("touchstart", _moveHandler, false);
+
+        _canvas.addEventListener("mousedown", _startHandler, false);
+        _canvas.addEventListener("touchstart", _startHandler, false);
+
+        _canvas.addEventListener("mouseup", _endHandler, false);
+        _canvas.addEventListener("touchend", _endHandler, false);
+
+        _canvas.addEventListener("mouseout", _endHandler, false);
+        _canvas.addEventListener("touchcancel", _endHandler, false);
     };
 
 
