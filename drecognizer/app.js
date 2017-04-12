@@ -107,6 +107,7 @@
         _context = _canvas.getContext("2d");
 
         function _moveHandler(e) {
+            e.preventDefault();
             if (paintFlag) {
                 prevX = currX;
                 prevY = currY;
@@ -132,6 +133,7 @@
         }
 
         function _startHandler(e) {
+            e.preventDefault()
             if (e.pageX != undefined && e.pageY != undefined) {
                 currX = e.pageX - _canvas.offsetLeft;
                 currY = e.pageY - _canvas.offsetTop;
