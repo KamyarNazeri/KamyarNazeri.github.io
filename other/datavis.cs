@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp7
+namespace DataVis
 {
     class Program
     {
@@ -50,7 +50,7 @@ namespace ConsoleApp7
                 .Select(t => t.Offset)
                 .Average();
 
-            using (var sw = new StreamWriter("c:\\kamy\\aaa.csv"))
+            using (var sw = new StreamWriter("c:\\data.csv"))
             {
                 foreach (var cus in data)
                 {
@@ -74,7 +74,7 @@ namespace ConsoleApp7
         static DataTable LoadData()
         {
             System.Data.OleDb.OleDbConnection conn = new System.Data.OleDb.OleDbConnection();
-            conn.ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0; Data source=C:\kamy\db.mdb";
+            conn.ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0; Data source=C:\db.mdb";
             try
             {
                 conn.Open();
