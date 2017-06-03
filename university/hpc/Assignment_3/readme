@@ -1,0 +1,5 @@
+To compile the code:
+$ icc src/*.cpp -o src/res -mkl
+
+To compile the code with OpenMP:
+$ icc src/*.cpp -o src/res -mkl -fopenmp

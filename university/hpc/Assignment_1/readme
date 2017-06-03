@@ -1,0 +1,54 @@
+To run the assignment, execute 'run.sh' shell script. The shell script performs 36 distinct configurations to compile and execute the assignment.
+How to install dependencies, compile and run the code:
+
+Install LAPACK:
+    sudo apt-get install liblapack-dev liblapack-doc-man liblapack-doc liblapack-pic liblapack3 liblapack-test liblapacke liblapacke-dev
+
+Install BLAS:
+    sudo apt-get install libblas-dev checkinstall
+    sudo apt-get install libblas-doc checkinstall
+
+Compile BLAS:
+    1. download latest version of the BLAS from here: http://www.netlib.org/blas/
+    2. unarchive and go to the folder in the terminal and run make
+    3. look for the file named blas_LINUX.a and save the address to this file
+
+Compile CBLAS:
+    1. download CBLAS from the same page
+    2. unarchive
+    3. open the file Makefile.in
+    4. look for the line BLLIB = .../blas_LINUX.a
+    5. put the address you had in step one here
+    6. go to the terminal in unzipped cblas folder and run make
+
+Use OpenMP:
+    OpenMP requires libiomp5.so library at runtime, defined in the environment variable LD_LIBRARY_PATH.
+    The libiomp5.so library is located in the intel directory (eg. /intel/compiler/lib/intel64_lin).
+    32 or 64 bit version must be used depending on the OS.
+
+ Compile the code using GNU compiler:
+    1. No optimization:
+        g++ mat_vec.cpp lib/cblas-gnu.a lib/blas-gnu.a -o result -lgfortran
+    2. Aggressive optimization:
+        g++ mat_vec.cpp lib/cblas-gnu.a lib/blas-gnu.a -o result -lgfortran -O3
+    3. Use parallelism without optimization:
+        g++ mat_vec.cpp lib/cblas-gnu.a lib/blas-gnu.a -o result -lgfortran -fopenmp
+    4. Use parallelism and aggressive optimization:
+        g++ mat_vec.cpp lib/cblas-gnu.a lib/blas-gnu.a -o result -lgfortran -fopenmp -O3
+
+ Compile the code using Intel compiler:
+    1. No optimization:
+        icc mat_vec.cpp lib/cblas-intel.a lib/blas-intel.a -o result -lifcore
+    2. Aggressive optimization:
+        icc mat_vec.cpp lib/cblas-intel.a lib/blas-intel.a -o result -lifcore -O3
+    3. Use parallelism without optimization:
+        icc mat_vec.cpp lib/cblas-intel.a lib/blas-intel.a -o result -lifcore -qopenmp
+    4. Use parallelism and aggressive optimization:
+        icc mat_vec.cpp lib/cblas-intel.a lib/blas-intel.a -o result -lifcore -qopenmp -O3
+
+Run the code:
+    To run the code using Double-Loop method, pass the argument -D to the executable; similarly, to run the code using LAPACK method pass the argument -L to the executable.
+    e.g. result -D (runs the code using double-loop method)
+
+    To run the code using OpenMP parallelism, pass the number of threads as an argument to the executable (-T2, -T4, . . . )
+    e.g. result -D -T2 (runs the code using double loop method with 2 threads)
