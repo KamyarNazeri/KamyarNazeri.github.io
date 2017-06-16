@@ -66,7 +66,6 @@ namespace DataVis
                 //{
                 //    sw.WriteLine(item.CustomerID + "," + item.OrderTotal + "," + item.OrderDate.ToString("yyyy/MM/dd") + "," + item.Offset + "," + item.Count);
                 //}
-
             }
         }
 
