@@ -6,7 +6,7 @@ function [J, grad] = costFunction(theta, X, y)
 
 m = length(y);                                          % number of training examples
 h = sigmoid(X * theta);                                 % hypothesis
-J = sum(-y .* log(h) - (1 - y) .* log(1 - h)) / m;        % cost
+J = sum(-y .* log(h) - (1 - y) .* log(1 - h)) / m;      % cost
 grad = (X' * (h - y)) / m;                              % gradient
 
 end
