@@ -22,13 +22,42 @@ Theta1 = reshape(nn_params(1:hidden_layer_size * (input_layer_size + 1)), ...
 Theta2 = reshape(nn_params((1 + (hidden_layer_size * (input_layer_size + 1))):end), ...
                  num_labels, (hidden_layer_size + 1));
 
-% Setup some useful variables
-m = size(X, 1);
+
+% Part 1: Feedforward and Cost Function
+
+
+m = size(X, 1);                         % number of training examples
+n = size(X, 2);                         % number of features
+
+a1 = [ones(m, 1) X];                    % (m x n+1) matrix: add the intercept column
+
+z2 = a1 * Theta1';                      % (m x hidden_layer_size) matrix
+a2 = [ones(m, 1) sigmoid(z2)];          % (m x hidden_layer_size+1) matrix: sigmoid + intercept column
+
+z3 = a2 * Theta2';                      % (m x num_labels) matrix
+a3 = sigmoid(z3);                       % apply sigmoid
+
+h = a3;                                 % hypothesis
+Y = zeros(m, num_labels);               % binary vector of 1's and 0's
+
+for i = 1:m
+    Y(i, y(i)) = 1;
+end
+
+cost = sum(sum(-Y .* log(h) - (1 - Y) .* log(1 - h))) / m;
+reg1 = sum(sum(Theta1(:,2:end) .^ 2));
+reg2 = sum(sum(Theta2(:,2:end) .^ 2));
+cost_reg = (reg1 + reg2) * lambda / (2 * m);
          
-% You need to return the following variables correctly 
-J = 0;
+J = cost + cost_reg;
+
+
+
+% Part 2: Implement the backpropagation
+
 Theta1_grad = zeros(size(Theta1));
 Theta2_grad = zeros(size(Theta2));
+
 
 % ====================== YOUR CODE HERE ======================
 % Instructions: You should complete the code by working through the
