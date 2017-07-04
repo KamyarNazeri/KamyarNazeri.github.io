@@ -9,7 +9,7 @@ function W = randInitializeWeights(L_in, L_out)
 %   the first column of W handles the "bias" terms
 %
 
-epsilon init = 0.12;
-W = rand(L out, 1 + L in) * 2 * epsilon init − epsilon init;
+epsilon_init = 0.12;
+W = rand(L_out, 1 + L_in) * 2 * epsilon_init - epsilon_init;
 
 end
