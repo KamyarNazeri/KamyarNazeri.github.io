@@ -1,7 +1,34 @@
-$(window).load(function () {
-    try {
-        $('#slider').nivoSlider();
+var page = (function () {
 
+    var _ready = [];
+
+    var _page = {
+        data: {
+            title: '',
+            updated: '',
+            teaching: [],
+            people: [],
+            publications: [],
+            publicationTypes: []
+        },
+        ready: function (fn) {
+            _ready.push(fn);
+        }
+    };
+
+    function initialize() {
+        $('a[href^="https://"],a[href^="http://"]').attr('target', '_blank');
+        $.ajax('data/data.json')
+            .done(function (d) {
+                _page.data = d;
+
+                for (var i = 0; i < _ready.length; i++) {
+                    _ready[i](d);
+                }
+            });
+    };
+
+    function initGoogleAnalytics() {
         (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
                 (i[r].q = i[r].q || []).push(arguments)
@@ -11,11 +38,19 @@ $(window).load(function () {
 
         ga('create', 'UA-45081905-1', 'uoit.ca');
         ga('send', 'pageview');
-    }
-    catch (e) { }
-});
+    };
 
 
-$(document).ready(function () {
-    $('a[href^="https://"],a[href^="http://"]').attr("target", "_blank");
-});
+    $(window).load(function () {
+        try {
+            $('#slider').nivoSlider();
+            initGoogleAnalytics();
+        }
+        catch (e) { }
+    });
+
+
+    $(document).ready(initialize);
+
+    return _page;
+})();
