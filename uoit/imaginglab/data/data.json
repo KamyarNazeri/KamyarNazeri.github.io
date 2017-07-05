@@ -1,0 +1,243 @@
+{
+    "title": "",
+    "teaching": [
+        {
+            "semester": "Winter 2015",
+            "title": "Mathematics of Medical Imaging",
+            "description": "Graduate course cross-listed with upper year undergraduate program",
+            "university": "u1"
+        },
+        {
+            "semester": "Winter 2014",
+            "title": "Computational Science II",
+            "description": "Math 4020U, Formerly known as Numerical Analysis",
+            "university": "u1"
+        },
+        {
+            "semester": "Winter 2014",
+            "title": "Complex Analysis",
+            "description": "Math 3060U",
+            "university": "u1"
+        },
+        {
+            "semester": "Fall 2013",
+            "title": "Optimization",
+            "description": "Math 3040U",
+            "university": "u1"
+        },
+        {
+            "semester": "Fall 2011",
+            "title": "Mathematical Modelling",
+            "description": "Math 3050U",
+            "university": "u1"
+        },
+        {
+            "semester": "Fall 2007",
+            "title": "Introduction to Differential Equations",
+            "description": "Math 218/SYDE 211",
+            "university": "u2"
+        },
+        {
+            "semester": "Fall 2006",
+            "title": "Introduction to Differential Equations",
+            "description": "Math 218/SYDE 211",
+            "university": "u2"
+        },
+        {
+            "semester": "Fall and Winter 2002",
+            "title": "Fundamental Math II",
+            "description": "Applied Calculus - Math 209",
+            "university": "u3"
+        }
+    ],
+    "people": [
+        {
+            "id": "S01",
+            "name": "Mia Carmela Mojica",
+            "email": "mia.mojica@uoit.net",
+            "position": "Graduate Student - PhD.",
+            "education": "MSc graduate in Applied Mathematics from the Philippines",
+            "start": "September 2016",
+            "end": "",
+            "description": "",
+            "alumni": false,
+            "visible": true
+        },
+        {
+            "id": "S02",
+            "name": "Kamyar Nazeri",
+            "email": "kamyar.nazerinaeini@uoit.net",
+            "position": "Graduate Student - MSC.",
+            "education": "BSc in Electrical Engineering from Iran",
+            "start": "January 2017",
+            "end": "",
+            "description": "",
+            "alumni": false,
+            "visible": true
+        },
+        {
+            "id": "S03",
+            "name": "Lorraine Ma",
+            "email": "lorraine.ma@uoit.net",
+            "position": "Graduate Student - MSC.",
+            "education": "",
+            "start": "September 2014",
+            "end": "December 2016",
+            "description": "Lorraine is investigating image registration schemes for Cardiac MRI for which the data is provided by Prof. Graham Wright (Sunnybrook Research Institute). Lorraine won the people’s choice award at the 2016 Three Minute Thesis (3MT®). She is aiming to defend her thesis in August 2015 and join the University of Auckland, New Zealand, as an exchange student in Fall 2016 on a Queen Elizabeth II Diamond Jubilee Scholarship.",
+            "alumni": true,
+            "visible": true
+        },
+        {
+            "id": "S04",
+            "name": "Ghazal Ahmadian",
+            "email": "ghazal.ahmadian@uoit.net",
+            "position": "Graduate Student - MSC.",
+            "education": "",
+            "start": "January 2015",
+            "end": "May 2017",
+            "description": "Co-supervised with Dr. Sean Bohun. Ghazal is investigating breast image registration schemes aimed at Computer aided surgery (CAS), for which the data is provided by Dr. Anne Martel (Sunnybrook Research Institute).",
+            "alumni": true,
+            "visible": true
+        },
+        {
+            "id": "S05",
+            "name": "Sancgeetha Kulaseharan",
+            "email": "sancgeetha.kulaseharan@uoit.net",
+            "position": "Graduate Student - MSC.",
+            "education": "",
+            "start": "September 2015",
+            "end": "",
+            "description": "Co-supervised with Dr. Elysa Widjaja (Hospital for Sick Children, Toronto), Working on combined texture and morphometric analyses of MR imaging to identify focal cortical dysplasia in children with focal epilepsy.",
+            "alumni": false,
+            "visible": true
+        },
+        {
+            "id": "S06",
+            "name": "Cory Falconer",
+            "email": "cory.falconer@uoit.net",
+            "position": "Graduate Student - MSC.",
+            "education": "",
+            "start": "September 2015",
+            "end": "",
+            "description": "Co-supervised with Dr. Sean Bohn, Cory is investigating resolution enhancement and denoising techniques for medical imaging applications.",
+            "alumni": false,
+            "visible": true
+        },
+        {
+            "id": "S07",
+            "name": "Eric NG",
+            "email": "eric.ng@uoit.net",
+            "position": "Graduate Student - MSC.",
+            "education": "",
+            "start": "September 2017",
+            "end": "",
+            "description": "",
+            "alumni": false,
+            "visible": true
+        },
+        {
+            "id": "S08",
+            "name": "Azad Aminpour",
+            "email": "azad.aminpour@uoit.net",
+            "position": "Graduate Student - PhD.",
+            "education": "MSc graduate in Computer Science from Iran",
+            "start": "September 2017",
+            "end": "",
+            "description": "",
+            "alumni": false,
+            "visible": true
+        },
+        {
+            "id": "S09",
+            "name": "Queenie Leung",
+            "email": "queenie.leung@uoit.net",
+            "position": "Undergraduate Thesis Student",
+            "education": "BSc in Applied and Industrial Math",
+            "start": "September 2015",
+            "end": "April 2016",
+            "description": "After completing her NSERC USRA, she completed her thesis on Image Segmentation using Graph cuts.",
+            "alumni": true,
+            "visible": true
+        },
+        {
+            "id": "S10",
+            "name": "Xu Han",
+            "email": "xu.han@uoit.net",
+            "position": "MITACS Globalink Research Intern",
+            "education": "",
+            "start": "June 2015",
+            "end": "August 2015",
+            "description": "Visiting from Biomedical Engineering Program, Huazhong University of Science and Technology, Wuhan, China, Project: Registration of Breast MR Images.",
+            "alumni": true,
+            "visible": true
+        },
+        {
+            "id": "S11",
+            "name": "Saurabh Agarwal",
+            "email": "saurabh.agarwal@uoit.net",
+            "position": "MITACS Globalink Research Intern",
+            "education": "",
+            "start": "June 2015",
+            "end": "August 2015",
+            "description": "Visiting from School of Electronics Engineering, VIT, Chennai, India Project: Segmentation of Breast MR Images.",
+            "alumni": true,
+            "visible": true
+        }
+    ],
+    "publications": [
+        {
+            "title": "",
+            "year": 2017,
+            "type": 1,
+            "url": "",
+            "pdf": "",
+            "bibtex": "",
+            "publicationsPageVisible": true,
+            "peoplePageVisible": true,
+            "contributors": []
+        }
+    ],
+    "publicationTypes": [
+        {
+            "id": 1,
+            "name": "Journal Articles"
+        },
+        {
+            "id": 2,
+            "name": "In Proceedings"
+        },
+        {
+            "id": 3,
+            "name": "Posters"
+        },
+        {
+            "id": 4,
+            "name": "Dissertations"
+        },
+        {
+            "id": 5,
+            "name": "Master’s Theses"
+        },
+        {
+            "id": 6,
+            "name": "Bachelor’s Thesis"
+        }
+    ],
+    "universities": [
+        {
+            "id": "u1",
+            "name": "UOIT",
+            "url": "http://www.uoit.ca"
+        },
+        {
+            "id": "u2",
+            "name": "University of Waterloo",
+            "url": "http://www.uwaterloo.ca"
+        },
+        {
+            "id": "u3",
+            "name": "Concordia University",
+            "url": "http://www.concordia.ca"
+        }
+    ]
+}
