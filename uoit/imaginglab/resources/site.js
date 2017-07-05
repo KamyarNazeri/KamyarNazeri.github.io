@@ -14,3 +14,8 @@ $(window).load(function () {
     }
     catch (e) { }
 });
+
+
+$(document).ready(function () {
+    $('a[href^="https://"],a[href^="http://"]').attr("target", "_blank");
+});
