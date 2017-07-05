@@ -263,11 +263,6 @@ s2 {
     list-style: none;
 }
 
-#trio3 {
-    float: right;
-    width: 8%;
-}
-
 .inner {
     margin: 5px 15px;
 }
@@ -278,10 +273,6 @@ s2 {
 
 #trio2 .inner {
     margin: 0;
-}
-
-#trio3 .inner {
-    margin-right: 0;
 }
 
 .left .inner {
@@ -389,6 +380,10 @@ img.alignleft, img.aligncenter, img.alignright {
     .altcolors #content {
         background-color: #f2f4f4;
     }
+
+.emph {
+    font-weight: bold
+}
 
 /*
  jQuery Nivo Slider v2.7.1
