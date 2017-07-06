@@ -61,19 +61,19 @@
   ],
   "people": [
     {
-      "id": "S01",
-      "name": "Mia Carmela Mojica",
-      "email": "mia.mojica@uoit.net",
-      "position": "Graduate Student - PhD.",
-      "education": "MSc graduate in Applied Mathematics from the Philippines",
-      "start": "September 2016",
+      "id": 1,
+      "name": "Mehran Ebrahimi",
+      "email": "mehran.ebrahimi@uoit.ca",
+      "position": "Assistant Professor - Lab Director",
+      "education": "PhD",
+      "start": "",
       "end": "",
       "description": "",
       "alumni": false,
       "visible": true
     },
     {
-      "id": "S02",
+      "id": 2,
       "name": "Kamyar Nazeri",
       "email": "kamyar.nazerinaeini@uoit.net",
       "position": "Graduate Student - MSC.",
@@ -85,7 +85,19 @@
       "visible": true
     },
     {
-      "id": "S03",
+      "id": 3,
+      "name": "Mia Carmela Mojica",
+      "email": "mia.mojica@uoit.net",
+      "position": "Graduate Student - PhD.",
+      "education": "MSc graduate in Applied Mathematics from the Philippines",
+      "start": "September 2016",
+      "end": "",
+      "description": "",
+      "alumni": false,
+      "visible": true
+    },
+    {
+      "id": 4,
       "name": "Lorraine Ma",
       "email": "lorraine.ma@uoit.net",
       "position": "Graduate Student - MSC.",
@@ -97,7 +109,7 @@
       "visible": true
     },
     {
-      "id": "S04",
+      "id": 5,
       "name": "Ghazal Ahmadian",
       "email": "ghazal.ahmadian@uoit.net",
       "position": "Graduate Student - MSC.",
@@ -109,7 +121,7 @@
       "visible": true
     },
     {
-      "id": "S05",
+      "id": 6,
       "name": "Sancgeetha Kulaseharan",
       "email": "sancgeetha.kulaseharan@uoit.net",
       "position": "Graduate Student - MSC.",
@@ -121,7 +133,7 @@
       "visible": true
     },
     {
-      "id": "S06",
+      "id": 7,
       "name": "Cory Falconer",
       "email": "cory.falconer@uoit.net",
       "position": "Graduate Student - MSC.",
@@ -133,7 +145,7 @@
       "visible": true
     },
     {
-      "id": "S07",
+      "id": 8,
       "name": "Eric NG",
       "email": "eric.ng@uoit.net",
       "position": "Graduate Student - MSC.",
@@ -145,7 +157,7 @@
       "visible": true
     },
     {
-      "id": "S08",
+      "id": 9,
       "name": "Azad Aminpour",
       "email": "azad.aminpour@uoit.net",
       "position": "Graduate Student - PhD.",
@@ -157,7 +169,7 @@
       "visible": true
     },
     {
-      "id": "S09",
+      "id": 10,
       "name": "Queenie Leung",
       "email": "queenie.leung@uoit.net",
       "position": "Undergraduate Thesis Student",
@@ -169,7 +181,7 @@
       "visible": true
     },
     {
-      "id": "S10",
+      "id": 11,
       "name": "Xu Han",
       "email": "xu.han@uoit.net",
       "position": "MITACS Globalink Research Intern",
@@ -181,7 +193,7 @@
       "visible": true
     },
     {
-      "id": "S11",
+      "id": 12,
       "name": "Saurabh Agarwal",
       "email": "saurabh.agarwal@uoit.net",
       "position": "MITACS Globalink Research Intern",
@@ -195,16 +207,279 @@
   ],
   "publications": [
     {
-      "title": "",
-      "year": 2017,
+      "code": "J1",
+      "title": "A Gauss-Newton Approach to Joint Image Registration and Intensity Correction. Computer Methods and Programs in Biomedicine. Vol.112(3) pp. 398-406.",
+      "year": 2013,
       "type": 1,
       "url": "",
       "pdf": "",
       "bibtex": "",
+      "contributors": "M. Ebrahimi, A. Lausch, and A. L. Martel",
       "publicationsPageVisible": true,
       "peoplePageVisible": true,
-      "contributors": []
+      "people": [ 1 ]
+    },
+    {
+      "code": "J2",
+      "title": "Using Surface Markers for MRI Guided Breast Conserving Surgery; a Feasibility Survey. Submitted to Physics in Medicine and Biology, Under secondary revisions.",
+      "year": 2013,
+      "type": 1,
+      "url": "",
+      "pdf": "",
+      "bibtex": "",
+      "contributors": "M. Ebrahimi, P. Siegler, A. Modhafar, C. Holloway, D. Plewes, and A. Martel",
+      "publicationsPageVisible": true,
+      "peoplePageVisible": true,
+      "people": [ 1 ]
+    },
+    {
+      "code": "J3",
+      "title": "Anatomical Noise in Contrast-Enhanced Digital Mammography. Part I. Single-Energy Imaging. Medical Physics, 40:051910.",
+      "year": 2013,
+      "type": 1,
+      "url": "",
+      "pdf": "",
+      "bibtex": "",
+      "contributors": "M. L. Hill, J. G. Mainprize, A.-K. Carton, S. Muller, M. Ebrahimi, R. A. Jong, C. Dromain, and M. J. Yaffe",
+      "publicationsPageVisible": true,
+      "peoplePageVisible": true,
+      "people": [ 1 ]
+    },
+    {
+      "code": "J5",
+      "title": "Evaluating Thin Plate Spline Registration of the Breast in Two Supine Positions. Journal of Computer Assisted Radiology and Surgery, 7(S1).",
+      "year": 2012,
+      "type": 1,
+      "url": "",
+      "pdf": "",
+      "bibtex": "",
+      "contributors": "M. Ebrahimi, P. Siegler, D. B. Plewes, and A. L. Martel",
+      "publicationsPageVisible": true,
+      "peoplePageVisible": true,
+      "people": [ 1 ]
+    },
+    {
+      "code": "J6",
+      "title": "A Necessary and Sufficient Contractivity Condition for the Fractal Transform Operator. Journal of Mathematical Imaging and Vision, Vol.35 (3), pp. 186–192.",
+      "year": 2009,
+      "type": 1,
+      "url": "",
+      "pdf": "",
+      "bibtex": "",
+      "contributors": "M. Ebrahimi",
+      "publicationsPageVisible": true,
+      "peoplePageVisible": true,
+      "people": [ 1 ]
+    },
+    {
+      "code": "J7",
+      "title": "Measure-Valued Images, Associated Fractal Transforms, and the Affine Self-Similarity of Images. SIAM Journal on Imaging Sciences, Vol.2 (2), pp. 470–507.",
+      "year": 2009,
+      "type": 1,
+      "url": "",
+      "pdf": "",
+      "bibtex": "",
+      "contributors": "D. La-Torre, E. R. Vrscay, M. Ebrahimi, and M. F. Barnsley",
+      "publicationsPageVisible": true,
+      "peoplePageVisible": true,
+      "people": [ 1 ]
+    },
+    {
+      "code": "J8",
+      "title": "Filtering Entropy , Physica D: Nonlinear Phenomena, Vol. 183(3-4), pp. 260–272.",
+      "year": 2003,
+      "type": 1,
+      "url": "",
+      "pdf": "",
+      "bibtex": "",
+      "contributors": "W. Bahsoun, P. Gora, A. Boyarsky, and M. Ebrahimi",
+      "publicationsPageVisible": true,
+      "peoplePageVisible": true,
+      "people": [ 1 ]
+    },
+    {
+      "code": "C1",
+      "title": "Image Registration for Abdominal Dynamic Contrast Enhanced Magnetic Resonance Images. In Proceedings of 8th IEEE International Symposium on Biomedical Imaging (ISBI), Chicago, Illinois, USA, pp. 561–565.",
+      "year": 2011,
+      "type": 1,
+      "url": "",
+      "pdf": "",
+      "bibtex": "",
+      "contributors": "A. Lausch, M. Ebrahimi, and A. L. Martel",
+      "publicationsPageVisible": true,
+      "peoplePageVisible": true,
+      "people": [ 1 ]
+    },
+    {
+      "code": "C2",
+      "title": "A PDE Approach to Coupled Super-Resolution with Non-Parametric Motion. In: SIAM International Conference on Imaging Science, [Invited Speaker to the Mini-Symposium on Variational Approaches and PDE’s for Imaging Tasks]. Chicago, Illinois, USA.",
+      "year": 2010,
+      "type": 1,
+      "url": "",
+      "pdf": "",
+      "bibtex": "",
+      "contributors": "M. Ebrahimi",
+      "publicationsPageVisible": true,
+      "peoplePageVisible": true,
+      "people": [ 1 ]
+    },
+    {
+      "code": "C3",
+      "title": "Inverse Problems and Self-Similarity in Imaging. In: Interdisciplinary Workshop on Fixed-Point Algorithms for Inverse Problems in Science and Engineering, Banff International Research Center, Banff, Alberta, Canada.",
+      "year": 2009,
+      "type": 1,
+      "url": "",
+      "pdf": "",
+      "bibtex": "",
+      "contributors": "M. Ebrahimi",
+      "publicationsPageVisible": true,
+      "peoplePageVisible": true,
+      "people": [ 1 ]
+    },
+    {
+      "code": "C4",
+      "title": "A General PDE Framework for Registration of Contrast Enhanced Images. In: Lecture Notes in Computer Science, Proceedings of Medical Image Computing and Computer Assisted Intervention (MICCAI). Ed. by D. Hawkes, D. Rueckert, and G. Z. Yang. Vol.5761. London, UK: Springer-Verlag, pp. 811–819.",
+      "year": 2009,
+      "type": 1,
+      "url": "",
+      "pdf": "",
+      "bibtex": "",
+      "contributors": "M. Ebrahimi, A. L. Martel",
+      "publicationsPageVisible": true,
+      "peoplePageVisible": true,
+      "people": [ 1 ]
+    },
+    {
+      "code": "C5",
+      "title": "Image Registration under Varying Illumination: Hyper-Demons Algorithm. In: Lecture Notes in Computer Science, Proceedings of Energy Minimization Methods in Computer Vision and Pattern Recognition (EMMCVPR). Ed. by D. Cremers, Y. Boykov, A. Blake, and F. R. Schmidt. Vol. 5681. Bonn, Germany: Springer-Verlag, pp. 303–316.",
+      "year": 2009,
+      "type": 1,
+      "url": "",
+      "pdf": "",
+      "bibtex": "",
+      "contributors": "M. Ebrahimi, A. L. Martel",
+      "publicationsPageVisible": true,
+      "peoplePageVisible": true,
+      "people": [ 1 ]
+    },
+    {
+      "code": "C6",
+      "title": "Coupled Multi-Frame Super-Resolution with Diffusive Motion Model and Total Variation Regularization. In: Proceedings of the International Work-shop on Local and Non-Local Approximation in Image Processing (LNLA). Ed. by J. Astola, K. Egiazarian, and V. Katkovnik. Tampere International Center for Signal Processing. Tuusula, Finland, pp. 62–69.",
+      "year": 2009,
+      "type": 1,
+      "url": "",
+      "pdf": "",
+      "bibtex": "",
+      "contributors": "M. Ebrahimi, E. R. Vrscay, and A. L. Martel",
+      "publicationsPageVisible": true,
+      "peoplePageVisible": true,
+      "people": [ 1 ]
+    },
+    {
+      "code": "C7",
+      "title": "A PDE Approach to Coupled Super-Resolution with Non-Parametric Motion. In: Lecture Notes in Computer Science, Proceedings of Energy Minimization Methods in Computer Vision and Pattern Recognition (EMMCVPR). Ed. by D. Cremers, Y. Boykov, A. Blake, and F. R. Schmidt. Vol.5681. Bonn, Germany: Springer-Verlag, pp. 112–125.",
+      "year": 2009,
+      "type": 1,
+      "url": "",
+      "pdf": "",
+      "bibtex": "",
+      "contributors": "M. Ebrahimi, A. L. Martel",
+      "publicationsPageVisible": true,
+      "peoplePageVisible": true,
+      "people": [ 1 ]
+    },
+    {
+      "code": "C8",
+      "title": "Self-Similarity in Imaging, 20 Years after “Fractals Everywhere”. In: Proceedings of The International Workshop on Local and Non-Local Approximation in Image Processing, LNLA. Lausanne, Switzerland, pp. 165–172.",
+      "year": 2008,
+      "type": 1,
+      "url": "",
+      "pdf": "",
+      "bibtex": "",
+      "contributors": "M. Ebrahimi, E. R. Vrscay",
+      "publicationsPageVisible": true,
+      "peoplePageVisible": true,
+      "people": [ 1 ]
+    },
+    {
+      "code": "C9",
+      "title": "Multi-Frame Super-Resolution with no Explicit Motion Estimation. In: Proceedings of the International Conference on Image Processing, Computer Vision, and Pattern Recognition, IPCV. Las Vegas, Nevada, USA, pp. 455–459.",
+      "year": 2008,
+      "type": 1,
+      "url": "",
+      "pdf": "",
+      "bibtex": "",
+      "contributors": "M. Ebrahimi, E. R. Vrscay",
+      "publicationsPageVisible": true,
+      "peoplePageVisible": true,
+      "people": [ 1 ]
+    },
+    {
+      "code": "C10",
+      "title": "Non-Local Approaches to Image and Video Resolution Enhancement. In: SIAM International Conference on Imaging Science. San Diego, California, USA.",
+      "year": 2008,
+      "type": 1,
+      "url": "",
+      "pdf": "",
+      "bibtex": "",
+      "contributors": "M. Ebrahimi",
+      "publicationsPageVisible": true,
+      "peoplePageVisible": true,
+      "people": [ 1 ]
+    },
+    {
+      "code": "C11",
+      "title": "Examining the Role of Scale in the Context of the Non-Local-Means Filter. In: Lecture Notes in Computer Science, Proceedings of the International Conference on Image Analysis and Recognition ICIAR, Povoa de Varzim, Portugal, pp. 170–181.",
+      "year": 2008,
+      "type": 1,
+      "url": "",
+      "pdf": "",
+      "bibtex": "",
+      "contributors": "M. Ebrahimi, E. R. Vrscay",
+      "publicationsPageVisible": true,
+      "peoplePageVisible": true,
+      "people": [ 1 ]
+    },
+    {
+      "code": "C12",
+      "title": "Regularization Schemes involving Self-similarity in Imaging Inverse Problems. In: Proceedings of Applied Inverse Problems (AIP), DOI:10.1088/1742-6596/124/1/012021, 12 pages.",
+      "year": 2007,
+      "type": 1,
+      "url": "",
+      "pdf": "",
+      "bibtex": "",
+      "contributors": "M. Ebrahimi, E. R. Vrscay",
+      "publicationsPageVisible": true,
+      "peoplePageVisible": true,
+      "people": [ 1 ]
+    },
+    {
+      "code": "C13",
+      "title": "Solving the Inverse Problem of Image Zooming using “Self-Examples”. In: Lecture Notes in Computer Science, Proceedings of the International Conference on Image Analysis and Recognition ICIAR. Vol. 4633, pp. 117–130.",
+      "year": 2007,
+      "type": 1,
+      "url": "",
+      "pdf": "",
+      "bibtex": "",
+      "contributors": "M. Ebrahimi, E. R. Vrscay",
+      "publicationsPageVisible": true,
+      "peoplePageVisible": true,
+      "people": [ 1 ]
+    },
+    {
+      "code": "C14",
+      "title": "Fractal Image Coding as Projections onto Convex Sets, In: Lecture Notes in Computer Science, Proceedings of the International Conference on Image Analysis and Recognition ICIAR. Berlin, Heidelberg, pp. 493–506.",
+      "year": 2006,
+      "type": 1,
+      "url": "",
+      "pdf": "",
+      "bibtex": "",
+      "contributors": "M. Ebrahimi, E. R. Vrscay",
+      "publicationsPageVisible": true,
+      "peoplePageVisible": true,
+      "people": [ 1 ]
     }
+
   ],
   "publicationTypes": [
     {
