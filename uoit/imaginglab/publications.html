@@ -2,201 +2,163 @@
 <html>
 
 <head>
-  <title>ImagingLab.ca, Publications</title>
-  <meta content="text/html; charset=utf-8" http-equiv="content-type">
-  <meta name="description" content="ImagingLab, Mehran Ebrahimi, UOIT">
-  <link rel="stylesheet" type="text/css" media="all" href="inland.css">
-  <script type="text/javascript" src="resources/jquery-1.7.1.min.js"></script>
-  <script type="text/javascript" src="resources/jquery.nivo.slider.js"></script>
-  <script type="text/javascript" src="resources/site.js"></script>
+    <title>ImagingLab.ca, Publications</title>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <meta name="description" content="ImagingLab, Mehran Ebrahimi, UOIT">
+    <link rel="stylesheet" type="text/css" media="all" href="inland.css">
+    <script type="text/javascript" src="resources/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="resources/jquery.nivo.slider.js"></script>
+    <script type="text/javascript" src="resources/multiplex.min.js"></script>
+    <script type="text/javascript" src="resources/site.js"></script>
 </head>
 
 <body>
-  <div id="wrapper960" class="clearfix">
-    <div id="header" class="clearfix shadow">
-      <div style="color: rgb(0, 0, 172);" id="sitetitle" class="clearfix">
-        <h1><a href=".">ImagingLab.ca</a></h1>
-      </div>
-      <div id="nav" class="clearfix">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="people.html">People</a></li>
-          <li><a href="research.html">Research</a></li>
-          <li><a class="current" href="publications.html">Publications</a></li>
-          <li><a href="teaching.html">Teaching</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
+    <div id="wrapper960" class="clearfix">
+        <div id="header" class="clearfix shadow">
+            <div style="color: rgb(0, 0, 172);" id="sitetitle" class="clearfix">
+                <h1><a href=".">ImagingLab.ca</a></h1>
+            </div>
+            <div id="nav" class="clearfix">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="people.html">People</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a class="current" href="publications.html">Publications</a></li>
+                    <li><a href="teaching.html">Teaching</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="slider-wrapper">
+            <div id="slider" class="nivoSlider">
+                <img src="images/slider1.jpg" alt="">
+                <img src="images/slider2.jpg" alt="">
+                <img src="images/slider3.jpg" alt="">
+                <img src="images/slider4.jpg" alt="">
+            </div>
+        </div>
+
+        <div id="content" class="clearfix shadow">
+            <h1>Selected Publications</h1>
+            <div id="content_updated"></div>
+            <br />
+
+            <h3>1-Landmark-based image registration of the breast</h3>
+            <div>
+                Breast magnetic resonance imaging (MRI) is frequently performed prior to breast conserving surgery in order to assess
+                the location and extent of the lesion. It is, however, difficult for the surgeon to use the MR images to guide the
+                surgery. While pre-surgical MRI is typically performed in the prone position, surgery is performed in the supine
+                position. The breast undergoes significant distortion as a result. To overcome this restriction, supine breast MRI
+                has been recently proposed. In most clinical MR scanners the arm of the patient has to be placed parallel to the
+                body, whereas the arm is placed in an outstretched position during surgery. The highly deformable nature of the breast
+                tissue and the computational time constraint are the main challenges in solving this inverse problem. We have examined
+                a thin-plate spline registration scheme to match these two configurations using the positional information of surface
+                markers [J2, J4, J5].
+            </div>
+            <br />
+
+            <h3>2-Intensity based approaches for medical image registration</h3>
+            <div>
+                We developed a number of new methodologies for automated motion correction of medical images using their intensity
+                information. Specifically, we have been working on registration algorithms aimed at motion correction of dynamic
+                contrast-enhanced magnetic resonance images (DCE-MRI). In [C5] we suggested an extension of the well-known Demons
+                image registration algorithm. Our extension allows intensity changes in images due to contrast enhancement as opposed
+                to the Demons algorithm. This extension provides a simple registration algorithm for DCE-MRI. Furthermore, in [C4]
+                we proposed a coupled PDE-based approach to optimize the combined image registration and intensity correction expression
+                in an optimize-then-discretize framework. More recently in [J1] we have presented an efficient multi-level Gauss-Newton
+                approach in a discretize-then-optimize paradigm. The simulated data for validation in this article was prepared by
+                Anthony Lausch (MSc Student, co-author). Lausch’s work has also led to [C1]. In addition, we assisted Melissa Hill
+                (PhD student at Sunnybrook) in registration of contrast-enhanced digital mammography images. The work was a collaboration
+                with a group of experts in digital mammography that led to [J3] in Medical Physics.
+            </div>
+            <br />
+
+            <h3>3-Image zooming and super-resolution</h3>
+            <div>
+                Recovery of a high-resolution image from a single image is called image zooming and from a set of distorted images
+                is known as super-resolution. Image zooming and super-resolution are the other ill-posed inverse problems that we
+                have been investigating during the course of our research. In “Solving the inverse problem of image zooming using
+                ‘self-examples’” [C13] we presented a recipe to address image zooming problem based on the non-local (NL) self-similarities
+                of an image across scales. This publication received a great deal of attention and citations. The method of “self-examples”
+                combined the ideas of fractal-zoom with the newly developed NL-means denoising algorithm which is demonstrated to
+                perform as a leading classical denoising method. The effectiveness of our method lies in the cross-scale regularity
+                properties of natural images which has been considered in [C11]. Furthermore, to address the multi-frame super-resolution
+                problem, we presented an algorithm in [C9] that does not require sub-pixel motion estimation as opposed to the common
+                existing super-resolution algorithms. It is believed that a combined reconstruction and motion estimation is a key
+                tool to address the superresolution problem rather than treating the two sub-problems independently. In [C6, C7],
+                we proposed a coupled multi-frame super-resolution approach with a non-parametric motion model. A coupled partial
+                differential equation (PDE)-based approach was used to solve the optimization problem. Two variants of this work
+                were also presented in [C2, C10].
+            </div>
+            <br />
+
+            <h3>4-Inverse problems involving self-similarity</h3>
+            <div>
+                Self-similarity is the basis of fractal image coding which was originally developed by Michael Barnsley, the influential
+                author of Fractals Everywhere. We revisited the concept of fractal-based methods and derived a necessary and sufficient
+                condition for the contractivity of the fractal transform operator [J6]. In [J7] prepared in collaboration with Barnsley
+                and coworkers we proposed more generalized fractal transform operators in the context of measure valued images. To
+                offer flexibility in inclusion of a-priori image constraints at the decoding stage we proposed “Fractal image coding
+                as projections onto convex sets (POCS)” [C14] and “Regularization Schemes involving Self-similarity in Imaging Inverse
+                Problems” [C12]. These papers provide tools to address the ill-posed inverse problem of missing fractal codes. We
+                summarized the activity in the area of self-similarity in imaging for the past 20 years in two invited presentations
+                [C3, C8].
+            </div>
+            <br /><br />
+
+
+            <h1>References</h1>
+            <br />
+            <div id="content_publication"></div>
+        </div>
+
+        <div id="footer" class="shadow">
+            <p>
+                <a href="http://www.uoit.ca">
+                    <img style="width: 78px; height: 25px;" longdesc="http://www.uoit.ca" title="UOIT" alt="UOIT" src="images/logo-uoit1.jpg" />
+                </a>
+                <br>
+                ©ImagingLab.ca, Dr. Mehran Ebrahimi
+            </p>
+        </div>
     </div>
 
-    <div class="slider-wrapper">
-      <div id="slider" class="nivoSlider">
-        <img src="images/slider1.jpg" alt="">
-        <img src="images/slider2.jpg" alt=""> 
-        <img src="images/slider3.jpg" alt="">
-        <img src="images/slider4.jpg" alt="">
-      </div>
-    </div>
+    <script type="text/javascript">
 
-    <div id="content" class="clearfix shadow">
-      <h1>Selected Publications&nbsp;&nbsp;&nbsp; </h1>
-      <h4>&nbsp;[Updated Sept. 2013]</h4>
-      <h3></h3>
-      <h3><br>
-        <span style="font-weight: bold;"></span></h3>
-      <h3>
-        <font size="2">1-Landmark-based image registration of the breast</font>
-      </h3>
-      <font size="2">Breast magnetic resonance imaging (MRI) is frequently performed prior to breast conserving surgery in order to assess
-        the location and extent of the lesion. It is, however, difficult for the surgeon to use the MR images to guide the
-        surgery. While pre-surgical MRI is typically performed in the prone position, surgery is performed in the supine
-        position. The breast undergoes significant distortion as a result. To overcome this restriction, supine breast MRI
-        has been recently proposed. In most clinical MR scanners the arm of the patient has to be placed parallel to the
-        body, whereas the arm is placed in an outstretched position during surgery. The highly deformable nature of the breast
-        tissue and the computational time constraint are the main challenges in solving this inverse problem. We have examined
-        a thin-plate spline registration scheme to match these two configurations using the positional information of surface
-        markers [J2, J4, J5].<br>
-      </font><br>
-      <h3>
-        <font size="2">2-Intensity based approaches for medical image registration
-        </font>
-      </h3>
-      <font size="2">We developed a number of new methodologies for automated motion correction of medical images using their intensity
-        information. Specifically, we have been working on registration algorithms aimed at motion correction of dynamic
-        contrast-enhanced magnetic resonance images (DCE-MRI). In [C5] we suggested an extension of the well-known Demons
-        image registration algorithm. Our extension allows intensity changes in images due to contrast enhancement as opposed
-        to the Demons algorithm. This extension provides a simple registration algorithm for DCE-MRI. Furthermore, in [C4]
-        we proposed a coupled PDE-based approach to optimize the combined image registration and intensity correction expression
-        in an optimize-then-discretize framework. More recently in [J1] we have presented an efficient multi-level Gauss-Newton
-        approach in a discretize-then-optimize paradigm. The simulated data for validation in this article was prepared by
-        Anthony Lausch (MSc Student, co-author). Lausch’s work has also led to [C1]. In addition, we assisted Melissa Hill
-        (PhD student at Sunnybrook) in registration of contrast-enhanced digital mammography images. The work was a collaboration
-        with a group of experts in digital mammography that led to [J3] in Medical Physics.<br>
-      </font>
-      <font size="2"><br>
-      </font>
-      <h3>
-        <font size="2">3-Image zooming and super-resolution</font>
-      </h3>
-      <font size="2">Recovery of a high-resolution image from a single image is called image zooming and from a set of distorted images
-        is known as super-resolution. Image zooming and super-resolution are the other ill-posed inverse problems that we
-        have been investigating during the course of our research. In “Solving the inverse problem of image zooming using
-        ‘self-examples’” [C13] we presented a recipe to address image zooming problem based on the non-local (NL) self-similarities
-        of an image across scales. This publication received a great deal of attention and citations. The method of “self-examples”
-        combined the ideas of fractal-zoom with the newly developed NL-means denoising algorithm which is demonstrated to
-        perform as a leading classical denoising method. The effectiveness of our method lies in the cross-scale regularity
-        properties of natural images which has been considered in [C11]. Furthermore, to address the multi-frame super-resolution
-        problem, we presented an algorithm in [C9] that does not require sub-pixel motion estimation as opposed to the common
-        existing super-resolution algorithms. It is believed that a combined reconstruction and motion estimation is a key
-        tool to address the superresolution problem rather than treating the two sub-problems independently. In [C6, C7],
-        we proposed a coupled multi-frame super-resolution approach with a non-parametric motion model. A coupled partial
-        differential equation (PDE)-based approach was used to solve the optimization problem. Two variants of this work
-        were also presented in [C2, C10].<br>
-      </font><br>
-      <h3>
-        <font size="2">4-Inverse problems involving self-similarity</font>
-      </h3>
-      <font size="2">Self-similarity is the basis of fractal image coding which was originally developed by Michael Barnsley, the influential
-        author of Fractals Everywhere. We revisited the concept of fractal-based methods and derived a necessary and sufficient
-        condition for the contractivity of the fractal transform operator [J6]. In [J7] prepared in collaboration with Barnsley
-        and coworkers we proposed more generalized fractal transform operators in the context of measure valued images. To
-        offer flexibility in inclusion of a-priori image constraints at the decoding stage we proposed “Fractal image coding
-        as projections onto convex sets (POCS)” [C14] and “Regularization Schemes involving Self-similarity in Imaging Inverse
-        Problems” [C12]. These papers provide tools to address the ill-posed inverse problem of missing fractal codes. We
-        summarized the activity in the area of self-similarity in imaging for the past 20 years in two invited presentations
-        [C3, C8].<br>
-      </font>
-      <font size="2"><br>
-        <br>
-        <br>
-      </font>
-      <h2><span style="font-weight: bold;"><font  size="2">References</font></span></h2>
-      <font size="2"><br> [J1] M. Ebrahimi, A. Lausch, and A. L. Martel (2013). A Gauss-Newton Approach to Joint Image Registration and
-        Intensity Correction. Computer Methods and Programs in Biomedicine. Vol.112(3) pp. 398-406.<br>
-        <br> [J2] M. Ebrahimi, P. Siegler, A. Modhafar, C. Holloway, D. Plewes, and A. Martel (2013). Using Surface Markers
-        for MRI Guided Breast Conserving Surgery; a Feasibility Survey. Submitted to Physics in Medicine and Biology, Under
-        secondary revisions.<br>
-        <br> [J3] M. L. Hill, J. G. Mainprize, A.-K. Carton, S. Muller, M. Ebrahimi, R. A. Jong, C. Dromain, and M. J. Yaffe
-        (2013). Anatomical Noise in Contrast-Enhanced Digital Mammography. Part I. Single-Energy Imaging. Medical Physics,
-        40:051910.
-        <br>
-        <br> [J4] P. Siegler, M. Ebrahimi, C. Holloway, G. Thevathasan, D. B. Plewes, and A. L. Martel (2012). Supine Breast
-        MRI and Assessment of Future Clinical Applications. European Journal of Radiology, 81(S1).<br>
-        <br> [J5] M. Ebrahimi, P. Siegler, D. B. Plewes, and A. L. Martel (2012). Evaluating Thin Plate Spline Registration
-        of the Breast in Two Supine Positions. Journal of Computer Assisted Radiology and Surgery, 7(S1).<br>
-        <br> [J6] M. Ebrahimi, (2009). A Necessary and Sufficient Contractivity Condition for the Fractal Transform Operator.
-        Journal of Mathematical Imaging and Vision, Vol.35 (3), pp. 186–192.<br>
-        <br> [J7] D. La-Torre, E. R. Vrscay, M. Ebrahimi, and M. F. Barnsley (2009). Measure-Valued Images, Associated Fractal
-        Transforms, and the Affine Self-Similarity of Images. SIAM Journal on Imaging Sciences, Vol.2 (2), pp. 470–507.<br>
-      </font><br>
-      <font size="2">[J8] W. Bahsoun, P. Gora, A. Boyarsky, and M. Ebrahimi (2003).
-      </font><span style="font-family: sans-serif;"> </span>Filtering Entropy
-      <span style="font-family: sans-serif;">, </span>Physica D: Nonlinear
-      <span style="font-family: sans-serif;"> </span>Phenomena<span style="font-family: sans-serif;">, </span>Vol.<span style="font-family: sans-serif;">
-        </span>183(3-4), pp. 260–272
-      <font size="2">.<br>
-        <br> [C1] A. Lausch, M. Ebrahimi, and A. L. Martel (2011). Image Registration for Abdominal Dynamic Contrast Enhanced
-        Magnetic Resonance Images. In Proceedings of 8th IEEE International Symposium on Biomedical Imaging (ISBI), Chicago,
-        Illinois, USA, pp. 561–565.<br>
-        <br> [C2] M. Ebrahimi (2010). A PDE Approach to Coupled Super-Resolution with Non-Parametric Motion. In: SIAM International
-        Conference on Imaging Science, [Invited Speaker to the Mini-Symposium on Variational Approaches and PDE’s for Imaging
-        Tasks]. Chicago, Illinois, USA.<br>
-        <br> [C3] M. Ebrahimi (2009). Inverse Problems and Self-Similarity in Imaging. In: Interdisciplinary Workshop on
-        Fixed-Point Algorithms for Inverse Problems in Science and Engineering, Banff International Research Center, Banff,
-        Alberta, Canada.<br>
-        <br> [C4] M. Ebrahimi and A. L. Martel (2009). A General PDE Framework for Registration of Contrast Enhanced Images.
-        In: Lecture Notes in Computer Science, Proceedings of Medical Image Computing and Computer Assisted Intervention
-        (MICCAI). Ed. by D. Hawkes, D. Rueckert, and G. Z. Yang. Vol.5761. London, UK: Springer-Verlag, pp. 811–819.<br>
-        <br> [C5] M. Ebrahimi and A. L. Martel (2009). Image Registration under Varying Illumination: Hyper-Demons Algorithm.
-        In: Lecture Notes in Computer Science, Proceedings of Energy Minimization Methods in Computer Vision and Pattern
-        Recognition (EMMCVPR). Ed. by D. Cremers, Y. Boykov, A. Blake, and F. R. Schmidt. Vol. 5681. Bonn, Germany: Springer-Verlag,
-        pp. 303–316.<br>
-        <br> [C6] M. Ebrahimi, E. R. Vrscay, and A. L. Martel (2009). Coupled Multi-Frame Super-Resolution with Diffusive
-        Motion Model and Total Variation Regularization. In: Proceedings of the International Work-shop on Local and Non-Local
-        Approximation in Image Processing (LNLA). Ed. by J. Astola, K. Egiazarian, and V. Katkovnik. Tampere International
-        Center for Signal Processing. Tuusula, Finland, pp. 62–69.
-        <br>
-        <br> [C7] M. Ebrahimi and A. L. Martel (2009). A PDE Approach to Coupled Super-Resolution with Non-Parametric Motion.
-        In: Lecture Notes in Computer Science, Proceedings of Energy Minimization Methods in Computer Vision and Pattern
-        Recognition (EMMCVPR). Ed. by D. Cremers, Y. Boykov, A. Blake, and F. R. Schmidt. Vol.5681. Bonn, Germany: Springer-Verlag,
-        pp. 112–125.<br>
-        <br> [C8] M. Ebrahimi and E. R. Vrscay (2008). Self-Similarity in Imaging, 20 Years after “Fractals Everywhere”.
-        In: Proceedings of The International Workshop on Local and Non-Local Approximation in Image Processing, LNLA. Lausanne,
-        Switzerland, pp. 165–172.<br>
-        <br> [C9] M. Ebrahimi and E. R. Vrscay (2008). Multi-Frame Super-Resolution with no Explicit Motion Estimation. In:
-        Proceedings of the International Conference on Image Processing, Computer Vision, and Pattern Recognition, IPCV.
-        Las Vegas, Nevada, USA, pp. 455–459.<br>
-        <br> [C10] M. Ebrahimi (2008). Non-Local Approaches to Image and Video Resolution Enhancement. In: SIAM International
-        Conference on Imaging Science. San Diego, California, USA.<br>
-        <br> [C11] M. Ebrahimi and E. R. Vrscay (2008). Examining the Role of Scale in the Context of the Non-Local-Means
-        Filter. In: Lecture Notes in Computer Science, Proceedings of the International Conference on Image Analysis and
-        Recognition ICIAR, Povoa de Varzim, Portugal, pp. 170–181.
-        <br>
-        <br> [C12] M. Ebrahimi and E. R. Vrscay (2007). Regularization Schemes involving Self-similarity in Imaging Inverse
-        Problems. In: Proceedings of Applied Inverse Problems (AIP), DOI:10.1088/1742-6596/124/1/012021, 12 pages. <br>
-        <br> [C13] M. Ebrahimi and E. R. Vrscay (2007). Solving the Inverse Problem of Image Zooming using “Self-Examples”.
-        In: Lecture Notes in Computer Science, Proceedings of the International Conference on Image Analysis and Recognition
-        ICIAR. Vol. 4633, pp. 117–130.<br>
-        <br> [C14] M. Ebrahimi and E. R. Vrscay (2006). Fractal Image Coding as Projections onto Convex Sets, In: Lecture
-        Notes in Computer Science, Proceedings of the International Conference on Image Analysis and Recognition ICIAR. Berlin,
-        Heidelberg, pp. 493–506.<br>
-      </font>
-      <font size="2"><br>
-      </font><br>
-      <br>
-      <br>
-    </div>
-    
-    <div id="footer" class="shadow">
-      <p>
-        <a href="http://www.uoit.ca">
-          <img  style="width: 78px; height: 25px;" longdesc="http://www.uoit.ca" title="UOIT" alt="UOIT" src="images/logo-uoit1.jpg" />
-        </a>
-        <br>
-        ©ImagingLab.ca, Dr. Mehran Ebrahimi 
-      </p>
-    </div>
-  </div>
+        page.ready(function (data) {
+
+            var content = mx(page.data.publications)
+                .groupBy(function (t) { return t.year })
+                .orderByDescending(function (t) { return t.key })
+                .select(function (grp) {
+                    var item = '';
+                    item += '<h3>';
+                    item += grp.key;
+                    item += '</h3>';
+                    item += '<ul style="list-style: none;">';
+                    grp.orderBy(function (p) { return p.code })
+                        .forEach(function (p) {
+                            item += "<li>";
+                            item += "[" + p.code + "] ";
+                            item += p.contributors;
+                            item += " (" + p.year + "). ";
+                            item += p.title;
+                            item += '</li>';
+                            item += '<br />';
+                        });
+
+                    item += '</ul>';
+                    return item;
+                })
+                .toArray()
+                .join("");
+
+            $("#content_updated").append("<h4>[Updated " + page.data.updated + "]</h4>");
+            $("#content_publication").append(content);
+        });
+    </script>
+
 </body>
 
 </html>
