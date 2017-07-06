@@ -2,120 +2,137 @@
 <html>
 
 <head>
-  <title>ImagingLab.ca, Research</title>
-  <meta content="text/html; charset=utf-8" http-equiv="content-type">
-  <meta name="description" content="ImagingLab, Mehran Ebrahimi, UOIT">
-  <link rel="stylesheet" type="text/css" media="all" href="inland.css">
-  <script type="text/javascript" src="resources/jquery-1.7.1.min.js"></script>
-  <script type="text/javascript" src="resources/jquery.nivo.slider.js"></script>
-  <script type="text/javascript" src="resources/site.js"></script>
+    <title>ImagingLab.ca, Research</title>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <meta name="description" content="ImagingLab, Mehran Ebrahimi, UOIT">
+    <link rel="stylesheet" type="text/css" media="all" href="inland.css">
+    <script type="text/javascript" src="resources/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="resources/jquery.nivo.slider.js"></script>
+    <script type="text/javascript" src="resources/multiplex.min.js"></script>
+    <script type="text/javascript" src="resources/site.js"></script>
 </head>
 
 <body>
-  <div id="wrapper960" class="clearfix">
-    <div id="header" class="clearfix shadow">
-      <div style="color: rgb(0, 0, 172);" id="sitetitle" class="clearfix">
-        <h1><a href=".">ImagingLab.ca</a></h1>
-      </div>
-      <div id="nav" class="clearfix">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="people.html">People</a></li>
-          <li><a class="current" href="research.html">Research</a></li>
-          <li><a href="publications.html">Publications</a></li>
-          <li><a href="teaching.html">Teaching</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </div>
+    <div id="wrapper960" class="clearfix">
+        <div id="header" class="clearfix shadow">
+            <div style="color: rgb(0, 0, 172);" id="sitetitle" class="clearfix">
+                <h1><a href=".">ImagingLab.ca</a></h1>
+            </div>
+            <div id="nav" class="clearfix">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="people.html">People</a></li>
+                    <li><a class="current" href="research.html">Research</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="teaching.html">Teaching</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
 
-    <div class="slider-wrapper">
-      <div id="slider" class="nivoSlider">
-        <img src="images/slider1.jpg" alt="">
-        <img src="images/slider2.jpg" alt=""> 
-        <img src="images/slider3.jpg" alt="">
-        <img src="images/slider4.jpg" alt="">
-      </div>
-    </div>
+        <div class="slider-wrapper">
+            <div id="slider" class="nivoSlider">
+                <img src="images/slider1.jpg" alt="">
+                <img src="images/slider2.jpg" alt="">
+                <img src="images/slider3.jpg" alt="">
+                <img src="images/slider4.jpg" alt="">
+            </div>
+        </div>
 
-    <div id="content" class="clearfix shadow">
-      <h2>Research Areas</h2>
-      <h4>[Updated Sept. 2013]</h4>
-      <h2><br>
-      </h2>
-      <span style="font-weight: bold;"></span>
-      <font size="2">Broadly speaking, our research interests lie in the diverse area of <span style="font-weight: bold;">mathematical
-            imaging</span> and <span style="font-weight: bold;">inverse
-            problems</span>. </font>
-      <font size="2">Our long-term research objective is directed towards developing and validating efficient <span style="font-weight: bold;">numerical methodologies for solving
-            real-world, ill-posed inverse problems</span> in the field of <span style="font-weight: bold;">medical imaging</span>.
-        Some of our short- and medium-term research objectives are outlined below.<br>
-        <br>
-      </font>
-      <h3>
-        <font size="2">1-Efficient numerical methodologies aimed at Computer Assisted Surgery (CAS) of the breast</font>
-      </h3>
-      <font size="2">Breast cancer is the most common malignant disease among Canadian women. Breast Magnetic Resonance Imaging (MRI) is
-        frequently performed prior to breast conserving surgery in order to assess the location and extent of the lesion.
-        Ideally, the surgeon should be able to use the pre-surgery image information during surgery to guide the excision.
-        This requires the prone pre-surgical MR image to be aligned or co-registered to conform to the patient's supine position
-        on the operating table. The registration step can be modelled as an inverse problem that is ill-posed, i.e., has
-        no unique solution.<br>
-        <br> Recently, we have developed a computationally efficient registration scheme based on Thin-Plate-Splines to align
-        pre-surgical images to the operating room position using MR-visible surface markers placed before imaging. While
-        the results are promising, the next natural step is to eliminate the requirement of placing the surface markers in
-        the registration scheme. The future breast CAS technology will demand novel efficient hybrid surface-intensity based
-        registration algorithms that employ the surface information of the operating room along with the intensity information
-        of the pre-surgical images. The highly deformable nature of the breast tissue is one of the main challenges of solving
-        this ill-posed inverse problem.<br>
-        <br>
-      </font>
-      <h3>
-        <font size="2">2-Coupled approaches for analysis of Dynamic Contrast Enhanced (DCE) Magnetic Resonance Imaging (MRI)</font>
-      </h3>
-      <font size="2">DCE imaging has emerged as a powerful screening tool for identifying carcinoma in high-risk populations. Accurate registration
-        of DCE images is valuable for proper identification of the lesions. Recently, we have developed a simple coupled
-        PDE approach to joint registration and intensity correction of the DCE images. In general, the contrast uptake curves
-        are results of a physical process. Motion correction of images coupled with this process is a significant step in
-        identification of malignancies. This requires defining regularization expressions that directly incorporate the underlying
-        physical process of this inverse problem.<br>
-        <br>
-      </font>
-      <h3>
-        <font size="2">3-Image registration schemes in presence of discontinuities
-        </font>
-      </h3>
-      <font size="2">In image registration, researchers generally rely on transformations to describe the alignment process relating two
-        images. However, in the clinical setting, there are many situations where the “true” deformation may have discontinuities.
-        For example, one would expect the transformation between the images of a patient before and after tumor resection
-        would contain a singularity or a hole. Previously, the problems of rips/tears have been addressed using the Total
-        Variation (TV) regularization, but this typically only works well for extremely small discontinuities. Furthermore,
-        these approaches do not at all address the clinical problems where singularities or holes are present in the true
-        deformation. Given these limitations of current approaches to image registration, an open problem is to define an
-        approach that would enable deformable registration in the presence of various types of large-scale discontinuities.
-        One potential approach is to develop a registration technique that implicitly allows topological changes in the deformation
-        field, much like the use of level sets in image segmentation allows implicitly for topological changes in region
-        boundaries.
-        <br>
-      </font>
-      <font size="2"><br>
-      </font>
-      <font size="2"><br>
-      </font><br>
-      <br>
-      <br>
+        <div id="content" class="clearfix shadow">
+            <h2>Research Areas</h2>
+            <h4>[Updated Sept. 2013]</h4>
+            <h2>
+                <br>
+            </h2>
+            <span style="font-weight: bold;"></span>
+            <font size="2">
+                Broadly speaking, our research interests lie in the diverse area of <span style="font-weight: bold;">
+                    mathematical
+                    imaging
+                </span> and <span style="font-weight: bold;">
+                    inverse
+                    problems
+                </span>.
+            </font>
+            <font size="2">
+                Our long-term research objective is directed towards developing and validating efficient <span style="font-weight: bold;">
+                    numerical methodologies for solving
+                    real-world, ill-posed inverse problems
+                </span> in the field of <span style="font-weight: bold;">medical imaging</span>.
+                Some of our short- and medium-term research objectives are outlined below.<br>
+                <br>
+            </font>
+            <h3>
+                <font size="2">1-Efficient numerical methodologies aimed at Computer Assisted Surgery (CAS) of the breast</font>
+            </h3>
+            <font size="2">
+                Breast cancer is the most common malignant disease among Canadian women. Breast Magnetic Resonance Imaging (MRI) is
+                frequently performed prior to breast conserving surgery in order to assess the location and extent of the lesion.
+                Ideally, the surgeon should be able to use the pre-surgery image information during surgery to guide the excision.
+                This requires the prone pre-surgical MR image to be aligned or co-registered to conform to the patient's supine position
+                on the operating table. The registration step can be modelled as an inverse problem that is ill-posed, i.e., has
+                no unique solution.<br>
+                <br> Recently, we have developed a computationally efficient registration scheme based on Thin-Plate-Splines to align
+                pre-surgical images to the operating room position using MR-visible surface markers placed before imaging. While
+                the results are promising, the next natural step is to eliminate the requirement of placing the surface markers in
+                the registration scheme. The future breast CAS technology will demand novel efficient hybrid surface-intensity based
+                registration algorithms that employ the surface information of the operating room along with the intensity information
+                of the pre-surgical images. The highly deformable nature of the breast tissue is one of the main challenges of solving
+                this ill-posed inverse problem.<br>
+                <br>
+            </font>
+            <h3>
+                <font size="2">2-Coupled approaches for analysis of Dynamic Contrast Enhanced (DCE) Magnetic Resonance Imaging (MRI)</font>
+            </h3>
+            <font size="2">
+                DCE imaging has emerged as a powerful screening tool for identifying carcinoma in high-risk populations. Accurate registration
+                of DCE images is valuable for proper identification of the lesions. Recently, we have developed a simple coupled
+                PDE approach to joint registration and intensity correction of the DCE images. In general, the contrast uptake curves
+                are results of a physical process. Motion correction of images coupled with this process is a significant step in
+                identification of malignancies. This requires defining regularization expressions that directly incorporate the underlying
+                physical process of this inverse problem.<br>
+                <br>
+            </font>
+            <h3>
+                <font size="2">
+                    3-Image registration schemes in presence of discontinuities
+                </font>
+            </h3>
+            <font size="2">
+                In image registration, researchers generally rely on transformations to describe the alignment process relating two
+                images. However, in the clinical setting, there are many situations where the “true” deformation may have discontinuities.
+                For example, one would expect the transformation between the images of a patient before and after tumor resection
+                would contain a singularity or a hole. Previously, the problems of rips/tears have been addressed using the Total
+                Variation (TV) regularization, but this typically only works well for extremely small discontinuities. Furthermore,
+                these approaches do not at all address the clinical problems where singularities or holes are present in the true
+                deformation. Given these limitations of current approaches to image registration, an open problem is to define an
+                approach that would enable deformable registration in the presence of various types of large-scale discontinuities.
+                One potential approach is to develop a registration technique that implicitly allows topological changes in the deformation
+                field, much like the use of level sets in image segmentation allows implicitly for topological changes in region
+                boundaries.
+                <br>
+            </font>
+            <font size="2">
+                <br>
+            </font>
+            <font size="2">
+                <br>
+            </font><br>
+            <br>
+            <br>
+        </div>
+
+        <div id="footer" class="shadow">
+            <p>
+                <a href="http://www.uoit.ca">
+                    <img style="width: 78px; height: 25px;" longdesc="http://www.uoit.ca" title="UOIT" alt="UOIT" src="images/logo-uoit1.jpg" />
+                </a>
+                <br>
+                ©ImagingLab.ca, Dr. Mehran Ebrahimi
+            </p>
+        </div>
     </div>
-    
-    <div id="footer" class="shadow">
-      <p>
-        <a href="http://www.uoit.ca">
-          <img  style="width: 78px; height: 25px;" longdesc="http://www.uoit.ca" title="UOIT" alt="UOIT" src="images/logo-uoit1.jpg" />
-        </a>
-        <br>
-        ©ImagingLab.ca, Dr. Mehran Ebrahimi 
-      </p>
-    </div>
-  </div>
 </body>
 
 </html>
