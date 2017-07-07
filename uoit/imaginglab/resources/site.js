@@ -13,8 +13,11 @@ var page = (function () {
         },
         ready: function (fn) {
             _ready.push(fn);
-        }
+        },
+
+        appendPublications: appendPublications
     };
+
 
     function initialize() {
         $('a[href^="https://"],a[href^="http://"]').attr('target', '_blank');
@@ -27,6 +30,46 @@ var page = (function () {
                 }
             });
     };
+
+    function appendPublications(parent, title, items) {
+        var item = $('<div><h3>' + title + '</h3></div>');
+        var ul = $("<ul>").css({ 'list-style': 'none' }).appendTo(item);
+
+        for (var i = 0; i < items.length; i++) {
+            var p = items[i];
+            var li = $('<li>').appendTo(ul);
+            li.append('[' + p.code + '] ');
+            li.append(p.contributors);
+            li.append(' (' + p.year + '). ');
+            li.append(p.title);
+            li.append('<br />');
+
+            var links = $('<div>').appendTo(li);
+
+            if (p.pdf) {
+                links.append('<a href="' + p.pdf + '" target="_blank" title="PDF"> [PDF] </a>');
+            }
+
+            if (p.url) {
+                links.append('<a href="' + p.url + '" target="_blank" title="URL"> [URL] </a>');
+            }
+
+            if (p.bibtex) {
+                var bibtexLink = $('<a href="javascript:void(0)" title="Bibtex"> [Bibtex] </a>').appendTo(links);
+                var bintexContent = $('<div>').addClass('bibtex').appendTo(links);
+
+                bibtexLink.click(function () {
+                    bintexContent.text(p.bibtex);
+                    bintexContent.toggle();
+                });
+            }
+
+            li.append('<br />');
+        };
+
+        item.appendTo(parent);
+    }
+
 
     function initGoogleAnalytics() {
         (function (i, s, o, g, r, a, m) {

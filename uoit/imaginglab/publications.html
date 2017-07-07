@@ -127,32 +127,14 @@
     <script type="text/javascript">
 
         page.ready(function (data) {
+            var content = $("<div>");
 
-            var content = mx(page.data.publications)
+            mx(page.data.publications)
                 .groupBy(function (t) { return t.year })
                 .orderByDescending(function (t) { return t.key })
-                .select(function (grp) {
-                    var item = '';
-                    item += '<h3>';
-                    item += grp.key;
-                    item += '</h3>';
-                    item += '<ul style="list-style: none;">';
-                    grp.orderBy(function (p) { return p.code })
-                        .forEach(function (p) {
-                            item += "<li>";
-                            item += "[" + p.code + "] ";
-                            item += p.contributors;
-                            item += " (" + p.year + "). ";
-                            item += p.title;
-                            item += '</li>';
-                            item += '<br />';
-                        });
-
-                    item += '</ul>';
-                    return item;
-                })
-                .toArray()
-                .join("");
+                .forEach(function (grp) {
+                    page.appendPublications(content, grp.key, grp.orderBy(function (p) { return p.code }).toArray());
+                });
 
             $("#content_updated").append("<h4>[Updated " + page.data.updated + "]</h4>");
             $("#content_publication").append(content);
