@@ -23,6 +23,9 @@ var page = (function () {
         $('a[href^="https://"],a[href^="http://"]').attr('target', '_blank');
         $.ajax('data/data.json')
             .done(function (d) {
+
+                var pubTypes = d.publicationTypes
+
                 _page.data = d;
 
                 for (var i = 0; i < _ready.length; i++) {
@@ -53,14 +56,15 @@ var page = (function () {
             if (p.url) {
                 links.append('<a href="' + p.url + '" target="_blank" title="URL"> [URL] </a>');
             }
-
+            
             if (p.bibtex) {
+                var bibtex = p.bibtex.replace(/\n/ig, "<br/>");
                 var bibtexLink = $('<a href="javascript:void(0)" title="Bibtex"> [Bibtex] </a>').appendTo(links);
                 var bintexContent = $('<div>').addClass('bibtex').appendTo(links);
 
                 bibtexLink.click(function () {
-                    bintexContent.text(p.bibtex);
-                    bintexContent.toggle();
+                    bintexContent.html(bibtex);
+                    bintexContent.slideToggle();
                 });
             }
 

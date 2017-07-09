@@ -37,17 +37,17 @@ a {
     text-decoration: none;
 }
 
+    a:hover {
+        color: forestgreen;
+        text-decoration: none;
+    }
+
 ol {
     margin-left: 25px;
 }
 
 a2 {
     color: #005596;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #333;
     text-decoration: none;
 }
 
@@ -105,8 +105,17 @@ b, strong {
     font-size: 11px;
     border: dashed 1px gray;
     background-color: #E6E6E6;
-    text-indent: 5px;
+    padding-left: 5px
 }
+
+.selected {
+    color: forestgreen;
+    font-weight: bold;
+}
+
+    .selected:hover {
+        color: forestgreen
+    }
 
 /* Main wrappers */
 #wrapper1240 {
