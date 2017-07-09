@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ImaginLab.CPanel;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -25,6 +26,12 @@ namespace CPanel
         private void button_save_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            txt_title.Text = CPanelApp.Current.Data.title;
+            label_update.Text = CPanelApp.Current.Data.updated.ToString("MMM yyyy");
         }
     }
 }
