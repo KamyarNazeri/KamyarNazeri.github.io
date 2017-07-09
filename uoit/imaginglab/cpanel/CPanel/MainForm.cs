@@ -16,5 +16,15 @@ namespace CPanel
         {
             InitializeComponent();
         }
+
+        private void button_publish_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button_save_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
