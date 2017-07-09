@@ -6,7 +6,7 @@ var page = (function () {
         data: {
             title: '',
             updated: '',
-            teaching: [],
+            teachings: [],
             people: [],
             publications: [],
             publicationTypes: []
