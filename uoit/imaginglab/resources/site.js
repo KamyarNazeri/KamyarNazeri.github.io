@@ -21,7 +21,7 @@ var page = (function () {
 
     function initialize() {
         $('a[href^="https://"],a[href^="http://"]').attr('target', '_blank');
-        $.ajax('data/data.json')
+        $.ajax('data/data.json?' + Math.random())
             .done(function (d) {
 
                 var pubTypes = d.publicationTypes
