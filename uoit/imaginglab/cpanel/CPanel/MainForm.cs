@@ -16,11 +16,19 @@ namespace ImagingLab.CPanel
         public MainForm()
         {
             InitializeComponent();
+            RenderForm();
+        }
+
+        void RenderForm()
+        {
+            RenderPeople();
+            RenderPublication();
+            RenderTeching();
         }
 
         #region Home
 
-        private void MainForm_Load(object sender, EventArgs e)
+        void MainForm_Load(object sender, EventArgs e)
         {
             txt_title.Text = CPanelApp.Current.Data.title;
             label_update.Text = CPanelApp.Current.Data.updated.ToString("MMM yyyy");
@@ -29,21 +37,26 @@ namespace ImagingLab.CPanel
             grd_publications.DataSource = CPanelApp.Current.Data.publications;
         }
 
-        private void button_publish_Click(object sender, EventArgs e)
+        void button_publish_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button_save_Click(object sender, EventArgs e)
+        void button_save_Click(object sender, EventArgs e)
         {
 
-        } 
+        }
+
+        void tab_cpanel_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            RenderForm();
+        }
 
         #endregion
 
         #region People
 
-        private void button3_addPeople_Click(object sender, EventArgs e)
+        private void button_addPeople_Click(object sender, EventArgs e)
         {
 
         }
@@ -60,70 +73,76 @@ namespace ImagingLab.CPanel
 
         private void grd_people_RowEnter(object sender, DataGridViewCellEventArgs e)
         {
-
+            RenderPeople();
         }
 
-        private void grd_people_CellEndEdit(object sender, DataGridViewCellEventArgs e)
+        void RenderPeople()
         {
-
+            bool selected = grd_people.SelectedRows.Count > 0;
+            button_editPeople.Enabled = selected;
+            button_deletePeople.Enabled = selected;
         }
 
         #endregion
 
         #region Publications
 
-        private void button_addPublication_Click(object sender, EventArgs e)
+        void button_addPublication_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button_editPublication_Click(object sender, EventArgs e)
+        void button_editPublication_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button_deletePublication_Click(object sender, EventArgs e)
+        void button_deletePublication_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void grd_publications_RowEnter(object sender, DataGridViewCellEventArgs e)
+        void grd_publications_RowEnter(object sender, DataGridViewCellEventArgs e)
         {
-
+            RenderPublication();
         }
 
-        private void grd_publications_CellEndEdit(object sender, DataGridViewCellEventArgs e)
+        void RenderPublication()
         {
-
+            bool selected = grd_publications.SelectedRows.Count > 0;
+            button_editPublication.Enabled = selected;
+            button_deletePublication.Enabled = selected;
         }
 
         #endregion
 
         #region Teachings
 
-        private void button_addTeaching_Click(object sender, EventArgs e)
+        void button_addTeaching_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button_editTeaching_Click(object sender, EventArgs e)
+        void button_editTeaching_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button_deleteTeaching_Click(object sender, EventArgs e)
+        void button_deleteTeaching_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void grd_teaching_RowEnter(object sender, DataGridViewCellEventArgs e)
+        void grd_teaching_RowEnter(object sender, DataGridViewCellEventArgs e)
         {
-
+            RenderTeching();
         }
 
-        private void grd_teaching_CellEndEdit(object sender, DataGridViewCellEventArgs e)
+        void RenderTeching()
         {
-
+            bool selected = grd_teaching.SelectedRows.Count > 0;
+            button_editTeaching.Enabled = selected;
+            button_deleteTeaching.Enabled = selected;
         }
 
         #endregion
