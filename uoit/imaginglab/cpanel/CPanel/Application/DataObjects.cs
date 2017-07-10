@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Diagnostics;
 using System.Linq;
 using System.Text;
@@ -11,12 +12,12 @@ namespace ImagingLab.CPanel
     class ImagingLabData
     {
         public string title { get; set; } = "ImagingLab.ca, Mehran Ebrahimi, UOIT";
-        public DateTime updated { get; set; } = DateTime.Now;
+        public string updated { get; set; } = DateTime.Now.ToString("MMM yyyy");
 
-        public Teaching[] teachings { get; set; }
-        public People[] people { get; set; }
-        public Publication[] publications { get; set; }
-        public string[] publicationTypes { get; set; }
+        public BindingList<Teaching> teachings { get; set; }
+        public BindingList<People> people { get; set; }
+        public BindingList<Publication> publications { get; set; }
+        public BindingList<string> publicationTypes { get; set; }
     }
 
     [DebuggerDisplay("{university} - {semester} - {title}")]
@@ -60,6 +61,6 @@ namespace ImagingLab.CPanel
         public string contributors { get; set; }
         public bool publicationsPageVisible { get; set; } = true;
         public bool peoplePageVisible { get; set; } = true;
-        public int[] people { get; set; }
+        public BindingList<int> people { get; set; }
     }
 }

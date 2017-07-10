@@ -117,7 +117,6 @@
             this.tab_cpanel.Font = new System.Drawing.Font("Arial Rounded MT Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tab_cpanel.HotTrack = true;
             this.tab_cpanel.Location = new System.Drawing.Point(0, 0);
-            this.tab_cpanel.Multiline = true;
             this.tab_cpanel.Name = "tab_cpanel";
             this.tab_cpanel.SelectedIndex = 0;
             this.tab_cpanel.Size = new System.Drawing.Size(1082, 509);
@@ -196,6 +195,7 @@
             // 
             // grd_people
             // 
+            this.grd_people.AllowUserToAddRows = false;
             this.grd_people.AllowUserToResizeRows = false;
             this.grd_people.AutoGenerateColumns = false;
             this.grd_people.BackgroundColor = System.Drawing.Color.White;
@@ -222,7 +222,6 @@
             this.grd_people.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grd_people.Size = new System.Drawing.Size(1068, 440);
             this.grd_people.TabIndex = 1;
-            this.grd_people.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.grd_people_RowEnter);
             // 
             // column_people_id
             // 
@@ -375,6 +374,7 @@
             // 
             // grd_publications
             // 
+            this.grd_publications.AllowUserToAddRows = false;
             this.grd_publications.AllowUserToResizeRows = false;
             this.grd_publications.AutoGenerateColumns = false;
             this.grd_publications.BackgroundColor = System.Drawing.Color.White;
@@ -394,6 +394,7 @@
             this.grd_publications.DataSource = this.publicationBindingSource;
             this.grd_publications.Dock = System.Windows.Forms.DockStyle.Fill;
             this.grd_publications.Location = new System.Drawing.Point(3, 3);
+            this.grd_publications.MultiSelect = false;
             this.grd_publications.Name = "grd_publications";
             this.grd_publications.RowHeadersWidth = 20;
             this.grd_publications.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
@@ -401,7 +402,6 @@
             this.grd_publications.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grd_publications.Size = new System.Drawing.Size(1068, 440);
             this.grd_publications.TabIndex = 1;
-            this.grd_publications.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.grd_publications_RowEnter);
             // 
             // column_publication_id
             // 
@@ -543,6 +543,7 @@
             // 
             // grd_teaching
             // 
+            this.grd_teaching.AllowUserToAddRows = false;
             this.grd_teaching.AllowUserToResizeRows = false;
             this.grd_teaching.AutoGenerateColumns = false;
             this.grd_teaching.BackgroundColor = System.Drawing.Color.White;
@@ -557,6 +558,7 @@
             this.grd_teaching.DataSource = this.teachingBindingSource;
             this.grd_teaching.Dock = System.Windows.Forms.DockStyle.Fill;
             this.grd_teaching.Location = new System.Drawing.Point(3, 3);
+            this.grd_teaching.MultiSelect = false;
             this.grd_teaching.Name = "grd_teaching";
             this.grd_teaching.RowHeadersWidth = 20;
             this.grd_teaching.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
@@ -564,7 +566,6 @@
             this.grd_teaching.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grd_teaching.Size = new System.Drawing.Size(1068, 440);
             this.grd_teaching.TabIndex = 1;
-            this.grd_teaching.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.grd_teaching_RowEnter);
             // 
             // column_teaching_id
             // 

@@ -13,6 +13,8 @@ namespace ImagingLab.CPanel
 {
     public partial class MainForm : Form
     {
+        #region Class methods
+
         public MainForm()
         {
             InitializeComponent();
@@ -26,25 +28,71 @@ namespace ImagingLab.CPanel
             RenderTeching();
         }
 
+        void InitGrid(DataGridView grid, object datasource)
+        {
+            grid.DataSource = datasource;
+            grid.RowEnter += (s, e) => RenderForm();
+            grid.UserDeletingRow += (s, e) => e.Cancel = !ConfirmDelete();
+            grid.UserDeletedRow += (s, e) => RenderForm();
+        }
+
+        void SaveData()
+        {
+            CPanelApp.Current.Data.title = txt_title.Text;
+            CPanelApp.Current.Data.updated = DateTime.Now.ToString("MMMM yyyy");
+            CPanelApp.Current.SaveData();
+        }
+
+        bool ConfirmDelete()
+        {
+            DialogResult res = MessageBox.Show("Are you sure to delete the selected item?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (res == DialogResult.Yes)
+            {
+                return true;
+            }
+
+            return false;
+        }
+
+        void DeleteRow(DataGridView grid)
+        {
+            bool res = ConfirmDelete();
+            if (res)
+            {
+                DataGridViewRow selected = grid.SelectedRows.OfType<DataGridViewRow>().FirstOrDefault();
+                if (selected != null)
+                {
+                    int index = Math.Min(selected.Index, grid.Rows.Count - 2);
+                    grid.Rows.Remove(selected);
+                    if (index >= 0) grid.Rows[index].Selected = true;
+                    RenderForm();
+                }
+            };
+        }
+
+        #endregion
+
         #region Home
 
         void MainForm_Load(object sender, EventArgs e)
         {
             txt_title.Text = CPanelApp.Current.Data.title;
-            label_update.Text = CPanelApp.Current.Data.updated.ToString("MMM yyyy");
-            grd_teaching.DataSource = CPanelApp.Current.Data.teachings;
-            grd_people.DataSource = CPanelApp.Current.Data.people;
-            grd_publications.DataSource = CPanelApp.Current.Data.publications;
+            label_update.Text = CPanelApp.Current.Data.updated;
+
+            InitGrid(grd_teaching, CPanelApp.Current.Data.teachings);
+            InitGrid(grd_people, CPanelApp.Current.Data.people);
+            InitGrid(grd_publications, CPanelApp.Current.Data.publications);
         }
 
         void button_publish_Click(object sender, EventArgs e)
         {
-
+            SaveData();
         }
 
         void button_save_Click(object sender, EventArgs e)
         {
-
+            SaveData();
+            MessageBox.Show("Data is saved successfully", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         void tab_cpanel_SelectedIndexChanged(object sender, EventArgs e)
@@ -56,24 +104,19 @@ namespace ImagingLab.CPanel
 
         #region People
 
-        private void button_addPeople_Click(object sender, EventArgs e)
+        void button_addPeople_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button_editPeople_Click(object sender, EventArgs e)
+        void button_editPeople_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button_deletePeople_Click(object sender, EventArgs e)
+        void button_deletePeople_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void grd_people_RowEnter(object sender, DataGridViewCellEventArgs e)
-        {
-            RenderPeople();
+            DeleteRow(grd_people);
         }
 
         void RenderPeople()
@@ -99,12 +142,7 @@ namespace ImagingLab.CPanel
 
         void button_deletePublication_Click(object sender, EventArgs e)
         {
-
-        }
-
-        void grd_publications_RowEnter(object sender, DataGridViewCellEventArgs e)
-        {
-            RenderPublication();
+            DeleteRow(grd_publications);
         }
 
         void RenderPublication()
@@ -130,12 +168,7 @@ namespace ImagingLab.CPanel
 
         void button_deleteTeaching_Click(object sender, EventArgs e)
         {
-
-        }
-
-        void grd_teaching_RowEnter(object sender, DataGridViewCellEventArgs e)
-        {
-            RenderTeching();
+            DeleteRow(grd_teaching);
         }
 
         void RenderTeching()
@@ -146,5 +179,5 @@ namespace ImagingLab.CPanel
         }
 
         #endregion
-    }
+   }
 }
