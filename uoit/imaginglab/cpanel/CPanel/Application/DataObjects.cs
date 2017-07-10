@@ -22,6 +22,7 @@ namespace ImagingLab.CPanel
     [DebuggerDisplay("{university} - {semester} - {title}")]
     class Teaching
     {
+        public int id { get; set; }
         public string semester { get; set; }
         public string title { get; set; }
         public string description { get; set; }
@@ -48,6 +49,7 @@ namespace ImagingLab.CPanel
     [DebuggerDisplay("{code} - {year} - {title}")]
     class Publication
     {
+        public int id { get; set; }
         public string code { get; set; }
         public string title { get; set; }
         public int year { get; set; } = 2017;
