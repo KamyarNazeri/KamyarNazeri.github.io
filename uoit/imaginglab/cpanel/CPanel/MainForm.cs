@@ -1,4 +1,4 @@
-﻿using ImaginLab.CPanel;
+﻿using ImagingLab.CPanel;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CPanel
+namespace ImagingLab.CPanel
 {
     public partial class MainForm : Form
     {
@@ -32,6 +32,9 @@ namespace CPanel
         {
             txt_title.Text = CPanelApp.Current.Data.title;
             label_update.Text = CPanelApp.Current.Data.updated.ToString("MMM yyyy");
+            grd_teaching.DataSource = CPanelApp.Current.Data.teachings;
+            grd_people.DataSource = CPanelApp.Current.Data.people;
+            grd_publications.DataSource = CPanelApp.Current.Data.publications;
         }
     }
 }

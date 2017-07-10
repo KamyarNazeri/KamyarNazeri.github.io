@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using System.Web.Script.Serialization;
 using System.Windows.Forms;
 
-namespace ImaginLab.CPanel
+namespace ImagingLab.CPanel
 {
     class CPanelApp
     {

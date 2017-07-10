@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ImaginLab.CPanel
+namespace ImagingLab.CPanel
 {
     [DebuggerDisplay("title = {title}")]
     class ImagingLabData
@@ -38,8 +38,8 @@ namespace ImaginLab.CPanel
         public string position { get; set; }
         public string education { get; set; }
         public string photo { get; set; }
-        public DateTime? start { get; set; }
-        public DateTime? end { get; set; }
+        public string start { get; set; }
+        public string end { get; set; }
         public string description { get; set; }
         public bool alumni { get; set; }
         public bool visible { get; set; }
