@@ -74,11 +74,11 @@
       "email": "mehran.ebrahimi@uoit.ca",
       "position": "Assistant Professor - Lab Director",
       "education": "PhD",
-      "photo": "",
+      "photo": "data/mehran.jpg",
       "start": "",
       "end": "",
       "description": "",
-      "alumni": false,
+      "alumnus": false,
       "visible": true
     },
     {
@@ -87,11 +87,11 @@
       "email": "kamyar.nazerinaeini@uoit.net",
       "position": "Graduate Student - MSC.",
       "education": "BSc in Electrical Engineering from Iran",
-      "photo": "",
+      "photo": "data/kamyar.jpg",
       "start": "January 2017",
       "end": "",
       "description": "",
-      "alumni": false,
+      "alumnus": false,
       "visible": true
     },
     {
@@ -100,11 +100,11 @@
       "email": "mia.mojica@uoit.net",
       "position": "Graduate Student - PhD.",
       "education": "MSc graduate in Applied Mathematics from the Philippines",
-      "photo": "",
+      "photo": "data/mia.jpg",
       "start": "September 2016",
       "end": "",
       "description": "",
-      "alumni": false,
+      "alumnus": false,
       "visible": true
     },
     {
@@ -113,11 +113,11 @@
       "email": "lorraine.ma@uoit.net",
       "position": "Graduate Student - MSC.",
       "education": "",
-      "photo": "",
+      "photo": "data/lorraine.jpg",
       "start": "September 2014",
       "end": "December 2016",
       "description": "Lorraine is investigating image registration schemes for Cardiac MRI for which the data is provided by Prof. Graham Wright (Sunnybrook Research Institute). Lorraine won the people’s choice award at the 2016 Three Minute Thesis (3MT®). She is aiming to defend her thesis in August 2015 and join the University of Auckland, New Zealand, as an exchange student in Fall 2016 on a Queen Elizabeth II Diamond Jubilee Scholarship.",
-      "alumni": true,
+      "alumnus": true,
       "visible": true
     },
     {
@@ -126,11 +126,11 @@
       "email": "ghazal.ahmadian@uoit.net",
       "position": "Graduate Student - MSC.",
       "education": "",
-      "photo": "",
+      "photo": "data/ghazaleh.png",
       "start": "January 2015",
       "end": "May 2017",
       "description": "Co-supervised with Dr. Sean Bohun. Ghazal is investigating breast image registration schemes aimed at Computer aided surgery (CAS), for which the data is provided by Dr. Anne Martel (Sunnybrook Research Institute).",
-      "alumni": true,
+      "alumnus": true,
       "visible": true
     },
     {
@@ -139,11 +139,11 @@
       "email": "sancgeetha.kulaseharan@uoit.net",
       "position": "Graduate Student - MSC.",
       "education": "",
-      "photo": "",
+      "photo": "data/sancgeetha.jpg",
       "start": "September 2015",
       "end": "",
       "description": "Co-supervised with Dr. Elysa Widjaja (Hospital for Sick Children, Toronto), Working on combined texture and morphometric analyses of MR imaging to identify focal cortical dysplasia in children with focal epilepsy.",
-      "alumni": false,
+      "alumnus": false,
       "visible": true
     },
     {
@@ -152,11 +152,11 @@
       "email": "cory.falconer@uoit.net",
       "position": "Graduate Student - MSC.",
       "education": "",
-      "photo": "",
+      "photo": "data/cory.jpg",
       "start": "September 2015",
       "end": "",
       "description": "Co-supervised with Dr. Sean Bohn, Cory is investigating resolution enhancement and denoising techniques for medical imaging applications.",
-      "alumni": false,
+      "alumnus": false,
       "visible": true
     },
     {
@@ -165,11 +165,11 @@
       "email": "eric.ng@uoit.net",
       "position": "Graduate Student - MSC.",
       "education": "",
-      "photo": "",
+      "photo": "data/eric.jpg",
       "start": "September 2017",
       "end": "",
       "description": "",
-      "alumni": false,
+      "alumnus": false,
       "visible": true
     },
     {
@@ -178,11 +178,11 @@
       "email": "azad.aminpour@uoit.net",
       "position": "Graduate Student - PhD.",
       "education": "MSc graduate in Computer Science from Iran",
-      "photo": "",
+      "photo": "data/azad.jpg",
       "start": "September 2017",
       "end": "",
       "description": "",
-      "alumni": false,
+      "alumnus": false,
       "visible": true
     },
     {
@@ -195,7 +195,7 @@
       "start": "September 2015",
       "end": "April 2016",
       "description": "After completing her NSERC USRA, she completed her thesis on Image Segmentation using Graph cuts.",
-      "alumni": true,
+      "alumnus": true,
       "visible": true
     },
     {
@@ -208,7 +208,7 @@
       "start": "June 2015",
       "end": "August 2015",
       "description": "Visiting from Biomedical Engineering Program, Huazhong University of Science and Technology, Wuhan, China, Project: Registration of Breast MR Images.",
-      "alumni": true,
+      "alumnus": true,
       "visible": true
     },
     {
@@ -221,7 +221,7 @@
       "start": "June 2015",
       "end": "August 2015",
       "description": "Visiting from School of Electronics Engineering, VIT, Chennai, India Project: Segmentation of Breast MR Images.",
-      "alumni": true,
+      "alumnus": true,
       "visible": true
     }
   ],

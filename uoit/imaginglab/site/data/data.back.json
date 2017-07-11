@@ -78,7 +78,7 @@
       "start": "",
       "end": "",
       "description": "",
-      "alumni": false,
+      "alumnus": false,
       "visible": true
     },
     {
@@ -91,7 +91,7 @@
       "start": "January 2017",
       "end": "",
       "description": "",
-      "alumni": false,
+      "alumnus": false,
       "visible": true
     },
     {
@@ -104,7 +104,7 @@
       "start": "September 2016",
       "end": "",
       "description": "",
-      "alumni": false,
+      "alumnus": false,
       "visible": true
     },
     {
@@ -117,7 +117,7 @@
       "start": "September 2014",
       "end": "December 2016",
       "description": "Lorraine is investigating image registration schemes for Cardiac MRI for which the data is provided by Prof. Graham Wright (Sunnybrook Research Institute). Lorraine won the people’s choice award at the 2016 Three Minute Thesis (3MT®). She is aiming to defend her thesis in August 2015 and join the University of Auckland, New Zealand, as an exchange student in Fall 2016 on a Queen Elizabeth II Diamond Jubilee Scholarship.",
-      "alumni": true,
+      "alumnus": true,
       "visible": true
     },
     {
@@ -130,7 +130,7 @@
       "start": "January 2015",
       "end": "May 2017",
       "description": "Co-supervised with Dr. Sean Bohun. Ghazal is investigating breast image registration schemes aimed at Computer aided surgery (CAS), for which the data is provided by Dr. Anne Martel (Sunnybrook Research Institute).",
-      "alumni": true,
+      "alumnus": true,
       "visible": true
     },
     {
@@ -143,7 +143,7 @@
       "start": "September 2015",
       "end": "",
       "description": "Co-supervised with Dr. Elysa Widjaja (Hospital for Sick Children, Toronto), Working on combined texture and morphometric analyses of MR imaging to identify focal cortical dysplasia in children with focal epilepsy.",
-      "alumni": false,
+      "alumnus": false,
       "visible": true
     },
     {
@@ -156,7 +156,7 @@
       "start": "September 2015",
       "end": "",
       "description": "Co-supervised with Dr. Sean Bohn, Cory is investigating resolution enhancement and denoising techniques for medical imaging applications.",
-      "alumni": false,
+      "alumnus": false,
       "visible": true
     },
     {
@@ -169,7 +169,7 @@
       "start": "September 2017",
       "end": "",
       "description": "",
-      "alumni": false,
+      "alumnus": false,
       "visible": true
     },
     {
@@ -182,7 +182,7 @@
       "start": "September 2017",
       "end": "",
       "description": "",
-      "alumni": false,
+      "alumnus": false,
       "visible": true
     },
     {
@@ -195,7 +195,7 @@
       "start": "September 2015",
       "end": "April 2016",
       "description": "After completing her NSERC USRA, she completed her thesis on Image Segmentation using Graph cuts.",
-      "alumni": true,
+      "alumnus": true,
       "visible": true
     },
     {
@@ -208,7 +208,7 @@
       "start": "June 2015",
       "end": "August 2015",
       "description": "Visiting from Biomedical Engineering Program, Huazhong University of Science and Technology, Wuhan, China, Project: Registration of Breast MR Images.",
-      "alumni": true,
+      "alumnus": true,
       "visible": true
     },
     {
@@ -221,7 +221,7 @@
       "start": "June 2015",
       "end": "August 2015",
       "description": "Visiting from School of Electronics Engineering, VIT, Chennai, India Project: Segmentation of Breast MR Images.",
-      "alumni": true,
+      "alumnus": true,
       "visible": true
     }
   ],
