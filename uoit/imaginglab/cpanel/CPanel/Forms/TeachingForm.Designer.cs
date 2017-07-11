@@ -47,7 +47,7 @@
             // 
             this.button_save.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button_save.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_save.Location = new System.Drawing.Point(525, 231);
+            this.button_save.Location = new System.Drawing.Point(530, 234);
             this.button_save.Name = "button_save";
             this.button_save.Size = new System.Drawing.Size(90, 27);
             this.button_save.TabIndex = 7;
@@ -60,7 +60,7 @@
             this.button_cancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button_cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.button_cancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_cancel.Location = new System.Drawing.Point(429, 231);
+            this.button_cancel.Location = new System.Drawing.Point(434, 234);
             this.button_cancel.Name = "button_cancel";
             this.button_cancel.Size = new System.Drawing.Size(90, 27);
             this.button_cancel.TabIndex = 6;
@@ -114,6 +114,8 @@
             // 
             // txt_description
             // 
+            this.txt_description.AcceptsReturn = true;
+            this.txt_description.AcceptsTab = true;
             this.txt_description.Location = new System.Drawing.Point(101, 129);
             this.txt_description.Multiline = true;
             this.txt_description.Name = "txt_description";
@@ -161,7 +163,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.button_cancel;
-            this.ClientSize = new System.Drawing.Size(627, 270);
+            this.ClientSize = new System.Drawing.Size(632, 273);
             this.Controls.Add(this.txt_description);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txt_title);
@@ -174,6 +176,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button_save);
             this.Controls.Add(this.button_cancel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "TeachingForm";
