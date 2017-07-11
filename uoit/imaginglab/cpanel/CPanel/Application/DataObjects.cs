@@ -5,6 +5,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.Script.Serialization;
 
 namespace ImagingLab.CPanel
 {
@@ -61,8 +62,11 @@ namespace ImagingLab.CPanel
         public string start { get; set; }
         public string end { get; set; }
         public string description { get; set; }
-        public bool alumnus { get; set; }
-        public bool visible { get; set; }
+        public bool alumnus { get; set; } = false;
+        public bool visible { get; set; } = true;
+
+        [ScriptIgnore]
+        internal string PhotoPath { get; set; }
     }
 
     [DebuggerDisplay("{code} - {year} - {title}")]
@@ -80,5 +84,8 @@ namespace ImagingLab.CPanel
         public bool publicationsPageVisible { get; set; } = true;
         public bool peoplePageVisible { get; set; } = true;
         public BindingList<int> people { get; set; }
+
+        [ScriptIgnore]
+        internal string PdfPath { get; set; }
     }
 }
