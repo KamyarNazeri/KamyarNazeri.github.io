@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +13,7 @@ namespace ImagingLab.CPanel
 {
     partial class PublicationsForm : Form
     {
+        string _pdf;
         public Publication Publication { get; set; }
 
         public PublicationsForm(Publication publication = null)
@@ -32,6 +34,7 @@ namespace ImagingLab.CPanel
             chk_visible.Checked = publication?.publicationsPageVisible ?? true;
             chk_peopleVisible.Checked = publication?.peoplePageVisible ?? true;
             txt_bibtex.Text = publication?.bibtex.Replace("\\n", Environment.NewLine).Replace("\n", Environment.NewLine) ?? "";
+            _pdf = publication?.url ?? "";
         }
 
         private void button_cancel_Click(object sender, EventArgs e)
@@ -59,8 +62,36 @@ namespace ImagingLab.CPanel
             Publication.peoplePageVisible = chk_peopleVisible.Checked;
             Publication.bibtex = txt_bibtex.Text.Replace("\n", "\\n");
 
+            if (File.Exists(_pdf))
+            {
+                FileInfo info = new FileInfo(_pdf);
+                Publication.pdf = "data/" + info.Name;
+                Publication.PdfPath = info.FullName;
+            }
+            else
+            {
+                Publication.pdf = "";
+                Publication.PdfPath = null;
+            }
+
             this.DialogResult = DialogResult.OK;
             this.Close();
+        }
+
+        private void pic_upload_Click(object sender, EventArgs e)
+        {
+            DialogResult res = openFileDialog1.ShowDialog();
+            if (res == DialogResult.OK)
+            {
+                _pdf = openFileDialog1.FileName;
+                txt_pdf.Text = openFileDialog1.SafeFileName;
+            }
+        }
+
+        private void pic_cancel_Click(object sender, EventArgs e)
+        {
+            txt_pdf.Text = "";
+            _pdf = null;
         }
     }
 }

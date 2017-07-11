@@ -30,6 +30,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PublicationsForm));
             this.button_save = new System.Windows.Forms.Button();
             this.button_cancel = new System.Windows.Forms.Button();
             this.txt_code = new ImagingLab.CPanel.CPanelTextBox();
@@ -50,7 +52,13 @@
             this.num_year = new System.Windows.Forms.NumericUpDown();
             this.txt_bibtex = new ImagingLab.CPanel.CPanelTextBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.pic_cancel = new System.Windows.Forms.PictureBox();
+            this.pic_upload = new System.Windows.Forms.PictureBox();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.num_year)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_cancel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_upload)).BeginInit();
             this.SuspendLayout();
             // 
             // button_save
@@ -141,7 +149,8 @@
             // 
             this.txt_pdf.Location = new System.Drawing.Point(107, 129);
             this.txt_pdf.Name = "txt_pdf";
-            this.txt_pdf.Size = new System.Drawing.Size(463, 22);
+            this.txt_pdf.ReadOnly = true;
+            this.txt_pdf.Size = new System.Drawing.Size(405, 22);
             this.txt_pdf.TabIndex = 5;
             // 
             // label5
@@ -252,6 +261,39 @@
             this.label8.TabIndex = 11;
             this.label8.Text = "BibTex:";
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            this.openFileDialog1.Filter = "PDF files|*.pdf|All files|*.*";
+            // 
+            // pic_cancel
+            // 
+            this.pic_cancel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pic_cancel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pic_cancel.Image = ((System.Drawing.Image)(resources.GetObject("pic_cancel.Image")));
+            this.pic_cancel.Location = new System.Drawing.Point(547, 129);
+            this.pic_cancel.Name = "pic_cancel";
+            this.pic_cancel.Size = new System.Drawing.Size(23, 23);
+            this.pic_cancel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pic_cancel.TabIndex = 13;
+            this.pic_cancel.TabStop = false;
+            this.toolTip1.SetToolTip(this.pic_cancel, "Remove the PDF file.");
+            this.pic_cancel.Click += new System.EventHandler(this.pic_cancel_Click);
+            // 
+            // pic_upload
+            // 
+            this.pic_upload.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pic_upload.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pic_upload.Image = ((System.Drawing.Image)(resources.GetObject("pic_upload.Image")));
+            this.pic_upload.Location = new System.Drawing.Point(518, 129);
+            this.pic_upload.Name = "pic_upload";
+            this.pic_upload.Size = new System.Drawing.Size(23, 23);
+            this.pic_upload.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pic_upload.TabIndex = 13;
+            this.pic_upload.TabStop = false;
+            this.toolTip1.SetToolTip(this.pic_upload, "Select a PDF file.");
+            this.pic_upload.Click += new System.EventHandler(this.pic_upload_Click);
+            // 
             // PublicationsForm
             // 
             this.AcceptButton = this.button_save;
@@ -259,6 +301,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.button_cancel;
             this.ClientSize = new System.Drawing.Size(632, 479);
+            this.Controls.Add(this.pic_cancel);
+            this.Controls.Add(this.pic_upload);
             this.Controls.Add(this.num_year);
             this.Controls.Add(this.chk_peopleVisible);
             this.Controls.Add(this.chk_visible);
@@ -288,6 +332,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Publications";
             ((System.ComponentModel.ISupportInitialize)(this.num_year)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_cancel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_upload)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -315,5 +361,9 @@
         private System.Windows.Forms.NumericUpDown num_year;
         private CPanelTextBox txt_bibtex;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.PictureBox pic_cancel;
+        private System.Windows.Forms.PictureBox pic_upload;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

@@ -117,4 +117,32 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="openFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="pic_cancel.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAgCAYAAAAIXrg4AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EwAACxMBAJqcGAAAAO1JREFUSEvtk10SwiAMhHszuIlwC//1TcffQ8I9NIyhLTWhBH3km8lD6Wa37XS7
+        RuP/eGXPTtklXhbjtTk5ZVZ4SeO0uXhtX2EkIcG839NmjccpTttrFPXigpCx+Wg2eHsAXu9GCLMhjPnL
+        K7NFSQqY3akFKkRsHikJ4c3tDiV5vF48KIMQ8rN5hAthZo9rMuBpn4TZdOrMI/kQc0BZPew3h6H+LhE5
+        8zjVISXmccQhrDmUqKbxCTlzlIgan8Cbf5dIHCIxj+Qaj5IBCKD+99kS0SFMPyYhxQ0d78HTH/GY5iOW
+        NzTszZo3GhV03Rvi+wgz5KzjXwAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>184, 17</value>
+  </metadata>
+  <data name="pic_upload.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAEbSURBVDhPpY8xToRQEIYftzCx8gbGE1hus5UHsFMKAgkBEwKR0FFZeoOtLTiApQ0xwYIlwRBM
+        wAIaPcHvznuw+5Z9utl1ki+ZNzP/R2AA/oVyeAibRlEniQZieG7VXgEFn74ZRyX5U0CBxRfDYyegfir5
+        VUCHDz3j3DeC8S1LlAI6uPtka27fBfJslOwIaHH9wba4ygXTOd2qBAktRmarL1++ahzq5d2KZEcgFx1d
+        LBnOXzQO9TQb1rz2Ck7fGM6eNQ71BwtUDGte09z8GGTBTZqmyLIMeZ6jLEvUdY22bdF1Hfq+R9M0qKoK
+        RVHwO8qsBWEYIggCeJ4H13Vh2zYsy4JhGNB1nWOaJhzHge/7iKIIcRyL9PgvxwH2A3pt8kVMkkmsAAAA
+        AElFTkSuQmCC
+</value>
+  </data>
 </root>
