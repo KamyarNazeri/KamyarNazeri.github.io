@@ -173,7 +173,6 @@
             // txt_title
             // 
             this.txt_title.AcceptsReturn = true;
-            this.txt_title.AcceptsTab = true;
             this.txt_title.Location = new System.Drawing.Point(107, 185);
             this.txt_title.Multiline = true;
             this.txt_title.Name = "txt_title";

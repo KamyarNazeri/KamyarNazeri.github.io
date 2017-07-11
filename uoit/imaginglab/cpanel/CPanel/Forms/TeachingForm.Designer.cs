@@ -115,7 +115,6 @@
             // txt_description
             // 
             this.txt_description.AcceptsReturn = true;
-            this.txt_description.AcceptsTab = true;
             this.txt_description.Location = new System.Drawing.Point(101, 129);
             this.txt_description.Multiline = true;
             this.txt_description.Name = "txt_description";
