@@ -144,7 +144,44 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="..\..\site\data\azad.jpg">
+      <Link>Data\azad.jpg</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\site\data\cory.jpg">
+      <Link>Data\cory.jpg</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\site\data\eric.jpg">
+      <Link>Data\eric.jpg</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\site\data\ghazaleh.png">
+      <Link>Data\ghazaleh.png</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\site\data\kamyar.jpg">
+      <Link>Data\kamyar.jpg</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\site\data\lorraine.jpg">
+      <Link>Data\lorraine.jpg</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\site\data\mehran.jpg">
+      <Link>Data\mehran.jpg</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\site\data\mia.jpg">
+      <Link>Data\mia.jpg</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\site\data\sancgeetha.jpg">
+      <Link>Data\sancgeetha.jpg</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="cpanel.ico" />
+    <None Include="Resources\noimage.png" />
     <None Include="Resources\title.png" />
   </ItemGroup>
   <ItemGroup>

@@ -32,6 +32,7 @@ namespace ImagingLab.CPanel
 
             grd_teaching.CellDoubleClick += (s, a) => EditTeaching();
             grd_publications.CellDoubleClick += (s, a) => EditPublication();
+            grd_people.CellDoubleClick += (s, a) => EditPeople();
         }
 
         void RenderForm()
@@ -114,17 +115,49 @@ namespace ImagingLab.CPanel
 
         void button_addPeople_Click(object sender, EventArgs e)
         {
-
+            AddPeople();
         }
 
         void button_editPeople_Click(object sender, EventArgs e)
         {
-
+            EditPeople();
         }
 
         void button_deletePeople_Click(object sender, EventArgs e)
         {
             DeleteRow(grd_people);
+        }
+
+        void AddPeople()
+        {
+            using (PeopleForm frm = new PeopleForm())
+            {
+                frm.Text = "Add New Person";
+                DialogResult res = frm.ShowDialog();
+
+                if (res == DialogResult.OK)
+                {
+                    CPanelApp.Current.Data.AddPeople(frm.People);
+                    grd_people.Invalidate();
+                    grd_people.FirstDisplayedScrollingRowIndex = grd_people.RowCount - 1;
+                    grd_people.Rows[grd_people.RowCount - 1].Selected = true;
+                }
+            }
+        }
+
+        void EditPeople()
+        {
+            if (grd_publications.SelectedRows.Count > 0)
+            {
+                People item = grd_people.SelectedRows[0].DataBoundItem as People;
+
+                using (PeopleForm frm = new PeopleForm(item))
+                {
+                    frm.Text = "Edit Person";
+                    frm.ShowDialog();
+                    grd_people.Invalidate();
+                }
+            }
         }
 
         void RenderPeople()
@@ -251,5 +284,5 @@ namespace ImagingLab.CPanel
         }
 
         #endregion
-   }
+    }
 }

@@ -48,7 +48,7 @@
             this.column_people_start = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.column_people_end = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.column_people_photo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.column_people_alumni = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.column_people_alumnus = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.column_people_visible = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.peopleBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel3 = new System.Windows.Forms.Panel();
@@ -210,7 +210,7 @@
             this.column_people_start,
             this.column_people_end,
             this.column_people_photo,
-            this.column_people_alumni,
+            this.column_people_alumnus,
             this.column_people_visible});
             this.grd_people.DataSource = this.peopleBindingSource;
             this.grd_people.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -296,12 +296,12 @@
             this.column_people_photo.Name = "column_people_photo";
             this.column_people_photo.Width = 95;
             // 
-            // column_people_alumni
+            // column_people_alumnus
             // 
-            this.column_people_alumni.DataPropertyName = "alumni";
-            this.column_people_alumni.HeaderText = "Alumni";
-            this.column_people_alumni.Name = "column_people_alumni";
-            this.column_people_alumni.Width = 57;
+            this.column_people_alumnus.DataPropertyName = "alumnus";
+            this.column_people_alumnus.HeaderText = "alumnus";
+            this.column_people_alumnus.Name = "column_people_alumnus";
+            this.column_people_alumnus.Width = 57;
             // 
             // column_people_visible
             // 
@@ -786,7 +786,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn column_people_start;
         private System.Windows.Forms.DataGridViewTextBoxColumn column_people_end;
         private System.Windows.Forms.DataGridViewTextBoxColumn column_people_photo;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn column_people_alumni;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn column_people_alumnus;
         private System.Windows.Forms.DataGridViewCheckBoxColumn column_people_visible;
         private System.Windows.Forms.DataGridViewTextBoxColumn column_teaching_id;
         private System.Windows.Forms.DataGridViewTextBoxColumn column_teaching_semester;
