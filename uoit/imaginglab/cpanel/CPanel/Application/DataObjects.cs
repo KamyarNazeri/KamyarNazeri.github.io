@@ -18,6 +18,24 @@ namespace ImagingLab.CPanel
         public BindingList<People> people { get; set; }
         public BindingList<Publication> publications { get; set; }
         public BindingList<string> publicationTypes { get; set; }
+
+        public void AddTeaching(Teaching obj)
+        {
+            obj.id = this.teachings.Max(t => t.id) + 1;
+            this.teachings.Add(obj);
+        }
+
+        public void AddPeople(People obj)
+        {
+            obj.id = this.people.Max(t => t.id) + 1;
+            this.people.Add(obj);
+        }
+
+        public void AddPublication(Publication obj)
+        {
+            obj.id = this.publications.Max(t => t.id) + 1;
+            this.publications.Add(obj);
+        }
     }
 
     [DebuggerDisplay("{university} - {semester} - {title}")]
