@@ -74,16 +74,43 @@
   <ItemGroup>
     <Compile Include="Application\CPanelApp.cs" />
     <Compile Include="Application\DataObjects.cs" />
-    <Compile Include="MainForm.cs">
+    <Compile Include="Forms\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainForm.Designer.cs">
+    <Compile Include="Forms\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PeopleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PeopleForm.Designer.cs">
+      <DependentUpon>PeopleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PublicationsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PublicationsForm.Designer.cs">
+      <DependentUpon>PublicationsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TeachingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TeachingForm.Designer.cs">
+      <DependentUpon>TeachingForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="MainForm.resx">
+    <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PeopleForm.resx">
+      <DependentUpon>PeopleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PublicationsForm.resx">
+      <DependentUpon>PublicationsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TeachingForm.resx">
+      <DependentUpon>TeachingForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -96,7 +123,7 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="..\..\site\data\data.json">
-      <Link>data\data.json</Link>
+      <Link>Data\data.json</Link>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="cpanel.snk" />

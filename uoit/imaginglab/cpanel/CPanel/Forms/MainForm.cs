@@ -82,6 +82,8 @@ namespace ImagingLab.CPanel
             InitGrid(grd_teaching, CPanelApp.Current.Data.teachings);
             InitGrid(grd_people, CPanelApp.Current.Data.people);
             InitGrid(grd_publications, CPanelApp.Current.Data.publications);
+
+            grd_teaching.CellDoubleClick += (s, a) => EditTeaching();
         }
 
         void button_publish_Click(object sender, EventArgs e)
@@ -158,17 +160,47 @@ namespace ImagingLab.CPanel
 
         void button_addTeaching_Click(object sender, EventArgs e)
         {
-
+            AddTeaching();
         }
 
         void button_editTeaching_Click(object sender, EventArgs e)
         {
-
+            EditTeaching();
         }
 
         void button_deleteTeaching_Click(object sender, EventArgs e)
         {
             DeleteRow(grd_teaching);
+        }
+
+        void AddTeaching()
+        {
+            using (TeachingForm frm = new TeachingForm())
+            {
+                frm.Text = "Add New Teaching";
+                DialogResult res = frm.ShowDialog();
+
+                if (res == DialogResult.OK)
+                {
+                    CPanelApp.Current.Data.AddTeaching(frm.Teaching);
+                    grd_teaching.Invalidate();
+                }
+            }
+        }
+
+        void EditTeaching()
+        {
+            if (grd_teaching.SelectedRows.Count > 0)
+            {
+                Teaching item = grd_teaching.SelectedRows[0].DataBoundItem as Teaching;
+
+                using (TeachingForm frm = new TeachingForm(item))
+                {
+                    frm.Text = "Edit Teaching";
+                    frm.ShowDialog();
+                    grd_teaching.Invalidate();
+                }
+            }
         }
 
         void RenderTeching()
