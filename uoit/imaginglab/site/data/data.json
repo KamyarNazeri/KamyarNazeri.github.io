@@ -236,7 +236,7 @@
       "pdf": "http://dl.acm.org/citation.cfm?id=2538409",
       "bibtex": "@article{Ebrahimi:2013:GAJ:2538050.2538409,\n author = {Ebrahimi, Mehran and Lausch, Anthony and Martel, Anne L.},\n title = {A Gauss-Newton Approach to Joint Image Registration and Intensity Correction},\n journal = {Comput. Methods Prog. Biomed.},\n issue_date = {December, 2013},\n volume = {112},\n number = {3},\n month = dec,\n year = {2013},\n issn = {0169-2607},\n pages = {398--406},\n numpages = {9},\n url = {http://dx.doi.org/10.1016/j.cmpb.2013.07.026},\n doi = {10.1016/j.cmpb.2013.07.026},\n acmid = {2538409},\n publisher = {Elsevier North-Holland, Inc.},\n address = {New York, NY, USA},\n keywords = {Image registration, Intensity correction, Inverse problems, Multi-level, Optimization},\n}",
       "contributors": "M. Ebrahimi, A. Lausch, and A. L. Martel",
-      "publicationsPageVisible": true,
+      "visible": true,
       "peoplePageVisible": true,
       "people": [ 1 ]
     },
@@ -250,7 +250,7 @@
       "pdf": "",
       "bibtex": "",
       "contributors": "M. Ebrahimi, P. Siegler, A. Modhafar, C. Holloway, D. Plewes, and A. Martel",
-      "publicationsPageVisible": true,
+      "visible": true,
       "peoplePageVisible": true,
       "people": [ 1 ]
     },
@@ -264,7 +264,7 @@
       "pdf": "",
       "bibtex": "",
       "contributors": "M. L. Hill, J. G. Mainprize, A.-K. Carton, S. Muller, M. Ebrahimi, R. A. Jong, C. Dromain, and M. J. Yaffe",
-      "publicationsPageVisible": true,
+      "visible": true,
       "peoplePageVisible": true,
       "people": [ 1 ]
     },
@@ -278,7 +278,7 @@
       "pdf": "",
       "bibtex": "",
       "contributors": "P. Siegler, M. Ebrahimi, C. Holloway, G. Thevathasan, D. B. Plewes, and A. L. Martel",
-      "publicationsPageVisible": true,
+      "visible": true,
       "peoplePageVisible": true,
       "people": [ 1 ]
     },
@@ -292,7 +292,7 @@
       "pdf": "",
       "bibtex": "",
       "contributors": "M. Ebrahimi, P. Siegler, D. B. Plewes, and A. L. Martel",
-      "publicationsPageVisible": true,
+      "visible": true,
       "peoplePageVisible": true,
       "people": [ 1 ]
     },
@@ -306,7 +306,7 @@
       "pdf": "",
       "bibtex": "",
       "contributors": "M. Ebrahimi",
-      "publicationsPageVisible": true,
+      "visible": true,
       "peoplePageVisible": true,
       "people": [ 1 ]
     },
@@ -320,7 +320,7 @@
       "pdf": "",
       "bibtex": "",
       "contributors": "D. La-Torre, E. R. Vrscay, M. Ebrahimi, and M. F. Barnsley",
-      "publicationsPageVisible": true,
+      "visible": true,
       "peoplePageVisible": true,
       "people": [ 1 ]
     },
@@ -334,7 +334,7 @@
       "pdf": "",
       "bibtex": "",
       "contributors": "W. Bahsoun, P. Gora, A. Boyarsky, and M. Ebrahimi",
-      "publicationsPageVisible": true,
+      "visible": true,
       "peoplePageVisible": true,
       "people": [ 1 ]
     },
@@ -348,7 +348,7 @@
       "pdf": "",
       "bibtex": "",
       "contributors": "A. Lausch, M. Ebrahimi, and A. L. Martel",
-      "publicationsPageVisible": true,
+      "visible": true,
       "peoplePageVisible": true,
       "people": [ 1 ]
     },
@@ -362,7 +362,7 @@
       "pdf": "",
       "bibtex": "",
       "contributors": "M. Ebrahimi",
-      "publicationsPageVisible": true,
+      "visible": true,
       "peoplePageVisible": true,
       "people": [ 1 ]
     },
@@ -376,7 +376,7 @@
       "pdf": "",
       "bibtex": "",
       "contributors": "M. Ebrahimi",
-      "publicationsPageVisible": true,
+      "visible": true,
       "peoplePageVisible": true,
       "people": [ 1 ]
     },
@@ -390,7 +390,7 @@
       "pdf": "",
       "bibtex": "",
       "contributors": "M. Ebrahimi, A. L. Martel",
-      "publicationsPageVisible": true,
+      "visible": true,
       "peoplePageVisible": true,
       "people": [ 1 ]
     },
@@ -404,7 +404,7 @@
       "pdf": "",
       "bibtex": "",
       "contributors": "M. Ebrahimi, A. L. Martel",
-      "publicationsPageVisible": true,
+      "visible": true,
       "peoplePageVisible": true,
       "people": [ 1 ]
     },
@@ -418,7 +418,7 @@
       "pdf": "",
       "bibtex": "",
       "contributors": "M. Ebrahimi, E. R. Vrscay, and A. L. Martel",
-      "publicationsPageVisible": true,
+      "visible": true,
       "peoplePageVisible": true,
       "people": [ 1 ]
     },
@@ -432,7 +432,7 @@
       "pdf": "",
       "bibtex": "",
       "contributors": "M. Ebrahimi, A. L. Martel",
-      "publicationsPageVisible": true,
+      "visible": true,
       "peoplePageVisible": true,
       "people": [ 1 ]
     },
@@ -446,7 +446,7 @@
       "pdf": "",
       "bibtex": "",
       "contributors": "M. Ebrahimi, E. R. Vrscay",
-      "publicationsPageVisible": true,
+      "visible": true,
       "peoplePageVisible": true,
       "people": [ 1 ]
     },
@@ -460,7 +460,7 @@
       "pdf": "",
       "bibtex": "",
       "contributors": "M. Ebrahimi, E. R. Vrscay",
-      "publicationsPageVisible": true,
+      "visible": true,
       "peoplePageVisible": true,
       "people": [ 1 ]
     },
@@ -474,7 +474,7 @@
       "pdf": "",
       "bibtex": "",
       "contributors": "M. Ebrahimi",
-      "publicationsPageVisible": true,
+      "visible": true,
       "peoplePageVisible": true,
       "people": [ 1 ]
     },
@@ -488,7 +488,7 @@
       "pdf": "",
       "bibtex": "",
       "contributors": "M. Ebrahimi, E. R. Vrscay",
-      "publicationsPageVisible": true,
+      "visible": true,
       "peoplePageVisible": true,
       "people": [ 1 ]
     },
@@ -502,7 +502,7 @@
       "pdf": "",
       "bibtex": "",
       "contributors": "M. Ebrahimi, E. R. Vrscay",
-      "publicationsPageVisible": true,
+      "visible": true,
       "peoplePageVisible": true,
       "people": [ 1 ]
     },
@@ -516,7 +516,7 @@
       "pdf": "",
       "bibtex": "",
       "contributors": "M. Ebrahimi, E. R. Vrscay",
-      "publicationsPageVisible": true,
+      "visible": true,
       "peoplePageVisible": true,
       "people": [ 1 ]
     },
@@ -530,7 +530,7 @@
       "pdf": "",
       "bibtex": "",
       "contributors": "M. Ebrahimi, E. R. Vrscay",
-      "publicationsPageVisible": true,
+      "visible": true,
       "peoplePageVisible": true,
       "people": [ 1 ]
     }
