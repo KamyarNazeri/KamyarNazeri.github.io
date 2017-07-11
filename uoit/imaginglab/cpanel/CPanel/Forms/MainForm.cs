@@ -21,6 +21,19 @@ namespace ImagingLab.CPanel
             RenderForm();
         }
 
+        void Initialize()
+        {
+            txt_title.Text = CPanelApp.Current.Data.title;
+            label_update.Text = CPanelApp.Current.Data.updated;
+
+            InitGrid(grd_teaching, CPanelApp.Current.Data.teachings);
+            InitGrid(grd_people, CPanelApp.Current.Data.people);
+            InitGrid(grd_publications, CPanelApp.Current.Data.publications);
+
+            grd_teaching.CellDoubleClick += (s, a) => EditTeaching();
+            grd_publications.CellDoubleClick += (s, a) => EditPublication();
+        }
+
         void RenderForm()
         {
             RenderPeople();
@@ -76,14 +89,7 @@ namespace ImagingLab.CPanel
 
         void MainForm_Load(object sender, EventArgs e)
         {
-            txt_title.Text = CPanelApp.Current.Data.title;
-            label_update.Text = CPanelApp.Current.Data.updated;
-
-            InitGrid(grd_teaching, CPanelApp.Current.Data.teachings);
-            InitGrid(grd_people, CPanelApp.Current.Data.people);
-            InitGrid(grd_publications, CPanelApp.Current.Data.publications);
-
-            grd_teaching.CellDoubleClick += (s, a) => EditTeaching();
+            Initialize();
         }
 
         void button_publish_Click(object sender, EventArgs e)
@@ -134,17 +140,47 @@ namespace ImagingLab.CPanel
 
         void button_addPublication_Click(object sender, EventArgs e)
         {
-
+            AddPublication();
         }
 
         void button_editPublication_Click(object sender, EventArgs e)
         {
-
+            EditPublication();
         }
 
         void button_deletePublication_Click(object sender, EventArgs e)
         {
             DeleteRow(grd_publications);
+        }
+
+        void AddPublication()
+        {
+            using (PublicationsForm frm = new PublicationsForm())
+            {
+                frm.Text = "Add New Publication";
+                DialogResult res = frm.ShowDialog();
+
+                if (res == DialogResult.OK)
+                {
+                    CPanelApp.Current.Data.AddPublication(frm.Publication);
+                    grd_publications.Invalidate();
+                }
+            }
+        }
+
+        void EditPublication()
+        {
+            if (grd_publications.SelectedRows.Count > 0)
+            {
+                Publication item = grd_publications.SelectedRows[0].DataBoundItem as Publication;
+
+                using (PublicationsForm frm = new PublicationsForm(item))
+                {
+                    frm.Text = "Edit Publication";
+                    frm.ShowDialog();
+                    grd_publications.Invalidate();
+                }
+            }
         }
 
         void RenderPublication()
