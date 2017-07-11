@@ -14,6 +14,7 @@ namespace ImagingLab.CPanel
     partial class PeopleForm : Form
     {
         public People People { get; set; }
+        string _photo;
 
         public PeopleForm(People people = null)
         {
@@ -30,9 +31,9 @@ namespace ImagingLab.CPanel
             txt_description.Text = people?.description ?? "";
             chk_alumnus.Checked = people?.alumnus ?? false;
             chk_visible.Checked = people?.visible ?? true;
+            _photo = people?.photo ?? null;
 
-            if (people?.photo != null && File.Exists(people.photo))
-                pic_photo.Image = Image.FromFile(people.photo);
+            Render();
         }
 
         private void button_cancel_Click(object sender, EventArgs e)
@@ -59,8 +60,59 @@ namespace ImagingLab.CPanel
             People.alumnus = chk_alumnus.Checked;
             People.visible = chk_visible.Checked;
 
+            if (_photo != null)
+            {
+                FileInfo info = new FileInfo(_photo);
+                People.photo = "data/" + info.Name;
+                People.PhotoPath = _photo;
+            }
+            else
+            {
+                People.photo = "";
+                People.PhotoPath = null;
+            }
+
             this.DialogResult = DialogResult.OK;
             this.Close();
+        }
+
+        private void pic_photo_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.InitialDirectory = Environment.CurrentDirectory + "\\data";
+
+            DialogResult res = openFileDialog1.ShowDialog();
+            if (res == DialogResult.OK)
+            {
+                _photo = openFileDialog1.FileName;
+                Render();
+            }
+        }
+
+        private void label_image_Click(object sender, EventArgs e)
+        {
+            if (File.Exists(_photo))
+            {
+                _photo = null;
+                Render();
+            }
+        }
+
+        void Render()
+        {
+            if (File.Exists(_photo))
+            {
+                pic_photo.Image = Image.FromFile(_photo);
+                label_image.Cursor = Cursors.Hand;
+                label_image.Text = "(remove photo)";
+                label_image.ForeColor = SystemColors.HotTrack;
+            }
+            else
+            {
+                pic_photo.Image = ImagingLab.CPanel.Properties.Resources.noimage;
+                label_image.Cursor = Cursors.Default;
+                label_image.Text = "(click to change)";
+                label_image.ForeColor = SystemColors.ControlDarkDark;
+            }
         }
     }
 }

@@ -48,8 +48,9 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txt_end = new ImagingLab.CPanel.CPanelTextBox();
             this.chk_alumnus = new System.Windows.Forms.CheckBox();
-            this.label8 = new System.Windows.Forms.Label();
+            this.label_image = new System.Windows.Forms.Label();
             this.pic_photo = new System.Windows.Forms.PictureBox();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.pic_photo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -217,16 +218,17 @@
             this.chk_alumnus.Text = "Alumnus";
             this.chk_alumnus.UseVisualStyleBackColor = true;
             // 
-            // label8
+            // label_image
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label8.Location = new System.Drawing.Point(450, 178);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(96, 15);
-            this.label8.TabIndex = 16;
-            this.label8.Text = "(click to change)";
+            this.label_image.AutoSize = true;
+            this.label_image.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_image.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label_image.Location = new System.Drawing.Point(450, 178);
+            this.label_image.Name = "label_image";
+            this.label_image.Size = new System.Drawing.Size(96, 15);
+            this.label_image.TabIndex = 16;
+            this.label_image.Text = "(click to change)";
+            this.label_image.Click += new System.EventHandler(this.label_image_Click);
             // 
             // pic_photo
             // 
@@ -239,6 +241,12 @@
             this.pic_photo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic_photo.TabIndex = 15;
             this.pic_photo.TabStop = false;
+            this.pic_photo.Click += new System.EventHandler(this.pic_photo_Click);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.Filter = "Images|*.jpg;*.jpeg;*.png;*.gif;*.bmp;|All files|*.*";
+            this.openFileDialog1.InitialDirectory = "/data";
             // 
             // PeopleForm
             // 
@@ -247,7 +255,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.button_cancel;
             this.ClientSize = new System.Drawing.Size(594, 360);
-            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label_image);
             this.Controls.Add(this.chk_alumnus);
             this.Controls.Add(this.chk_visible);
             this.Controls.Add(this.pic_photo);
@@ -302,6 +310,7 @@
         private System.Windows.Forms.Label label5;
         private CPanelTextBox txt_end;
         private System.Windows.Forms.CheckBox chk_alumnus;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label_image;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }
