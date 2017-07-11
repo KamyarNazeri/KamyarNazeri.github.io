@@ -11,6 +11,7 @@ namespace ImagingLab.CPanel
 {
     class CPanelApp
     {
+        public const string DATA_DIR = "Data";
         public const string DATA_PATH = @"Data\data.json";
 
         public ImagingLabData Data { get; private set; }
@@ -72,6 +73,15 @@ namespace ImagingLab.CPanel
         {
             try
             {
+                Data.publications.Select(t => t.PdfPath)
+                .Union(Data.people.Select(t => t.PhotoPath))
+                .Where(t => !String.IsNullOrEmpty(t))
+                .Distinct()
+                .Select(t => new FileInfo(t))
+                .Where(t => t.Exists)
+                .ToList()
+                .ForEach(t => t.CopyTo("data\\" + t.Name, true));
+
                 using (StreamWriter sw = new StreamWriter(DATA_PATH))
                 {
                     JavaScriptSerializer ser = new JavaScriptSerializer();
@@ -81,6 +91,33 @@ namespace ImagingLab.CPanel
             catch (Exception ex)
             {
                 MessageBox.Show("Error in saving data.json!" + Environment.NewLine + ex.Message, "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        public void Publish(string path)
+        {
+            DirectoryCopy(Path.Combine(Environment.CurrentDirectory, DATA_DIR), Path.Combine(path, DATA_DIR));
+        }
+
+        public void DirectoryCopy(string sourceDirName, string destDirName)
+        {
+            DirectoryInfo dir = new DirectoryInfo(sourceDirName);
+
+            if (!Directory.Exists(destDirName))
+            {
+                Directory.CreateDirectory(destDirName);
+            }
+
+            foreach (FileInfo file in dir.GetFiles())
+            {
+                string temppath = Path.Combine(destDirName, file.Name);
+                file.CopyTo(temppath, true);
+            }
+
+            foreach (DirectoryInfo subdir in dir.GetDirectories())
+            {
+                string temppath = Path.Combine(destDirName, subdir.Name);
+                DirectoryCopy(subdir.FullName, temppath);
             }
         }
     }

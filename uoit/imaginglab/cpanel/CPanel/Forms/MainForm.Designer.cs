@@ -75,6 +75,12 @@
             this.button_deletePublication = new System.Windows.Forms.Button();
             this.tabPage_teaching = new System.Windows.Forms.TabPage();
             this.grd_teaching = new System.Windows.Forms.DataGridView();
+            this.column_teaching_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.column_teaching_semester = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.column_teaching_title = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.column_teaching_description = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.column_teaching_university = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.column_teaching_url = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.teachingBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
             this.button_addTeaching = new System.Windows.Forms.Button();
@@ -83,12 +89,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.button_save = new System.Windows.Forms.Button();
             this.button_publish = new System.Windows.Forms.Button();
-            this.column_teaching_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.column_teaching_semester = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.column_teaching_title = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.column_teaching_description = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.column_teaching_university = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.column_teaching_url = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.tab_cpanel.SuspendLayout();
             this.tabPage_home.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -567,6 +568,50 @@
             this.grd_teaching.Size = new System.Drawing.Size(1068, 440);
             this.grd_teaching.TabIndex = 1;
             // 
+            // column_teaching_id
+            // 
+            this.column_teaching_id.DataPropertyName = "id";
+            this.column_teaching_id.HeaderText = "ID";
+            this.column_teaching_id.Name = "column_teaching_id";
+            this.column_teaching_id.Visible = false;
+            // 
+            // column_teaching_semester
+            // 
+            this.column_teaching_semester.DataPropertyName = "semester";
+            this.column_teaching_semester.HeaderText = "Semester";
+            this.column_teaching_semester.Name = "column_teaching_semester";
+            this.column_teaching_semester.Width = 120;
+            // 
+            // column_teaching_title
+            // 
+            this.column_teaching_title.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.column_teaching_title.DataPropertyName = "title";
+            this.column_teaching_title.FillWeight = 30F;
+            this.column_teaching_title.HeaderText = "Title";
+            this.column_teaching_title.Name = "column_teaching_title";
+            // 
+            // column_teaching_description
+            // 
+            this.column_teaching_description.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.column_teaching_description.DataPropertyName = "description";
+            this.column_teaching_description.FillWeight = 70F;
+            this.column_teaching_description.HeaderText = "Description";
+            this.column_teaching_description.Name = "column_teaching_description";
+            // 
+            // column_teaching_university
+            // 
+            this.column_teaching_university.DataPropertyName = "university";
+            this.column_teaching_university.HeaderText = "University";
+            this.column_teaching_university.Name = "column_teaching_university";
+            this.column_teaching_university.Width = 130;
+            // 
+            // column_teaching_url
+            // 
+            this.column_teaching_url.DataPropertyName = "url";
+            this.column_teaching_url.HeaderText = "Url";
+            this.column_teaching_url.Name = "column_teaching_url";
+            this.column_teaching_url.Width = 160;
+            // 
             // teachingBindingSource
             // 
             this.teachingBindingSource.DataSource = typeof(ImagingLab.CPanel.Teaching);
@@ -652,50 +697,6 @@
             this.button_publish.Text = "Publish";
             this.button_publish.UseVisualStyleBackColor = true;
             this.button_publish.Click += new System.EventHandler(this.button_publish_Click);
-            // 
-            // column_teaching_id
-            // 
-            this.column_teaching_id.DataPropertyName = "id";
-            this.column_teaching_id.HeaderText = "ID";
-            this.column_teaching_id.Name = "column_teaching_id";
-            this.column_teaching_id.Visible = false;
-            // 
-            // column_teaching_semester
-            // 
-            this.column_teaching_semester.DataPropertyName = "semester";
-            this.column_teaching_semester.HeaderText = "Semester";
-            this.column_teaching_semester.Name = "column_teaching_semester";
-            this.column_teaching_semester.Width = 120;
-            // 
-            // column_teaching_title
-            // 
-            this.column_teaching_title.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.column_teaching_title.DataPropertyName = "title";
-            this.column_teaching_title.FillWeight = 30F;
-            this.column_teaching_title.HeaderText = "Title";
-            this.column_teaching_title.Name = "column_teaching_title";
-            // 
-            // column_teaching_description
-            // 
-            this.column_teaching_description.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.column_teaching_description.DataPropertyName = "description";
-            this.column_teaching_description.FillWeight = 70F;
-            this.column_teaching_description.HeaderText = "Description";
-            this.column_teaching_description.Name = "column_teaching_description";
-            // 
-            // column_teaching_university
-            // 
-            this.column_teaching_university.DataPropertyName = "university";
-            this.column_teaching_university.HeaderText = "University";
-            this.column_teaching_university.Name = "column_teaching_university";
-            this.column_teaching_university.Width = 130;
-            // 
-            // column_teaching_url
-            // 
-            this.column_teaching_url.DataPropertyName = "url";
-            this.column_teaching_url.HeaderText = "Url";
-            this.column_teaching_url.Name = "column_teaching_url";
-            this.column_teaching_url.Width = 160;
             // 
             // MainForm
             // 
@@ -794,6 +795,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn column_teaching_description;
         private System.Windows.Forms.DataGridViewTextBoxColumn column_teaching_university;
         private System.Windows.Forms.DataGridViewTextBoxColumn column_teaching_url;
+        private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
     }
 }
 

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -95,7 +96,12 @@ namespace ImagingLab.CPanel
 
         void button_publish_Click(object sender, EventArgs e)
         {
-            SaveData();
+            DialogResult res = folderBrowserDialog1.ShowDialog();
+            if(res == DialogResult.OK)
+            {
+                CPanelApp.Current.Publish(folderBrowserDialog1.SelectedPath);
+                MessageBox.Show("Website data is published successfully", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
         void button_save_Click(object sender, EventArgs e)

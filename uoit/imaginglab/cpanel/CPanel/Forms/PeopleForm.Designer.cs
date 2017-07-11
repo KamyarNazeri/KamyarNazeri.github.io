@@ -118,7 +118,6 @@
             // 
             this.txt_education.Location = new System.Drawing.Point(93, 96);
             this.txt_education.Name = "txt_education";
-            this.txt_education.Required = true;
             this.txt_education.Size = new System.Drawing.Size(316, 22);
             this.txt_education.TabIndex = 4;
             // 
