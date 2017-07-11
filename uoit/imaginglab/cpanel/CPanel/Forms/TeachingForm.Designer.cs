@@ -32,15 +32,15 @@
             this.button_save = new System.Windows.Forms.Button();
             this.button_cancel = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.txt_semester = new System.Windows.Forms.TextBox();
+            this.txt_semester = new ImagingLab.CPanel.CPanelTextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txt_title = new System.Windows.Forms.TextBox();
+            this.txt_title = new ImagingLab.CPanel.CPanelTextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txt_description = new System.Windows.Forms.TextBox();
+            this.txt_description = new ImagingLab.CPanel.CPanelTextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.txt_university = new System.Windows.Forms.TextBox();
+            this.txt_university = new ImagingLab.CPanel.CPanelTextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.txt_url = new System.Windows.Forms.TextBox();
+            this.txt_url = new ImagingLab.CPanel.CPanelTextBox();
             this.SuspendLayout();
             // 
             // button_save
@@ -79,8 +79,10 @@
             // 
             // txt_semester
             // 
+            this.txt_semester.BackColor = System.Drawing.SystemColors.Window;
             this.txt_semester.Location = new System.Drawing.Point(101, 17);
             this.txt_semester.Name = "txt_semester";
+            this.txt_semester.Required = true;
             this.txt_semester.Size = new System.Drawing.Size(248, 22);
             this.txt_semester.TabIndex = 1;
             // 
@@ -97,6 +99,7 @@
             // 
             this.txt_title.Location = new System.Drawing.Point(101, 101);
             this.txt_title.Name = "txt_title";
+            this.txt_title.Required = true;
             this.txt_title.Size = new System.Drawing.Size(514, 22);
             this.txt_title.TabIndex = 4;
             // 
@@ -114,6 +117,7 @@
             this.txt_description.Location = new System.Drawing.Point(101, 129);
             this.txt_description.Multiline = true;
             this.txt_description.Name = "txt_description";
+            this.txt_description.Required = true;
             this.txt_description.Size = new System.Drawing.Size(514, 77);
             this.txt_description.TabIndex = 5;
             // 
@@ -130,6 +134,7 @@
             // 
             this.txt_university.Location = new System.Drawing.Point(101, 45);
             this.txt_university.Name = "txt_university";
+            this.txt_university.Required = true;
             this.txt_university.Size = new System.Drawing.Size(248, 22);
             this.txt_university.TabIndex = 2;
             // 
@@ -146,6 +151,7 @@
             // 
             this.txt_url.Location = new System.Drawing.Point(101, 73);
             this.txt_url.Name = "txt_url";
+            this.txt_url.Required = true;
             this.txt_url.Size = new System.Drawing.Size(248, 22);
             this.txt_url.TabIndex = 3;
             // 
@@ -185,14 +191,14 @@
         private System.Windows.Forms.Button button_save;
         private System.Windows.Forms.Button button_cancel;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txt_semester;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txt_title;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txt_description;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txt_university;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txt_url;
+        private CPanelTextBox txt_semester;
+        private CPanelTextBox txt_title;
+        private CPanelTextBox txt_description;
+        private CPanelTextBox txt_university;
+        private CPanelTextBox txt_url;
     }
 }

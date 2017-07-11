@@ -19,6 +19,7 @@ namespace ImagingLab.CPanel
             Teaching = teaching ?? new Teaching();
             InitializeComponent();
 
+            AutoValidate = AutoValidate.EnableAllowFocusChange;
             txt_title.Text = teaching?.title ?? "";
             txt_semester.Text = teaching?.semester ?? "";
             txt_description.Text = teaching?.description ?? "";
@@ -34,6 +35,12 @@ namespace ImagingLab.CPanel
 
         private void button_save_Click(object sender, EventArgs e)
         {
+            if(!this.ValidateChildren())
+            {
+                MessageBox.Show("Please enter required values!", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             Teaching.title = txt_title.Text;
             Teaching.semester = txt_semester.Text;
             Teaching.description = txt_description.Text;

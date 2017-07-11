@@ -73,6 +73,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Application\CPanelApp.cs" />
+    <Compile Include="Application\CPanelTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Application\DataObjects.cs" />
     <Compile Include="Forms\MainForm.cs">
       <SubType>Form</SubType>
