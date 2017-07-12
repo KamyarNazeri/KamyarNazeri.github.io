@@ -69,8 +69,10 @@ namespace ImagingLab.CPanel
             return null;
         }
 
-        public void SaveData()
+        public bool SaveData()
         {
+            DirectoryInfo datadir = new DirectoryInfo(Path.Combine(Environment.CurrentDirectory, DATA_DIR));
+
             try
             {
                 Data.publications.Select(t => t.PdfPath)
@@ -78,20 +80,23 @@ namespace ImagingLab.CPanel
                 .Where(t => !String.IsNullOrEmpty(t))
                 .Distinct()
                 .Select(t => new FileInfo(t))
-                .Where(t => t.Exists)
+                .Where(t => t.Exists && t.Directory.FullName.ToUpper() != datadir.FullName.ToUpper())
                 .ToList()
-                .ForEach(t => t.CopyTo("data\\" + t.Name, true));
+                .ForEach(t => t.CopyTo(Path.Combine(DATA_DIR, t.Name), true));
 
                 using (StreamWriter sw = new StreamWriter(DATA_PATH))
                 {
                     JavaScriptSerializer ser = new JavaScriptSerializer();
                     sw.Write(ser.Serialize(Data));
+                    return true;
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error in saving data.json!" + Environment.NewLine + ex.Message, "", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
+            return false;
         }
 
         public void Publish(string path)

@@ -51,11 +51,11 @@ namespace ImagingLab.CPanel
             grid.UserDeletedRow += (s, e) => RenderForm();
         }
 
-        void SaveData()
+        bool SaveData()
         {
             CPanelApp.Current.Data.title = txt_title.Text;
             CPanelApp.Current.Data.updated = DateTime.Now.ToString("MMMM yyyy");
-            CPanelApp.Current.SaveData();
+            return CPanelApp.Current.SaveData();
         }
 
         bool ConfirmDelete()
@@ -106,8 +106,11 @@ namespace ImagingLab.CPanel
 
         void button_save_Click(object sender, EventArgs e)
         {
-            SaveData();
-            MessageBox.Show("Data is saved successfully", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            bool res = SaveData();
+            if (res)
+            {
+                MessageBox.Show("Data is saved successfully", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
         void tab_cpanel_SelectedIndexChanged(object sender, EventArgs e)

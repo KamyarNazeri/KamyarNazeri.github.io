@@ -101,7 +101,11 @@ namespace ImagingLab.CPanel
         {
             if (File.Exists(_photo))
             {
-                pic_photo.Image = Image.FromFile(_photo);
+                using (Image img = Image.FromFile(_photo))
+                {
+                    pic_photo.Image = img.Clone() as Image;
+                }
+
                 label_image.Cursor = Cursors.Hand;
                 label_image.Text = "(remove photo)";
                 label_image.ForeColor = SystemColors.HotTrack;
