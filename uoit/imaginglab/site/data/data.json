@@ -542,14 +542,6 @@
       "peoplePageVisible": true,
       "people": [ 1 ]
     }
-
   ],
-  "publicationTypes": [
-    "Journal Articles",
-    "In Proceedings",
-    "Posters",
-    "Dissertations",
-    "Master’s Theses",
-    "Bachelor’s Thesis"
-  ]
+  "publicationTypes": [ "Journal Articles", "In Proceedings", "Posters", "Dissertations", "Master’s Theses", "Bachelor’s Thesis" ]
 }

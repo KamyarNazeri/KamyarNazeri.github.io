@@ -8,7 +8,8 @@
       "title": "Mathematics of Medical Imaging",
       "description": "Graduate course cross-listed with upper year undergraduate program",
       "university": "UOIT",
-      "url": "http://www.uoit.ca"
+      "url": "http://www.uoit.ca",
+      "visible": true
     },
     {
       "id": 2,
@@ -16,7 +17,8 @@
       "title": "Computational Science II",
       "description": "Math 4020U, Formerly known as Numerical Analysis",
       "university": "UOIT",
-      "url": "http://www.uoit.ca"
+      "url": "http://www.uoit.ca",
+      "visible": true
     },
     {
       "id": 3,
@@ -24,7 +26,8 @@
       "title": "Complex Analysis",
       "description": "Math 3060U",
       "university": "UOIT",
-      "url": "http://www.uoit.ca"
+      "url": "http://www.uoit.ca",
+      "visible": true
     },
     {
       "id": 4,
@@ -32,7 +35,8 @@
       "title": "Optimization",
       "description": "Math 3040U",
       "university": "UOIT",
-      "url": "http://www.uoit.ca"
+      "url": "http://www.uoit.ca",
+      "visible": true
     },
     {
       "id": 5,
@@ -40,7 +44,8 @@
       "title": "Mathematical Modelling",
       "description": "Math 3050U",
       "university": "UOIT",
-      "url": "http://www.uoit.ca"
+      "url": "http://www.uoit.ca",
+      "visible": true
     },
     {
       "id": 6,
@@ -48,7 +53,8 @@
       "title": "Introduction to Differential Equations",
       "description": "Math 218/SYDE 211",
       "university": "University of Waterloo",
-      "url": "http://www.uwaterloo.ca"
+      "url": "http://www.uwaterloo.ca",
+      "visible": true
     },
     {
       "id": 7,
@@ -56,7 +62,8 @@
       "title": "Introduction to Differential Equations",
       "description": "Math 218/SYDE 211",
       "university": "University of Waterloo",
-      "url": "http://www.uwaterloo.ca"
+      "url": "http://www.uwaterloo.ca",
+      "visible": true
     },
     {
       "id": 8,
@@ -64,7 +71,8 @@
       "title": "Fundamental Math II",
       "description": "Applied Calculus - Math 209",
       "university": "Concordia University",
-      "url": "http://www.concordia.ca"
+      "url": "http://www.concordia.ca",
+      "visible": true
     }
   ],
   "people": [
@@ -74,7 +82,7 @@
       "email": "mehran.ebrahimi@uoit.ca",
       "position": "Assistant Professor - Lab Director",
       "education": "PhD",
-      "photo": "",
+      "photo": "data/mehran.jpg",
       "start": "",
       "end": "",
       "description": "",
@@ -87,7 +95,7 @@
       "email": "kamyar.nazerinaeini@uoit.net",
       "position": "Graduate Student - MSC.",
       "education": "BSc in Electrical Engineering from Iran",
-      "photo": "",
+      "photo": "data/kamyar.jpg",
       "start": "January 2017",
       "end": "",
       "description": "",
@@ -100,7 +108,7 @@
       "email": "mia.mojica@uoit.net",
       "position": "Graduate Student - PhD.",
       "education": "MSc graduate in Applied Mathematics from the Philippines",
-      "photo": "",
+      "photo": "data/mia.jpg",
       "start": "September 2016",
       "end": "",
       "description": "",
@@ -113,7 +121,7 @@
       "email": "lorraine.ma@uoit.net",
       "position": "Graduate Student - MSC.",
       "education": "",
-      "photo": "",
+      "photo": "data/lorraine.jpg",
       "start": "September 2014",
       "end": "December 2016",
       "description": "Lorraine is investigating image registration schemes for Cardiac MRI for which the data is provided by Prof. Graham Wright (Sunnybrook Research Institute). Lorraine won the people’s choice award at the 2016 Three Minute Thesis (3MT®). She is aiming to defend her thesis in August 2015 and join the University of Auckland, New Zealand, as an exchange student in Fall 2016 on a Queen Elizabeth II Diamond Jubilee Scholarship.",
@@ -122,11 +130,11 @@
     },
     {
       "id": 5,
-      "name": "Ghazal Ahmadian",
-      "email": "ghazal.ahmadian@uoit.net",
+      "name": "Ghazaleh Ahmadian",
+      "email": "ghazaleh.ahmadian@uoit.net",
       "position": "Graduate Student - MSC.",
       "education": "",
-      "photo": "",
+      "photo": "data/ghazaleh.png",
       "start": "January 2015",
       "end": "May 2017",
       "description": "Co-supervised with Dr. Sean Bohun. Ghazal is investigating breast image registration schemes aimed at Computer aided surgery (CAS), for which the data is provided by Dr. Anne Martel (Sunnybrook Research Institute).",
@@ -139,7 +147,7 @@
       "email": "sancgeetha.kulaseharan@uoit.net",
       "position": "Graduate Student - MSC.",
       "education": "",
-      "photo": "",
+      "photo": "data/sancgeetha.jpg",
       "start": "September 2015",
       "end": "",
       "description": "Co-supervised with Dr. Elysa Widjaja (Hospital for Sick Children, Toronto), Working on combined texture and morphometric analyses of MR imaging to identify focal cortical dysplasia in children with focal epilepsy.",
@@ -152,7 +160,7 @@
       "email": "cory.falconer@uoit.net",
       "position": "Graduate Student - MSC.",
       "education": "",
-      "photo": "",
+      "photo": "data/cory.jpg",
       "start": "September 2015",
       "end": "",
       "description": "Co-supervised with Dr. Sean Bohn, Cory is investigating resolution enhancement and denoising techniques for medical imaging applications.",
@@ -165,7 +173,7 @@
       "email": "eric.ng@uoit.net",
       "position": "Graduate Student - MSC.",
       "education": "",
-      "photo": "",
+      "photo": "data/eric.jpg",
       "start": "September 2017",
       "end": "",
       "description": "",
@@ -178,7 +186,7 @@
       "email": "azad.aminpour@uoit.net",
       "position": "Graduate Student - PhD.",
       "education": "MSc graduate in Computer Science from Iran",
-      "photo": "",
+      "photo": "data/azad.jpg",
       "start": "September 2017",
       "end": "",
       "description": "",
