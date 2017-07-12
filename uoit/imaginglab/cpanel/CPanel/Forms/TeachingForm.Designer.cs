@@ -41,6 +41,7 @@
             this.txt_university = new ImagingLab.CPanel.CPanelTextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txt_url = new ImagingLab.CPanel.CPanelTextBox();
+            this.chk_visible = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // button_save
@@ -50,7 +51,7 @@
             this.button_save.Location = new System.Drawing.Point(530, 234);
             this.button_save.Name = "button_save";
             this.button_save.Size = new System.Drawing.Size(90, 27);
-            this.button_save.TabIndex = 7;
+            this.button_save.TabIndex = 8;
             this.button_save.Text = "Save";
             this.button_save.UseVisualStyleBackColor = true;
             this.button_save.Click += new System.EventHandler(this.button_save_Click);
@@ -63,7 +64,7 @@
             this.button_cancel.Location = new System.Drawing.Point(434, 234);
             this.button_cancel.Name = "button_cancel";
             this.button_cancel.Size = new System.Drawing.Size(90, 27);
-            this.button_cancel.TabIndex = 6;
+            this.button_cancel.TabIndex = 7;
             this.button_cancel.Text = "Cancel";
             this.button_cancel.UseVisualStyleBackColor = true;
             this.button_cancel.Click += new System.EventHandler(this.button_cancel_Click);
@@ -156,6 +157,16 @@
             this.txt_url.Size = new System.Drawing.Size(248, 22);
             this.txt_url.TabIndex = 3;
             // 
+            // chk_visible
+            // 
+            this.chk_visible.AutoSize = true;
+            this.chk_visible.Location = new System.Drawing.Point(101, 213);
+            this.chk_visible.Name = "chk_visible";
+            this.chk_visible.Size = new System.Drawing.Size(71, 21);
+            this.chk_visible.TabIndex = 6;
+            this.chk_visible.Text = "Visible";
+            this.chk_visible.UseVisualStyleBackColor = true;
+            // 
             // TeachingForm
             // 
             this.AcceptButton = this.button_save;
@@ -163,6 +174,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.button_cancel;
             this.ClientSize = new System.Drawing.Size(632, 273);
+            this.Controls.Add(this.chk_visible);
             this.Controls.Add(this.txt_description);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txt_title);
@@ -202,5 +214,6 @@
         private CPanelTextBox txt_description;
         private CPanelTextBox txt_university;
         private CPanelTextBox txt_url;
+        private System.Windows.Forms.CheckBox chk_visible;
     }
 }

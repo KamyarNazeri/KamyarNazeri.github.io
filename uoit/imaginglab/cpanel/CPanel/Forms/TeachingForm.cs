@@ -25,6 +25,7 @@ namespace ImagingLab.CPanel
             txt_description.Text = teaching?.description ?? "";
             txt_university.Text = teaching?.university ?? "UOIT";
             txt_url.Text = teaching?.url ?? "http://www.uoit.ca";
+            chk_visible.Checked = teaching?.visible ?? true;
         }
 
         private void button_cancel_Click(object sender, EventArgs e)
@@ -46,6 +47,7 @@ namespace ImagingLab.CPanel
             Teaching.description = txt_description.Text;
             Teaching.university = txt_university.Text;
             Teaching.url = txt_url.Text;
+            Teaching.visible = chk_visible.Checked;
 
             this.DialogResult = DialogResult.OK;
             this.Close();

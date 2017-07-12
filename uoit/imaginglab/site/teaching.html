@@ -67,6 +67,7 @@
 
             for (var i = 0; i < page.data.teachings.length; i++) {
                 var item = page.data.teachings[i];
+                if (!item.visible) continue;
                 content += '<li>';
                 content += item.semester;
                 content += ', <span style="font- weight: bold;">';

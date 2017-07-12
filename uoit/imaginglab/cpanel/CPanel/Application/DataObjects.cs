@@ -48,6 +48,7 @@ namespace ImagingLab.CPanel
         public string description { get; set; }
         public string university { get; set; }
         public string url { get; set; }
+        public bool visible { get; set; } = true;
     }
 
     [DebuggerDisplay("{id} - {name} - {position}")]
