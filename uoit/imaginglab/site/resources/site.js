@@ -41,9 +41,9 @@ var page = (function () {
         for (var i = 0; i < items.length; i++) {
             var p = items[i];
             var li = $('<li>').appendTo(ul);
-            li.append('[' + p.code + '] ');
-            li.append(p.contributors);
-            li.append(' (' + p.year + '). ');
+            if (p.code) li.append('[' + p.code + '] ');
+            if (p.contributors) li.append(p.contributors);
+            if (p.year) li.append(' (' + p.year + '). ');
             li.append(p.title);
             li.append('<br />');
 
