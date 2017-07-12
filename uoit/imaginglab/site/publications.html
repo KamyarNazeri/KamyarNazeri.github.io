@@ -149,6 +149,7 @@
 
 
         function bindPublications(by_year) {
+            
             var content = $('<div>');
             var pubs = page.data.publications;
             var types = page.data.publicationTypes;
@@ -164,14 +165,18 @@
             var groups = [];
 
             for (var i = 0; i < pubs.length; i++) {
-                var key = pubs[i][by_year ? "year" : "type"];
+                var item = pubs[i];
+                var key = item[by_year ? "year" : "type"];
+
+                if (!item.visible) continue;
+
                 if (!keys[key]) {
                     var grp = [];
                     grp.key = key;
                     keys[key] = grp;
                     groups.push(grp);
                 }
-                keys[key].push(pubs[i]);
+                keys[key].push(item);
             }
 
             for (var i = 0; i < groups.length; i++) {
