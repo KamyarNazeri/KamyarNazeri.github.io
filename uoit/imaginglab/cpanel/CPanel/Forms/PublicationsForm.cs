@@ -31,7 +31,7 @@ namespace ImagingLab.CPanel
             txt_pdf.Text = publication?.pdf ?? "";
             txt_contributors.Text = publication?.contributors ?? "";
             txt_title.Text = publication?.title ?? "";
-            chk_visible.Checked = publication?.publicationsPageVisible ?? true;
+            chk_visible.Checked = publication?.visible ?? true;
             chk_peopleVisible.Checked = publication?.peoplePageVisible ?? true;
             txt_bibtex.Text = publication?.bibtex.Replace("\\n", Environment.NewLine).Replace("\n", Environment.NewLine) ?? "";
             _pdf = publication?.url ?? "";
@@ -58,7 +58,7 @@ namespace ImagingLab.CPanel
             Publication.pdf = txt_pdf.Text;
             Publication.contributors = txt_contributors.Text;
             Publication.title = txt_title.Text;
-            Publication.publicationsPageVisible = chk_visible.Checked;
+            Publication.visible = chk_visible.Checked;
             Publication.peoplePageVisible = chk_peopleVisible.Checked;
             Publication.bibtex = txt_bibtex.Text.Replace("\n", "\\n");
 

@@ -15,10 +15,10 @@ namespace ImagingLab.CPanel
         public string title { get; set; } = "ImagingLab.ca, Mehran Ebrahimi, UOIT";
         public string updated { get; set; } = DateTime.Now.ToString("MMM yyyy");
 
-        public BindingList<Teaching> teachings { get; set; }
-        public BindingList<People> people { get; set; }
-        public BindingList<Publication> publications { get; set; }
-        public BindingList<string> publicationTypes { get; set; }
+        public SortableBindingList<Teaching> teachings { get; set; }
+        public SortableBindingList<People> people { get; set; }
+        public SortableBindingList<Publication> publications { get; set; }
+        public SortableBindingList<string> publicationTypes { get; set; }
 
         public void AddTeaching(Teaching obj)
         {
@@ -82,7 +82,7 @@ namespace ImagingLab.CPanel
         public string pdf { get; set; }
         public string bibtex { get; set; }
         public string contributors { get; set; }
-        public bool publicationsPageVisible { get; set; } = true;
+        public bool visible { get; set; } = true;
         public bool peoplePageVisible { get; set; } = true;
         public BindingList<int> people { get; set; }
 

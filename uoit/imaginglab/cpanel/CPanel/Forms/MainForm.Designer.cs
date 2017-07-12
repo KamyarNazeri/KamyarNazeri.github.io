@@ -46,17 +46,6 @@
             this.button_deletePeople = new System.Windows.Forms.Button();
             this.tabPage_publication = new System.Windows.Forms.TabPage();
             this.grd_publications = new System.Windows.Forms.DataGridView();
-            this.column_publication_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.column_publication_code = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.column_publication_title = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.column_publication_year = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.column_publication_type = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.column_publication_url = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.column_publication_pdf = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.column_publication_bibtex = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.column_publication_contributors = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.column_publication_visible = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.column_publication_peoplePageVisible = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.publicationBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel4 = new System.Windows.Forms.Panel();
             this.button_addPublication = new System.Windows.Forms.Button();
@@ -91,6 +80,17 @@
             this.column_people_photo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.column_people_alumnus = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.column_people_visible = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.column_publication_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.column_publication_code = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.column_publication_title = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.column_publication_year = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.column_publication_type = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.column_publication_url = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.column_publication_pdf = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.column_publication_bibtex = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.column_publication_contributors = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.column_publication_visible = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.column_publication_peoplePageVisible = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.tab_cpanel.SuspendLayout();
             this.tabPage_home.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -317,82 +317,6 @@
             this.grd_publications.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grd_publications.Size = new System.Drawing.Size(1068, 440);
             this.grd_publications.TabIndex = 1;
-            // 
-            // column_publication_id
-            // 
-            this.column_publication_id.DataPropertyName = "id";
-            this.column_publication_id.HeaderText = "ID";
-            this.column_publication_id.Name = "column_publication_id";
-            this.column_publication_id.Visible = false;
-            // 
-            // column_publication_code
-            // 
-            this.column_publication_code.DataPropertyName = "code";
-            this.column_publication_code.HeaderText = "Code";
-            this.column_publication_code.Name = "column_publication_code";
-            this.column_publication_code.Width = 50;
-            // 
-            // column_publication_title
-            // 
-            this.column_publication_title.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.column_publication_title.DataPropertyName = "title";
-            this.column_publication_title.HeaderText = "Title";
-            this.column_publication_title.MinimumWidth = 150;
-            this.column_publication_title.Name = "column_publication_title";
-            // 
-            // column_publication_year
-            // 
-            this.column_publication_year.DataPropertyName = "year";
-            this.column_publication_year.HeaderText = "Year";
-            this.column_publication_year.Name = "column_publication_year";
-            this.column_publication_year.Width = 50;
-            // 
-            // column_publication_type
-            // 
-            this.column_publication_type.DataPropertyName = "type";
-            this.column_publication_type.HeaderText = "Type";
-            this.column_publication_type.Name = "column_publication_type";
-            this.column_publication_type.Width = 120;
-            // 
-            // column_publication_url
-            // 
-            this.column_publication_url.DataPropertyName = "url";
-            this.column_publication_url.HeaderText = "Url";
-            this.column_publication_url.Name = "column_publication_url";
-            this.column_publication_url.Width = 120;
-            // 
-            // column_publication_pdf
-            // 
-            this.column_publication_pdf.DataPropertyName = "pdf";
-            this.column_publication_pdf.HeaderText = "PDF";
-            this.column_publication_pdf.Name = "column_publication_pdf";
-            this.column_publication_pdf.Width = 120;
-            // 
-            // column_publication_bibtex
-            // 
-            this.column_publication_bibtex.DataPropertyName = "bibtex";
-            this.column_publication_bibtex.HeaderText = "BibTex";
-            this.column_publication_bibtex.Name = "column_publication_bibtex";
-            // 
-            // column_publication_contributors
-            // 
-            this.column_publication_contributors.DataPropertyName = "contributors";
-            this.column_publication_contributors.HeaderText = "Contributors";
-            this.column_publication_contributors.Name = "column_publication_contributors";
-            // 
-            // column_publication_visible
-            // 
-            this.column_publication_visible.DataPropertyName = "publicationsPageVisible";
-            this.column_publication_visible.HeaderText = "Visible";
-            this.column_publication_visible.Name = "column_publication_visible";
-            this.column_publication_visible.Width = 60;
-            // 
-            // column_publication_peoplePageVisible
-            // 
-            this.column_publication_peoplePageVisible.DataPropertyName = "peoplePageVisible";
-            this.column_publication_peoplePageVisible.HeaderText = "People Visible";
-            this.column_publication_peoplePageVisible.Name = "column_publication_peoplePageVisible";
-            this.column_publication_peoplePageVisible.Width = 115;
             // 
             // publicationBindingSource
             // 
@@ -708,6 +632,82 @@
             this.column_people_visible.Name = "column_people_visible";
             this.column_people_visible.Width = 57;
             // 
+            // column_publication_id
+            // 
+            this.column_publication_id.DataPropertyName = "id";
+            this.column_publication_id.HeaderText = "ID";
+            this.column_publication_id.Name = "column_publication_id";
+            this.column_publication_id.Visible = false;
+            // 
+            // column_publication_code
+            // 
+            this.column_publication_code.DataPropertyName = "code";
+            this.column_publication_code.HeaderText = "Code";
+            this.column_publication_code.Name = "column_publication_code";
+            this.column_publication_code.Width = 50;
+            // 
+            // column_publication_title
+            // 
+            this.column_publication_title.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.column_publication_title.DataPropertyName = "title";
+            this.column_publication_title.HeaderText = "Title";
+            this.column_publication_title.MinimumWidth = 150;
+            this.column_publication_title.Name = "column_publication_title";
+            // 
+            // column_publication_year
+            // 
+            this.column_publication_year.DataPropertyName = "year";
+            this.column_publication_year.HeaderText = "Year";
+            this.column_publication_year.Name = "column_publication_year";
+            this.column_publication_year.Width = 50;
+            // 
+            // column_publication_type
+            // 
+            this.column_publication_type.DataPropertyName = "type";
+            this.column_publication_type.HeaderText = "Type";
+            this.column_publication_type.Name = "column_publication_type";
+            this.column_publication_type.Width = 120;
+            // 
+            // column_publication_url
+            // 
+            this.column_publication_url.DataPropertyName = "url";
+            this.column_publication_url.HeaderText = "Url";
+            this.column_publication_url.Name = "column_publication_url";
+            this.column_publication_url.Width = 120;
+            // 
+            // column_publication_pdf
+            // 
+            this.column_publication_pdf.DataPropertyName = "pdf";
+            this.column_publication_pdf.HeaderText = "PDF";
+            this.column_publication_pdf.Name = "column_publication_pdf";
+            this.column_publication_pdf.Width = 120;
+            // 
+            // column_publication_bibtex
+            // 
+            this.column_publication_bibtex.DataPropertyName = "bibtex";
+            this.column_publication_bibtex.HeaderText = "BibTex";
+            this.column_publication_bibtex.Name = "column_publication_bibtex";
+            // 
+            // column_publication_contributors
+            // 
+            this.column_publication_contributors.DataPropertyName = "contributors";
+            this.column_publication_contributors.HeaderText = "Contributors";
+            this.column_publication_contributors.Name = "column_publication_contributors";
+            // 
+            // column_publication_visible
+            // 
+            this.column_publication_visible.DataPropertyName = "visible";
+            this.column_publication_visible.HeaderText = "Visible";
+            this.column_publication_visible.Name = "column_publication_visible";
+            this.column_publication_visible.Width = 60;
+            // 
+            // column_publication_peoplePageVisible
+            // 
+            this.column_publication_peoplePageVisible.DataPropertyName = "peoplePageVisible";
+            this.column_publication_peoplePageVisible.HeaderText = "People Visible";
+            this.column_publication_peoplePageVisible.Name = "column_publication_peoplePageVisible";
+            this.column_publication_peoplePageVisible.Width = 115;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -777,17 +777,6 @@
         private System.Windows.Forms.Button button_addTeaching;
         private System.Windows.Forms.Button button_editTeaching;
         private System.Windows.Forms.Button button_deleteTeaching;
-        private System.Windows.Forms.DataGridViewTextBoxColumn column_publication_id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn column_publication_code;
-        private System.Windows.Forms.DataGridViewTextBoxColumn column_publication_title;
-        private System.Windows.Forms.DataGridViewTextBoxColumn column_publication_year;
-        private System.Windows.Forms.DataGridViewTextBoxColumn column_publication_type;
-        private System.Windows.Forms.DataGridViewTextBoxColumn column_publication_url;
-        private System.Windows.Forms.DataGridViewTextBoxColumn column_publication_pdf;
-        private System.Windows.Forms.DataGridViewTextBoxColumn column_publication_bibtex;
-        private System.Windows.Forms.DataGridViewTextBoxColumn column_publication_contributors;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn column_publication_visible;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn column_publication_peoplePageVisible;
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
         private System.Windows.Forms.DataGridViewTextBoxColumn column_teaching_id;
         private System.Windows.Forms.DataGridViewTextBoxColumn column_teaching_semester;
@@ -807,6 +796,17 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn column_people_photo;
         private System.Windows.Forms.DataGridViewCheckBoxColumn column_people_alumnus;
         private System.Windows.Forms.DataGridViewCheckBoxColumn column_people_visible;
+        private System.Windows.Forms.DataGridViewTextBoxColumn column_publication_id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn column_publication_code;
+        private System.Windows.Forms.DataGridViewTextBoxColumn column_publication_title;
+        private System.Windows.Forms.DataGridViewTextBoxColumn column_publication_year;
+        private System.Windows.Forms.DataGridViewTextBoxColumn column_publication_type;
+        private System.Windows.Forms.DataGridViewTextBoxColumn column_publication_url;
+        private System.Windows.Forms.DataGridViewTextBoxColumn column_publication_pdf;
+        private System.Windows.Forms.DataGridViewTextBoxColumn column_publication_bibtex;
+        private System.Windows.Forms.DataGridViewTextBoxColumn column_publication_contributors;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn column_publication_visible;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn column_publication_peoplePageVisible;
     }
 }
 
