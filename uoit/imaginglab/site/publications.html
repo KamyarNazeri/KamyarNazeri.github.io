@@ -8,7 +8,6 @@
     <link rel="stylesheet" type="text/css" media="all" href="inland.css">
     <script type="text/javascript" src="resources/jquery-1.7.1.min.js"></script>
     <script type="text/javascript" src="resources/jquery.nivo.slider.js"></script>
-    <script type="text/javascript" src="resources/multiplex.min.js"></script>
     <script type="text/javascript" src="resources/site.js"></script>
 </head>
 
@@ -137,13 +136,11 @@
             $('#a_year').click(function (e) {
                 bindPublications(true);
                 e.preventDefault();
-                e.stopPropagation();
             });
 
             $('#a_type').click(function (e) {
                 bindPublications(false);
                 e.preventDefault();
-                e.stopPropagation();
             });
 
             bindPublications(true);
@@ -153,16 +150,35 @@
 
         function bindPublications(by_year) {
             var content = $('<div>');
+            var pubs = page.data.publications;
+            var types = page.data.publicationTypes;
 
             $("a").removeClass('selected');
             (by_year ? $('#a_year') : $('#a_type')).addClass('selected');
 
-            mx(page.data.publications)
-                .groupBy(function (t) { return by_year ? t.year : t.type })
-                .orderByDescending(function (t) { return by_year ? t.key : -page.data.publicationTypes.indexOf(t.key) })
-                .forEach(function (grp) {
-                    page.appendPublications(content, grp.key, grp.orderBy(function (p) { return p.code }).toArray());
-                });
+            pubs.sort(function (a, b) {
+                return by_year ? (b.year - a.year) : (types.indexOf(a.type) - types.indexOf(b.type));
+            });
+
+            var keys = {};
+            var groups = [];
+
+            for (var i = 0; i < pubs.length; i++) {
+                var key = pubs[i][by_year ? "year" : "type"];
+                if (!keys[key]) {
+                    var grp = [];
+                    grp.key = key;
+                    keys[key] = grp;
+                    groups.push(grp);
+                }
+                keys[key].push(pubs[i]);
+            }
+
+            for (var i = 0; i < groups.length; i++) {
+                var grp = groups[i];
+                grp.sort(function (a, b) { return a.code.localeCompare(b.code || "") });
+                page.appendPublications(content, grp.key, grp);
+            }
 
             $('#content_publication').empty().append(content);
         };
