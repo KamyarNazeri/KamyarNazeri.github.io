@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Web.Script.Serialization;
 using System.Windows.Forms;
@@ -84,10 +85,12 @@ namespace ImagingLab.CPanel
                 .ToList()
                 .ForEach(t => t.CopyTo(Path.Combine(DATA_DIR, t.Name), true));
 
-                using (StreamWriter sw = new StreamWriter(DATA_PATH))
+                using (StreamWriter sw = new StreamWriter(DATA_PATH, false, Encoding.Unicode))
                 {
                     JavaScriptSerializer ser = new JavaScriptSerializer();
-                    sw.Write(ser.Serialize(Data));
+                    string json = ser.Serialize(Data);
+                    string unescape = Regex.Unescape(json).Replace("\n", "\\n"); ;
+                    sw.Write(unescape);
                     return true;
                 }
             }

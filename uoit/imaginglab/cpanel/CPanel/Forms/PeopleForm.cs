@@ -6,7 +6,9 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using System.Web;
 using System.Windows.Forms;
 
 namespace ImagingLab.CPanel
@@ -56,7 +58,13 @@ namespace ImagingLab.CPanel
             People.education = txt_education.Text;
             People.start = txt_start.Text;
             People.end = txt_end.Text;
-            People.description = txt_description.Text;
+            People.description = txt_description.Text
+                .Replace("\"", "\\\"")
+                .Replace("\n", "")
+                .Replace("\r", "")
+                .Replace("\t", "");
+            People.description = new Regex("[ ]{2,}", RegexOptions.Multiline).Replace(People.description, " ");
+
             People.alumnus = chk_alumnus.Checked;
             People.visible = chk_visible.Checked;
 
