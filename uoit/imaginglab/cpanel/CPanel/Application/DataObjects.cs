@@ -63,6 +63,7 @@ namespace ImagingLab.CPanel
         public string photo { get; set; }
         public string start { get; set; }
         public string end { get; set; }
+        public string research { get; set; }
         public string description { get; set; }
         public bool alumnus { get; set; } = false;
         public bool visible { get; set; } = true;

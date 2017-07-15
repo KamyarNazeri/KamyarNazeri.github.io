@@ -44,7 +44,7 @@ namespace ImagingLab.CPanel
 
             Teaching.title = txt_title.Text;
             Teaching.semester = txt_semester.Text;
-            Teaching.description = txt_description.Text;
+            Teaching.description = CPanelApp.JSONEncode(txt_description.Text);
             Teaching.university = txt_university.Text;
             Teaching.url = txt_url.Text;
             Teaching.visible = chk_visible.Checked;

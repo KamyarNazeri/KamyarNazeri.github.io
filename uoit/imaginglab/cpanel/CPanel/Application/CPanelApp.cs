@@ -128,5 +128,19 @@ namespace ImagingLab.CPanel
                 DirectoryCopy(subdir.FullName, temppath);
             }
         }
+
+        static readonly Regex WhitespaceRegex = new Regex("[ ]{2,}", RegexOptions.Multiline | RegexOptions.Compiled);
+        public static string JSONEncode(string val)
+        {
+            val = val
+                .Replace("\"", "\\\"")
+                .Replace("\n", "")
+                .Replace("\r", "")
+                .Replace("\t", "");
+
+            val = WhitespaceRegex.Replace(val, " ");
+
+            return val;
+        }
     }
 }

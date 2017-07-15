@@ -53,6 +53,8 @@
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.label8 = new System.Windows.Forms.Label();
             this.txt_title = new ImagingLab.CPanel.CPanelTextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txt_research = new ImagingLab.CPanel.CPanelTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pic_photo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -142,7 +144,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(12, 211);
+            this.label7.Location = new System.Drawing.Point(12, 293);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(83, 17);
             this.label7.TabIndex = 0;
@@ -151,7 +153,7 @@
             // txt_description
             // 
             this.txt_description.AcceptsReturn = true;
-            this.txt_description.Location = new System.Drawing.Point(93, 208);
+            this.txt_description.Location = new System.Drawing.Point(93, 290);
             this.txt_description.Multiline = true;
             this.txt_description.Name = "txt_description";
             this.txt_description.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -162,7 +164,7 @@
             // 
             this.button_save.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button_save.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_save.Location = new System.Drawing.Point(492, 353);
+            this.button_save.Location = new System.Drawing.Point(492, 419);
             this.button_save.Name = "button_save";
             this.button_save.Size = new System.Drawing.Size(90, 27);
             this.button_save.TabIndex = 11;
@@ -175,7 +177,7 @@
             this.button_cancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button_cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.button_cancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_cancel.Location = new System.Drawing.Point(396, 353);
+            this.button_cancel.Location = new System.Drawing.Point(396, 419);
             this.button_cancel.Name = "button_cancel";
             this.button_cancel.Size = new System.Drawing.Size(90, 27);
             this.button_cancel.TabIndex = 10;
@@ -186,7 +188,7 @@
             // chk_visible
             // 
             this.chk_visible.AutoSize = true;
-            this.chk_visible.Location = new System.Drawing.Point(93, 310);
+            this.chk_visible.Location = new System.Drawing.Point(93, 392);
             this.chk_visible.Name = "chk_visible";
             this.chk_visible.Size = new System.Drawing.Size(71, 21);
             this.chk_visible.TabIndex = 8;
@@ -212,7 +214,7 @@
             // chk_alumnus
             // 
             this.chk_alumnus.AutoSize = true;
-            this.chk_alumnus.Location = new System.Drawing.Point(93, 337);
+            this.chk_alumnus.Location = new System.Drawing.Point(93, 419);
             this.chk_alumnus.Name = "chk_alumnus";
             this.chk_alumnus.Size = new System.Drawing.Size(84, 21);
             this.chk_alumnus.TabIndex = 9;
@@ -266,19 +268,40 @@
             this.txt_title.Size = new System.Drawing.Size(316, 22);
             this.txt_title.TabIndex = 2;
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(12, 211);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(73, 17);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "Research:";
+            // 
+            // txt_research
+            // 
+            this.txt_research.AcceptsReturn = true;
+            this.txt_research.Location = new System.Drawing.Point(93, 208);
+            this.txt_research.Multiline = true;
+            this.txt_research.Name = "txt_research";
+            this.txt_research.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txt_research.Size = new System.Drawing.Size(316, 76);
+            this.txt_research.TabIndex = 7;
+            // 
             // PeopleForm
             // 
             this.AcceptButton = this.button_save;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.button_cancel;
-            this.ClientSize = new System.Drawing.Size(594, 392);
+            this.ClientSize = new System.Drawing.Size(594, 458);
             this.Controls.Add(this.label_image);
             this.Controls.Add(this.chk_alumnus);
             this.Controls.Add(this.chk_visible);
             this.Controls.Add(this.pic_photo);
             this.Controls.Add(this.button_save);
             this.Controls.Add(this.button_cancel);
+            this.Controls.Add(this.txt_research);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.txt_description);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txt_end);
@@ -334,5 +357,7 @@
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Label label8;
         private CPanelTextBox txt_title;
+        private System.Windows.Forms.Label label9;
+        private CPanelTextBox txt_research;
     }
 }

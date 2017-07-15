@@ -32,6 +32,7 @@ namespace ImagingLab.CPanel
             txt_start.Text = people?.start ?? "";
             txt_end.Text = people?.end ?? "";
             txt_description.Text = people?.description ?? "";
+            txt_research.Text = people?.research ?? "";
             chk_alumnus.Checked = people?.alumnus ?? false;
             chk_visible.Checked = people?.visible ?? true;
             _photo = people?.photo ?? null;
@@ -60,13 +61,8 @@ namespace ImagingLab.CPanel
             People.education = txt_education.Text;
             People.start = txt_start.Text;
             People.end = txt_end.Text;
-            People.description = txt_description.Text
-                .Replace("\"", "\\\"")
-                .Replace("\n", "")
-                .Replace("\r", "")
-                .Replace("\t", "");
-            People.description = new Regex("[ ]{2,}", RegexOptions.Multiline).Replace(People.description, " ");
-
+            People.research = CPanelApp.JSONEncode(txt_research.Text);
+            People.description = CPanelApp.JSONEncode(txt_description.Text);
             People.alumnus = chk_alumnus.Checked;
             People.visible = chk_visible.Checked;
 
