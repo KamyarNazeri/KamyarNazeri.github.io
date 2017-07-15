@@ -16,12 +16,18 @@ var page = (function () {
             _ready.push(fn);
         },
 
+        render: render,
         appendPublications: appendPublications
+    };
+
+
+    function render() {
+        $('a[href^="https://"]:not([target]),a[href^="http://"]:not([target])').attr('target', '_blank');
     };
 
     
     function initialize() {
-        $('a[href^="https://"]:not([target]),a[href^="http://"]:not([target])').attr('target', '_blank');
+        render();
         $.ajax('data/data.json?' + Math.random())
             .done(function (d) {
 

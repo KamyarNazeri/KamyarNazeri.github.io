@@ -5,6 +5,9 @@
     <title>ImagingLab.ca, People</title>
     <meta content="text/html; charset=utf-8" http-equiv="content-type">
     <meta name="description" content="ImagingLab, Mehran Ebrahimi, UOIT">
+    <meta name="author" content="Kamyar Nazeri">
+    <meta name="contact" content="kamyar.nzr@gmail.com">
+
     <link rel="stylesheet" type="text/css" media="all" href="inland.css">
     <script type="text/javascript" src="resources/jquery-1.7.1.min.js"></script>
     <script type="text/javascript" src="resources/jquery.nivo.slider.js"></script>
@@ -48,10 +51,11 @@
                             <div style="display:table-cell;">
                                 <img id="content_person_image" />
                             </div>
-                            <div style="display:table-cell; padding:10px">
+                            <div style="display:table-cell; padding-left:10px; padding-right:10xp">
                                 <h1 id="content_person_name">[NAME]</h1>
-                                <h4 id="content_person_title">[TITLE]</h4>
+                                <h4 id="content_person_title" style="display:inline-block; padding-right:10px">[TITLE]</h4>
                                 <span id="content_person_duration">[START-END]</span>
+                                <div id="content_person_email">[EMAIL]</div>
                                 <div id="content_person_research">[RESEARCH INTERESTS]</div>
                             </div>
                         </div>
@@ -179,6 +183,7 @@
                 var research = person.research ? ('<span style="font-weight: bold">Research interests: </span>' + person.research) : '';
                 var description = person.description;
                 var duration = '';
+                var email = person.email ? ('<span style="font-weight: bold">Contact: </span><a href="mailto:' + person.email + '">' + person.email + '</a>') : '';
                 var publications = [];
 
                 for (var i = 0; i < page.data.publications.length; i++) {
@@ -203,10 +208,11 @@
                     duration += ']';
                 }
 
-                $('#content_person_detail').fadeOut(function () {
+                $('#content_person_detail').fadeOut('fast', function () {
                     $('#content_person_image').attr('src', photo);
                     $('#content_person_name').html(name);
                     $('#content_person_title').html(title);
+                    $('#content_person_email').html(email);
                     $('#content_person_duration').html(duration);
                     $('#content_person_research').html(research);
                     $('#content_person_description').html(description);
@@ -214,6 +220,7 @@
                     page.appendPublications($('#content_person_publications'), 'Publications', publications);
 
                     $('#content_person_detail').fadeIn();
+                    page.render();
                 });
             };
         })();

@@ -5,6 +5,9 @@
     <title>ImagingLab.ca, Publications</title>
     <meta content="text/html; charset=utf-8" http-equiv="content-type">
     <meta name="description" content="ImagingLab, Mehran Ebrahimi, UOIT">
+    <meta name="author" content="Kamyar Nazeri">
+    <meta name="contact" content="kamyar.nzr@gmail.com">
+
     <link rel="stylesheet" type="text/css" media="all" href="inland.css">
     <script type="text/javascript" src="resources/jquery-1.7.1.min.js"></script>
     <script type="text/javascript" src="resources/jquery.nivo.slider.js"></script>
@@ -130,64 +133,65 @@
 
     <script type="text/javascript">
 
-        page.ready(function (data) {
-            var header = $('<h4>[Updated ' + page.data.updated + ']</h4>');
+        (function () {
+            page.ready(function (data) {
+                var header = $('<h4>[Updated ' + page.data.updated + ']</h4>');
 
-            $('#a_year').click(function (e) {
+                $('#a_year').click(function (e) {
+                    bindPublications(true);
+                    e.preventDefault();
+                });
+
+                $('#a_type').click(function (e) {
+                    bindPublications(false);
+                    e.preventDefault();
+                });
+
                 bindPublications(true);
-                e.preventDefault();
+                $('#content_updated').append(header);
             });
 
-            $('#a_type').click(function (e) {
-                bindPublications(false);
-                e.preventDefault();
-            });
 
-            bindPublications(true);
-            $('#content_updated').append(header);
-        });
+            function bindPublications(by_year) {
 
+                var content = $('<div>');
+                var pubs = page.data.publications;
+                var types = page.data.publicationTypes;
 
-        function bindPublications(by_year) {
-            
-            var content = $('<div>');
-            var pubs = page.data.publications;
-            var types = page.data.publicationTypes;
+                $("a").removeClass('selected');
+                (by_year ? $('#a_year') : $('#a_type')).addClass('selected');
 
-            $("a").removeClass('selected');
-            (by_year ? $('#a_year') : $('#a_type')).addClass('selected');
+                pubs.sort(function (a, b) {
+                    return by_year ? (b.year - a.year) : (types.indexOf(a.type) - types.indexOf(b.type));
+                });
 
-            pubs.sort(function (a, b) {
-                return by_year ? (b.year - a.year) : (types.indexOf(a.type) - types.indexOf(b.type));
-            });
+                var keys = {};
+                var groups = [];
 
-            var keys = {};
-            var groups = [];
+                for (var i = 0; i < pubs.length; i++) {
+                    var item = pubs[i];
+                    var key = item[by_year ? "year" : "type"];
 
-            for (var i = 0; i < pubs.length; i++) {
-                var item = pubs[i];
-                var key = item[by_year ? "year" : "type"];
+                    if (!item.visible) continue;
 
-                if (!item.visible) continue;
-
-                if (!keys[key]) {
-                    var grp = [];
-                    grp.key = key;
-                    keys[key] = grp;
-                    groups.push(grp);
+                    if (!keys[key]) {
+                        var grp = [];
+                        grp.key = key;
+                        keys[key] = grp;
+                        groups.push(grp);
+                    }
+                    keys[key].push(item);
                 }
-                keys[key].push(item);
-            }
 
-            for (var i = 0; i < groups.length; i++) {
-                var grp = groups[i];
-                grp.sort(function (a, b) { return a.code.localeCompare(b.code || "") });
-                page.appendPublications(content, grp.key, grp);
-            }
+                for (var i = 0; i < groups.length; i++) {
+                    var grp = groups[i];
+                    grp.sort(function (a, b) { return a.code.localeCompare(b.code || "") });
+                    page.appendPublications(content, grp.key, grp);
+                }
 
-            $('#content_publication').empty().append(content);
-        };
-
+                $('#content_publication').empty().append(content);
+            };
+        })();
 
     </script>
 
