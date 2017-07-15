@@ -11,6 +11,7 @@ var page = (function () {
             publications: [],
             publicationTypes: []
         },
+
         ready: function (fn) {
             _ready.push(fn);
         },
@@ -18,9 +19,9 @@ var page = (function () {
         appendPublications: appendPublications
     };
 
-
+    
     function initialize() {
-        $('a[href^="https://"],a[href^="http://"]').attr('target', '_blank');
+        $('a[href^="https://"]:not([target]),a[href^="http://"]:not([target])').attr('target', '_blank');
         $.ajax('data/data.json?' + Math.random())
             .done(function (d) {
 
