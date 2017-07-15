@@ -46,40 +46,6 @@
             this.button_deletePeople = new System.Windows.Forms.Button();
             this.tabPage_publication = new System.Windows.Forms.TabPage();
             this.grd_publications = new System.Windows.Forms.DataGridView();
-            this.publicationBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.button_addPublication = new System.Windows.Forms.Button();
-            this.button_editPublication = new System.Windows.Forms.Button();
-            this.button_deletePublication = new System.Windows.Forms.Button();
-            this.tabPage_teaching = new System.Windows.Forms.TabPage();
-            this.grd_teaching = new System.Windows.Forms.DataGridView();
-            this.teachingBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.button_addTeaching = new System.Windows.Forms.Button();
-            this.button_editTeaching = new System.Windows.Forms.Button();
-            this.button_deleteTeaching = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.button_save = new System.Windows.Forms.Button();
-            this.button_publish = new System.Windows.Forms.Button();
-            this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
-            this.column_teaching_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.column_teaching_semester = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.column_teaching_title = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.column_teaching_description = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.column_teaching_university = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.column_teaching_url = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.column_teaching_visible = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.column_people_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.column_people_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.column_people_email = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.column_people_position = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.column_people_education = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.column_people_description = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.column_people_start = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.column_people_end = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.column_people_photo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.column_people_alumnus = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.column_people_visible = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.column_publication_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.column_publication_code = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.column_publication_title = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -91,6 +57,40 @@
             this.column_publication_contributors = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.column_publication_visible = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.column_publication_peoplePageVisible = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.publicationBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.button_addPublication = new System.Windows.Forms.Button();
+            this.button_editPublication = new System.Windows.Forms.Button();
+            this.button_deletePublication = new System.Windows.Forms.Button();
+            this.tabPage_teaching = new System.Windows.Forms.TabPage();
+            this.grd_teaching = new System.Windows.Forms.DataGridView();
+            this.column_teaching_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.column_teaching_semester = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.column_teaching_title = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.column_teaching_description = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.column_teaching_university = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.column_teaching_url = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.column_teaching_visible = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.teachingBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.button_addTeaching = new System.Windows.Forms.Button();
+            this.button_editTeaching = new System.Windows.Forms.Button();
+            this.button_deleteTeaching = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.button_save = new System.Windows.Forms.Button();
+            this.button_publish = new System.Windows.Forms.Button();
+            this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
+            this.column_people_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.column_people_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.column_people_email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.column_people_title = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.column_people_position = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.column_people_education = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.column_people_description = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.column_people_start = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.column_people_end = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.column_people_alumnus = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.column_people_visible = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.tab_cpanel.SuspendLayout();
             this.tabPage_home.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -206,12 +206,12 @@
             this.column_people_id,
             this.column_people_name,
             this.column_people_email,
+            this.column_people_title,
             this.column_people_position,
             this.column_people_education,
             this.column_people_description,
             this.column_people_start,
             this.column_people_end,
-            this.column_people_photo,
             this.column_people_alumnus,
             this.column_people_visible});
             this.grd_people.DataSource = this.peopleBindingSource;
@@ -318,6 +318,82 @@
             this.grd_publications.Size = new System.Drawing.Size(1068, 440);
             this.grd_publications.TabIndex = 1;
             // 
+            // column_publication_id
+            // 
+            this.column_publication_id.DataPropertyName = "id";
+            this.column_publication_id.HeaderText = "ID";
+            this.column_publication_id.Name = "column_publication_id";
+            this.column_publication_id.Visible = false;
+            // 
+            // column_publication_code
+            // 
+            this.column_publication_code.DataPropertyName = "code";
+            this.column_publication_code.HeaderText = "Code";
+            this.column_publication_code.Name = "column_publication_code";
+            this.column_publication_code.Width = 50;
+            // 
+            // column_publication_title
+            // 
+            this.column_publication_title.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.column_publication_title.DataPropertyName = "title";
+            this.column_publication_title.HeaderText = "Title";
+            this.column_publication_title.MinimumWidth = 150;
+            this.column_publication_title.Name = "column_publication_title";
+            // 
+            // column_publication_year
+            // 
+            this.column_publication_year.DataPropertyName = "year";
+            this.column_publication_year.HeaderText = "Year";
+            this.column_publication_year.Name = "column_publication_year";
+            this.column_publication_year.Width = 50;
+            // 
+            // column_publication_type
+            // 
+            this.column_publication_type.DataPropertyName = "type";
+            this.column_publication_type.HeaderText = "Type";
+            this.column_publication_type.Name = "column_publication_type";
+            this.column_publication_type.Width = 120;
+            // 
+            // column_publication_url
+            // 
+            this.column_publication_url.DataPropertyName = "url";
+            this.column_publication_url.HeaderText = "Url";
+            this.column_publication_url.Name = "column_publication_url";
+            this.column_publication_url.Width = 120;
+            // 
+            // column_publication_pdf
+            // 
+            this.column_publication_pdf.DataPropertyName = "pdf";
+            this.column_publication_pdf.HeaderText = "PDF";
+            this.column_publication_pdf.Name = "column_publication_pdf";
+            this.column_publication_pdf.Width = 120;
+            // 
+            // column_publication_bibtex
+            // 
+            this.column_publication_bibtex.DataPropertyName = "bibtex";
+            this.column_publication_bibtex.HeaderText = "BibTex";
+            this.column_publication_bibtex.Name = "column_publication_bibtex";
+            // 
+            // column_publication_contributors
+            // 
+            this.column_publication_contributors.DataPropertyName = "contributors";
+            this.column_publication_contributors.HeaderText = "Contributors";
+            this.column_publication_contributors.Name = "column_publication_contributors";
+            // 
+            // column_publication_visible
+            // 
+            this.column_publication_visible.DataPropertyName = "visible";
+            this.column_publication_visible.HeaderText = "Visible";
+            this.column_publication_visible.Name = "column_publication_visible";
+            this.column_publication_visible.Width = 60;
+            // 
+            // column_publication_peoplePageVisible
+            // 
+            this.column_publication_peoplePageVisible.DataPropertyName = "peoplePageVisible";
+            this.column_publication_peoplePageVisible.HeaderText = "People Visible";
+            this.column_publication_peoplePageVisible.Name = "column_publication_peoplePageVisible";
+            this.column_publication_peoplePageVisible.Width = 115;
+            // 
             // publicationBindingSource
             // 
             this.publicationBindingSource.DataSource = typeof(ImagingLab.CPanel.Publication);
@@ -407,6 +483,57 @@
             this.grd_teaching.Size = new System.Drawing.Size(1068, 440);
             this.grd_teaching.TabIndex = 1;
             // 
+            // column_teaching_id
+            // 
+            this.column_teaching_id.DataPropertyName = "id";
+            this.column_teaching_id.HeaderText = "ID";
+            this.column_teaching_id.Name = "column_teaching_id";
+            this.column_teaching_id.Visible = false;
+            // 
+            // column_teaching_semester
+            // 
+            this.column_teaching_semester.DataPropertyName = "semester";
+            this.column_teaching_semester.HeaderText = "Semester";
+            this.column_teaching_semester.Name = "column_teaching_semester";
+            this.column_teaching_semester.Width = 120;
+            // 
+            // column_teaching_title
+            // 
+            this.column_teaching_title.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.column_teaching_title.DataPropertyName = "title";
+            this.column_teaching_title.FillWeight = 30F;
+            this.column_teaching_title.HeaderText = "Title";
+            this.column_teaching_title.Name = "column_teaching_title";
+            // 
+            // column_teaching_description
+            // 
+            this.column_teaching_description.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.column_teaching_description.DataPropertyName = "description";
+            this.column_teaching_description.FillWeight = 70F;
+            this.column_teaching_description.HeaderText = "Description";
+            this.column_teaching_description.Name = "column_teaching_description";
+            // 
+            // column_teaching_university
+            // 
+            this.column_teaching_university.DataPropertyName = "university";
+            this.column_teaching_university.HeaderText = "University";
+            this.column_teaching_university.Name = "column_teaching_university";
+            this.column_teaching_university.Width = 130;
+            // 
+            // column_teaching_url
+            // 
+            this.column_teaching_url.DataPropertyName = "url";
+            this.column_teaching_url.HeaderText = "Url";
+            this.column_teaching_url.Name = "column_teaching_url";
+            this.column_teaching_url.Width = 160;
+            // 
+            // column_teaching_visible
+            // 
+            this.column_teaching_visible.DataPropertyName = "visible";
+            this.column_teaching_visible.HeaderText = "Visible";
+            this.column_teaching_visible.Name = "column_teaching_visible";
+            this.column_teaching_visible.Width = 60;
+            // 
             // teachingBindingSource
             // 
             this.teachingBindingSource.DataSource = typeof(ImagingLab.CPanel.Teaching);
@@ -493,57 +620,6 @@
             this.button_publish.UseVisualStyleBackColor = true;
             this.button_publish.Click += new System.EventHandler(this.button_publish_Click);
             // 
-            // column_teaching_id
-            // 
-            this.column_teaching_id.DataPropertyName = "id";
-            this.column_teaching_id.HeaderText = "ID";
-            this.column_teaching_id.Name = "column_teaching_id";
-            this.column_teaching_id.Visible = false;
-            // 
-            // column_teaching_semester
-            // 
-            this.column_teaching_semester.DataPropertyName = "semester";
-            this.column_teaching_semester.HeaderText = "Semester";
-            this.column_teaching_semester.Name = "column_teaching_semester";
-            this.column_teaching_semester.Width = 120;
-            // 
-            // column_teaching_title
-            // 
-            this.column_teaching_title.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.column_teaching_title.DataPropertyName = "title";
-            this.column_teaching_title.FillWeight = 30F;
-            this.column_teaching_title.HeaderText = "Title";
-            this.column_teaching_title.Name = "column_teaching_title";
-            // 
-            // column_teaching_description
-            // 
-            this.column_teaching_description.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.column_teaching_description.DataPropertyName = "description";
-            this.column_teaching_description.FillWeight = 70F;
-            this.column_teaching_description.HeaderText = "Description";
-            this.column_teaching_description.Name = "column_teaching_description";
-            // 
-            // column_teaching_university
-            // 
-            this.column_teaching_university.DataPropertyName = "university";
-            this.column_teaching_university.HeaderText = "University";
-            this.column_teaching_university.Name = "column_teaching_university";
-            this.column_teaching_university.Width = 130;
-            // 
-            // column_teaching_url
-            // 
-            this.column_teaching_url.DataPropertyName = "url";
-            this.column_teaching_url.HeaderText = "Url";
-            this.column_teaching_url.Name = "column_teaching_url";
-            this.column_teaching_url.Width = 160;
-            // 
-            // column_teaching_visible
-            // 
-            this.column_teaching_visible.DataPropertyName = "visible";
-            this.column_teaching_visible.HeaderText = "Visible";
-            this.column_teaching_visible.Name = "column_teaching_visible";
-            this.column_teaching_visible.Width = 60;
-            // 
             // column_people_id
             // 
             this.column_people_id.DataPropertyName = "id";
@@ -568,6 +644,14 @@
             this.column_people_email.HeaderText = "Email";
             this.column_people_email.MinimumWidth = 120;
             this.column_people_email.Name = "column_people_email";
+            // 
+            // column_people_title
+            // 
+            this.column_people_title.DataPropertyName = "title";
+            this.column_people_title.HeaderText = "Title";
+            this.column_people_title.MinimumWidth = 100;
+            this.column_people_title.Name = "column_people_title";
+            this.column_people_title.Width = 120;
             // 
             // column_people_position
             // 
@@ -610,14 +694,6 @@
             this.column_people_end.Name = "column_people_end";
             this.column_people_end.Width = 120;
             // 
-            // column_people_photo
-            // 
-            this.column_people_photo.DataPropertyName = "photo";
-            this.column_people_photo.HeaderText = "Photo";
-            this.column_people_photo.Name = "column_people_photo";
-            this.column_people_photo.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.column_people_photo.Width = 95;
-            // 
             // column_people_alumnus
             // 
             this.column_people_alumnus.DataPropertyName = "alumnus";
@@ -631,82 +707,6 @@
             this.column_people_visible.HeaderText = "Visible";
             this.column_people_visible.Name = "column_people_visible";
             this.column_people_visible.Width = 57;
-            // 
-            // column_publication_id
-            // 
-            this.column_publication_id.DataPropertyName = "id";
-            this.column_publication_id.HeaderText = "ID";
-            this.column_publication_id.Name = "column_publication_id";
-            this.column_publication_id.Visible = false;
-            // 
-            // column_publication_code
-            // 
-            this.column_publication_code.DataPropertyName = "code";
-            this.column_publication_code.HeaderText = "Code";
-            this.column_publication_code.Name = "column_publication_code";
-            this.column_publication_code.Width = 50;
-            // 
-            // column_publication_title
-            // 
-            this.column_publication_title.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.column_publication_title.DataPropertyName = "title";
-            this.column_publication_title.HeaderText = "Title";
-            this.column_publication_title.MinimumWidth = 150;
-            this.column_publication_title.Name = "column_publication_title";
-            // 
-            // column_publication_year
-            // 
-            this.column_publication_year.DataPropertyName = "year";
-            this.column_publication_year.HeaderText = "Year";
-            this.column_publication_year.Name = "column_publication_year";
-            this.column_publication_year.Width = 50;
-            // 
-            // column_publication_type
-            // 
-            this.column_publication_type.DataPropertyName = "type";
-            this.column_publication_type.HeaderText = "Type";
-            this.column_publication_type.Name = "column_publication_type";
-            this.column_publication_type.Width = 120;
-            // 
-            // column_publication_url
-            // 
-            this.column_publication_url.DataPropertyName = "url";
-            this.column_publication_url.HeaderText = "Url";
-            this.column_publication_url.Name = "column_publication_url";
-            this.column_publication_url.Width = 120;
-            // 
-            // column_publication_pdf
-            // 
-            this.column_publication_pdf.DataPropertyName = "pdf";
-            this.column_publication_pdf.HeaderText = "PDF";
-            this.column_publication_pdf.Name = "column_publication_pdf";
-            this.column_publication_pdf.Width = 120;
-            // 
-            // column_publication_bibtex
-            // 
-            this.column_publication_bibtex.DataPropertyName = "bibtex";
-            this.column_publication_bibtex.HeaderText = "BibTex";
-            this.column_publication_bibtex.Name = "column_publication_bibtex";
-            // 
-            // column_publication_contributors
-            // 
-            this.column_publication_contributors.DataPropertyName = "contributors";
-            this.column_publication_contributors.HeaderText = "Contributors";
-            this.column_publication_contributors.Name = "column_publication_contributors";
-            // 
-            // column_publication_visible
-            // 
-            this.column_publication_visible.DataPropertyName = "visible";
-            this.column_publication_visible.HeaderText = "Visible";
-            this.column_publication_visible.Name = "column_publication_visible";
-            this.column_publication_visible.Width = 60;
-            // 
-            // column_publication_peoplePageVisible
-            // 
-            this.column_publication_peoplePageVisible.DataPropertyName = "peoplePageVisible";
-            this.column_publication_peoplePageVisible.HeaderText = "People Visible";
-            this.column_publication_peoplePageVisible.Name = "column_publication_peoplePageVisible";
-            this.column_publication_peoplePageVisible.Width = 115;
             // 
             // MainForm
             // 
@@ -785,17 +785,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn column_teaching_university;
         private System.Windows.Forms.DataGridViewTextBoxColumn column_teaching_url;
         private System.Windows.Forms.DataGridViewCheckBoxColumn column_teaching_visible;
-        private System.Windows.Forms.DataGridViewTextBoxColumn column_people_id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn column_people_name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn column_people_email;
-        private System.Windows.Forms.DataGridViewTextBoxColumn column_people_position;
-        private System.Windows.Forms.DataGridViewTextBoxColumn column_people_education;
-        private System.Windows.Forms.DataGridViewTextBoxColumn column_people_description;
-        private System.Windows.Forms.DataGridViewTextBoxColumn column_people_start;
-        private System.Windows.Forms.DataGridViewTextBoxColumn column_people_end;
-        private System.Windows.Forms.DataGridViewTextBoxColumn column_people_photo;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn column_people_alumnus;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn column_people_visible;
         private System.Windows.Forms.DataGridViewTextBoxColumn column_publication_id;
         private System.Windows.Forms.DataGridViewTextBoxColumn column_publication_code;
         private System.Windows.Forms.DataGridViewTextBoxColumn column_publication_title;
@@ -807,6 +796,17 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn column_publication_contributors;
         private System.Windows.Forms.DataGridViewCheckBoxColumn column_publication_visible;
         private System.Windows.Forms.DataGridViewCheckBoxColumn column_publication_peoplePageVisible;
+        private System.Windows.Forms.DataGridViewTextBoxColumn column_people_id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn column_people_name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn column_people_email;
+        private System.Windows.Forms.DataGridViewTextBoxColumn column_people_title;
+        private System.Windows.Forms.DataGridViewTextBoxColumn column_people_position;
+        private System.Windows.Forms.DataGridViewTextBoxColumn column_people_education;
+        private System.Windows.Forms.DataGridViewTextBoxColumn column_people_description;
+        private System.Windows.Forms.DataGridViewTextBoxColumn column_people_start;
+        private System.Windows.Forms.DataGridViewTextBoxColumn column_people_end;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn column_people_alumnus;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn column_people_visible;
     }
 }
 

@@ -26,6 +26,7 @@ namespace ImagingLab.CPanel
             AutoValidate = AutoValidate.EnableAllowFocusChange;
             txt_name.Text = people?.name ?? "";
             txt_email.Text = people?.email ?? "";
+            txt_title.Text = people?.title ?? "";
             txt_position.Text = people?.position ?? "";
             txt_education.Text = people?.education ?? "";
             txt_start.Text = people?.start ?? "";
@@ -54,6 +55,7 @@ namespace ImagingLab.CPanel
 
             People.name = txt_name.Text;
             People.email = txt_email.Text;
+            People.title = txt_title.Text;
             People.position = txt_position.Text;
             People.education = txt_education.Text;
             People.start = txt_start.Text;

@@ -57,6 +57,7 @@ namespace ImagingLab.CPanel
         public int id { get; set; }
         public string name { get; set; }
         public string email { get; set; }
+        public string title { get; set; }
         public string position { get; set; }
         public string education { get; set; }
         public string photo { get; set; }
