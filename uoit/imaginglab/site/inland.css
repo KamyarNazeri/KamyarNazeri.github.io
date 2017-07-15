@@ -2,17 +2,16 @@
     font-family: 'Droid Sans';
     font-style: normal;
     font-weight: 400;
-    src: local('Droid Sans'), local('DroidSans'), url(resources/droid.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+    src: local('Droid Sans'), local('DroidSans'), url(resources/droid.woff) format('woff');
 }
 
 @font-face {
     font-family: 'Yanone Kaffeesatz';
     font-style: normal;
     font-weight: 400;
-    src: local('Yanone Kaffeesatz Regular'), local('YanoneKaffeesatz-Regular'), url(resources/yanone.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+    src: local('Yanone Kaffeesatz Regular'), local('YanoneKaffeesatz-Regular'), url(resources/yanone.woff) format('woff');
 }
+
 
 * {
     border: 0;
@@ -55,7 +54,7 @@ a img {
     border: none;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
     clear: left;
     color: #005596;
     font-weight: 400;
@@ -98,6 +97,64 @@ i, em {
 b, strong {
     font-weight: 700;
 }
+
+.table {
+    display: table;
+}
+
+.table-row {
+    display: table-row;
+}
+
+.table-cell {
+    display: table-cell;
+}
+
+.people-item {
+    float: left;
+    display: block;
+    width: 280px;
+    padding: 17px 0px;
+    text-decoration: none;
+    border-top: solid 1px TRANSPARENT;
+    border-bottom: solid 1px #e6e6e6;
+    background-size: 0% 100%;
+    background-image: linear-gradient(#EAEAEA, #EAEAEA);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 100% 0%;
+    transition: background-size .3s, color .5s;
+}
+
+
+    .people-item:hover {
+        background-size: 100% 100%;
+        border-bottom: solid 1px #C6C6C6
+    }
+
+    .people-item img {
+        width: 50px;
+        height: 50px;
+        padding: 2px;
+        margin-left: 2px;
+        border-radius: 5px;
+        border: solid 1px #b6b6b6;
+    }
+
+    .people-item div {
+        padding: 6px;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+        .people-item div h4 {
+            margin: 0;
+        }
+
+    .people-item span {
+        color: gray;
+    }
+
 
 .bibtex {
     display: none;
