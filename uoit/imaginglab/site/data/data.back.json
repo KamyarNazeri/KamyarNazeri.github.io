@@ -80,12 +80,14 @@
       "id": 1,
       "name": "Mehran Ebrahimi",
       "email": "mehran.ebrahimi@uoit.ca",
+      "title": "Assistant Professor, Faculty of Science, UOIT",
       "position": "Assistant Professor - Lab Director",
       "education": "PhD",
       "photo": "data/mehran.jpg",
       "start": "",
       "end": "",
-      "description": "",
+      "research": "Mathematical imaging and inverse problems; developing and validating efficient numerical methodologies for solving real-world, ill-posed inverse problems in the field of medical imaging.",
+      "description": "<div> <div style=\"font-weight: bold; color:black\">Education</div> Postdoctoral Fellowship: <a href=\"http://medbio.utoronto.ca/\"> Dept. of Medical Biophysics</a>, <a href=\"http://www.utoronto.ca/\"> University of Toronto</a>, Imaging Research, <a href=\"http://www.sunnybrook.ca/\">Sunnybrook Health Sciences Centre</a>(2008-2013) <br /> PhD: <a href=\"http://www.math.uwaterloo.ca/AM_Dept/\">Department of Applied Mathematics</a>, <a href=\"http://www.uwaterloo.ca\"> University of Waterloo</a>, Waterloo, Ontario, Canada (2003-2008) </div> <br /> <div> <div style=\"font-weight: bold; color:black\">Awards</div> <div> Canadian Breast Cancer Foundation (CBCF) Postdoctoral Fellowship </div> <div> NSERC Postdoctoral Fellowship (2009-2010) </div> </div>",
       "alumnus": false,
       "visible": true
     },
@@ -93,11 +95,13 @@
       "id": 2,
       "name": "Kamyar Nazeri",
       "email": "kamyar.nazerinaeini@uoit.net",
+      "title": "Graduate Student - MSC.",
       "position": "Graduate Student - MSC.",
       "education": "BSc in Electrical Engineering from Iran",
       "photo": "data/kamyar.jpg",
       "start": "January 2017",
       "end": "",
+      "research": "Deep learning algorithms, in particular: convolutional neural networks (CNNs), in medical image analysis and processing.",
       "description": "",
       "alumnus": false,
       "visible": true
@@ -106,11 +110,13 @@
       "id": 3,
       "name": "Mia Carmela Mojica",
       "email": "mia.mojica@uoit.net",
+      "title": "Graduate Student - PhD.",
       "position": "Graduate Student - PhD.",
       "education": "MSc graduate in Applied Mathematics from the Philippines",
       "photo": "data/mia.jpg",
       "start": "September 2016",
       "end": "",
+      "research": "Cardiac diffusion imaging, cardiac atlas construction, image deblurring, and denoising.",
       "description": "",
       "alumnus": false,
       "visible": true
@@ -119,11 +125,13 @@
       "id": 4,
       "name": "Lorraine Ma",
       "email": "lorraine.ma@uoit.net",
+      "title": "Graduate Student - MSC.",
       "position": "Graduate Student - MSC.",
       "education": "",
       "photo": "data/lorraine.jpg",
       "start": "September 2014",
       "end": "December 2016",
+      "research": "Medical image registration schemes for Cardiac MRI. ",
       "description": "Lorraine is investigating image registration schemes for Cardiac MRI for which the data is provided by Prof. Graham Wright (Sunnybrook Research Institute). Lorraine won the people’s choice award at the 2016 Three Minute Thesis (3MT®). She is aiming to defend her thesis in August 2015 and join the University of Auckland, New Zealand, as an exchange student in Fall 2016 on a Queen Elizabeth II Diamond Jubilee Scholarship.",
       "alumnus": true,
       "visible": true
@@ -132,11 +140,13 @@
       "id": 5,
       "name": "Ghazaleh Ahmadian",
       "email": "ghazaleh.ahmadian@uoit.net",
+      "title": "Graduate Student - MSC.",
       "position": "Graduate Student - MSC.",
       "education": "",
       "photo": "data/ghazaleh.png",
       "start": "January 2015",
       "end": "May 2017",
+      "research": "Medical Image Registration",
       "description": "Co-supervised with Dr. Sean Bohun. Ghazal is investigating breast image registration schemes aimed at Computer aided surgery (CAS), for which the data is provided by Dr. Anne Martel (Sunnybrook Research Institute).",
       "alumnus": true,
       "visible": true
@@ -145,11 +155,13 @@
       "id": 6,
       "name": "Sancgeetha Kulaseharan",
       "email": "sancgeetha.kulaseharan@uoit.net",
+      "title": "Graduate Student - MSC.",
       "position": "Graduate Student - MSC.",
       "education": "",
       "photo": "data/sancgeetha.jpg",
       "start": "September 2015",
       "end": "",
+      "research": "Working on combined texture and morphometric analyses of MR imaging to identify focal cortical dysplasia in children with focal epilepsy.",
       "description": "Co-supervised with Dr. Elysa Widjaja (Hospital for Sick Children, Toronto), Working on combined texture and morphometric analyses of MR imaging to identify focal cortical dysplasia in children with focal epilepsy.",
       "alumnus": false,
       "visible": true
@@ -158,11 +170,13 @@
       "id": 7,
       "name": "Cory Falconer",
       "email": "cory.falconer@uoit.net",
+      "title": "Graduate Student - MSC.",
       "position": "Graduate Student - MSC.",
       "education": "",
       "photo": "data/cory.jpg",
       "start": "September 2015",
       "end": "",
+      "research": "Resolution enhancement and denoising techniques for medical imaging applications.",
       "description": "Co-supervised with Dr. Sean Bohn, Cory is investigating resolution enhancement and denoising techniques for medical imaging applications.",
       "alumnus": false,
       "visible": true
@@ -171,11 +185,13 @@
       "id": 8,
       "name": "Eric NG",
       "email": "eric.ng@uoit.net",
+      "title": "Graduate Student - MSC.",
       "position": "Graduate Student - MSC.",
       "education": "",
       "photo": "data/eric.jpg",
       "start": "September 2017",
       "end": "",
+      "research": "",
       "description": "",
       "alumnus": false,
       "visible": true
@@ -184,11 +200,13 @@
       "id": 9,
       "name": "Azad Aminpour",
       "email": "azad.aminpour@uoit.net",
+      "title": "Graduate Student - PhD.",
       "position": "Graduate Student - PhD.",
       "education": "MSc graduate in Computer Science from Iran",
       "photo": "data/azad.jpg",
       "start": "September 2017",
       "end": "",
+      "research": "Computer Vision, Machine/Robotic Vision and, Medical Imaging.",
       "description": "",
       "alumnus": false,
       "visible": true
@@ -197,11 +215,13 @@
       "id": 10,
       "name": "Queenie Leung",
       "email": "queenie.leung@uoit.net",
+      "title": "Undergraduate Thesis Student",
       "position": "Undergraduate Thesis Student",
       "education": "BSc in Applied and Industrial Math",
       "photo": "",
       "start": "September 2015",
       "end": "April 2016",
+      "research": "",
       "description": "After completing her NSERC USRA, she completed her thesis on Image Segmentation using Graph cuts.",
       "alumnus": true,
       "visible": true
@@ -210,11 +230,13 @@
       "id": 11,
       "name": "Xu Han",
       "email": "xu.han@uoit.net",
+      "title": "MITACS Globalink Research Intern",
       "position": "MITACS Globalink Research Intern",
       "education": "",
       "photo": "",
       "start": "June 2015",
       "end": "August 2015",
+      "research": "",
       "description": "Visiting from Biomedical Engineering Program, Huazhong University of Science and Technology, Wuhan, China, Project: Registration of Breast MR Images.",
       "alumnus": true,
       "visible": true
@@ -223,11 +245,13 @@
       "id": 12,
       "name": "Saurabh Agarwal",
       "email": "saurabh.agarwal@uoit.net",
+      "title": "MITACS Globalink Research Intern",
       "position": "MITACS Globalink Research Intern",
       "education": "",
       "photo": "",
       "start": "June 2015",
       "end": "August 2015",
+      "research": "",
       "description": "Visiting from School of Electronics Engineering, VIT, Chennai, India Project: Segmentation of Breast MR Images.",
       "alumnus": true,
       "visible": true
@@ -246,7 +270,9 @@
       "contributors": "M. Ebrahimi, A. Lausch, and A. L. Martel",
       "visible": true,
       "peoplePageVisible": true,
-      "people": [ 1 ]
+      "people": [
+        1
+      ]
     },
     {
       "id": 2,
@@ -260,7 +286,9 @@
       "contributors": "M. Ebrahimi, P. Siegler, A. Modhafar, C. Holloway, D. Plewes, and A. Martel",
       "visible": true,
       "peoplePageVisible": true,
-      "people": [ 1 ]
+      "people": [
+        1
+      ]
     },
     {
       "id": 3,
@@ -274,7 +302,9 @@
       "contributors": "M. L. Hill, J. G. Mainprize, A.-K. Carton, S. Muller, M. Ebrahimi, R. A. Jong, C. Dromain, and M. J. Yaffe",
       "visible": true,
       "peoplePageVisible": true,
-      "people": [ 1 ]
+      "people": [
+        1
+      ]
     },
     {
       "id": 4,
@@ -288,7 +318,9 @@
       "contributors": "P. Siegler, M. Ebrahimi, C. Holloway, G. Thevathasan, D. B. Plewes, and A. L. Martel",
       "visible": true,
       "peoplePageVisible": true,
-      "people": [ 1 ]
+      "people": [
+        1
+      ]
     },
     {
       "id": 5,
@@ -302,7 +334,9 @@
       "contributors": "M. Ebrahimi, P. Siegler, D. B. Plewes, and A. L. Martel",
       "visible": true,
       "peoplePageVisible": true,
-      "people": [ 1 ]
+      "people": [
+        1
+      ]
     },
     {
       "id": 6,
@@ -316,7 +350,9 @@
       "contributors": "M. Ebrahimi",
       "visible": true,
       "peoplePageVisible": true,
-      "people": [ 1 ]
+      "people": [
+        1
+      ]
     },
     {
       "id": 7,
@@ -330,7 +366,9 @@
       "contributors": "D. La-Torre, E. R. Vrscay, M. Ebrahimi, and M. F. Barnsley",
       "visible": true,
       "peoplePageVisible": true,
-      "people": [ 1 ]
+      "people": [
+        1
+      ]
     },
     {
       "id": 8,
@@ -344,7 +382,9 @@
       "contributors": "W. Bahsoun, P. Gora, A. Boyarsky, and M. Ebrahimi",
       "visible": true,
       "peoplePageVisible": true,
-      "people": [ 1 ]
+      "people": [
+        1
+      ]
     },
     {
       "id": 9,
@@ -358,7 +398,9 @@
       "contributors": "A. Lausch, M. Ebrahimi, and A. L. Martel",
       "visible": true,
       "peoplePageVisible": true,
-      "people": [ 1 ]
+      "people": [
+        1
+      ]
     },
     {
       "id": 10,
@@ -372,7 +414,9 @@
       "contributors": "M. Ebrahimi",
       "visible": true,
       "peoplePageVisible": true,
-      "people": [ 1 ]
+      "people": [
+        1
+      ]
     },
     {
       "id": 11,
@@ -386,7 +430,9 @@
       "contributors": "M. Ebrahimi",
       "visible": true,
       "peoplePageVisible": true,
-      "people": [ 1 ]
+      "people": [
+        1
+      ]
     },
     {
       "id": 12,
@@ -400,7 +446,9 @@
       "contributors": "M. Ebrahimi, A. L. Martel",
       "visible": true,
       "peoplePageVisible": true,
-      "people": [ 1 ]
+      "people": [
+        1
+      ]
     },
     {
       "id": 13,
@@ -414,7 +462,9 @@
       "contributors": "M. Ebrahimi, A. L. Martel",
       "visible": true,
       "peoplePageVisible": true,
-      "people": [ 1 ]
+      "people": [
+        1
+      ]
     },
     {
       "id": 14,
@@ -428,7 +478,9 @@
       "contributors": "M. Ebrahimi, E. R. Vrscay, and A. L. Martel",
       "visible": true,
       "peoplePageVisible": true,
-      "people": [ 1 ]
+      "people": [
+        1
+      ]
     },
     {
       "id": 15,
@@ -442,7 +494,9 @@
       "contributors": "M. Ebrahimi, A. L. Martel",
       "visible": true,
       "peoplePageVisible": true,
-      "people": [ 1 ]
+      "people": [
+        1
+      ]
     },
     {
       "id": 16,
@@ -456,7 +510,9 @@
       "contributors": "M. Ebrahimi, E. R. Vrscay",
       "visible": true,
       "peoplePageVisible": true,
-      "people": [ 1 ]
+      "people": [
+        1
+      ]
     },
     {
       "id": 17,
@@ -470,7 +526,9 @@
       "contributors": "M. Ebrahimi, E. R. Vrscay",
       "visible": true,
       "peoplePageVisible": true,
-      "people": [ 1 ]
+      "people": [
+        1
+      ]
     },
     {
       "id": 18,
@@ -484,7 +542,9 @@
       "contributors": "M. Ebrahimi",
       "visible": true,
       "peoplePageVisible": true,
-      "people": [ 1 ]
+      "people": [
+        1
+      ]
     },
     {
       "id": 19,
@@ -498,7 +558,9 @@
       "contributors": "M. Ebrahimi, E. R. Vrscay",
       "visible": true,
       "peoplePageVisible": true,
-      "people": [ 1 ]
+      "people": [
+        1
+      ]
     },
     {
       "id": 20,
@@ -512,7 +574,9 @@
       "contributors": "M. Ebrahimi, E. R. Vrscay",
       "visible": true,
       "peoplePageVisible": true,
-      "people": [ 1 ]
+      "people": [
+        1
+      ]
     },
     {
       "id": 21,
@@ -526,7 +590,9 @@
       "contributors": "M. Ebrahimi, E. R. Vrscay",
       "visible": true,
       "peoplePageVisible": true,
-      "people": [ 1 ]
+      "people": [
+        1
+      ]
     },
     {
       "id": 22,
@@ -540,9 +606,10 @@
       "contributors": "M. Ebrahimi, E. R. Vrscay",
       "visible": true,
       "peoplePageVisible": true,
-      "people": [ 1 ]
+      "people": [
+        1
+      ]
     }
-
   ],
   "publicationTypes": [
     "Journal Articles",
