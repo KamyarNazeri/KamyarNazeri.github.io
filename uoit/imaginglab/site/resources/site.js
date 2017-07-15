@@ -36,6 +36,7 @@ var page = (function () {
     };
 
     function appendPublications(parent, title, items) {
+        if (items.length == 0) return;
         var item = $('<div><h3>' + title + '</h3></div>');
         var ul = $("<ul>").css({ 'list-style': 'none' }).appendTo(item);
 

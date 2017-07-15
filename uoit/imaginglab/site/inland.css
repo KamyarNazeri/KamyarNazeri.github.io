@@ -110,6 +110,23 @@ b, strong {
     display: table-cell;
 }
 
+.person {
+    display: table-cell;
+    padding-left: 10px;
+    padding-right: 30px;
+}
+
+    .person img {
+        width: 150px;
+        height: 150px;
+        padding: 2px;
+        border: solid 1px #b6b6b6;
+    }
+
+    .person div {
+        vertical-align: top;
+    }
+
 .people-item {
     float: left;
     display: block;
