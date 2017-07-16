@@ -87,7 +87,7 @@
       "start": "",
       "end": "",
       "research": "Mathematical imaging and inverse problems; developing and validating efficient numerical methodologies for solving real-world, ill-posed inverse problems in the field of medical imaging.",
-      "description": "<div> <h3>Education</h3> Postdoctoral Fellowship: <a href=\"http://medbio.utoronto.ca/\"> Dept. of Medical Biophysics</a>, <a href=\"http://www.utoronto.ca/\"> University of Toronto</a>, Imaging Research, <a href=\"http://www.sunnybrook.ca/\">Sunnybrook Health Sciences Centre</a>(2008-2013) <br /> PhD: <a href=\"http://www.math.uwaterloo.ca/AM_Dept/\">Department of Applied Mathematics</a>, <a href=\"http://www.uwaterloo.ca\"> University of Waterloo</a>, Waterloo, Ontario, Canada (2003-2008) </div> <br /> <div> <h3>Awards</h3> <div> Canadian Breast Cancer Foundation (CBCF) Postdoctoral Fellowship </div> <div> NSERC Postdoctoral Fellowship (2009-2010) </div> </div>",
+      "description": "<div> <h3>Education</h3> Postdoctoral Fellowship: <a href='http://medbio.utoronto.ca/'> Dept. of Medical Biophysics</a>, <a href='http://www.utoronto.ca/'> University of Toronto</a>, Imaging Research, <a href='http://www.sunnybrook.ca/'>Sunnybrook Health Sciences Centre</a>(2008-2013) <br> PhD: <a href='http://www.math.uwaterloo.ca/AM_Dept/'>Department of Applied Mathematics</a>, <a href='http://www.uwaterloo.ca'> University of Waterloo</a>, Waterloo, Ontario, Canada (2003-2008) </div> <br> <div> <h3>Awards</h3> <div> Canadian Breast Cancer Foundation (CBCF) Postdoctoral Fellowship </div> <div> NSERC Postdoctoral Fellowship (2009-2010) </div> </div>",
       "alumnus": false,
       "visible": true
     },
@@ -266,7 +266,7 @@
       "type": "Journal Articles",
       "url": "http://dl.acm.org/citation.cfm?id=2538409",
       "pdf": "http://dl.acm.org/citation.cfm?id=2538409",
-      "bibtex": "@article{Ebrahimi:2013:GAJ:2538050.2538409,\n author = {Ebrahimi, Mehran and Lausch, Anthony and Martel, Anne L.},\n title = {A Gauss-Newton Approach to Joint Image Registration and Intensity Correction},\n journal = {Comput. Methods Prog. Biomed.},\n issue_date = {December, 2013},\n volume = {112},\n number = {3},\n month = dec,\n year = {2013},\n issn = {0169-2607},\n pages = {398--406},\n numpages = {9},\n url = {http://dx.doi.org/10.1016/j.cmpb.2013.07.026},\n doi = {10.1016/j.cmpb.2013.07.026},\n acmid = {2538409},\n publisher = {Elsevier North-Holland, Inc.},\n address = {New York, NY, USA},\n keywords = {Image registration, Intensity correction, Inverse problems, Multi-level, Optimization},\n}",
+      "bibtex": "@article{Ebrahimi:2013:GAJ:2538050.2538409, <br> author = {Ebrahimi, Mehran and Lausch, Anthony and Martel, Anne L.},<br> title = {A Gauss-Newton Approach to Joint Image Registration and Intensity Correction},<br> journal = {Comput. Methods Prog. Biomed.},<br> issue_date = {December, 2013},<br> volume = {112},<br> number = {3},<br> month = dec,<br> year = {2013},<br> issn = {0169-2607},<br> pages = {398--406},<br> numpages = {9},<br> url = {http://dx.doi.org/10.1016/j.cmpb.2013.07.026},<br> doi = {10.1016/j.cmpb.2013.07.026},<br> acmid = {2538409},<br> publisher = {Elsevier North-Holland, Inc.},<br> address = {New York, NY, USA},<br> keywords = {Image registration, Intensity correction, Inverse problems, Multi-level, Optimization},<br>}",
       "contributors": "M. Ebrahimi, A. Lausch, and A. L. Martel",
       "visible": true,
       "peoplePageVisible": true,
