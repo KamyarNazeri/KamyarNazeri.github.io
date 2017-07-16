@@ -127,7 +127,7 @@
                 var content = $('<div>');
 
                 function fixname(name) {
-                    return (name || '').replace(/ /ig, '_');
+                    return (name || '').replace(/ /ig, '_').toLowerCase();
                 };
 
 
@@ -139,6 +139,9 @@
                         current = person;
 
                     if ((type == 2 & person.alumnus) || type == 3 & !person.alumnus)
+                        continue;
+
+                    if (!person.visible)
                         continue;
 
                     var persoan_link = $('<a>').attr('href', '#' + fixname(person.name)).click(function (e) {
@@ -164,7 +167,7 @@
                     content.append(persoan_link);
                 }
 
-                $('#content_people').fadeOut(function () {
+                $('#content_people').fadeOut('fast', function () {
                     $(this).empty().hide().append(content).fadeIn()
                 });
 
