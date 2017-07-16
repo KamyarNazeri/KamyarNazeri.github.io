@@ -133,6 +133,7 @@
     </None>
     <None Include="cpanel.snk" />
     <None Include="Properties\DataSources\People.datasource" />
+    <None Include="Properties\DataSources\PeoplePublication.datasource" />
     <None Include="Properties\DataSources\Publication.datasource" />
     <None Include="Properties\DataSources\Teaching.datasource" />
     <None Include="Properties\Settings.settings">

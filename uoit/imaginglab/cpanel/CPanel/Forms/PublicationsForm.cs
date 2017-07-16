@@ -15,13 +15,22 @@ namespace ImagingLab.CPanel
     {
         string _pdf;
         public Publication Publication { get; set; }
+        List<PeoplePublication> PeoplePublication;
 
         public PublicationsForm(Publication publication = null)
         {
             Publication = publication ?? new Publication();
+            PeoplePublication = CPanelApp.Current.Data.people.Select(t => new PeoplePublication
+            {
+                id = t.id,
+                name = t.name,
+                selected = publication?.people.Contains(t.id) ?? false
+            }).ToList();
+
             InitializeComponent();
 
             cmb_type.DataSource = CPanelApp.Current.Data.publicationTypes;
+            grd_people.DataSource = PeoplePublication;
 
             AutoValidate = AutoValidate.EnableAllowFocusChange;
             txt_code.Text = publication?.code ?? "";
@@ -33,7 +42,7 @@ namespace ImagingLab.CPanel
             txt_title.Text = publication?.title ?? "";
             chk_visible.Checked = publication?.visible ?? true;
             chk_peopleVisible.Checked = publication?.peoplePageVisible ?? true;
-            txt_bibtex.Text = publication?.bibtex.Replace("\\n", Environment.NewLine).Replace("\n", Environment.NewLine) ?? "";
+            txt_bibtex.Text = publication?.bibtex.Replace("\\n", Environment.NewLine).Replace("<br>", Environment.NewLine).Replace("<br />", Environment.NewLine) ?? "";
             _pdf = publication?.url ?? "";
         }
 
@@ -60,7 +69,8 @@ namespace ImagingLab.CPanel
             Publication.title = txt_title.Text;
             Publication.visible = chk_visible.Checked;
             Publication.peoplePageVisible = chk_peopleVisible.Checked;
-            Publication.bibtex = txt_bibtex.Text.Replace("\n", "\\n");
+            Publication.bibtex = txt_bibtex.Text.Replace(Environment.NewLine, "<br>");
+            Publication.people = new BindingList<int>(PeoplePublication.Where(t => t.selected).Select(t => t.id).ToList());
 
             if (File.Exists(_pdf))
             {

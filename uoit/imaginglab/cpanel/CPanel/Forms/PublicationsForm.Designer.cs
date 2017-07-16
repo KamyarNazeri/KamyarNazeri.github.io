@@ -56,16 +56,24 @@
             this.pic_cancel = new System.Windows.Forms.PictureBox();
             this.pic_upload = new System.Windows.Forms.PictureBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.grd_people = new System.Windows.Forms.DataGridView();
+            this.peoplePublicationBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.label9 = new System.Windows.Forms.Label();
+            this.chekedDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.num_year)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_cancel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_upload)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grd_people)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.peoplePublicationBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // button_save
             // 
             this.button_save.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button_save.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_save.Location = new System.Drawing.Point(530, 440);
+            this.button_save.Location = new System.Drawing.Point(488, 564);
             this.button_save.Name = "button_save";
             this.button_save.Size = new System.Drawing.Size(90, 27);
             this.button_save.TabIndex = 12;
@@ -78,7 +86,7 @@
             this.button_cancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button_cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.button_cancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_cancel.Location = new System.Drawing.Point(434, 440);
+            this.button_cancel.Location = new System.Drawing.Point(392, 564);
             this.button_cancel.Name = "button_cancel";
             this.button_cancel.Size = new System.Drawing.Size(90, 27);
             this.button_cancel.TabIndex = 11;
@@ -187,7 +195,7 @@
             this.txt_title.Name = "txt_title";
             this.txt_title.Required = true;
             this.txt_title.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txt_title.Size = new System.Drawing.Size(463, 63);
+            this.txt_title.Size = new System.Drawing.Size(463, 60);
             this.txt_title.TabIndex = 7;
             // 
             // label7
@@ -202,7 +210,7 @@
             // chk_visible
             // 
             this.chk_visible.AutoSize = true;
-            this.chk_visible.Location = new System.Drawing.Point(107, 383);
+            this.chk_visible.Location = new System.Drawing.Point(107, 517);
             this.chk_visible.Name = "chk_visible";
             this.chk_visible.Size = new System.Drawing.Size(71, 21);
             this.chk_visible.TabIndex = 9;
@@ -212,7 +220,7 @@
             // chk_peopleVisible
             // 
             this.chk_peopleVisible.AutoSize = true;
-            this.chk_peopleVisible.Location = new System.Drawing.Point(107, 410);
+            this.chk_peopleVisible.Location = new System.Drawing.Point(107, 544);
             this.chk_peopleVisible.Name = "chk_peopleVisible";
             this.chk_peopleVisible.Size = new System.Drawing.Size(169, 21);
             this.chk_peopleVisible.TabIndex = 10;
@@ -245,17 +253,17 @@
             // 
             this.txt_bibtex.AcceptsReturn = true;
             this.txt_bibtex.AcceptsTab = true;
-            this.txt_bibtex.Location = new System.Drawing.Point(107, 254);
+            this.txt_bibtex.Location = new System.Drawing.Point(107, 251);
             this.txt_bibtex.Multiline = true;
             this.txt_bibtex.Name = "txt_bibtex";
             this.txt_bibtex.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txt_bibtex.Size = new System.Drawing.Size(463, 123);
+            this.txt_bibtex.Size = new System.Drawing.Size(463, 104);
             this.txt_bibtex.TabIndex = 8;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(12, 257);
+            this.label8.Location = new System.Drawing.Point(12, 254);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(55, 17);
             this.label8.TabIndex = 11;
@@ -294,13 +302,73 @@
             this.toolTip1.SetToolTip(this.pic_upload, "Select a PDF file.");
             this.pic_upload.Click += new System.EventHandler(this.pic_upload_Click);
             // 
+            // grd_people
+            // 
+            this.grd_people.AllowUserToAddRows = false;
+            this.grd_people.AllowUserToDeleteRows = false;
+            this.grd_people.AllowUserToResizeColumns = false;
+            this.grd_people.AllowUserToResizeRows = false;
+            this.grd_people.AutoGenerateColumns = false;
+            this.grd_people.BackgroundColor = System.Drawing.Color.White;
+            this.grd_people.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grd_people.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.chekedDataGridViewCheckBoxColumn,
+            this.idDataGridViewTextBoxColumn,
+            this.nameDataGridViewTextBoxColumn});
+            this.grd_people.DataSource = this.peoplePublicationBindingSource;
+            this.grd_people.Location = new System.Drawing.Point(107, 361);
+            this.grd_people.MultiSelect = false;
+            this.grd_people.Name = "grd_people";
+            this.grd_people.RowHeadersVisible = false;
+            this.grd_people.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.grd_people.RowTemplate.Height = 24;
+            this.grd_people.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.grd_people.Size = new System.Drawing.Size(463, 150);
+            this.grd_people.TabIndex = 14;
+            // 
+            // peoplePublicationBindingSource
+            // 
+            this.peoplePublicationBindingSource.DataSource = typeof(ImagingLab.CPanel.PeoplePublication);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(12, 361);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(56, 17);
+            this.label9.TabIndex = 11;
+            this.label9.Text = "People:";
+            // 
+            // chekedDataGridViewCheckBoxColumn
+            // 
+            this.chekedDataGridViewCheckBoxColumn.DataPropertyName = "selected";
+            this.chekedDataGridViewCheckBoxColumn.HeaderText = "Select";
+            this.chekedDataGridViewCheckBoxColumn.Name = "chekedDataGridViewCheckBoxColumn";
+            this.chekedDataGridViewCheckBoxColumn.Width = 70;
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            this.nameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
             // PublicationsForm
             // 
             this.AcceptButton = this.button_save;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.button_cancel;
-            this.ClientSize = new System.Drawing.Size(632, 479);
+            this.ClientSize = new System.Drawing.Size(590, 603);
+            this.Controls.Add(this.grd_people);
             this.Controls.Add(this.pic_cancel);
             this.Controls.Add(this.pic_upload);
             this.Controls.Add(this.num_year);
@@ -308,6 +376,7 @@
             this.Controls.Add(this.chk_visible);
             this.Controls.Add(this.cmb_type);
             this.Controls.Add(this.label3);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -334,6 +403,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.num_year)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_cancel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_upload)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grd_people)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.peoplePublicationBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -365,5 +436,11 @@
         private System.Windows.Forms.PictureBox pic_cancel;
         private System.Windows.Forms.PictureBox pic_upload;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.DataGridView grd_people;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.BindingSource peoplePublicationBindingSource;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn chekedDataGridViewCheckBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
     }
 }

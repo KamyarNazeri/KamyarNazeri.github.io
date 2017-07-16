@@ -89,7 +89,7 @@ namespace ImagingLab.CPanel
                 {
                     JavaScriptSerializer ser = new JavaScriptSerializer();
                     string json = ser.Serialize(Data);
-                    string unescape = Regex.Unescape(json).Replace("\n", "\\n"); ;
+                    string unescape = Regex.Unescape(json).Replace("\n", "\\n").Replace(Environment.NewLine, "\\n");
                     sw.Write(unescape);
                     return true;
                 }
@@ -133,7 +133,8 @@ namespace ImagingLab.CPanel
         public static string JSONEncode(string val)
         {
             val = val
-                .Replace("\"", "\\\"")
+                .Replace(Environment.NewLine, "")
+                .Replace("\"", "'")
                 .Replace("\n", "")
                 .Replace("\r", "")
                 .Replace("\t", "");

@@ -91,4 +91,12 @@ namespace ImagingLab.CPanel
         [ScriptIgnore]
         internal string PdfPath { get; set; }
     }
+
+    [DebuggerDisplay("{name}")]
+    class PeoplePublication
+    {
+        public int id { get; set; }
+        public string name { get; set; }
+        public bool selected { get; set; }
+    }
 }
