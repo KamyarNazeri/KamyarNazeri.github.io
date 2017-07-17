@@ -26,10 +26,19 @@ namespace ImagingLab.CPanel
         {
             txt_title.Text = CPanelApp.Current.Data.title;
             label_update.Text = CPanelApp.Current.Data.updated;
-            
+
             InitGrid(grd_teaching, CPanelApp.Current.Data.teachings);
             InitGrid(grd_people, CPanelApp.Current.Data.people);
             InitGrid(grd_publications, CPanelApp.Current.Data.publications);
+
+            InitMoveButton(grd_people, button_upPeople, true);
+            InitMoveButton(grd_people, button_downPeople, false);
+
+            InitMoveButton(grd_publications, button_upPublication, true);
+            InitMoveButton(grd_publications, button_downPublication, false);
+
+            InitMoveButton(grd_teaching, button_upTeaching, true);
+            InitMoveButton(grd_teaching, button_downTeaching, false);
 
             grd_teaching.Sort(column_teaching_order, ListSortDirection.Ascending);
             grd_people.Sort(column_people_order, ListSortDirection.Ascending);
@@ -50,7 +59,7 @@ namespace ImagingLab.CPanel
         void InitGrid(DataGridView grid, IEnumerable<DataObject> datasource)
         {
             grid.DataSource = datasource;
-            grid.RowEnter += (s, e) => RenderForm();
+            grid.CellClick += (s, e) => RenderForm();
             grid.UserDeletingRow += (s, e) => e.Cancel = !ConfirmDelete();
             grid.UserDeletedRow += (s, e) => RenderForm();
         }
@@ -59,7 +68,9 @@ namespace ImagingLab.CPanel
         {
             CPanelApp.Current.Data.title = txt_title.Text;
             CPanelApp.Current.Data.updated = DateTime.Now.ToString("MMMM yyyy");
-            return CPanelApp.Current.SaveData();
+            bool res = CPanelApp.Current.SaveData();
+            RenderForm();
+            return res;
         }
 
         bool ConfirmDelete()
@@ -89,6 +100,30 @@ namespace ImagingLab.CPanel
             };
         }
 
+        void InitMoveButton(DataGridView grid, Button btn, bool up)
+        {
+            btn.Click += (sender, e) =>
+            {
+                DataGridViewRow current = grid.SelectedRows.OfType<DataGridViewRow>().FirstOrDefault();
+                if (current == null) return;
+                if ((current.Index == 0 && up) || (current.Index == grid.RowCount - 1 && !up)) return;
+
+                int index = up ? current.Index - 1 : current.Index + 1;
+                DataGridViewRow other = grid.Rows[index];
+
+                DataObject currentItem = (current.DataBoundItem as DataObject);
+                DataObject otherItem = (other.DataBoundItem as DataObject);
+
+                int temp = currentItem.order;
+                currentItem.order = otherItem.order;
+                otherItem.order = temp;
+
+                grid.ClearSelection();
+                grid.Sort(grid.SortedColumn, ListSortDirection.Ascending);
+                grid.Rows[index].Selected = true;
+            };
+        }
+
         #endregion
 
         #region Home
@@ -101,7 +136,7 @@ namespace ImagingLab.CPanel
         void button_publish_Click(object sender, EventArgs e)
         {
             DialogResult res = folderBrowserDialog1.ShowDialog();
-            if(res == DialogResult.OK)
+            if (res == DialogResult.OK)
             {
                 CPanelApp.Current.Publish(folderBrowserDialog1.SelectedPath);
                 MessageBox.Show("Website data is published successfully", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -178,6 +213,9 @@ namespace ImagingLab.CPanel
             bool selected = grd_people.SelectedRows.Count > 0;
             button_editPeople.Enabled = selected;
             button_deletePeople.Enabled = selected;
+            button_upPeople.Enabled = selected;
+            button_downPeople.Enabled = selected;
+            grd_people.Invalidate();
         }
 
         #endregion
@@ -236,6 +274,9 @@ namespace ImagingLab.CPanel
             bool selected = grd_publications.SelectedRows.Count > 0;
             button_editPublication.Enabled = selected;
             button_deletePublication.Enabled = selected;
+            button_upPublication.Enabled = selected;
+            button_downPublication.Enabled = selected;
+            grd_publications.Invalidate();
         }
 
         #endregion
@@ -294,6 +335,9 @@ namespace ImagingLab.CPanel
             bool selected = grd_teaching.SelectedRows.Count > 0;
             button_editTeaching.Enabled = selected;
             button_deleteTeaching.Enabled = selected;
+            button_upTeaching.Enabled = selected;
+            button_downTeaching.Enabled = selected;
+            grd_teaching.Invalidate();
         }
 
         #endregion

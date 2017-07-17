@@ -11,8 +11,8 @@ namespace ImagingLab.CPanel
 {
     interface DataObject
     {
-        int id { get; }
-        int order { get; }
+        int id { get; set;  }
+        int order { get; set; }
     }
 
     [DebuggerDisplay("title = {title}")]
@@ -28,20 +28,41 @@ namespace ImagingLab.CPanel
 
         public void AddTeaching(Teaching obj)
         {
-            obj.id = this.teachings.Max(t => t.id) + 1;
-            this.teachings.Add(obj);
+            AddEntry(this.teachings, obj);
         }
 
         public void AddPeople(People obj)
         {
-            obj.id = this.people.Max(t => t.id) + 1;
-            this.people.Add(obj);
+            AddEntry(this.people, obj);
         }
 
         public void AddPublication(Publication obj)
         {
-            obj.id = this.publications.Max(t => t.id) + 1;
-            this.publications.Add(obj);
+            AddEntry(this.publications, obj);
+        }
+
+        public void ReOrder()
+        {
+            ReOrder(this.teachings);
+            ReOrder(this.people);
+            ReOrder(this.publications);
+        }
+
+        void AddEntry<T>(IList<T> list, T obj) where T : DataObject
+        {
+            obj.id = list.Max(t => t.id) + 1;
+            obj.order = list.Max(t => t.order) + 1;
+            list.Add(obj);
+        }
+
+        void ReOrder<T>(IList<T> list) where T : DataObject
+        {
+            int order = 1;
+            foreach (DataObject obj in list.OrderBy(t => t.order).ToList())
+            {
+                obj.order = order;
+                order++;
+            }
         }
     }
 

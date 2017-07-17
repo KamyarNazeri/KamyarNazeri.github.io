@@ -184,6 +184,8 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="cpanel.ico" />
+    <None Include="Resources\down.png" />
+    <None Include="Resources\up.png" />
     <None Include="Resources\upload.png" />
     <None Include="Resources\cancel.png" />
     <None Include="Resources\noimage.png" />

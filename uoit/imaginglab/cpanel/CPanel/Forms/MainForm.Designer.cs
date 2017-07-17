@@ -36,29 +36,19 @@
             this.label_update = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabPage_people = new System.Windows.Forms.TabPage();
             this.grd_people = new System.Windows.Forms.DataGridView();
             this.column_people_order = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.column_people_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.column_people_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.column_people_email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.column_people_title = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.column_people_position = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.column_people_education = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.column_people_description = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.column_people_start = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.column_people_end = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.column_people_alumnus = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.column_people_visible = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.peopleBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel3 = new System.Windows.Forms.Panel();
             this.button_addPeople = new System.Windows.Forms.Button();
             this.button_editPeople = new System.Windows.Forms.Button();
             this.button_deletePeople = new System.Windows.Forms.Button();
             this.tabPage_publication = new System.Windows.Forms.TabPage();
             this.grd_publications = new System.Windows.Forms.DataGridView();
-            this.publicationBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.column_publication_order = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.column_publication_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel4 = new System.Windows.Forms.Panel();
             this.button_addPublication = new System.Windows.Forms.Button();
             this.button_editPublication = new System.Windows.Forms.Button();
@@ -67,13 +57,7 @@
             this.grd_teaching = new System.Windows.Forms.DataGridView();
             this.column_teaching_order = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.column_teaching_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.column_teaching_semester = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.column_teaching_title = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.column_teaching_description = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.column_teaching_university = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.column_teaching_url = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.column_teaching_visible = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.teachingBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
             this.button_addTeaching = new System.Windows.Forms.Button();
             this.button_editTeaching = new System.Windows.Forms.Button();
@@ -82,8 +66,20 @@
             this.button_save = new System.Windows.Forms.Button();
             this.button_publish = new System.Windows.Forms.Button();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
-            this.column_publication_order = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.column_publication_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.column_people_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.column_people_email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.column_people_position = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.column_people_education = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.column_people_description = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.column_people_start = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.column_people_end = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.column_people_alumnus = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.column_people_visible = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.peopleBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.button_downPeople = new System.Windows.Forms.Button();
+            this.button_upPeople = new System.Windows.Forms.Button();
             this.column_publication_code = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.column_publication_title = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.column_publication_year = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -94,22 +90,33 @@
             this.column_publication_contributors = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.column_publication_visible = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.column_publication_peoplePageVisible = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.publicationBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.column_teaching_semester = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.column_teaching_title = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.column_teaching_description = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.column_teaching_university = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.column_teaching_url = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.teachingBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.button_downPublication = new System.Windows.Forms.Button();
+            this.button_upPublication = new System.Windows.Forms.Button();
+            this.button_downTeaching = new System.Windows.Forms.Button();
+            this.button_upTeaching = new System.Windows.Forms.Button();
             this.tab_cpanel.SuspendLayout();
             this.tabPage_home.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage_people.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grd_people)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.peopleBindingSource)).BeginInit();
             this.panel3.SuspendLayout();
             this.tabPage_publication.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grd_publications)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.publicationBindingSource)).BeginInit();
             this.panel4.SuspendLayout();
             this.tabPage_teaching.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grd_teaching)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.teachingBindingSource)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.peopleBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.publicationBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.teachingBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // tab_cpanel
@@ -177,15 +184,6 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Update Date:";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::ImagingLab.CPanel.Properties.Resources.title;
-            this.pictureBox1.Location = new System.Drawing.Point(30, 30);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(225, 62);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // tabPage_people
             // 
             this.tabPage_people.BackColor = System.Drawing.Color.White;
@@ -236,6 +234,7 @@
             this.column_people_order.HeaderText = "#";
             this.column_people_order.MinimumWidth = 30;
             this.column_people_order.Name = "column_people_order";
+            this.column_people_order.ReadOnly = true;
             this.column_people_order.Width = 30;
             // 
             // column_people_id
@@ -245,24 +244,6 @@
             this.column_people_id.Name = "column_people_id";
             this.column_people_id.Visible = false;
             // 
-            // column_people_name
-            // 
-            this.column_people_name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.column_people_name.DataPropertyName = "name";
-            this.column_people_name.FillWeight = 20F;
-            this.column_people_name.HeaderText = "Name";
-            this.column_people_name.MinimumWidth = 120;
-            this.column_people_name.Name = "column_people_name";
-            // 
-            // column_people_email
-            // 
-            this.column_people_email.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.column_people_email.DataPropertyName = "email";
-            this.column_people_email.FillWeight = 20F;
-            this.column_people_email.HeaderText = "Email";
-            this.column_people_email.MinimumWidth = 120;
-            this.column_people_email.Name = "column_people_email";
-            // 
             // column_people_title
             // 
             this.column_people_title.DataPropertyName = "title";
@@ -271,67 +252,10 @@
             this.column_people_title.Name = "column_people_title";
             this.column_people_title.Width = 120;
             // 
-            // column_people_position
-            // 
-            this.column_people_position.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.column_people_position.DataPropertyName = "position";
-            this.column_people_position.FillWeight = 20F;
-            this.column_people_position.HeaderText = "Position";
-            this.column_people_position.MinimumWidth = 100;
-            this.column_people_position.Name = "column_people_position";
-            // 
-            // column_people_education
-            // 
-            this.column_people_education.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.column_people_education.DataPropertyName = "education";
-            this.column_people_education.FillWeight = 20F;
-            this.column_people_education.HeaderText = "Education";
-            this.column_people_education.MinimumWidth = 50;
-            this.column_people_education.Name = "column_people_education";
-            // 
-            // column_people_description
-            // 
-            this.column_people_description.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.column_people_description.DataPropertyName = "description";
-            this.column_people_description.FillWeight = 20F;
-            this.column_people_description.HeaderText = "Description";
-            this.column_people_description.MinimumWidth = 50;
-            this.column_people_description.Name = "column_people_description";
-            // 
-            // column_people_start
-            // 
-            this.column_people_start.DataPropertyName = "start";
-            this.column_people_start.HeaderText = "Start";
-            this.column_people_start.Name = "column_people_start";
-            this.column_people_start.Width = 120;
-            // 
-            // column_people_end
-            // 
-            this.column_people_end.DataPropertyName = "end";
-            this.column_people_end.HeaderText = "End";
-            this.column_people_end.Name = "column_people_end";
-            this.column_people_end.Width = 120;
-            // 
-            // column_people_alumnus
-            // 
-            this.column_people_alumnus.DataPropertyName = "alumnus";
-            this.column_people_alumnus.HeaderText = "Alumnus";
-            this.column_people_alumnus.Name = "column_people_alumnus";
-            this.column_people_alumnus.Width = 67;
-            // 
-            // column_people_visible
-            // 
-            this.column_people_visible.DataPropertyName = "visible";
-            this.column_people_visible.HeaderText = "Visible";
-            this.column_people_visible.Name = "column_people_visible";
-            this.column_people_visible.Width = 57;
-            // 
-            // peopleBindingSource
-            // 
-            this.peopleBindingSource.DataSource = typeof(ImagingLab.CPanel.People);
-            // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.button_downPeople);
+            this.panel3.Controls.Add(this.button_upPeople);
             this.panel3.Controls.Add(this.button_addPeople);
             this.panel3.Controls.Add(this.button_editPeople);
             this.panel3.Controls.Add(this.button_deletePeople);
@@ -420,12 +344,25 @@
             this.grd_publications.Size = new System.Drawing.Size(1068, 440);
             this.grd_publications.TabIndex = 1;
             // 
-            // publicationBindingSource
+            // column_publication_order
             // 
-            this.publicationBindingSource.DataSource = typeof(ImagingLab.CPanel.Publication);
+            this.column_publication_order.DataPropertyName = "order";
+            this.column_publication_order.HeaderText = "#";
+            this.column_publication_order.MinimumWidth = 30;
+            this.column_publication_order.Name = "column_publication_order";
+            this.column_publication_order.Width = 30;
+            // 
+            // column_publication_id
+            // 
+            this.column_publication_id.DataPropertyName = "id";
+            this.column_publication_id.HeaderText = "ID";
+            this.column_publication_id.Name = "column_publication_id";
+            this.column_publication_id.Visible = false;
             // 
             // panel4
             // 
+            this.panel4.Controls.Add(this.button_downPublication);
+            this.panel4.Controls.Add(this.button_upPublication);
             this.panel4.Controls.Add(this.button_addPublication);
             this.panel4.Controls.Add(this.button_editPublication);
             this.panel4.Controls.Add(this.button_deletePublication);
@@ -525,43 +462,6 @@
             this.column_teaching_id.Name = "column_teaching_id";
             this.column_teaching_id.Visible = false;
             // 
-            // column_teaching_semester
-            // 
-            this.column_teaching_semester.DataPropertyName = "semester";
-            this.column_teaching_semester.HeaderText = "Semester";
-            this.column_teaching_semester.Name = "column_teaching_semester";
-            this.column_teaching_semester.Width = 120;
-            // 
-            // column_teaching_title
-            // 
-            this.column_teaching_title.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.column_teaching_title.DataPropertyName = "title";
-            this.column_teaching_title.FillWeight = 30F;
-            this.column_teaching_title.HeaderText = "Title";
-            this.column_teaching_title.Name = "column_teaching_title";
-            // 
-            // column_teaching_description
-            // 
-            this.column_teaching_description.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.column_teaching_description.DataPropertyName = "description";
-            this.column_teaching_description.FillWeight = 70F;
-            this.column_teaching_description.HeaderText = "Description";
-            this.column_teaching_description.Name = "column_teaching_description";
-            // 
-            // column_teaching_university
-            // 
-            this.column_teaching_university.DataPropertyName = "university";
-            this.column_teaching_university.HeaderText = "University";
-            this.column_teaching_university.Name = "column_teaching_university";
-            this.column_teaching_university.Width = 130;
-            // 
-            // column_teaching_url
-            // 
-            this.column_teaching_url.DataPropertyName = "url";
-            this.column_teaching_url.HeaderText = "Url";
-            this.column_teaching_url.Name = "column_teaching_url";
-            this.column_teaching_url.Width = 160;
-            // 
             // column_teaching_visible
             // 
             this.column_teaching_visible.DataPropertyName = "visible";
@@ -569,12 +469,10 @@
             this.column_teaching_visible.Name = "column_teaching_visible";
             this.column_teaching_visible.Width = 60;
             // 
-            // teachingBindingSource
-            // 
-            this.teachingBindingSource.DataSource = typeof(ImagingLab.CPanel.Teaching);
-            // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.button_downTeaching);
+            this.panel2.Controls.Add(this.button_upTeaching);
             this.panel2.Controls.Add(this.button_addTeaching);
             this.panel2.Controls.Add(this.button_editTeaching);
             this.panel2.Controls.Add(this.button_deleteTeaching);
@@ -655,20 +553,113 @@
             this.button_publish.UseVisualStyleBackColor = true;
             this.button_publish.Click += new System.EventHandler(this.button_publish_Click);
             // 
-            // column_publication_order
+            // pictureBox1
             // 
-            this.column_publication_order.DataPropertyName = "order";
-            this.column_publication_order.HeaderText = "#";
-            this.column_publication_order.MinimumWidth = 30;
-            this.column_publication_order.Name = "column_publication_order";
-            this.column_publication_order.Width = 30;
+            this.pictureBox1.Image = global::ImagingLab.CPanel.Properties.Resources.title;
+            this.pictureBox1.Location = new System.Drawing.Point(30, 30);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(225, 62);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
-            // column_publication_id
+            // column_people_name
             // 
-            this.column_publication_id.DataPropertyName = "id";
-            this.column_publication_id.HeaderText = "ID";
-            this.column_publication_id.Name = "column_publication_id";
-            this.column_publication_id.Visible = false;
+            this.column_people_name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.column_people_name.DataPropertyName = "name";
+            this.column_people_name.FillWeight = 20F;
+            this.column_people_name.HeaderText = "Name";
+            this.column_people_name.MinimumWidth = 120;
+            this.column_people_name.Name = "column_people_name";
+            // 
+            // column_people_email
+            // 
+            this.column_people_email.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.column_people_email.DataPropertyName = "email";
+            this.column_people_email.FillWeight = 20F;
+            this.column_people_email.HeaderText = "Email";
+            this.column_people_email.MinimumWidth = 120;
+            this.column_people_email.Name = "column_people_email";
+            // 
+            // column_people_position
+            // 
+            this.column_people_position.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.column_people_position.DataPropertyName = "position";
+            this.column_people_position.FillWeight = 20F;
+            this.column_people_position.HeaderText = "Position";
+            this.column_people_position.MinimumWidth = 100;
+            this.column_people_position.Name = "column_people_position";
+            // 
+            // column_people_education
+            // 
+            this.column_people_education.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.column_people_education.DataPropertyName = "education";
+            this.column_people_education.FillWeight = 20F;
+            this.column_people_education.HeaderText = "Education";
+            this.column_people_education.MinimumWidth = 50;
+            this.column_people_education.Name = "column_people_education";
+            // 
+            // column_people_description
+            // 
+            this.column_people_description.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.column_people_description.DataPropertyName = "description";
+            this.column_people_description.FillWeight = 20F;
+            this.column_people_description.HeaderText = "Description";
+            this.column_people_description.MinimumWidth = 50;
+            this.column_people_description.Name = "column_people_description";
+            // 
+            // column_people_start
+            // 
+            this.column_people_start.DataPropertyName = "start";
+            this.column_people_start.HeaderText = "Start";
+            this.column_people_start.Name = "column_people_start";
+            this.column_people_start.Width = 120;
+            // 
+            // column_people_end
+            // 
+            this.column_people_end.DataPropertyName = "end";
+            this.column_people_end.HeaderText = "End";
+            this.column_people_end.Name = "column_people_end";
+            this.column_people_end.Width = 120;
+            // 
+            // column_people_alumnus
+            // 
+            this.column_people_alumnus.DataPropertyName = "alumnus";
+            this.column_people_alumnus.HeaderText = "Alumnus";
+            this.column_people_alumnus.Name = "column_people_alumnus";
+            this.column_people_alumnus.Width = 67;
+            // 
+            // column_people_visible
+            // 
+            this.column_people_visible.DataPropertyName = "visible";
+            this.column_people_visible.HeaderText = "Visible";
+            this.column_people_visible.Name = "column_people_visible";
+            this.column_people_visible.Width = 57;
+            // 
+            // peopleBindingSource
+            // 
+            this.peopleBindingSource.DataSource = typeof(ImagingLab.CPanel.People);
+            // 
+            // button_downPeople
+            // 
+            this.button_downPeople.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_downPeople.Image = ((System.Drawing.Image)(resources.GetObject("button_downPeople.Image")));
+            this.button_downPeople.Location = new System.Drawing.Point(977, 6);
+            this.button_downPeople.Name = "button_downPeople";
+            this.button_downPeople.Size = new System.Drawing.Size(40, 25);
+            this.button_downPeople.TabIndex = 2;
+            this.toolTip1.SetToolTip(this.button_downPeople, "Move Down");
+            this.button_downPeople.UseVisualStyleBackColor = true;
+            // 
+            // button_upPeople
+            // 
+            this.button_upPeople.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_upPeople.Image = ((System.Drawing.Image)(resources.GetObject("button_upPeople.Image")));
+            this.button_upPeople.Location = new System.Drawing.Point(1023, 6);
+            this.button_upPeople.Name = "button_upPeople";
+            this.button_upPeople.Size = new System.Drawing.Size(40, 25);
+            this.button_upPeople.TabIndex = 2;
+            this.toolTip1.SetToolTip(this.button_upPeople, "Move Up");
+            this.button_upPeople.UseVisualStyleBackColor = true;
             // 
             // column_publication_code
             // 
@@ -739,6 +730,95 @@
             this.column_publication_peoplePageVisible.Name = "column_publication_peoplePageVisible";
             this.column_publication_peoplePageVisible.Width = 115;
             // 
+            // publicationBindingSource
+            // 
+            this.publicationBindingSource.DataSource = typeof(ImagingLab.CPanel.Publication);
+            // 
+            // column_teaching_semester
+            // 
+            this.column_teaching_semester.DataPropertyName = "semester";
+            this.column_teaching_semester.HeaderText = "Semester";
+            this.column_teaching_semester.Name = "column_teaching_semester";
+            this.column_teaching_semester.Width = 120;
+            // 
+            // column_teaching_title
+            // 
+            this.column_teaching_title.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.column_teaching_title.DataPropertyName = "title";
+            this.column_teaching_title.FillWeight = 30F;
+            this.column_teaching_title.HeaderText = "Title";
+            this.column_teaching_title.Name = "column_teaching_title";
+            // 
+            // column_teaching_description
+            // 
+            this.column_teaching_description.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.column_teaching_description.DataPropertyName = "description";
+            this.column_teaching_description.FillWeight = 70F;
+            this.column_teaching_description.HeaderText = "Description";
+            this.column_teaching_description.Name = "column_teaching_description";
+            // 
+            // column_teaching_university
+            // 
+            this.column_teaching_university.DataPropertyName = "university";
+            this.column_teaching_university.HeaderText = "University";
+            this.column_teaching_university.Name = "column_teaching_university";
+            this.column_teaching_university.Width = 130;
+            // 
+            // column_teaching_url
+            // 
+            this.column_teaching_url.DataPropertyName = "url";
+            this.column_teaching_url.HeaderText = "Url";
+            this.column_teaching_url.Name = "column_teaching_url";
+            this.column_teaching_url.Width = 160;
+            // 
+            // teachingBindingSource
+            // 
+            this.teachingBindingSource.DataSource = typeof(ImagingLab.CPanel.Teaching);
+            // 
+            // button_downPublication
+            // 
+            this.button_downPublication.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_downPublication.Image = ((System.Drawing.Image)(resources.GetObject("button_downPublication.Image")));
+            this.button_downPublication.Location = new System.Drawing.Point(977, 6);
+            this.button_downPublication.Name = "button_downPublication";
+            this.button_downPublication.Size = new System.Drawing.Size(40, 25);
+            this.button_downPublication.TabIndex = 5;
+            this.toolTip1.SetToolTip(this.button_downPublication, "Move Down");
+            this.button_downPublication.UseVisualStyleBackColor = true;
+            // 
+            // button_upPublication
+            // 
+            this.button_upPublication.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_upPublication.Image = ((System.Drawing.Image)(resources.GetObject("button_upPublication.Image")));
+            this.button_upPublication.Location = new System.Drawing.Point(1023, 6);
+            this.button_upPublication.Name = "button_upPublication";
+            this.button_upPublication.Size = new System.Drawing.Size(40, 25);
+            this.button_upPublication.TabIndex = 6;
+            this.toolTip1.SetToolTip(this.button_upPublication, "Move Up");
+            this.button_upPublication.UseVisualStyleBackColor = true;
+            // 
+            // button_downTeaching
+            // 
+            this.button_downTeaching.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_downTeaching.Image = ((System.Drawing.Image)(resources.GetObject("button_downTeaching.Image")));
+            this.button_downTeaching.Location = new System.Drawing.Point(977, 6);
+            this.button_downTeaching.Name = "button_downTeaching";
+            this.button_downTeaching.Size = new System.Drawing.Size(40, 25);
+            this.button_downTeaching.TabIndex = 8;
+            this.toolTip1.SetToolTip(this.button_downTeaching, "Move Down");
+            this.button_downTeaching.UseVisualStyleBackColor = true;
+            // 
+            // button_upTeaching
+            // 
+            this.button_upTeaching.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_upTeaching.Image = ((System.Drawing.Image)(resources.GetObject("button_upTeaching.Image")));
+            this.button_upTeaching.Location = new System.Drawing.Point(1023, 6);
+            this.button_upTeaching.Name = "button_upTeaching";
+            this.button_upTeaching.Size = new System.Drawing.Size(40, 25);
+            this.button_upTeaching.TabIndex = 9;
+            this.toolTip1.SetToolTip(this.button_upTeaching, "Move Up");
+            this.button_upTeaching.UseVisualStyleBackColor = true;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -757,20 +837,20 @@
             this.tab_cpanel.ResumeLayout(false);
             this.tabPage_home.ResumeLayout(false);
             this.tabPage_home.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabPage_people.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.grd_people)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.peopleBindingSource)).EndInit();
             this.panel3.ResumeLayout(false);
             this.tabPage_publication.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.grd_publications)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.publicationBindingSource)).EndInit();
             this.panel4.ResumeLayout(false);
             this.tabPage_teaching.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.grd_teaching)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.teachingBindingSource)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.peopleBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.publicationBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.teachingBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -809,18 +889,6 @@
         private System.Windows.Forms.Button button_editTeaching;
         private System.Windows.Forms.Button button_deleteTeaching;
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn column_people_order;
-        private System.Windows.Forms.DataGridViewTextBoxColumn column_people_id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn column_people_name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn column_people_email;
-        private System.Windows.Forms.DataGridViewTextBoxColumn column_people_title;
-        private System.Windows.Forms.DataGridViewTextBoxColumn column_people_position;
-        private System.Windows.Forms.DataGridViewTextBoxColumn column_people_education;
-        private System.Windows.Forms.DataGridViewTextBoxColumn column_people_description;
-        private System.Windows.Forms.DataGridViewTextBoxColumn column_people_start;
-        private System.Windows.Forms.DataGridViewTextBoxColumn column_people_end;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn column_people_alumnus;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn column_people_visible;
         private System.Windows.Forms.DataGridViewTextBoxColumn column_teaching_order;
         private System.Windows.Forms.DataGridViewTextBoxColumn column_teaching_id;
         private System.Windows.Forms.DataGridViewTextBoxColumn column_teaching_semester;
@@ -841,6 +909,25 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn column_publication_contributors;
         private System.Windows.Forms.DataGridViewCheckBoxColumn column_publication_visible;
         private System.Windows.Forms.DataGridViewCheckBoxColumn column_publication_peoplePageVisible;
+        private System.Windows.Forms.Button button_downPeople;
+        private System.Windows.Forms.Button button_upPeople;
+        private System.Windows.Forms.DataGridViewTextBoxColumn column_people_order;
+        private System.Windows.Forms.DataGridViewTextBoxColumn column_people_id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn column_people_name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn column_people_email;
+        private System.Windows.Forms.DataGridViewTextBoxColumn column_people_title;
+        private System.Windows.Forms.DataGridViewTextBoxColumn column_people_position;
+        private System.Windows.Forms.DataGridViewTextBoxColumn column_people_education;
+        private System.Windows.Forms.DataGridViewTextBoxColumn column_people_description;
+        private System.Windows.Forms.DataGridViewTextBoxColumn column_people_start;
+        private System.Windows.Forms.DataGridViewTextBoxColumn column_people_end;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn column_people_alumnus;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn column_people_visible;
+        private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.Button button_downPublication;
+        private System.Windows.Forms.Button button_upPublication;
+        private System.Windows.Forms.Button button_downTeaching;
+        private System.Windows.Forms.Button button_upTeaching;
     }
 }
 

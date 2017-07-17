@@ -76,6 +76,8 @@ namespace ImagingLab.CPanel
 
             try
             {
+                Data.ReOrder();
+
                 Data.publications.Select(t => t.PdfPath)
                 .Union(Data.people.Select(t => t.PhotoPath))
                 .Where(t => !String.IsNullOrEmpty(t))
