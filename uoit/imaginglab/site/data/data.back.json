@@ -4,60 +4,17 @@
   "teachings": [
     {
       "id": 1,
-      "semester": "Winter 2015",
-      "title": "Mathematics of Medical Imaging",
-      "description": "Graduate course cross-listed with upper year undergraduate program",
-      "university": "UOIT",
-      "url": "http://www.uoit.ca",
+      "order": 1,
+      "semester": "Fall and Winter 2002",
+      "title": "Fundamental Math II",
+      "description": "Applied Calculus - Math 209",
+      "university": "Concordia University",
+      "url": "http://www.concordia.ca",
       "visible": true
     },
     {
       "id": 2,
-      "semester": "Winter 2014",
-      "title": "Computational Science II",
-      "description": "Math 4020U, Formerly known as Numerical Analysis",
-      "university": "UOIT",
-      "url": "http://www.uoit.ca",
-      "visible": true
-    },
-    {
-      "id": 3,
-      "semester": "Winter 2014",
-      "title": "Complex Analysis",
-      "description": "Math 3060U",
-      "university": "UOIT",
-      "url": "http://www.uoit.ca",
-      "visible": true
-    },
-    {
-      "id": 4,
-      "semester": "Fall 2013",
-      "title": "Optimization",
-      "description": "Math 3040U",
-      "university": "UOIT",
-      "url": "http://www.uoit.ca",
-      "visible": true
-    },
-    {
-      "id": 5,
-      "semester": "Fall 2011",
-      "title": "Mathematical Modelling",
-      "description": "Math 3050U",
-      "university": "UOIT",
-      "url": "http://www.uoit.ca",
-      "visible": true
-    },
-    {
-      "id": 6,
-      "semester": "Fall 2007",
-      "title": "Introduction to Differential Equations",
-      "description": "Math 218/SYDE 211",
-      "university": "University of Waterloo",
-      "url": "http://www.uwaterloo.ca",
-      "visible": true
-    },
-    {
-      "id": 7,
+      "order": 2,
       "semester": "Fall 2006",
       "title": "Introduction to Differential Equations",
       "description": "Math 218/SYDE 211",
@@ -66,18 +23,70 @@
       "visible": true
     },
     {
+      "id": 3,
+      "order": 3,
+      "semester": "Fall 2007",
+      "title": "Introduction to Differential Equations",
+      "description": "Math 218/SYDE 211",
+      "university": "University of Waterloo",
+      "url": "http://www.uwaterloo.ca",
+      "visible": true
+    },
+    {
+      "id": 4,
+      "order": 4,
+      "semester": "Fall 2011",
+      "title": "Mathematical Modelling",
+      "description": "Math 3050U",
+      "university": "UOIT",
+      "url": "http://www.uoit.ca",
+      "visible": true
+    },
+    {
+      "id": 5,
+      "order": 5,
+      "semester": "Fall 2013",
+      "title": "Optimization",
+      "description": "Math 3040U",
+      "university": "UOIT",
+      "url": "http://www.uoit.ca",
+      "visible": true
+    },
+    {
+      "id": 6,
+      "order": 6,
+      "semester": "Winter 2014",
+      "title": "Complex Analysis",
+      "description": "Math 3060U",
+      "university": "UOIT",
+      "url": "http://www.uoit.ca",
+      "visible": true
+    },
+    {
+      "id": 7,
+      "order": 7,
+      "semester": "Winter 2014",
+      "title": "Computational Science II",
+      "description": "Math 4020U, Formerly known as Numerical Analysis",
+      "university": "UOIT",
+      "url": "http://www.uoit.ca",
+      "visible": true
+    },
+    {
       "id": 8,
-      "semester": "Fall and Winter 2002",
-      "title": "Fundamental Math II",
-      "description": "Applied Calculus - Math 209",
-      "university": "Concordia University",
-      "url": "http://www.concordia.ca",
+      "order": 8,
+      "semester": "Winter 2015",
+      "title": "Mathematics of Medical Imaging",
+      "description": "Graduate course cross-listed with upper year undergraduate program",
+      "university": "UOIT",
+      "url": "http://www.uoit.ca",
       "visible": true
     }
   ],
   "people": [
     {
       "id": 1,
+      "order": 1,
       "name": "Mehran Ebrahimi",
       "email": "mehran.ebrahimi@uoit.ca",
       "title": "Assistant Professor, Faculty of Science, UOIT",
@@ -93,6 +102,7 @@
     },
     {
       "id": 2,
+      "order": 2,
       "name": "Mia Carmela Mojica",
       "email": "mia.mojica@uoit.net",
       "title": "Graduate Student - PhD.",
@@ -108,6 +118,7 @@
     },
     {
       "id": 3,
+      "order": 3,
       "name": "Sancgeetha Kulaseharan",
       "email": "sancgeetha.kulaseharan@uoit.net",
       "title": "Graduate Student - MSC.",
@@ -123,6 +134,7 @@
     },
     {
       "id": 4,
+      "order": 4,
       "name": "Cory Falconer",
       "email": "cory.falconer@uoit.net",
       "title": "Graduate Student - MSC.",
@@ -138,6 +150,7 @@
     },
     {
       "id": 5,
+      "order": 5,
       "name": "Kamyar Nazeri",
       "email": "kamyar.nazerinaeini@uoit.net",
       "title": "Graduate Student - MSC.",
@@ -153,6 +166,7 @@
     },
     {
       "id": 6,
+      "order": 6,
       "name": "Lorraine Ma",
       "email": "lorraine.ma@uoit.net",
       "title": "Graduate Student - MSC.",
@@ -168,6 +182,7 @@
     },
     {
       "id": 7,
+      "order": 7,
       "name": "Ghazaleh Ahmadian",
       "email": "ghazaleh.ahmadian@uoit.net",
       "title": "Graduate Student - MSC.",
@@ -183,6 +198,7 @@
     },
     {
       "id": 8,
+      "order": 8,
       "name": "Eric NG",
       "email": "eric.ng@uoit.net",
       "title": "Graduate Student - MSC.",
@@ -198,6 +214,7 @@
     },
     {
       "id": 9,
+      "order": 9,
       "name": "Azad Aminpour",
       "email": "azad.aminpour@uoit.net",
       "title": "Graduate Student - PhD.",
@@ -213,6 +230,7 @@
     },
     {
       "id": 10,
+      "order": 10,
       "name": "Queenie Leung",
       "email": "queenie.leung@uoit.net",
       "title": "Undergraduate Thesis Student",
@@ -228,6 +246,7 @@
     },
     {
       "id": 11,
+      "order": 11,
       "name": "Xu Han",
       "email": "xu.han@uoit.net",
       "title": "MITACS Globalink Research Intern",
@@ -243,6 +262,7 @@
     },
     {
       "id": 12,
+      "order": 12,
       "name": "Saurabh Agarwal",
       "email": "saurabh.agarwal@uoit.net",
       "title": "MITACS Globalink Research Intern",
@@ -260,6 +280,7 @@
   "publications": [
     {
       "id": 1,
+      "order": 1,
       "code": "J1",
       "title": "A Gauss-Newton Approach to Joint Image Registration and Intensity Correction. Computer Methods and Programs in Biomedicine. Vol.112(3) pp. 398-406.",
       "year": 2013,
@@ -276,6 +297,7 @@
     },
     {
       "id": 2,
+      "order": 2,
       "code": "J2",
       "title": "Using Surface Markers for MRI Guided Breast Conserving Surgery; a Feasibility Survey. Submitted to Physics in Medicine and Biology, Under secondary revisions.",
       "year": 2013,
@@ -292,6 +314,7 @@
     },
     {
       "id": 3,
+      "order": 3,
       "code": "J3",
       "title": "Anatomical Noise in Contrast-Enhanced Digital Mammography. Part I. Single-Energy Imaging. Medical Physics, 40:051910.",
       "year": 2013,
@@ -308,6 +331,7 @@
     },
     {
       "id": 4,
+      "order": 4,
       "code": "J4",
       "title": "Supine Breast MRI and Assessment of Future Clinical Applications. European Journal of Radiology, 81(S1).",
       "year": 2012,
@@ -324,6 +348,7 @@
     },
     {
       "id": 5,
+      "order": 5,
       "code": "J5",
       "title": "Evaluating Thin Plate Spline Registration of the Breast in Two Supine Positions. Journal of Computer Assisted Radiology and Surgery, 7(S1).",
       "year": 2012,
@@ -340,6 +365,7 @@
     },
     {
       "id": 6,
+      "order": 6,
       "code": "J6",
       "title": "A Necessary and Sufficient Contractivity Condition for the Fractal Transform Operator. Journal of Mathematical Imaging and Vision, Vol.35 (3), pp. 186–192.",
       "year": 2009,
@@ -356,6 +382,7 @@
     },
     {
       "id": 7,
+      "order": 7,
       "code": "J7",
       "title": "Measure-Valued Images, Associated Fractal Transforms, and the Affine Self-Similarity of Images. SIAM Journal on Imaging Sciences, Vol.2 (2), pp. 470–507.",
       "year": 2009,
@@ -372,6 +399,7 @@
     },
     {
       "id": 8,
+      "order": 8,
       "code": "J8",
       "title": "Filtering Entropy , Physica D: Nonlinear Phenomena, Vol. 183(3-4), pp. 260–272.",
       "year": 2003,
@@ -388,6 +416,7 @@
     },
     {
       "id": 9,
+      "order": 9,
       "code": "C1",
       "title": "Image Registration for Abdominal Dynamic Contrast Enhanced Magnetic Resonance Images. In Proceedings of 8th IEEE International Symposium on Biomedical Imaging (ISBI), Chicago, Illinois, USA, pp. 561–565.",
       "year": 2011,
@@ -404,6 +433,7 @@
     },
     {
       "id": 10,
+      "order": 10,
       "code": "C2",
       "title": "A PDE Approach to Coupled Super-Resolution with Non-Parametric Motion. In: SIAM International Conference on Imaging Science, [Invited Speaker to the Mini-Symposium on Variational Approaches and PDE’s for Imaging Tasks]. Chicago, Illinois, USA.",
       "year": 2010,
@@ -420,6 +450,7 @@
     },
     {
       "id": 11,
+      "order": 11,
       "code": "C3",
       "title": "Inverse Problems and Self-Similarity in Imaging. In: Interdisciplinary Workshop on Fixed-Point Algorithms for Inverse Problems in Science and Engineering, Banff International Research Center, Banff, Alberta, Canada.",
       "year": 2009,
@@ -436,6 +467,7 @@
     },
     {
       "id": 12,
+      "order": 12,
       "code": "C4",
       "title": "A General PDE Framework for Registration of Contrast Enhanced Images. In: Lecture Notes in Computer Science, Proceedings of Medical Image Computing and Computer Assisted Intervention (MICCAI). Ed. by D. Hawkes, D. Rueckert, and G. Z. Yang. Vol.5761. London, UK: Springer-Verlag, pp. 811–819.",
       "year": 2009,
@@ -452,6 +484,7 @@
     },
     {
       "id": 13,
+      "order": 13,
       "code": "C5",
       "title": "Image Registration under Varying Illumination: Hyper-Demons Algorithm. In: Lecture Notes in Computer Science, Proceedings of Energy Minimization Methods in Computer Vision and Pattern Recognition (EMMCVPR). Ed. by D. Cremers, Y. Boykov, A. Blake, and F. R. Schmidt. Vol. 5681. Bonn, Germany: Springer-Verlag, pp. 303–316.",
       "year": 2009,
@@ -468,6 +501,7 @@
     },
     {
       "id": 14,
+      "order": 14,
       "code": "C6",
       "title": "Coupled Multi-Frame Super-Resolution with Diffusive Motion Model and Total Variation Regularization. In: Proceedings of the International Work-shop on Local and Non-Local Approximation in Image Processing (LNLA). Ed. by J. Astola, K. Egiazarian, and V. Katkovnik. Tampere International Center for Signal Processing. Tuusula, Finland, pp. 62–69.",
       "year": 2009,
@@ -484,6 +518,7 @@
     },
     {
       "id": 15,
+      "order": 15,
       "code": "C7",
       "title": "A PDE Approach to Coupled Super-Resolution with Non-Parametric Motion. In: Lecture Notes in Computer Science, Proceedings of Energy Minimization Methods in Computer Vision and Pattern Recognition (EMMCVPR). Ed. by D. Cremers, Y. Boykov, A. Blake, and F. R. Schmidt. Vol.5681. Bonn, Germany: Springer-Verlag, pp. 112–125.",
       "year": 2009,
@@ -500,6 +535,7 @@
     },
     {
       "id": 16,
+      "order": 16,
       "code": "C8",
       "title": "Self-Similarity in Imaging, 20 Years after “Fractals Everywhere”. In: Proceedings of The International Workshop on Local and Non-Local Approximation in Image Processing, LNLA. Lausanne, Switzerland, pp. 165–172.",
       "year": 2008,
@@ -516,6 +552,7 @@
     },
     {
       "id": 17,
+      "order": 17,
       "code": "C9",
       "title": "Multi-Frame Super-Resolution with no Explicit Motion Estimation. In: Proceedings of the International Conference on Image Processing, Computer Vision, and Pattern Recognition, IPCV. Las Vegas, Nevada, USA, pp. 455–459.",
       "year": 2008,
@@ -532,6 +569,7 @@
     },
     {
       "id": 18,
+      "order": 18,
       "code": "C10",
       "title": "Non-Local Approaches to Image and Video Resolution Enhancement. In: SIAM International Conference on Imaging Science. San Diego, California, USA.",
       "year": 2008,
@@ -548,6 +586,7 @@
     },
     {
       "id": 19,
+      "order": 19,
       "code": "C11",
       "title": "Examining the Role of Scale in the Context of the Non-Local-Means Filter. In: Lecture Notes in Computer Science, Proceedings of the International Conference on Image Analysis and Recognition ICIAR, Povoa de Varzim, Portugal, pp. 170–181.",
       "year": 2008,
@@ -564,6 +603,7 @@
     },
     {
       "id": 20,
+      "order": 20,
       "code": "C12",
       "title": "Regularization Schemes involving Self-similarity in Imaging Inverse Problems. In: Proceedings of Applied Inverse Problems (AIP), DOI:10.1088/1742-6596/124/1/012021, 12 pages.",
       "year": 2007,
@@ -580,6 +620,7 @@
     },
     {
       "id": 21,
+      "order": 21,
       "code": "C13",
       "title": "Solving the Inverse Problem of Image Zooming using “Self-Examples”. In: Lecture Notes in Computer Science, Proceedings of the International Conference on Image Analysis and Recognition ICIAR. Vol. 4633, pp. 117–130.",
       "year": 2007,
@@ -596,6 +637,7 @@
     },
     {
       "id": 22,
+      "order": 22,
       "code": "C14",
       "title": "Fractal Image Coding as Projections onto Convex Sets, In: Lecture Notes in Computer Science, Proceedings of the International Conference on Image Analysis and Recognition ICIAR. Berlin, Heidelberg, pp. 493–506.",
       "year": 2006,
