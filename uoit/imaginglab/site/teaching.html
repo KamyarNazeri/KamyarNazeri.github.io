@@ -42,7 +42,7 @@
         </div>
 
         <div id="content" class="clearfix shadow">
-            <h2>Teaching </h2>
+            <h1>Teaching </h1>
             <div id="content_updated"></div>
             <div style="font-weight: bold;">
                 Students: Teaching content is available on <a href="https://uoit.blackboard.com/">Blackboard</a>.<br>
@@ -67,10 +67,16 @@
         page.ready(function (data) {
 
             var content = '';
+            var teachings = page.data.teachings;
 
-            for (var i = 0; i < page.data.teachings.length; i++) {
-                var item = page.data.teachings[i];
+            teachings.sort(function (a, b) {
+                return b.order - a.order;
+            });
+
+            for (var i = 0; i < teachings.length; i++) {
+                var item = teachings[i];
                 if (!item.visible) continue;
+
                 content += '<li>';
                 content += item.semester;
                 content += ', <span style="font- weight: bold;">';

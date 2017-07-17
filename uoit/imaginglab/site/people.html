@@ -130,6 +130,10 @@
                     return (name || '').replace(/ /ig, '_').toLowerCase();
                 };
 
+                people.sort(function (a, b) {
+                    return a.order - b.order;
+                });
+
 
                 for (var i = 0; i < people.length; i++) {
                     var person = people[i];
