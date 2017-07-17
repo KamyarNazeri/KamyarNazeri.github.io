@@ -42,11 +42,9 @@
         </div>
 
         <div id="content" class="clearfix shadow">
-            <h2>Research Areas</h2>
-            <h4>[Updated Sept. 2013]</h4>
-            <h2>
-                <br>
-            </h2>
+            <h1>Research Areas</h1>
+            <h4 id="content_updated">[Updated]</h4>
+            <br>
             <span style="font-weight: bold;"></span>
             <font size="2">
                 Broadly speaking, our research interests lie in the diverse area of <span style="font-weight: bold;">
@@ -135,6 +133,13 @@
             </p>
         </div>
     </div>
+
+    <script type="text/javascript">
+        page.ready(function (data) {
+            $("#content_updated").html("[Updated " + data.updated + "]");
+        });
+    </script>
+
 </body>
 
 </html>
