@@ -641,6 +641,7 @@
             // 
             // button_downPeople
             // 
+            this.button_downPeople.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button_downPeople.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_downPeople.Image = ((System.Drawing.Image)(resources.GetObject("button_downPeople.Image")));
             this.button_downPeople.Location = new System.Drawing.Point(977, 6);
@@ -652,6 +653,7 @@
             // 
             // button_upPeople
             // 
+            this.button_upPeople.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button_upPeople.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_upPeople.Image = ((System.Drawing.Image)(resources.GetObject("button_upPeople.Image")));
             this.button_upPeople.Location = new System.Drawing.Point(1023, 6);
@@ -777,6 +779,7 @@
             // 
             // button_downPublication
             // 
+            this.button_downPublication.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button_downPublication.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_downPublication.Image = ((System.Drawing.Image)(resources.GetObject("button_downPublication.Image")));
             this.button_downPublication.Location = new System.Drawing.Point(977, 6);
@@ -788,6 +791,7 @@
             // 
             // button_upPublication
             // 
+            this.button_upPublication.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button_upPublication.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_upPublication.Image = ((System.Drawing.Image)(resources.GetObject("button_upPublication.Image")));
             this.button_upPublication.Location = new System.Drawing.Point(1023, 6);
@@ -799,6 +803,7 @@
             // 
             // button_downTeaching
             // 
+            this.button_downTeaching.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button_downTeaching.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_downTeaching.Image = ((System.Drawing.Image)(resources.GetObject("button_downTeaching.Image")));
             this.button_downTeaching.Location = new System.Drawing.Point(977, 6);
@@ -810,6 +815,7 @@
             // 
             // button_upTeaching
             // 
+            this.button_upTeaching.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button_upTeaching.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_upTeaching.Image = ((System.Drawing.Image)(resources.GetObject("button_upTeaching.Image")));
             this.button_upTeaching.Location = new System.Drawing.Point(1023, 6);
