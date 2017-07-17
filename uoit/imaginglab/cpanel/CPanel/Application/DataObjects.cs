@@ -9,6 +9,12 @@ using System.Web.Script.Serialization;
 
 namespace ImagingLab.CPanel
 {
+    interface DataObject
+    {
+        int id { get; }
+        int order { get; }
+    }
+
     [DebuggerDisplay("title = {title}")]
     class ImagingLabData
     {
@@ -40,9 +46,10 @@ namespace ImagingLab.CPanel
     }
 
     [DebuggerDisplay("{university} - {semester} - {title}")]
-    class Teaching
+    class Teaching : DataObject
     {
         public int id { get; set; }
+        public int order { get; set; }
         public string semester { get; set; }
         public string title { get; set; }
         public string description { get; set; }
@@ -52,9 +59,10 @@ namespace ImagingLab.CPanel
     }
 
     [DebuggerDisplay("{id} - {name} - {position}")]
-    class People
+    class People : DataObject
     {
         public int id { get; set; }
+        public int order { get; set; }
         public string name { get; set; }
         public string email { get; set; }
         public string title { get; set; }
@@ -73,9 +81,10 @@ namespace ImagingLab.CPanel
     }
 
     [DebuggerDisplay("{code} - {year} - {title}")]
-    class Publication
+    class Publication : DataObject
     {
         public int id { get; set; }
+        public int order { get; set; }
         public string code { get; set; }
         public string title { get; set; }
         public int year { get; set; } = 2017;
@@ -93,9 +102,10 @@ namespace ImagingLab.CPanel
     }
 
     [DebuggerDisplay("{name}")]
-    class PeoplePublication
+    class PeoplePublication : DataObject
     {
         public int id { get; set; }
+        public int order { get; set; }
         public string name { get; set; }
         public bool selected { get; set; }
     }

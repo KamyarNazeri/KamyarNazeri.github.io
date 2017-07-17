@@ -91,7 +91,6 @@ namespace ImagingLab.CPanel
             OnListChanged(new ListChangedEventArgs(ListChangedType.Reset, -1));
         }
 
-
         private int Compare(T lhs, T rhs)
         {
             var result = OnComparison(lhs, rhs);

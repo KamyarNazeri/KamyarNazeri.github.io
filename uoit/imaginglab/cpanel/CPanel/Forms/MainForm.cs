@@ -26,10 +26,14 @@ namespace ImagingLab.CPanel
         {
             txt_title.Text = CPanelApp.Current.Data.title;
             label_update.Text = CPanelApp.Current.Data.updated;
-
+            
             InitGrid(grd_teaching, CPanelApp.Current.Data.teachings);
             InitGrid(grd_people, CPanelApp.Current.Data.people);
             InitGrid(grd_publications, CPanelApp.Current.Data.publications);
+
+            grd_teaching.Sort(column_teaching_order, ListSortDirection.Ascending);
+            grd_people.Sort(column_people_order, ListSortDirection.Ascending);
+            grd_publications.Sort(column_publication_order, ListSortDirection.Ascending);
 
             grd_teaching.CellDoubleClick += (s, a) => EditTeaching();
             grd_publications.CellDoubleClick += (s, a) => EditPublication();
@@ -43,7 +47,7 @@ namespace ImagingLab.CPanel
             RenderTeching();
         }
 
-        void InitGrid(DataGridView grid, object datasource)
+        void InitGrid(DataGridView grid, IEnumerable<DataObject> datasource)
         {
             grid.DataSource = datasource;
             grid.RowEnter += (s, e) => RenderForm();
