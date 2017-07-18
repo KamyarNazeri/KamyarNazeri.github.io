@@ -206,7 +206,7 @@
                     if (p.code) li.append('[' + p.code + '] ');
                     if (p.authors) li.append(p.authors);
                     if (p.year) li.append(' (' + p.year + '). ');
-                    li.append('<span style="font-style:italic">' + p.title + '</span>');
+                    li.append(p.title);
                     li.append('<br />');
 
                     var links = $('<div>').appendTo(li);
