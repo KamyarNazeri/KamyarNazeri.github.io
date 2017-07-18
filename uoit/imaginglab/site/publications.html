@@ -162,7 +162,9 @@
                 (by_year ? $('#a_year') : $('#a_type')).addClass('selected');
 
                 pubs.sort(function (a, b) {
-                    return by_year ? (b.year - a.year) : (types.indexOf(a.type) - types.indexOf(b.type));
+                    var res = by_year ? (b.year - a.year) : (types.indexOf(a.type) - types.indexOf(b.type));
+                    if (res == 0) res = a.order - b.order;
+                    return res;
                 });
 
                 var keys = {};
@@ -204,7 +206,7 @@
                     if (p.code) li.append('[' + p.code + '] ');
                     if (p.authors) li.append(p.authors);
                     if (p.year) li.append(' (' + p.year + '). ');
-                    li.append(p.title);
+                    li.append('<span style="font-style:italic">' + p.title + '</span>');
                     li.append('<br />');
 
                     var links = $('<div>').appendTo(li);
@@ -218,14 +220,16 @@
                     }
 
                     if (p.bibtex) {
-                        var bibtex = p.bibtex.replace(/\n/ig, "<br/>");
-                        var bibtexLink = $('<a href="javascript:void(0)" title="Bibtex"> [Bibtex] </a>').appendTo(links);
-                        var bintexContent = $('<div>').addClass('bibtex').appendTo(links);
+                        (function () {
+                            var bibtex = p.bibtex.replace(/\n/ig, "<br/>");
+                            var bibtexLink = $('<a href="javascript:void(0)" title="Bibtex"> [Bibtex] </a>').appendTo(links);
+                            var bintexContent = $('<div>').addClass('bibtex').appendTo(links);
 
-                        bibtexLink.click(function () {
-                            bintexContent.html(bibtex);
-                            bintexContent.slideToggle();
-                        });
+                            bibtexLink.click(function () {
+                                bintexContent.html(bibtex);
+                                bintexContent.slideToggle();
+                            });
+                        })();
                     }
 
                     li.append('<br />');

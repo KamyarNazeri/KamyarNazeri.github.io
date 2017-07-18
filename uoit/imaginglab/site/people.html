@@ -238,6 +238,12 @@
 
                 if (items.length == 0) return;
 
+                items.sort(function (a, b) {
+                    var res = b.year - a.year;
+                    if (res == 0) res = a.order - b.order;
+                    return res;
+                });
+
                 var item = $('<div><h3>' + title + '</h3></div>');
                 var ul = $("<ul>").css({ 'list-style': 'none' }).appendTo(item);
 
@@ -247,7 +253,7 @@
                     if (p.code) li.append('[' + p.code + '] ');
                     if (p.authors) li.append(p.authors);
                     if (p.year) li.append(' (' + p.year + '). ');
-                    li.append(p.title);
+                    li.append('<span style="font-style:italic">' + p.title + '</span>');
                     li.append('<br>');
 
                     var links = $('<div>').appendTo(li);
@@ -261,14 +267,16 @@
                     }
 
                     if (p.bibtex) {
-                        var bibtex = p.bibtex.replace(/\n/ig, "<br>");
-                        var bibtexLink = $('<a href="javascript:void(0)" title="Bibtex"> [Bibtex] </a>').appendTo(links);
-                        var bintexContent = $('<div>').addClass('bibtex').appendTo(links);
+                        (function () {
+                            var bibtex = p.bibtex.replace(/\n/ig, "<br>");
+                            var bibtexLink = $('<a href="javascript:void(0)" title="Bibtex"> [Bibtex] </a>').appendTo(links);
+                            var bintexContent = $('<div>').addClass('bibtex').appendTo(links);
 
-                        bibtexLink.click(function () {
-                            bintexContent.html(bibtex);
-                            bintexContent.slideToggle();
-                        });
+                            bibtexLink.click(function () {
+                                bintexContent.html(bibtex);
+                                bintexContent.slideToggle();
+                            });
+                        })();
                     }
 
                     li.append('<br>');
