@@ -201,24 +201,8 @@
             "visible": true
         },
         {
-            "id": 2,
-            "order": 2,
-            "name": "Mia Carmela Mojica",
-            "email": "mia.mojica@uoit.net",
-            "title": "Graduate Student - PhD.",
-            "position": "Graduate Student - PhD.",
-            "education": "MSc graduate in Applied Mathematics from the Philippines",
-            "photo": "data/mia.jpg",
-            "start": "September 2016",
-            "end": "",
-            "research": "Cardiac diffusion imaging, cardiac atlas construction, image deblurring, and denoising.",
-            "description": "",
-            "alumnus": false,
-            "visible": true
-        },
-        {
             "id": 3,
-            "order": 3,
+            "order": 2,
             "name": "Sancgeetha Kulaseharan",
             "email": "sancgeetha.kulaseharan@uoit.net",
             "title": "Graduate Student - MSC.",
@@ -228,13 +212,13 @@
             "start": "September 2015",
             "end": "",
             "research": "Working on combined texture and morphometric analyses of MR imaging to identify focal cortical dysplasia in children with focal epilepsy.",
-            "description": "Co-supervised with Dr. Elysa Widjaja (Hospital for Sick Children, Toronto), Working on combined texture and morphometric analyses of MR imaging to identify focal cortical dysplasia in children with focal epilepsy.",
+            "description": "Co-supervised with Dr. Elysa Widjaja, Hospital for Sick Children, Toronto. She is working on combined texture and morphometric analyses of MR imaging to identify focal cortical dysplasia in children with focal epilepsy. Sancgeetha is the runner-up of the 2017 Three Minute Thesis (3MT) competition at UOIT.",
             "alumnus": false,
             "visible": true
         },
         {
             "id": 4,
-            "order": 4,
+            "order": 3,
             "name": "Cory Falconer",
             "email": "cory.falconer@uoit.net",
             "title": "Graduate Student - MSC.",
@@ -244,7 +228,23 @@
             "start": "September 2015",
             "end": "",
             "research": "Resolution enhancement and denoising techniques for medical imaging applications.",
-            "description": "Co-supervised with Dr. Sean Bohn, Cory is investigating resolution enhancement and denoising techniques for medical imaging applications.",
+            "description": "Co-supervised with Dr. Sean Bohn, Cory is investigating resolution enhancement and denoising techniques for medical imaging applications. He will start his internship at the Communications Security Establishment (CSE) Canada in Ottawa as of May 1t 2017 for 4 to 8 months.",
+            "alumnus": false,
+            "visible": true
+        },
+        {
+            "id": 2,
+            "order": 4,
+            "name": "Mia Carmela Mojica",
+            "email": "mia.mojica@uoit.net",
+            "title": "Graduate Student - PhD.",
+            "position": "Graduate Student - PhD.",
+            "education": "MSc graduate in Applied Mathematics from the Philippines",
+            "photo": "data/mia.jpg",
+            "start": "September 2016",
+            "end": "",
+            "research": "Cardiac diffusion imaging, cardiac atlas construction, image deblurring, and denoising.",
+            "description": "Mia has won the prestigious Ontario Trillium Scholarship after ﬁnishing her MSc in Applied Math in Philippines. She is working on a number of inverse problems for medical imaging applications. She has recently started collaborating with Dr. Mihaela Pop (Sunnybrook research institute) to create a pig cardiac atlas.",
             "alumnus": false,
             "visible": true
         },
@@ -260,7 +260,7 @@
             "start": "January 2017",
             "end": "",
             "research": "Deep learning algorithms, in particular: convolutional neural networks (CNNs), in medical image analysis and processing.",
-            "description": "",
+            "description": "BSc graduate in Electrical Engineering from Isfahan U. of Tech., Iran. He is currently working on machine learning algorithms for medical imaging applications.",
             "alumnus": false,
             "visible": true
         },
@@ -276,7 +276,7 @@
             "start": "September 2014",
             "end": "December 2016",
             "research": "Medical image registration schemes for Cardiac MRI. ",
-            "description": "Lorraine is investigating image registration schemes for Cardiac MRI for which the data is provided by Prof. Graham Wright (Sunnybrook Research Institute). Lorraine won the people’s choice award at the 2016 Three Minute Thesis (3MT®). She is aiming to defend her thesis in August 2015 and join the University of Auckland, New Zealand, as an exchange student in Fall 2016 on a Queen Elizabeth II Diamond Jubilee Scholarship.",
+            "description": "Lorraine is investigating image registration schemes for Cardiac MRI for which the data is provided by Prof. Graham Wright (Sunnybrook Research Institute). Lorraine won the people’s choice award at the 2016 Three Minute Thesis (3MT®). <br>She defended her thesis in August 2015 and joined the University of Auckland, New Zealand, as an exchange student in Fall 2016 on a Queen Elizabeth II Diamond Jubilee Scholarship.",
             "alumnus": true,
             "visible": true
         },
@@ -308,7 +308,7 @@
             "start": "September 2017",
             "end": "",
             "research": "",
-            "description": "",
+            "description": "Former NSERC USRA and thesis student, he has won Dean’s and entrance scholarships and has the highest GPA among all of my students.",
             "alumnus": false,
             "visible": true
         },
@@ -324,7 +324,7 @@
             "start": "September 2017",
             "end": "",
             "research": "Computer Vision, Machine/Robotic Vision and, Medical Imaging.",
-            "description": "",
+            "description": " Azad has expertise in the area of MachineLearning and Artiﬁcial Intelligent. He has won the Graduate International Tuition Scholar-ship (GITS) oﬀered to at most one candidate per Faculty.",
             "alumnus": false,
             "visible": true
         },
@@ -388,7 +388,7 @@
             "url": "http://dl.acm.org/citation.cfm?id=2538409",
             "pdf": "",
             "bibtex": "@article{Ebrahimi:2013:GAJ:2538050.2538409, <br> author = {Ebrahimi, Mehran and Lausch, Anthony and Martel, Anne L.},<br> title = {A Gauss-Newton Approach to Joint Image Registration and Intensity Correction},<br> journal = {Comput. Methods Prog. Biomed.},<br> issue_date = {December, 2013},<br> volume = {112},<br> number = {3},<br> month = dec,<br> year = {2013},<br> issn = {0169-2607},<br> pages = {398--406},<br> numpages = {9},<br> url = {http://dx.doi.org/10.1016/j.cmpb.2013.07.026},<br> doi = {10.1016/j.cmpb.2013.07.026},<br> acmid = {2538409},<br> publisher = {Elsevier North-Holland, Inc.},<br> address = {New York, NY, USA},<br> keywords = {Image registration, Intensity correction, Inverse problems, Multi-level, Optimization},<br>}",
-            "contributors": "M. Ebrahimi, A. Lausch, and A. L. Martel",
+            "authors": "M. Ebrahimi, A. Lausch, and A. L. Martel",
             "visible": true,
             "peoplePageVisible": true,
             "people": [
@@ -405,7 +405,7 @@
             "url": "",
             "pdf": "",
             "bibtex": "",
-            "contributors": "M. Ebrahimi, P. Siegler, A. Modhafar, C. Holloway, D. Plewes, and A. Martel",
+            "authors": "M. Ebrahimi, P. Siegler, A. Modhafar, C. Holloway, D. Plewes, and A. Martel",
             "visible": true,
             "peoplePageVisible": true,
             "people": [
@@ -422,7 +422,7 @@
             "url": "",
             "pdf": "",
             "bibtex": "",
-            "contributors": "M. L. Hill, J. G. Mainprize, A.-K. Carton, S. Muller, M. Ebrahimi, R. A. Jong, C. Dromain, and M. J. Yaffe",
+            "authors": "M. L. Hill, J. G. Mainprize, A.-K. Carton, S. Muller, M. Ebrahimi, R. A. Jong, C. Dromain, and M. J. Yaffe",
             "visible": true,
             "peoplePageVisible": true,
             "people": [
@@ -439,7 +439,7 @@
             "url": "",
             "pdf": "",
             "bibtex": "",
-            "contributors": "P. Siegler, M. Ebrahimi, C. Holloway, G. Thevathasan, D. B. Plewes, and A. L. Martel",
+            "authors": "P. Siegler, M. Ebrahimi, C. Holloway, G. Thevathasan, D. B. Plewes, and A. L. Martel",
             "visible": true,
             "peoplePageVisible": true,
             "people": [
@@ -456,7 +456,7 @@
             "url": "",
             "pdf": "",
             "bibtex": "",
-            "contributors": "M. Ebrahimi, P. Siegler, D. B. Plewes, and A. L. Martel",
+            "authors": "M. Ebrahimi, P. Siegler, D. B. Plewes, and A. L. Martel",
             "visible": true,
             "peoplePageVisible": true,
             "people": [
@@ -473,7 +473,7 @@
             "url": "",
             "pdf": "",
             "bibtex": "",
-            "contributors": "M. Ebrahimi",
+            "authors": "M. Ebrahimi",
             "visible": true,
             "peoplePageVisible": true,
             "people": [
@@ -490,7 +490,7 @@
             "url": "",
             "pdf": "",
             "bibtex": "",
-            "contributors": "D. La-Torre, E. R. Vrscay, M. Ebrahimi, and M. F. Barnsley",
+            "authors": "D. La-Torre, E. R. Vrscay, M. Ebrahimi, and M. F. Barnsley",
             "visible": true,
             "peoplePageVisible": true,
             "people": [
@@ -507,7 +507,7 @@
             "url": "",
             "pdf": "",
             "bibtex": "",
-            "contributors": "W. Bahsoun, P. Gora, A. Boyarsky, and M. Ebrahimi",
+            "authors": "W. Bahsoun, P. Gora, A. Boyarsky, and M. Ebrahimi",
             "visible": true,
             "peoplePageVisible": true,
             "people": [
@@ -524,7 +524,7 @@
             "url": "",
             "pdf": "",
             "bibtex": "",
-            "contributors": "A. Lausch, M. Ebrahimi, and A. L. Martel",
+            "authors": "A. Lausch, M. Ebrahimi, and A. L. Martel",
             "visible": true,
             "peoplePageVisible": true,
             "people": [
@@ -541,7 +541,7 @@
             "url": "",
             "pdf": "",
             "bibtex": "",
-            "contributors": "M. Ebrahimi",
+            "authors": "M. Ebrahimi",
             "visible": true,
             "peoplePageVisible": true,
             "people": [
@@ -558,7 +558,7 @@
             "url": "",
             "pdf": "",
             "bibtex": "",
-            "contributors": "M. Ebrahimi",
+            "authors": "M. Ebrahimi",
             "visible": true,
             "peoplePageVisible": true,
             "people": [
@@ -575,7 +575,7 @@
             "url": "",
             "pdf": "",
             "bibtex": "",
-            "contributors": "M. Ebrahimi, A. L. Martel",
+            "authors": "M. Ebrahimi, A. L. Martel",
             "visible": true,
             "peoplePageVisible": true,
             "people": [
@@ -592,7 +592,7 @@
             "url": "",
             "pdf": "",
             "bibtex": "",
-            "contributors": "M. Ebrahimi, A. L. Martel",
+            "authors": "M. Ebrahimi, A. L. Martel",
             "visible": true,
             "peoplePageVisible": true,
             "people": [
@@ -609,7 +609,7 @@
             "url": "",
             "pdf": "",
             "bibtex": "",
-            "contributors": "M. Ebrahimi, E. R. Vrscay, and A. L. Martel",
+            "authors": "M. Ebrahimi, E. R. Vrscay, and A. L. Martel",
             "visible": true,
             "peoplePageVisible": true,
             "people": [
@@ -626,7 +626,7 @@
             "url": "",
             "pdf": "",
             "bibtex": "",
-            "contributors": "M. Ebrahimi, A. L. Martel",
+            "authors": "M. Ebrahimi, A. L. Martel",
             "visible": true,
             "peoplePageVisible": true,
             "people": [
@@ -643,7 +643,7 @@
             "url": "",
             "pdf": "",
             "bibtex": "",
-            "contributors": "M. Ebrahimi, E. R. Vrscay",
+            "authors": "M. Ebrahimi, E. R. Vrscay",
             "visible": true,
             "peoplePageVisible": true,
             "people": [
@@ -660,7 +660,7 @@
             "url": "",
             "pdf": "",
             "bibtex": "",
-            "contributors": "M. Ebrahimi, E. R. Vrscay",
+            "authors": "M. Ebrahimi, E. R. Vrscay",
             "visible": true,
             "peoplePageVisible": true,
             "people": [
@@ -677,7 +677,7 @@
             "url": "",
             "pdf": "",
             "bibtex": "",
-            "contributors": "M. Ebrahimi",
+            "authors": "M. Ebrahimi",
             "visible": true,
             "peoplePageVisible": true,
             "people": [
@@ -694,7 +694,7 @@
             "url": "",
             "pdf": "",
             "bibtex": "",
-            "contributors": "M. Ebrahimi, E. R. Vrscay",
+            "authors": "M. Ebrahimi, E. R. Vrscay",
             "visible": true,
             "peoplePageVisible": true,
             "people": [
@@ -711,7 +711,7 @@
             "url": "",
             "pdf": "",
             "bibtex": "",
-            "contributors": "M. Ebrahimi, E. R. Vrscay",
+            "authors": "M. Ebrahimi, E. R. Vrscay",
             "visible": true,
             "peoplePageVisible": true,
             "people": [
@@ -728,7 +728,7 @@
             "url": "",
             "pdf": "",
             "bibtex": "",
-            "contributors": "M. Ebrahimi, E. R. Vrscay",
+            "authors": "M. Ebrahimi, E. R. Vrscay",
             "visible": true,
             "peoplePageVisible": true,
             "people": [
@@ -745,7 +745,7 @@
             "url": "",
             "pdf": "",
             "bibtex": "",
-            "contributors": "M. Ebrahimi, E. R. Vrscay",
+            "authors": "M. Ebrahimi, E. R. Vrscay",
             "visible": true,
             "peoplePageVisible": true,
             "people": [
@@ -754,11 +754,16 @@
         }
     ],
     "publicationTypes": [
-        "Journal Articles",
-        "In Proceedings",
-        "Posters",
-        "Dissertations",
-        "Master’s Theses",
-        "Bachelor’s Thesis"
+        "Journal Article",
+        "Conference Proceedings",
+        "Conference Abstract",
+        "Poster Presentation",
+        "Oral Presentation",
+        "PhD Thesis",
+        "MSc Thesis",
+        "BSc Thesis",
+        "Manuscript",
+        "Report",
+        "Book"
     ]
 }
