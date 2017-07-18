@@ -87,7 +87,7 @@ namespace ImagingLab.CPanel
                 .ToList()
                 .ForEach(t => t.CopyTo(Path.Combine(DATA_DIR, t.Name), true));
 
-                using (StreamWriter sw = new StreamWriter(DATA_PATH, false, Encoding.Unicode))
+                using (StreamWriter sw = new StreamWriter(DATA_PATH, false, Encoding.UTF8))
                 {
                     JavaScriptSerializer ser = new JavaScriptSerializer();
                     string json = ser.Serialize(Data);
