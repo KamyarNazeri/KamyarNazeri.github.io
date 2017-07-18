@@ -69,7 +69,7 @@ namespace ImagingLab.CPanel
             Publication.title = txt_title.Text;
             Publication.visible = chk_visible.Checked;
             Publication.peoplePageVisible = chk_peopleVisible.Checked;
-            Publication.bibtex = txt_bibtex.Text.Replace(Environment.NewLine, "<br>");
+            Publication.bibtex = CPanelApp.JSONEncode(txt_bibtex.Text, false);
             Publication.people = new BindingList<int>(PeoplePublication.Where(t => t.selected).Select(t => t.id).ToList());
 
             if (File.Exists(_pdf))

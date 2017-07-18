@@ -172,13 +172,15 @@ namespace ImagingLab.CPanel
         }
 
         static readonly Regex WhitespaceRegex = new Regex("[ ]{2,}", RegexOptions.Multiline | RegexOptions.Compiled);
-        public static string JSONEncode(string val)
+        public static string JSONEncode(string val, bool stripNewLines = true)
         {
+            string linechar = stripNewLines ? "" : "<br>";
+
             val = val
-                .Replace(Environment.NewLine, "")
+                .Replace(Environment.NewLine, linechar)
+                .Replace("\n", linechar)
+                .Replace("\r", linechar)
                 .Replace("\"", "'")
-                .Replace("\n", "")
-                .Replace("\r", "")
                 .Replace("\t", "");
 
             val = WhitespaceRegex.Replace(val, " ");
