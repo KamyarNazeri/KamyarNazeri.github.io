@@ -152,6 +152,19 @@ namespace ImagingLab.CPanel
             }
         }
 
+        void button_upload_Click(object sender, EventArgs e)
+        {
+            using (CredentialsForm frm = new CredentialsForm())
+            {
+                DialogResult res = frm.ShowDialog();
+
+                if (res == DialogResult.OK)
+                {
+                    MessageBox.Show("Data is uploaded successfully", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+        }
+
         void tab_cpanel_SelectedIndexChanged(object sender, EventArgs e)
         {
             RenderForm();

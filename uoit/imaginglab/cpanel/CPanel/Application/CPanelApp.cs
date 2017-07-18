@@ -1,7 +1,9 @@
-﻿using System;
+﻿using FluentFTP;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
@@ -129,6 +131,44 @@ namespace ImagingLab.CPanel
                 string temppath = Path.Combine(destDirName, subdir.Name);
                 DirectoryCopy(subdir.FullName, temppath);
             }
+        }
+
+        public Task<UploadResult> Upload(string username, string password)
+        {
+            return Task.Run<UploadResult>(() =>
+            {
+                using (FtpClient client = new FtpClient("ftp://imaginglab.ca/"))
+                {
+                    try
+                    {
+                        client.Credentials = new NetworkCredential(username, password);
+                        client.Connect();
+
+                        DirectoryInfo dir = new DirectoryInfo(Path.Combine(Environment.CurrentDirectory, DATA_DIR));
+
+                        IEnumerable<string> paths = dir.GetFiles().Select(t => t.FullName);
+
+                        client.UploadFiles(paths, "/" + DATA_DIR);
+                        return new UploadResult(true, "success!");
+                    }
+                    catch (Exception ex)
+                    {
+                        return new UploadResult(false, ex.Message);
+                    }
+                }
+            });
+        }
+
+        public class UploadResult
+        {
+            public UploadResult(bool success, string message)
+            {
+                Success = success;
+                Message = message;
+            }
+
+            public bool Success { get; private set; }
+            public string Message { get; private set; }
         }
 
         static readonly Regex WhitespaceRegex = new Regex("[ ]{2,}", RegexOptions.Multiline | RegexOptions.Compiled);
