@@ -38,7 +38,7 @@ namespace ImagingLab.CPanel
             cmb_type.SelectedItem = publication?.type ?? CPanelApp.Current.Data.publicationTypes.FirstOrDefault();
             txt_url.Text = publication?.url ?? "";
             txt_pdf.Text = publication?.pdf ?? "";
-            txt_contributors.Text = publication?.contributors ?? "";
+            txt_authors.Text = publication?.authors ?? "";
             txt_title.Text = publication?.title ?? "";
             chk_visible.Checked = publication?.visible ?? true;
             chk_peopleVisible.Checked = publication?.peoplePageVisible ?? true;
@@ -65,7 +65,7 @@ namespace ImagingLab.CPanel
             Publication.type = cmb_type.SelectedItem as string;
             Publication.url = txt_url.Text;
             Publication.pdf = txt_pdf.Text;
-            Publication.contributors = txt_contributors.Text;
+            Publication.authors = txt_authors.Text;
             Publication.title = txt_title.Text;
             Publication.visible = chk_visible.Checked;
             Publication.peoplePageVisible = chk_peopleVisible.Checked;

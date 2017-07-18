@@ -43,7 +43,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txt_pdf = new ImagingLab.CPanel.CPanelTextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.txt_contributors = new ImagingLab.CPanel.CPanelTextBox();
+            this.txt_authors = new ImagingLab.CPanel.CPanelTextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txt_title = new ImagingLab.CPanel.CPanelTextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -57,11 +57,11 @@
             this.pic_upload = new System.Windows.Forms.PictureBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.grd_people = new System.Windows.Forms.DataGridView();
-            this.peoplePublicationBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.label9 = new System.Windows.Forms.Label();
             this.chekedDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.peoplePublicationBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.num_year)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_cancel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_upload)).BeginInit();
@@ -170,22 +170,22 @@
             this.label5.TabIndex = 11;
             this.label5.Text = "PDF:";
             // 
-            // txt_contributors
+            // txt_authors
             // 
-            this.txt_contributors.Location = new System.Drawing.Point(107, 157);
-            this.txt_contributors.Name = "txt_contributors";
-            this.txt_contributors.Required = true;
-            this.txt_contributors.Size = new System.Drawing.Size(463, 22);
-            this.txt_contributors.TabIndex = 6;
+            this.txt_authors.Location = new System.Drawing.Point(107, 157);
+            this.txt_authors.Name = "txt_authors";
+            this.txt_authors.Required = true;
+            this.txt_authors.Size = new System.Drawing.Size(463, 22);
+            this.txt_authors.TabIndex = 6;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(12, 160);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(89, 17);
+            this.label6.Size = new System.Drawing.Size(61, 17);
             this.label6.TabIndex = 11;
-            this.label6.Text = "Contributors:";
+            this.label6.Text = "Authors:";
             // 
             // txt_title
             // 
@@ -259,6 +259,7 @@
             this.txt_bibtex.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.txt_bibtex.Size = new System.Drawing.Size(463, 104);
             this.txt_bibtex.TabIndex = 8;
+            this.txt_bibtex.WordWrap = false;
             // 
             // label8
             // 
@@ -326,19 +327,6 @@
             this.grd_people.Size = new System.Drawing.Size(463, 150);
             this.grd_people.TabIndex = 14;
             // 
-            // peoplePublicationBindingSource
-            // 
-            this.peoplePublicationBindingSource.DataSource = typeof(ImagingLab.CPanel.PeoplePublication);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(12, 361);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(56, 17);
-            this.label9.TabIndex = 11;
-            this.label9.Text = "People:";
-            // 
             // chekedDataGridViewCheckBoxColumn
             // 
             this.chekedDataGridViewCheckBoxColumn.DataPropertyName = "selected";
@@ -360,6 +348,19 @@
             this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
             this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
             this.nameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // peoplePublicationBindingSource
+            // 
+            this.peoplePublicationBindingSource.DataSource = typeof(ImagingLab.CPanel.PeoplePublication);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(12, 361);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(56, 17);
+            this.label9.TabIndex = 11;
+            this.label9.Text = "People:";
             // 
             // PublicationsForm
             // 
@@ -386,7 +387,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txt_bibtex);
             this.Controls.Add(this.txt_title);
-            this.Controls.Add(this.txt_contributors);
+            this.Controls.Add(this.txt_authors);
             this.Controls.Add(this.txt_pdf);
             this.Controls.Add(this.txt_url);
             this.Controls.Add(this.txt_code);
@@ -423,7 +424,7 @@
         private System.Windows.Forms.Label label4;
         private CPanelTextBox txt_pdf;
         private System.Windows.Forms.Label label5;
-        private CPanelTextBox txt_contributors;
+        private CPanelTextBox txt_authors;
         private System.Windows.Forms.Label label6;
         private CPanelTextBox txt_title;
         private System.Windows.Forms.Label label7;

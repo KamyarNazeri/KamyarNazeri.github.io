@@ -113,7 +113,7 @@ namespace ImagingLab.CPanel
         public string url { get; set; }
         public string pdf { get; set; }
         public string bibtex { get; set; }
-        public string contributors { get; set; }
+        public string authors { get; set; }
         public bool visible { get; set; } = true;
         public bool peoplePageVisible { get; set; } = true;
         public BindingList<int> people { get; set; }
