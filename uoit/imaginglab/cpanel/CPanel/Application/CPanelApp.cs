@@ -14,8 +14,8 @@ namespace ImagingLab.CPanel
 {
     class CPanelApp
     {
-        public const string DATA_DIR = "Data";
-        public const string DATA_PATH = @"Data\data.json";
+        public const string DATA_DIR = "data";
+        public const string DATA_PATH = @"data\data.json";
 
         public ImagingLabData Data { get; private set; }
 
