@@ -199,7 +199,7 @@
                 if (items.length == 0) return;
                 var item = $('<div>');
                 var header = $('<a href="#"></a>').appendTo(item);
-                var headertext = $('<h3 class="link">- ' + title + '</h3>').appendTo(header);
+                var headertext = $('<h3 class="link"> ' + title + '</h3>').appendTo(header);
                 var pubdiv = $("<div>").appendTo(item);
                 var ul = $("<ul>").css({ 'list-style': 'none' }).appendTo(pubdiv);
                 var open = true;
@@ -207,7 +207,7 @@
                 header.click(function (e) {
                     open = !open;
                     pubdiv.slideToggle();
-                    headertext.html((open ? '- ' : '+ ') + title);
+                    headertext.html((open ? ' ' : '» ') + title);
                     e.preventDefault();
                 });
 
@@ -216,8 +216,9 @@
                     var li = $('<li>').appendTo(ul);
                     if (p.code) li.append('[<span style="font-weight:bold">' + p.code + '</span>] ');
                     if (p.authors) li.append(p.authors);
-                    if (p.year) li.append(p.year);
+                    if (p.year) li.append(' (' + p.year + '). ');
                     li.append(p.title);
+                    if (p.type != title) li.append(' (<span STYLE="font-style:italic; font-size: 11px">' + p.type + '</span>)');
                     li.append('<br />');
 
                     var links = $('<div>').appendTo(li);

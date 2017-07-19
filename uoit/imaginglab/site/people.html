@@ -254,6 +254,7 @@
                     if (p.authors) li.append(p.authors);
                     if (p.year) li.append(' (' + p.year + '). ');
                     li.append(p.title);
+                    li.append(' (<span STYLE="font-style:italic; font-size: 11px">' + p.type + '</span>)');
                     li.append('<br>');
 
                     var links = $('<div>').appendTo(li);
