@@ -191,14 +191,27 @@
                     bindPublicationsGroup(content, grp.key, grp);
                 }
 
-                $('#content_publication').empty().append(content);
+                $('#content_publication').fadeOut('fast', function () {
+                    $(this).empty().append(content).fadeIn();
+                });
             };
 
 
             function bindPublicationsGroup(parent, title, items) {
                 if (items.length == 0) return;
-                var item = $('<div><h3>' + title + '</h3></div>');
-                var ul = $("<ul>").css({ 'list-style': 'none' }).appendTo(item);
+                var item = $('<div>');
+                var header = $('<a href="#"></a>').appendTo(item);
+                var headertext = $('<h3 class="link">- ' + title + '</h3>').appendTo(header);
+                var pubdiv = $("<div>").appendTo(item);
+                var ul = $("<ul>").css({ 'list-style': 'none' }).appendTo(pubdiv);
+                var open = true;
+
+                header.click(function (e) {
+                    open = !open;
+                    pubdiv.slideToggle();
+                    headertext.html((open ? '- ' : '+ ') + title);
+                    e.preventDefault();
+                });
 
                 for (var i = 0; i < items.length; i++) {
                     var p = items[i];

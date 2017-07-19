@@ -31,12 +31,12 @@ body {
     text-align: justify;
 }
 
-a {
+a, .link {
     color: #005596;
     text-decoration: none;
 }
 
-    a:hover {
+    a:hover, .link:hover {
         color: forestgreen;
         text-decoration: none;
     }
@@ -191,12 +191,12 @@ b, strong {
         color: forestgreen
     }
 
-/* Main wrappers */
-#wrapper1240 {
-    background-color: #fff;
-    margin: 20px auto;
-    width: 1240px;
-}
+    /* Main wrappers */
+    #wrapper1240 {
+        background-color: #fff;
+        margin: 20px auto;
+        width: 1240px;
+    }
 
 #wrapper960 {
     background-color: #fff;
