@@ -250,7 +250,7 @@
                 for (var i = 0; i < items.length; i++) {
                     var p = items[i];
                     var li = $('<li>').appendTo(ul);
-                    if (p.code) li.append('[' + p.code + '] ');
+                    if (p.code) li.append('[<span style="font-weight:bold">' + p.code + '</span>] ');
                     if (p.authors) li.append(p.authors);
                     if (p.year) li.append(' (' + p.year + '). ');
                     li.append(p.title);
