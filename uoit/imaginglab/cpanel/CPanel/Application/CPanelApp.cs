@@ -144,11 +144,19 @@ namespace ImagingLab.CPanel
                         client.Credentials = new NetworkCredential(username, password);
                         client.Connect();
 
+                        string path = "/" + DATA_DIR;
                         DirectoryInfo dir = new DirectoryInfo(Path.Combine(Environment.CurrentDirectory, DATA_DIR));
-
                         IEnumerable<string> paths = dir.GetFiles().Select(t => t.FullName);
 
-                        client.UploadFiles(paths, "/" + DATA_DIR);
+
+                        if (client.DirectoryExists(path))
+                        {
+                            FtpListItem[] items = client.GetListing(path);
+                            paths = dir.GetFiles().Where(t => !items.Any(u => u.Name == t.Name && u.Size == t.Length)).Select(t => t.FullName);
+                        }
+
+
+                        client.UploadFiles(paths, path);
                         return new UploadResult(true, "success!");
                     }
                     catch (Exception ex)
