@@ -62,7 +62,18 @@
                         <br />
                         <div id="content_person_description">[DESCRIPTION]</div>
                         <br />
-                        <div id="content_person_publications">[PUBLICATION]</div>
+                        <div id="content_person_publications">
+                            <br />
+                            <h3 style="display: inline; padding-right:15px">Publications</h3>
+                            <span>
+                                <a href="#" id="a_year"> By Year </a>
+                                |
+                                <a href="#" id="a_type"> By Type </a>
+                            </span>
+                            <br />
+                            <br />
+                            <div id="content_person_publications_content"></div>
+                        </div>
                     </div>
                 </div>
 
@@ -224,7 +235,8 @@
                     $('#content_person_duration').html(duration);
                     $('#content_person_research').html(research);
                     $('#content_person_description').html(description);
-                    bindPublications(publications);
+                    $('#content_person_publications').toggle(publications.length > 0);
+                    bindPublications(publications, true);
 
                     $('#content_person_detail').fadeIn();
                     page.render();
@@ -232,30 +244,90 @@
             };
 
 
-            function bindPublications(items) {
-                var title = 'Publications';
-                var parent = $('#content_person_publications').empty();
+            function bindPublications(pubs, by_year) {
 
-                if (items.length == 0) return;
+                if (pubs.length == 0) return;
 
-                items.sort(function (a, b) {
-                    var res = b.year - a.year;
-                    if (res == 0) res = a.order - b.order;
-                    return res;
+                var content = $('<div>').css({ 'padding-left': '10px' });
+                var types = page.data.publicationTypes;
+
+                pubs.sort(function (a, b) {
+                    return by_year ? (b.year - a.year) : (types.indexOf(a.type) - types.indexOf(b.type));
                 });
 
-                var item = $('<div><h3>' + title + '</h3></div>');
-                var ul = $("<ul>").css({ 'list-style': 'none' }).appendTo(item);
+                $('#a_year')
+                    .toggleClass('selected', by_year)
+                    .unbind()
+                    .click(function (e) {
+                        bindPublications(pubs, true);
+                        e.preventDefault();
+                    });
+
+                $('#a_type')
+                    .toggleClass('selected', !by_year)
+                    .unbind()
+                    .click(function (e) {
+                        bindPublications(pubs, false);
+                        e.preventDefault();
+                    });
+
+
+
+                var keys = {};
+                var groups = [];
+
+                for (var i = 0; i < pubs.length; i++) {
+                    var item = pubs[i];
+                    var key = item[by_year ? 'year' : 'type'];
+
+                    if (!item.visible) continue;
+
+                    if (!keys[key]) {
+                        var grp = [];
+                        grp.key = key;
+                        keys[key] = grp;
+                        groups.push(grp);
+                    }
+                    keys[key].push(item);
+                }
+
+                for (var i = 0; i < groups.length; i++) {
+                    var grp = groups[i];
+                    grp.sort(function (a, b) { return a.order - b.order });
+                    bindPublicationsGroup(content, grp.key, grp);
+                }
+
+                $('#content_person_publications_content').fadeOut('fast', function () {
+                    $(this).empty().append(content).fadeIn();
+                });
+            }
+
+
+            function bindPublicationsGroup(parent, title, items) {
+                if (items.length == 0) return;
+                var item = $('<div>');
+                var header = $('<a href="#"></a>').appendTo(item);
+                var headertext = $('<h3 class="link"> ' + title + '</h3>').appendTo(header);
+                var pubdiv = $("<div>").appendTo(item);
+                var ul = $("<ul>").css({ 'list-style': 'none' }).appendTo(pubdiv);
+                var open = true;
+
+                header.click(function (e) {
+                    open = !open;
+                    pubdiv.slideToggle();
+                    headertext.html((open ? ' ' : '» ') + title);
+                    e.preventDefault();
+                });
 
                 for (var i = 0; i < items.length; i++) {
                     var p = items[i];
                     var li = $('<li>').appendTo(ul);
-                    if (p.code) li.append('[<span style="font-weight:bold">' + p.code + '</span>] ');
+                    if (p.code) li.append('[<span id="' + p.code + '" style="font-weight:bold">' + p.code + '</span>] ');
                     if (p.authors) li.append(p.authors);
                     if (p.year) li.append(' (' + p.year + '). ');
                     li.append(p.title);
-                    li.append(' (<span STYLE="font-style:italic; font-size: 11px">' + p.type + '</span>)');
-                    li.append('<br>');
+                    if (p.type != title) li.append(' (<span STYLE="font-style:italic; font-size: 11px">' + p.type + '</span>)');
+                    li.append('<br />');
 
                     var links = $('<div>').appendTo(li);
 
@@ -269,7 +341,7 @@
 
                     if (p.bibtex) {
                         (function () {
-                            var bibtex = p.bibtex.replace(/\n/ig, "<br>");
+                            var bibtex = p.bibtex.replace(/\n/ig, "<br/>");
                             var bibtexLink = $('<a href="javascript:void(0)" title="Bibtex"> [Bibtex] </a>').appendTo(links);
                             var bintexContent = $('<div>').addClass('bibtex').appendTo(links);
 
@@ -280,7 +352,7 @@
                         })();
                     }
 
-                    li.append('<br>');
+                    li.append('<br />');
                 };
 
                 item.appendTo(parent);
