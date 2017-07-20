@@ -35,7 +35,7 @@ namespace ImagingLab.CPanel
             txt_research.Text = people?.research ?? "";
             chk_alumnus.Checked = people?.alumnus ?? false;
             chk_visible.Checked = people?.visible ?? true;
-            _photo = people.PhotoPath ?? people?.photo ?? null;
+            _photo = people?.PhotoPath ?? people?.photo ?? null;
 
             Render();
         }

@@ -43,7 +43,7 @@ namespace ImagingLab.CPanel
             chk_visible.Checked = publication?.visible ?? true;
             chk_peopleVisible.Checked = publication?.peoplePageVisible ?? true;
             txt_bibtex.Text = publication?.bibtex.Replace("\\n", Environment.NewLine).Replace("<br>", Environment.NewLine).Replace("<br />", Environment.NewLine) ?? "";
-            _pdf = Publication.PdfPath ?? publication?.pdf ?? "";
+            _pdf = Publication?.PdfPath ?? publication?.pdf ?? "";
         }
 
         private void button_cancel_Click(object sender, EventArgs e)

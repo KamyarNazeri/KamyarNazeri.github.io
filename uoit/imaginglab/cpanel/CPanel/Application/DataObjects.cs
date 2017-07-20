@@ -29,17 +29,17 @@ namespace ImagingLab.CPanel
 
         public void AddTeaching(Teaching obj)
         {
-            AddEntry(this.teachings, obj);
+            AddEntry(this.teachings, obj, true);
         }
 
         public void AddPeople(People obj)
         {
-            AddEntry(this.people, obj);
+            AddEntry(this.people, obj, true);
         }
 
         public void AddPublication(Publication obj)
         {
-            AddEntry(this.publications, obj);
+            AddEntry(this.publications, obj, false);
         }
 
         public void ReOrder()
@@ -49,11 +49,12 @@ namespace ImagingLab.CPanel
             ReOrder(this.publications);
         }
 
-        void AddEntry<T>(IList<T> list, T obj) where T : DataObject
+        void AddEntry<T>(IList<T> list, T obj, bool addToEnd) where T : DataObject
         {
             obj.id = list.Max(t => t.id) + 1;
-            obj.order = list.Max(t => t.order) + 1;
-            list.Add(obj);
+            obj.order = addToEnd ? list.Max(t => t.order) + 1 : 0;
+            list.Insert(addToEnd ? list.Count : 0, obj);
+            ReOrder(list);
         }
 
         void ReOrder<T>(IList<T> list) where T : DataObject

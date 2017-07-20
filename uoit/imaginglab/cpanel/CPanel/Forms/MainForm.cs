@@ -261,8 +261,8 @@ namespace ImagingLab.CPanel
                 {
                     CPanelApp.Current.Data.AddPublication(frm.Publication);
                     grd_publications.Invalidate();
-                    grd_publications.FirstDisplayedScrollingRowIndex = grd_publications.RowCount - 1;
-                    grd_publications.Rows[grd_publications.RowCount - 1].Selected = true;
+                    grd_publications.FirstDisplayedScrollingRowIndex = 0;
+                    grd_publications.Rows[0].Selected = true;
                 }
             }
         }

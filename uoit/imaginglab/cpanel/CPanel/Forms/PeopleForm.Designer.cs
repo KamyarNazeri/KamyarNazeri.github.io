@@ -110,7 +110,7 @@
             this.txt_position.Name = "txt_position";
             this.txt_position.Required = true;
             this.txt_position.Size = new System.Drawing.Size(316, 22);
-            this.txt_position.TabIndex = 3;
+            this.txt_position.TabIndex = 4;
             // 
             // label4
             // 
@@ -127,7 +127,7 @@
             this.txt_education.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_education.Name = "txt_education";
             this.txt_education.Size = new System.Drawing.Size(316, 22);
-            this.txt_education.TabIndex = 4;
+            this.txt_education.TabIndex = 5;
             // 
             // label6
             // 
@@ -144,7 +144,7 @@
             this.txt_start.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_start.Name = "txt_start";
             this.txt_start.Size = new System.Drawing.Size(316, 22);
-            this.txt_start.TabIndex = 5;
+            this.txt_start.TabIndex = 6;
             // 
             // label7
             // 
@@ -164,7 +164,7 @@
             this.txt_description.Name = "txt_description";
             this.txt_description.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txt_description.Size = new System.Drawing.Size(487, 141);
-            this.txt_description.TabIndex = 7;
+            this.txt_description.TabIndex = 9;
             // 
             // button_save
             // 
@@ -174,7 +174,7 @@
             this.button_save.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button_save.Name = "button_save";
             this.button_save.Size = new System.Drawing.Size(91, 27);
-            this.button_save.TabIndex = 11;
+            this.button_save.TabIndex = 13;
             this.button_save.Text = "Ok";
             this.button_save.UseVisualStyleBackColor = true;
             this.button_save.Click += new System.EventHandler(this.button_save_Click);
@@ -188,7 +188,7 @@
             this.button_cancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button_cancel.Name = "button_cancel";
             this.button_cancel.Size = new System.Drawing.Size(91, 27);
-            this.button_cancel.TabIndex = 10;
+            this.button_cancel.TabIndex = 12;
             this.button_cancel.Text = "Cancel";
             this.button_cancel.UseVisualStyleBackColor = true;
             this.button_cancel.Click += new System.EventHandler(this.button_cancel_Click);
@@ -200,7 +200,7 @@
             this.chk_visible.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chk_visible.Name = "chk_visible";
             this.chk_visible.Size = new System.Drawing.Size(71, 21);
-            this.chk_visible.TabIndex = 8;
+            this.chk_visible.TabIndex = 10;
             this.chk_visible.Text = "Visible";
             this.chk_visible.UseVisualStyleBackColor = true;
             // 
@@ -219,7 +219,7 @@
             this.txt_end.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_end.Name = "txt_end";
             this.txt_end.Size = new System.Drawing.Size(316, 22);
-            this.txt_end.TabIndex = 6;
+            this.txt_end.TabIndex = 7;
             // 
             // chk_alumnus
             // 
@@ -228,7 +228,7 @@
             this.chk_alumnus.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chk_alumnus.Name = "chk_alumnus";
             this.chk_alumnus.Size = new System.Drawing.Size(84, 21);
-            this.chk_alumnus.TabIndex = 9;
+            this.chk_alumnus.TabIndex = 11;
             this.chk_alumnus.Text = "Alumnus";
             this.chk_alumnus.UseVisualStyleBackColor = true;
             // 
@@ -279,7 +279,7 @@
             this.txt_title.Name = "txt_title";
             this.txt_title.Required = true;
             this.txt_title.Size = new System.Drawing.Size(316, 22);
-            this.txt_title.TabIndex = 2;
+            this.txt_title.TabIndex = 3;
             // 
             // label9
             // 
@@ -299,7 +299,7 @@
             this.txt_research.Name = "txt_research";
             this.txt_research.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txt_research.Size = new System.Drawing.Size(487, 75);
-            this.txt_research.TabIndex = 7;
+            this.txt_research.TabIndex = 8;
             // 
             // PeopleForm
             // 
