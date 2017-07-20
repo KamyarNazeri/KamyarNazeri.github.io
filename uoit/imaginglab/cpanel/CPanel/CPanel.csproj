@@ -164,7 +164,7 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="..\..\site\data\data.json">
-      <Link>Data\data.json</Link>
+      <Link>data\data.json</Link>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="cpanel.snk" />
