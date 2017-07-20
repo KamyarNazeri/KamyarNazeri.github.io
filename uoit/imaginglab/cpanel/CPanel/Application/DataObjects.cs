@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,7 +12,7 @@ namespace ImagingLab.CPanel
 {
     interface DataObject
     {
-        int id { get; set;  }
+        int id { get; set; }
         int order { get; set; }
     }
 
@@ -98,7 +99,16 @@ namespace ImagingLab.CPanel
         public bool visible { get; set; } = true;
 
         [ScriptIgnore]
-        internal string PhotoPath { get; set; }
+        public bool HasPhoto
+        {
+            get
+            {
+                return !String.IsNullOrEmpty(this.photo) && File.Exists(this.photo);
+            }
+        }
+
+        [ScriptIgnore]
+        public string PhotoPath { get; set; }
     }
 
     [DebuggerDisplay("{code} - {year} - {title}")]
@@ -119,7 +129,16 @@ namespace ImagingLab.CPanel
         public BindingList<int> people { get; set; }
 
         [ScriptIgnore]
-        internal string PdfPath { get; set; }
+        public bool HasPdf
+        {
+            get
+            {
+                return !String.IsNullOrEmpty(this.pdf) && File.Exists(this.pdf);
+            }
+        }
+
+        [ScriptIgnore]
+        public string PdfPath { get; set; }
     }
 
     [DebuggerDisplay("{name}")]

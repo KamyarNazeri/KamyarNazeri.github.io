@@ -37,13 +37,13 @@ namespace ImagingLab.CPanel
             num_year.Value = publication?.year ?? DateTime.Now.Year;
             cmb_type.SelectedItem = publication?.type ?? CPanelApp.Current.Data.publicationTypes.FirstOrDefault();
             txt_url.Text = publication?.url ?? "";
-            txt_pdf.Text = publication?.pdf ?? "";
+            txt_pdf.Text = Publication.PdfPath != null ? new FileInfo(Publication.PdfPath).Name : (publication?.pdf ?? "");
             txt_authors.Text = publication?.authors ?? "";
             txt_title.Text = publication?.title ?? "";
             chk_visible.Checked = publication?.visible ?? true;
             chk_peopleVisible.Checked = publication?.peoplePageVisible ?? true;
             txt_bibtex.Text = publication?.bibtex.Replace("\\n", Environment.NewLine).Replace("<br>", Environment.NewLine).Replace("<br />", Environment.NewLine) ?? "";
-            _pdf = publication?.url ?? "";
+            _pdf = Publication.PdfPath ?? publication?.pdf ?? "";
         }
 
         private void button_cancel_Click(object sender, EventArgs e)

@@ -14,6 +14,8 @@ namespace ImagingLab.CPanel
 {
     public partial class CredentialsForm : Form
     {
+        bool _uploading = false;
+
         public CredentialsForm()
         {
             AutoValidate = AutoValidate.EnableAllowFocusChange;
@@ -42,28 +44,44 @@ namespace ImagingLab.CPanel
                 AppSettings.Current.Save();
             }
 
-            CPanelApp.UploadResult res = await CPanelApp.Current.Upload(txt_username.Text, txt_password.Text);
+            try
+            {
+                _uploading = true;
+                CPanelApp.UploadResult res = await CPanelApp.Current.Upload(txt_username.Text, txt_password.Text);
 
-            if (res.Success)
+                if (res.Success)
+                {
+                    AppSettings.Current.Username = txt_username.Text;
+                    AppSettings.Current.Password = chk_savePassword.Checked ? txt_password.Text : "";
+                    AppSettings.Current.Save();
+                    DialogResult = DialogResult.OK;
+                }
+                else
+                {
+                    panel_container.Enabled = true;
+                    this.Text = "Server Credentials";
+                    MessageBox.Show("Error uploading data: " + res.Message, "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            finally
             {
-                AppSettings.Current.Username = txt_username.Text;
-                AppSettings.Current.Password = chk_savePassword.Checked ? txt_password.Text : "";
-                AppSettings.Current.Save();
-                DialogResult = DialogResult.OK;
+                _uploading = false;
+            }
+
+            if (DialogResult == DialogResult.OK)
                 Close();
-            }
-            else
-            {
-                panel_container.Enabled = true;
-                this.Text = "Server Credentials";
-                MessageBox.Show("Error uploading data: " + res.Message, "", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
         }
 
-        private void button_cancel_Click(object sender, EventArgs e)
+        void button_cancel_Click(object sender, EventArgs e)
         {
             DialogResult = DialogResult.Cancel;
             Close();
+        }
+
+        void CredentialsForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (_uploading)
+                e.Cancel = true;
         }
     }
 }

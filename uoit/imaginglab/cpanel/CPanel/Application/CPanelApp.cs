@@ -155,8 +155,7 @@ namespace ImagingLab.CPanel
                             paths = dir.GetFiles().Where(t => !items.Any(u => u.Name == t.Name && u.Size == t.Length)).Select(t => t.FullName);
                         }
 
-
-                        client.UploadFiles(paths, path);
+                        if (paths.Any()) client.UploadFiles(paths, path);
                         return new UploadResult(true, "success!");
                     }
                     catch (Exception ex)
