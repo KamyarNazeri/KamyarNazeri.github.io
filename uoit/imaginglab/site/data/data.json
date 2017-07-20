@@ -190,7 +190,7 @@
             "name": "Mehran Ebrahimi",
             "email": "mehran.ebrahimi@uoit.ca",
             "title": "Assistant Professor, Faculty of Science, UOIT",
-            "position": "Assistant Professor - Lab Director",
+            "position": "Assistant Professor, Lab Director",
             "education": "PhD",
             "photo": "data/mehran.jpg",
             "start": "",
@@ -382,10 +382,10 @@
             "id": 27,
             "order": 1,
             "code": "ABE17a",
-            "title": "Coherent Point Drift Algorithms for Breast Image Registration. Proceedings of Computer Assisted Radiology and Surgery (CARS).  Barcelona, Spain",
+            "title": "Coherent Point Drift Algorithms for Breast Image Registration. International Journal of CARS (2017) 12(Suppl 1): S193-195",
             "year": 2017,
             "type": "Conference Proceedings",
-            "url": "",
+            "url": "https://link.springer.com/article/10.1007%2Fs11548-017-1588-3",
             "pdf": "",
             "bibtex": "@inproceedings(ABE17a,<br> author = 'G. Ahmadian and S. Bohun and M. Ebrahimi',<br> title = 'Coherent Point Drift Algorithms for Breast Image Registration',<br> Booktitle = 'Proceedings of Computer Assisted Radiology and Surgery (CARS)',<br> year = '2017',<br> month='June',<br> pages='2 pages',<br> address = 'Barcelona, Spain'<br>)",
             "authors": "G. Ahmadian and S. Bohun and M. Ebrahimi",
@@ -403,45 +403,9 @@
             "title": "Slice-to-Volume Image Registration Models for MRI-Guided Cardiac Procedures. Proceedings of  Functional Imaging and Modelling of the Heart (FIMH).  Toronto, Canada",
             "year": 2017,
             "type": "Conference Proceedings",
-            "url": "",
-            "pdf": "",
-            "bibtex": "@inproceedings(ME17a,<br> author = ' L. Ma and M. Ebrahimi',<br> title = 'Slice-to-Volume Image Registration Models for MRI-Guided Cardiac Procedures',<br> Booktitle = 'Proceedings of Functional Imaging and Modelling of the Heart (FIMH)',<br> year = '2017',<br> month='June',<br> address = 'Toronto, Canada',<br> publisher = 'Springer',<br> pages='12 pages'<br>)",
-            "authors": "L. Ma and M. Ebrahimi",
-            "visible": true,
-            "peoplePageVisible": true,
-            "people": [
-                1,
-                6
-            ]
-        },
-        {
-            "id": 31,
-            "order": 3,
-            "code": "ABE17b",
-            "title": "Coherent point drift algorithms for breast image registration. In Imaging Network Ontario (ImNO) symposium, London, Ontario, Canada",
-            "year": 2017,
-            "type": "Conference Abstract",
-            "url": "",
-            "pdf": "",
-            "bibtex": "@inproceedings(ABE17b,<br> author = ' G. Ahmadian and S. Bohun and M. Ebrahimi',<br> title = 'Coherent Point Drift Algorithms for Breast Image Registration',<br> Booktitle = 'Imaging Network Ontario (ImNO) symposium',<br> year = '2017',<br> address='London, Ontario, Canada',<br> month='March'<br>)",
-            "authors": "Ahmadian, G., S. Bohun, and M. Ebrahimi",
-            "visible": true,
-            "peoplePageVisible": true,
-            "people": [
-                1,
-                7
-            ]
-        },
-        {
-            "id": 30,
-            "order": 4,
-            "code": "ME17b",
-            "title": "Slice-to-volume Parametric Image Registration Models with Applications to Cardiac MRI. SPIE Digital Library as part of the proceedings of the Medical Imaging 2017: Image-Guided Procedures, Robotic Interventions, and Modeling conference. Orlando, Florida, USA",
-            "year": 2017,
-            "type": "Conference Proceedings",
-            "url": "",
-            "pdf": "",
-            "bibtex": "@inproceedings(ME17b,<br> author = ' L. Ma and M. Ebrahimi',<br> title = 'Slice-to-volume Parametric Image Registration Models with Applications to Cardiac MRI',<br> Booktitle = 'SPIE Digital Library as part of the proceedings of the Medical Imaging 2017: Image-Guided Procedures, Robotic Interventions, and Modeling conference',<br> year = '2017',<br> month='March',<br> address = 'Orlando, Florida, USA',<br> publisher = 'SPIE',<br> pages='16 pages'<br>)",
+            "url": "https://link.springer.com/chapter/10.1007/978-3-319-59448-4_14",
+            "pdf": "data/FIMH2017.pdf",
+            "bibtex": "@inproceedings(ME17a,<br> author = ' L. Ma and M. Ebrahimi',<br> title = 'Slice-to-Volume Image Registration Models for MRI-Guided Cardiac Procedures',<br> Booktitle = 'Proceedings of Functional Imaging and Modelling of the Heart (FIMH)',<br> year = '2017',<br> month='June',<br> address = 'Toronto, Canada',<br> publisher = 'Springer',<br> pages={139--151}<br>)",
             "authors": "L. Ma and M. Ebrahimi",
             "visible": true,
             "peoplePageVisible": true,
@@ -457,9 +421,9 @@
             "title": "A Note on Boosting Algorithms for Image Denoising. Lecture Notes in Computer Science, Proceedings of International Conference on Image Analysis and Recognition (ICIAR). Montreal, Canada",
             "year": 2017,
             "type": "Conference Proceedings",
-            "url": "",
-            "pdf": "",
-            "bibtex": "@inproceedings(FBE17,<br> author = ' C. Falconer and S. Bohun and M. Ebrahimi',<br> title = 'A Note on Boosting Algorithms for Image Denoising',<br> Booktitle = 'Lecture Notes in Computer Science, Proceedings of International Conference on Image Analysis and Recognition (ICIAR)',<br> year = '2017',<br> month='March',<br> pages='9 pages',<br> address = 'Montreal, Canada',<br> publisher = 'Springer'<br>)",
+            "url": "https://doi.org/10.1007/978-3-319-59876-5_16",
+            "pdf": "data/falconer2017.pdf",
+            "bibtex": "author = {Cory Falconer and<br> C. Sean Bohun and<br> Mehran Ebrahimi},<br> title = {A Note on Boosting Algorithms for Image Denoising},<br> booktitle = {Image Analysis and Recognition - 14th International Conference, {ICIAR}<br> 2017, Montreal, QC, Canada, July 5-7, 2017, Proceedings},<br> pages = {134--142},<br> year = {2017},<br> crossref = {DBLP:conf/iciar/2017},<br> url = {https://doi.org/10.1007/978-3-319-59876-5_16},<br> doi = {10.1007/978-3-319-59876-5_16},<br> timestamp = {Mon, 19 Jun 2017 13:01:44 +0200},<br> biburl = {http://dblp.uni-trier.de/rec/bib/conf/iciar/FalconerBE17},<br> bibsource = {dblp computer science bibliography, http://dblp.org}",
             "authors": "C. Falconer and S. Bohun and M. Ebrahimi",
             "visible": true,
             "peoplePageVisible": true,
@@ -469,14 +433,50 @@
             ]
         },
         {
+            "id": 30,
+            "order": 4,
+            "code": "ME17b",
+            "title": "Slice-to-volume Parametric Image Registration Models with Applications to Cardiac MRI. SPIE Digital Library as part of the proceedings of the Medical Imaging 2017: Image-Guided Procedures, Robotic Interventions, and Modeling conference. Orlando, Florida, USA",
+            "year": 2017,
+            "type": "Conference Proceedings",
+            "url": "http://proceedings.spiedigitallibrary.org/proceeding.aspx?articleid=2609175",
+            "pdf": "data/1013520.pdf",
+            "bibtex": "@inproceedings(ME17b,<br> author = ' L. Ma and M. Ebrahimi',<br> title = 'Slice-to-volume Parametric Image Registration Models with Applications to Cardiac MRI',<br> Booktitle = 'SPIE Digital Library as part of the proceedings of the Medical Imaging 2017: Image-Guided Procedures, Robotic Interventions, and Modeling conference',<br> year = '2017',<br> month='March',<br> address = 'Orlando, Florida, USA',<br> publisher = 'SPIE',<br> pages='16 pages'<br>)",
+            "authors": "L. Ma and M. Ebrahimi",
+            "visible": true,
+            "peoplePageVisible": true,
+            "people": [
+                1,
+                6
+            ]
+        },
+        {
+            "id": 31,
+            "order": 3,
+            "code": "ABE17b",
+            "title": "Coherent point drift algorithms for breast image registration. In Imaging Network Ontario (ImNO) symposium, London, Ontario, Canada",
+            "year": 2017,
+            "type": "Conference Abstract",
+            "url": "http://imno.ca/sites/default/files/ImNO%202017%20Full%20Program.pdf",
+            "pdf": "",
+            "bibtex": "@inproceedings(ABE17b,<br> author = ' G. Ahmadian and S. Bohun and M. Ebrahimi',<br> title = 'Coherent Point Drift Algorithms for Breast Image Registration',<br> Booktitle = 'Imaging Network Ontario (ImNO) symposium',<br> year = '2017',<br> address='London, Ontario, Canada',<br> month='March'<br>)",
+            "authors": "Ahmadian, G., S. Bohun, and M. Ebrahimi",
+            "visible": true,
+            "peoplePageVisible": true,
+            "people": [
+                1,
+                7
+            ]
+        },
+        {
             "id": 32,
             "order": 6,
             "code": "KEW17",
             "title": "Identifying Epileptogenic Lesions using Cortical Thickness. Imaging Network Ontario (ImNO) symposium. London, Ontario, Canada",
             "year": 2017,
             "type": "Conference Abstract",
-            "url": "",
-            "pdf": "",
+            "url": "http://imno.ca/2017-symposium",
+            "pdf": "data/IMNO_Sancgeetha.pdf",
             "bibtex": "@inproceedings(KEW17,<br> author = ' S. Kulaseharan and M. Ebrahimi and E. Widjaja',<br> title = 'Identifying Epileptogenic Lesions using Cortical Thickness',<br> Booktitle = 'Imaging Network Ontario (ImNO) symposium',<br> year = '2017',<br> address='London, Ontario, Canada',<br> month='March'<br>)",
             "authors": "S. Kulaseharan and M. Ebrahimi and E. Widjaja",
             "visible": true,
@@ -487,50 +487,14 @@
             ]
         },
         {
-            "id": 23,
-            "order": 7,
-            "code": "ABE16",
-            "title": "Evaluation of a Coherent Point Drift Algorithm for Breast Image Registration via Surface Markers",
-            "year": 2016,
-            "type": "Journal Article",
-            "url": "",
-            "pdf": "",
-            "bibtex": "@ARTICLE(ABE16,<br> author = 'G. Ahmadian and S. Bohun and M. Ebrahimi',<br> title = 'Evaluation of a Coherent Point Drift Algorithm for Breast Image Registration via Surface Markers',<br> journal = 'Journal of Computational Vision and Imaging Systems',<br> year = '2016',<br> month='October',<br> volume = '2, Open Access',<br> more='Open Access, ISSN: 2369-6753, DOI: http://dx.doi.org/10.15353/vsnl.v2i1'<br>)<br>",
-            "authors": "G. Ahmadian and S. Bohun and M. Ebrahimi",
-            "visible": true,
-            "peoplePageVisible": true,
-            "people": [
-                1,
-                7
-            ]
-        },
-        {
-            "id": 36,
-            "order": 8,
-            "code": "ME16a",
-            "title": "A Flexible 2D-3D Parametric Image Registration Algorithm for Cardiac MRI. Lecture Notes in Computer Science, Proceedings of The International Conference on Image Analysis and Recognition ICIAR. Povoa de Varzim, Portugal",
-            "year": 2016,
-            "type": "Conference Proceedings",
-            "url": "",
-            "pdf": "",
-            "bibtex": "@inproceedings(ME16a,<br> author = ' L. Ma and M. Ebrahimi',<br> title = 'A Flexible 2D-3D Parametric Image Registration Algorithm for Cardiac MRI',<br> Booktitle = 'Lecture Notes in Computer Science, Proceedings of The International Conference on Image Analysis and Recognition ICIAR',<br> year = '2016',<br> pages = '661-671 ',<br> address = 'Povoa de Varzim, Portugal',<br> publisher = 'Springer',<br> month = 'July'<br>)",
-            "authors": "L. Ma and M. Ebrahimi",
-            "visible": true,
-            "peoplePageVisible": true,
-            "people": [
-                1,
-                6
-            ]
-        },
-        {
             "id": 48,
             "order": 9,
             "code": "MEP16a",
             "title": "Subject-specific patch-based denoising for contrast-enhanced cardiac MR images. SPIE Digital Library, proceedings of the Medical Imaging",
             "year": 2016,
-            "type": "Journal Article",
-            "url": "",
-            "pdf": "",
+            "type": "Conference Proceedings",
+            "url": "http://proceedings.spiedigitallibrary.org/proceeding.aspx?articleid=2506275",
+            "pdf": "data/97843R.pdf",
             "bibtex": "@inproceedings(MEP16a,<br> author = ' L. Ma and M. Ebrahimi and M. Pop',<br> title = 'Subject-specific patch-based denoising for contrast-enhanced cardiac MR images',<br> Booktitle = 'SPIE Digital Library, proceedings of the Medical Imaging',<br> year = '2016',<br> volume= '9784',<br> month='March',<br> pages='97843R'<br>)",
             "authors": "L. Ma and M. Ebrahimi and M. Pop",
             "visible": true,
@@ -547,7 +511,7 @@
             "title": "A Flexible Approach to 2D-3D Image Registration. SIAM International Conference on Imaging Science. Albuquerque, New Mexico, USA",
             "year": 2016,
             "type": "Conference Abstract",
-            "url": "",
+            "url": "http://meetings.siam.org/sess/dsp_talk.cfm?p=76800",
             "pdf": "",
             "bibtex": "@inproceedings(ME16b,<br> author = ' L. Ma and M. Ebrahimi and M. Pop',<br> title = 'Subject-specific patch-based denoising for contrast-enhanced cardiac MR images',<br> Booktitle = 'Imaging Network Ontario (ImNO) symposium',<br> year = '2016',<br> address=''Toronto, Ontario, Canada',<br> month='March'<br>)",
             "authors": "L. Ma and M. Ebrahimi",
@@ -559,14 +523,31 @@
             ]
         },
         {
+            "id": 43,
+            "order": 13,
+            "code": "Ebr16",
+            "title": "Inverse Problems in Medical Image Processing. Invited speaker for the Medical Imaging Symposium, 13th Conference on Computer and Robot Vision (CRV). Victoria, BC, Canada",
+            "year": 2016,
+            "type": "Oral Presentation",
+            "url": "http://www.computerrobotvision.org/2016/index.html",
+            "pdf": "",
+            "bibtex": "@inproceedings(Ebr16,<br> author = 'M. Ebrahimi',<br> title = 'Inverse Problems in Medical Image Processing',<br> booktitle = 'Invited speaker for the Medical Imaging Symposium, 13th Conference on Computer and Robot Vision (CRV)',<br> year = '2016',<br> month='June',<br> address = 'Victoria, BC, Canada'<br>)",
+            "authors": "M. Ebrahimi",
+            "visible": true,
+            "peoplePageVisible": true,
+            "people": [
+                1
+            ]
+        },
+        {
             "id": 37,
             "order": 11,
             "code": "MEP16b",
             "title": "Subject-specific patch-based denoising for contrast-enhanced cardiac MR images. Imaging Network Ontario (ImNO) symposium. Toronto, Ontario, Canada",
             "year": 2016,
-            "type": "Conference Abstract",
-            "url": "",
-            "pdf": "",
+            "type": "Conference Proceedings",
+            "url": "http://proceedings.spiedigitallibrary.org/proceeding.aspx?articleid=2506275",
+            "pdf": "data/97843R.pdf",
             "bibtex": "@inproceedings(MEP16b,<br> author = ' L. Ma and M. Ebrahimi and M. Pop',<br> title = 'Subject-specific patch-based denoising for contrast-enhanced cardiac MR images',<br> Booktitle = 'Imaging Network Ontario (ImNO) symposium',<br> year = '2016',<br> address=''Toronto, Ontario, Canada',<br> month='March'<br>)",
             "authors": "L. Ma and M. Ebrahimi and M. Pop",
             "visible": true,
@@ -577,13 +558,49 @@
             ]
         },
         {
+            "id": 36,
+            "order": 8,
+            "code": "ME16a",
+            "title": "A Flexible 2D-3D Parametric Image Registration Algorithm for Cardiac MRI. Lecture Notes in Computer Science, Proceedings of The International Conference on Image Analysis and Recognition ICIAR. Povoa de Varzim, Portugal",
+            "year": 2016,
+            "type": "Conference Proceedings",
+            "url": "https://link.springer.com/chapter/10.1007/978-3-319-41501-7_74",
+            "pdf": "data/iciar2016lorraine.pdf",
+            "bibtex": "@inproceedings(ME16a,<br> author = ' L. Ma and M. Ebrahimi',<br> title = 'A Flexible 2D-3D Parametric Image Registration Algorithm for Cardiac MRI',<br> Booktitle = 'Lecture Notes in Computer Science, Proceedings of The International Conference on Image Analysis and Recognition ICIAR',<br> year = '2016',<br> pages = '661-671 ',<br> address = 'Povoa de Varzim, Portugal',<br> publisher = 'Springer',<br> month = 'July'<br>)",
+            "authors": "L. Ma and M. Ebrahimi",
+            "visible": true,
+            "peoplePageVisible": true,
+            "people": [
+                1,
+                6
+            ]
+        },
+        {
+            "id": 23,
+            "order": 7,
+            "code": "ABE16",
+            "title": "Evaluation of a Coherent Point Drift Algorithm for Breast Image Registration via Surface Markers",
+            "year": 2016,
+            "type": "Journal Article",
+            "url": "http://openjournals.uwaterloo.ca/index.php/vsl/article/view/90",
+            "pdf": "data/90-165-1-SM.pdf",
+            "bibtex": "@ARTICLE(ABE16,<br> author = 'G. Ahmadian and S. Bohun and M. Ebrahimi',<br> title = 'Evaluation of a Coherent Point Drift Algorithm for Breast Image Registration via Surface Markers',<br> journal = 'Journal of Computational Vision and Imaging Systems',<br> year = '2016',<br> month='October',<br> volume = '2, Open Access',<br> more='Open Access, ISSN: 2369-6753, DOI: http://dx.doi.org/10.15353/vsnl.v2i1'<br>)<br>",
+            "authors": "G. Ahmadian and S. Bohun and M. Ebrahimi",
+            "visible": true,
+            "peoplePageVisible": true,
+            "people": [
+                1,
+                7
+            ]
+        },
+        {
             "id": 24,
             "order": 12,
             "code": "NE16",
             "title": "A Discretize-then-Optimize Approach to Super-Resolution Reconstruction and Motion Estimation. In SIAM International Conference on Imaging Science, Albuquerque, New Mexico, USA",
             "year": 2016,
-            "type": "Journal Article",
-            "url": "",
+            "type": "Conference Abstract",
+            "url": "http://meetings.siam.org/sess/dsp_talk.cfm?p=76799",
             "pdf": "",
             "bibtex": "@ARTICLE(NE16,<br> author = 'E. Ng and M. Ebrahimi',<br> title = '<br> A Discretize-then-Optimize Approach to Super-Resolution Reconstruction and Motion Estimation',<br> journal = 'Journal of Computational Vision and Imaging Systems',<br> year = '2015',<br> volume = '1, Open Access',<br> more='Open Access, ISSN: 2369-6753, DOI: http://dx.doi.org/10.15353/vsnl.v1i1.39'<br>)",
             "authors": "E. Ng and M. Ebrahimi",
@@ -592,23 +609,6 @@
             "people": [
                 1,
                 8
-            ]
-        },
-        {
-            "id": 43,
-            "order": 13,
-            "code": "Ebr16",
-            "title": "Inverse Problems in Medical Image Processing. Invited speaker for the Medical Imaging Symposium, 13th Conference on Computer and Robot Vision (CRV). Victoria, BC, Canada",
-            "year": 2016,
-            "type": "Oral Presentation",
-            "url": "",
-            "pdf": "",
-            "bibtex": "@inproceedings(Ebr16,<br> author = 'M. Ebrahimi',<br> title = 'Inverse Problems in Medical Image Processing',<br> booktitle = 'Invited speaker for the Medical Imaging Symposium, 13th Conference on Computer and Robot Vision (CRV)',<br> year = '2016',<br> month='June',<br> address = 'Victoria, BC, Canada'<br>)",
-            "authors": "M. Ebrahimi",
-            "visible": true,
-            "peoplePageVisible": true,
-            "people": [
-                1
             ]
         },
         {
@@ -630,20 +630,21 @@
             ]
         },
         {
-            "id": 44,
-            "order": 15,
-            "code": "Ebr15",
-            "title": "Inverse Problems in Medical Image Processing. Invited presentation, Sunnybrook Medical Image Analysis Laboratories (SMIAL) seminar series",
+            "id": 49,
+            "order": 17,
+            "code": "NE15",
+            "title": "Coupled Multi-Frame Super-Resolution Reconstruction and Motion Estimation. UOIT student research showcase",
             "year": 2015,
-            "type": "Oral Presentation",
+            "type": "Conference Abstract",
             "url": "",
             "pdf": "",
-            "bibtex": "@inproceedings(Ebr15,<br> author = 'M. Ebrahimi',<br> title = 'Inverse Problems in Medical Image Processing',<br> booktitle = 'Invited presentation, Sunnybrook Medical Image Analysis Laboratories (SMIAL) seminar series',<br> year = '2015'<br>)",
-            "authors": "M. Ebrahimi",
+            "bibtex": "@inproceedings(poster2015,<br> author = {E. Ng and M. Ebrahimi},<br> title = 'Coupled Multi-Frame Super-Resolution Reconstruction and Motion Estimation',<br> booktitle = 'UOIT student research showcase',<br> year = '2015',<br> address = 'UOIT',<br> month = 'August'<br>)",
+            "authors": "E. Ng and M. Ebrahimi",
             "visible": true,
             "peoplePageVisible": true,
             "people": [
-                1
+                1,
+                8
             ]
         },
         {
@@ -665,15 +666,32 @@
             ]
         },
         {
-            "id": 49,
-            "order": 17,
-            "code": "NE15",
-            "title": "Coupled Multi-Frame Super-Resolution Reconstruction and Motion Estimation. UOIT student research showcase",
+            "id": 44,
+            "order": 15,
+            "code": "Ebr15",
+            "title": "Inverse Problems in Medical Image Processing. Invited presentation, Sunnybrook Medical Image Analysis Laboratories (SMIAL) seminar series",
             "year": 2015,
-            "type": "Conference Abstract",
+            "type": "Oral Presentation",
             "url": "",
             "pdf": "",
-            "bibtex": "@inproceedings(poster2015,<br> author = {E. Ng and M. Ebrahimi},<br> title = 'Coupled Multi-Frame Super-Resolution Reconstruction and Motion Estimation',<br> booktitle = 'UOIT student research showcase',<br> year = '2015',<br> address = 'UOIT',<br> month = 'August'<br>)",
+            "bibtex": "@inproceedings(Ebr15,<br> author = 'M. Ebrahimi',<br> title = 'Inverse Problems in Medical Image Processing',<br> booktitle = 'Invited presentation, Sunnybrook Medical Image Analysis Laboratories (SMIAL) seminar series',<br> year = '2015'<br>)",
+            "authors": "M. Ebrahimi",
+            "visible": true,
+            "peoplePageVisible": true,
+            "people": [
+                1
+            ]
+        },
+        {
+            "id": 54,
+            "order": 52,
+            "code": "NE15a",
+            "title": "A Discretize-then-Optimize Approach to Super-Resolution Reconstruction and Motion Estimation. Journal of Computational Vision and Imaging Systems Vol. 1, Open Access",
+            "year": 2015,
+            "type": "Journal Article",
+            "url": "http://openjournals.uwaterloo.ca/index.php/vsl/article/view/VL106",
+            "pdf": "data/39-65-1-SM.pdf",
+            "bibtex": "@ARTICLE(ABE16,<br> author = 'E. Ng and M. Ebrahimi',<br> title = 'A Discretize-then-Optimize Approach to Super-Resolution Reconstruction and Motion Estimation',<br> journal = 'Journal of Computational Vision and Imaging Systems',<br> year = '2015',<br> month='October',<br> volume = '1, Open Access',<br> more='Open Access, DOI: http://dx.doi.org/10.15353/vsnl.v1i1.39'<br>)<br>",
             "authors": "E. Ng and M. Ebrahimi",
             "visible": true,
             "peoplePageVisible": true,
@@ -686,13 +704,30 @@
             "id": 2,
             "order": 18,
             "code": "ESM+14",
-            "title": "Using Surface Markers for MRI Guided Breast Conserving Surgery; a Feasibility Survey. Submitted to Physics in Medicine and Biology, ",
+            "title": "Using Surface Markers for MRI Guided Breast Conserving Surgery; a Feasibility Survey.  Physics in Medicine and Biology, Physics in Medicine and Biology, (59), pp. 1589–1605",
             "year": 2014,
             "type": "Journal Article",
-            "url": "",
-            "pdf": "",
-            "bibtex": "@ARTICLE(ESM+14,<br> author = ' M. Ebrahimi and P. Siegler and A. Modhafar, C. Holloway and D. B. Plewes and A. L. Martel ',<br> title = 'Using Surface Markers for MRI Guided Breast Conserving Surgery: A Feasibility Survey',<br> journal = 'Physics in Medicine and Biology',<br> year = '2014',<br> number = '59',<br> pages = '1589-1605'<br>)",
+            "url": "https://www.ncbi.nlm.nih.gov/pubmed/24614540",
+            "pdf": "data/2A1-A3PMB-2014.pdf",
+            "bibtex": "@ARTICLE(ESM+14,<br> title={Using surface markers for MRI guided breast conserving surgery: a feasibility survey},<br> author={Ebrahimi, Mehran and Siegler, Peter and Modhafar, Amen and Holloway, Claire MB and Plewes, Donald B and Martel, Anne L},<br> journal={Physics in medicine and biology},<br> volume={59},<br> number={7},<br> pages={1589},<br> year={2014},<br> publisher={IOP Publishing}<br>)",
             "authors": "M. Ebrahimi, P. Siegler, A. Modhafar, C. Holloway, D. Plewes, and A. Martel",
+            "visible": true,
+            "peoplePageVisible": true,
+            "people": [
+                1
+            ]
+        },
+        {
+            "id": 3,
+            "order": 20,
+            "code": "MEL13",
+            "title": "Anatomical Noise in Contrast-Enhanced Digital Mammography. Part I. Single-Energy Imaging. Medical Physics, 40:051910.",
+            "year": 2013,
+            "type": "Journal Article",
+            "url": "https://www.ncbi.nlm.nih.gov/pubmed/23635280",
+            "pdf": "data/Hill_et_al-2013-Medical_Physics.pdf",
+            "bibtex": "@ARTICLE(MEL13,<br> title={Anatomical noise in contrast-enhanced digital mammography. Part I. Single-energy imaging},<br> author={Hill, Melissa L and Mainprize, James G and Carton, Ann-Katherine and Muller, Serge and Ebrahimi, Mehran and Jong, Roberta A and Dromain, Clarisse and Yaffe, Martin J},<br> journal={Medical physics},<br> volume={40},<br> number={5},<br> year={2013},<br> publisher={American Association of Physicists in Medicine}<br>)",
+            "authors": "M. L. Hill, J. G. Mainprize, A.-K. Carton, S. Muller, M. Ebrahimi, R. A. Jong, C. Dromain, and M. J. Yaffe",
             "visible": true,
             "peoplePageVisible": true,
             "people": [
@@ -717,23 +752,6 @@
             ]
         },
         {
-            "id": 3,
-            "order": 20,
-            "code": "MEL13",
-            "title": "Anatomical Noise in Contrast-Enhanced Digital Mammography. Part I. Single-Energy Imaging. Medical Physics, 40:051910.",
-            "year": 2013,
-            "type": "Journal Article",
-            "url": "",
-            "pdf": "",
-            "bibtex": "@ARTICLE(MEL13l,<br> author = ' M. L. Hill and J. G. Mainprize and A. K. Carton and S. Muller and M. Ebrahimi and R. A. Jong and C. Dromin and M. Yaffe ',<br> journal = 'Medical Physics',<br> title = 'Anatomical Noise in Contrast-Enhanced Digital Mammography: Part I. Single-Energy Imaging',<br> year = '2013',<br> volume = '40',<br> number = '5',<br> pages= '19 pages'<br>)",
-            "authors": "M. L. Hill, J. G. Mainprize, A.-K. Carton, S. Muller, M. Ebrahimi, R. A. Jong, C. Dromain, and M. J. Yaffe",
-            "visible": true,
-            "peoplePageVisible": true,
-            "people": [
-                1
-            ]
-        },
-        {
             "id": 26,
             "order": 21,
             "code": "LBE+12",
@@ -744,8 +762,8 @@
             "pdf": "",
             "bibtex": "@ARTICLE(LBE+12,<br> author = ' A. Lausch and C. Bailey and M. Ebrahimi and G. A. Bjarnason and G. Stanisz and A. L. Martel ',<br> title = 'Non-rigid Registration of Abdominal DCE-MRI Data using Motion Informed Intensity Corrections',<br> journal = 'Submitted to Journal of Digital Imaging',<br> Year = {2012}<br>)",
             "authors": "A. Lausch  and   C. Bailey  and  M. Ebrahimi  and  G. A. Bjarnason   and  G. Stanisz  and  A. L. Martel",
-            "visible": true,
-            "peoplePageVisible": true,
+            "visible": false,
+            "peoplePageVisible": false,
             "people": [
                 1
             ]
@@ -761,6 +779,38 @@
             "pdf": "",
             "bibtex": "@ARTICLE(ESPM12,<br> author = {M. Ebrahimi and P. Siegler and D. B. Plewes and A. L. Martel},<br> title = 'Evaluating Thin Plate Spline Registration of the Breast in Two Supine Positions',<br> journal = 'Journal of Computer Assisted Radiology and Surgery',<br> year = '2012',<br> volume = '7',<br> number = 'S1',<br> pages = '408-409',<br> publisher = 'Elsevier'<br>)",
             "authors": "M. Ebrahimi, P. Siegler, D. B. Plewes, and A. L. Martel",
+            "visible": true,
+            "peoplePageVisible": true,
+            "people": [
+                1
+            ]
+        },
+        {
+            "id": 35,
+            "order": 25,
+            "code": "SEH+12b",
+            "title": "Supine Breast MRI and Assessment of Future Clinical Applications. 6th  International Congress on MR-Mammography. Jena, Germany",
+            "year": 2012,
+            "type": "Conference Proceedings",
+            "url": "",
+            "pdf": "",
+            "bibtex": "@inproceedings(sig1jena,<br> author = {P. Siegler and M. Ebrahimi and C. Holloway and G. Thevathasan and D. B. Plewes and A. L. Martel},<br> title = 'Supine Breast MRI and Assessment of Future Clinical Applications',<br> booktitle = '6th International Congress on MR-Mammography',<br> year = '2012',<br> address = 'Jena, Germany',<br> month = 'September'<br> )",
+            "authors": "P.  Siegler and M.  Ebrahimi and C.  Holloway and  G.  Thevathasan and  D. B. Plewes and A. L.  Martel",
+            "visible": true,
+            "peoplePageVisible": true,
+            "people": []
+        },
+        {
+            "id": 50,
+            "order": 26,
+            "code": "CE12",
+            "title": "Image Registration in Presence of Discontinuities. Fields-MITACs Industrial Problem Solving Workshop on Medical Imaging, Problem Presented. York University, Toronto, Ontario, Canada",
+            "year": 2012,
+            "type": "Conference Abstract",
+            "url": "",
+            "pdf": "",
+            "bibtex": "@inproceedings(CE12,<br> author = 'N. Cahill and M. Ebrahimi',<br> title = 'Image Registration in Presence of Discontinuities',<br> booktitle = 'Fields-MITACs Industrial Problem Solving Workshop on Medical Imaging, Problem Presented',<br> year = '2012',<br> month='August',<br> address = 'York University, Toronto, Ontario, Canada'<br>)",
+            "authors": "N. Cahill and M. Ebrahimi",
             "visible": true,
             "peoplePageVisible": true,
             "people": [
@@ -802,55 +852,6 @@
             ]
         },
         {
-            "id": 35,
-            "order": 25,
-            "code": "SEH+12b",
-            "title": "Supine Breast MRI and Assessment of Future Clinical Applications. 6th  International Congress on MR-Mammography. Jena, Germany",
-            "year": 2012,
-            "type": "Conference Proceedings",
-            "url": "",
-            "pdf": "",
-            "bibtex": "@inproceedings(sig1jena,<br> author = {P. Siegler and M. Ebrahimi and C. Holloway and G. Thevathasan and D. B. Plewes and A. L. Martel},<br> title = 'Supine Breast MRI and Assessment of Future Clinical Applications',<br> booktitle = '6th International Congress on MR-Mammography',<br> year = '2012',<br> address = 'Jena, Germany',<br> month = 'September'<br> )",
-            "authors": "P.  Siegler and M.  Ebrahimi and C.  Holloway and  G.  Thevathasan and  D. B. Plewes and A. L.  Martel",
-            "visible": true,
-            "peoplePageVisible": true,
-            "people": []
-        },
-        {
-            "id": 50,
-            "order": 26,
-            "code": "CE12",
-            "title": "Image Registration in Presence of Discontinuities. Fields-MITACs Industrial Problem Solving Workshop on Medical Imaging, Problem Presented. York University, Toronto, Ontario, Canada",
-            "year": 2012,
-            "type": "Conference Abstract",
-            "url": "",
-            "pdf": "",
-            "bibtex": "@inproceedings(CE12,<br> author = 'N. Cahill and M. Ebrahimi',<br> title = 'Image Registration in Presence of Discontinuities',<br> booktitle = 'Fields-MITACs Industrial Problem Solving Workshop on Medical Imaging, Problem Presented',<br> year = '2012',<br> month='August',<br> address = 'York University, Toronto, Ontario, Canada'<br>)",
-            "authors": "N. Cahill and M. Ebrahimi",
-            "visible": true,
-            "peoplePageVisible": true,
-            "people": [
-                1
-            ]
-        },
-        {
-            "id": 34,
-            "order": 27,
-            "code": "Ebr11",
-            "title": "Mathematical methods for breast image registration. MITACS-Fields Conference on the Mathematics of Medical Imaging. [Invited Speaker to the Special Session on Medical Imaging: Mathematical Methods and Industrial Applications]. Toronto, Ontario, Canada",
-            "year": 2011,
-            "type": "Oral Presentation",
-            "url": "",
-            "pdf": "",
-            "bibtex": "@inproceedings(Ebr11,<br> author = 'M. Ebrahimi',<br> title = 'Mathematical Methods for Breast Image Registration',<br> booktitle = 'MITACS-Fields Conference on the Mathematics of Medical Imaging, [Invited Speaker to the Special Session on Medical Imaging: Mathematical Methods and Industrial Applications]',<br> year = '2011',<br> month='June',<br> address = 'Toronto, Ontario, Canada'<br>)",
-            "authors": "M. Ebrahimi",
-            "visible": true,
-            "peoplePageVisible": true,
-            "people": [
-                1
-            ]
-        },
-        {
             "id": 9,
             "order": 28,
             "code": "LEM11",
@@ -868,15 +869,15 @@
             ]
         },
         {
-            "id": 10,
-            "order": 29,
-            "code": "Ebr10b",
-            "title": "A PDE Approach to Coupled Super-Resolution with Non-Parametric Motion. In: SIAM International Conference on Imaging Science, [Invited Speaker to the Mini-Symposium on Variational Approaches and PDE’s for Imaging Tasks]. Chicago, Illinois, USA.",
-            "year": 2010,
+            "id": 34,
+            "order": 27,
+            "code": "Ebr11",
+            "title": "Mathematical methods for breast image registration. MITACS-Fields Conference on the Mathematics of Medical Imaging. [Invited Speaker to the Special Session on Medical Imaging: Mathematical Methods and Industrial Applications]. Toronto, Ontario, Canada",
+            "year": 2011,
             "type": "Oral Presentation",
             "url": "",
             "pdf": "",
-            "bibtex": "@inproceedings(Ebr10b,<br> author = 'M. Ebrahimi',<br> title = 'A PDE Approach to Coupled Super-Resolution with Non-Parametric Motion',<br> booktitle = 'SIAM International Conference on Imaging Science, [Invited Speaker to the Mini-Symposium on Variational Approaches and PDE's for Imaging Tasks]',<br> year = '2010',<br> address = 'Chicago, Illinois, USA'<br>)",
+            "bibtex": "@inproceedings(Ebr11,<br> author = 'M. Ebrahimi',<br> title = 'Mathematical Methods for Breast Image Registration',<br> booktitle = 'MITACS-Fields Conference on the Mathematics of Medical Imaging, [Invited Speaker to the Special Session on Medical Imaging: Mathematical Methods and Industrial Applications]',<br> year = '2011',<br> month='June',<br> address = 'Toronto, Ontario, Canada'<br>)",
             "authors": "M. Ebrahimi",
             "visible": true,
             "peoplePageVisible": true,
@@ -902,6 +903,23 @@
             ]
         },
         {
+            "id": 10,
+            "order": 29,
+            "code": "Ebr10b",
+            "title": "A PDE Approach to Coupled Super-Resolution with Non-Parametric Motion. In: SIAM International Conference on Imaging Science, [Invited Speaker to the Mini-Symposium on Variational Approaches and PDE’s for Imaging Tasks]. Chicago, Illinois, USA.",
+            "year": 2010,
+            "type": "Oral Presentation",
+            "url": "",
+            "pdf": "",
+            "bibtex": "@inproceedings(Ebr10b,<br> author = 'M. Ebrahimi',<br> title = 'A PDE Approach to Coupled Super-Resolution with Non-Parametric Motion',<br> booktitle = 'SIAM International Conference on Imaging Science, [Invited Speaker to the Mini-Symposium on Variational Approaches and PDE's for Imaging Tasks]',<br> year = '2010',<br> address = 'Chicago, Illinois, USA'<br>)",
+            "authors": "M. Ebrahimi",
+            "visible": true,
+            "peoplePageVisible": true,
+            "people": [
+                1
+            ]
+        },
+        {
             "id": 6,
             "order": 31,
             "code": "Ebr09",
@@ -912,6 +930,40 @@
             "pdf": "",
             "bibtex": "@ARTICLE(Ebr09,<br> author = { M. Ebrahimi} ,<br> title = 'A Necessary and Sufficient Contractivity Condition for the Fractal Transform Operator',<br> journal = 'Journal of Mathematical Imaging and Vision',<br> year = '2009',<br> volume = '35',<br> number = '3',<br> pages = '186-192',<br> publisher = 'Springer'<br>)",
             "authors": "M. Ebrahimi",
+            "visible": true,
+            "peoplePageVisible": true,
+            "people": [
+                1
+            ]
+        },
+        {
+            "id": 14,
+            "order": 36,
+            "code": "EVM09",
+            "title": "Coupled Multi-Frame Super-Resolution with Diffusive Motion Model and Total Variation Regularization. In: Proceedings of the International Work-shop on Local and Non-Local Approximation in Image Processing (LNLA). Ed. by J. Astola, K. Egiazarian, and V. Katkovnik. Tampere International Center for Signal Processing. Tuusula, Finland, pp. 62–69.",
+            "year": 2009,
+            "type": "Conference Proceedings",
+            "url": "",
+            "pdf": "",
+            "bibtex": "@inproceedings(EVM09,<br> author = ' M. Ebrahimi and E. R. Vrscay and A. L. Martel ',<br> title = 'Coupled Multi-Frame Super-Resolution with Diffusive Motion Model and Total Variation Regularization',<br> Booktitle = 'Proceedings of The International Workshop on Local and Non-Local Approximation in Image Processing (LNLA)',<br> year = '2009',<br> editor = 'J. Astola and K. Egiazarian and V. Katkovnik',<br> pages = '62-69',<br> address = 'Tuusula, Finland',<br> month = 'August',<br> organization = 'Tampere International Center for Signal Processing'<br>)",
+            "authors": "M. Ebrahimi, E. R. Vrscay, and A. L. Martel",
+            "visible": true,
+            "peoplePageVisible": true,
+            "people": [
+                1
+            ]
+        },
+        {
+            "id": 13,
+            "order": 35,
+            "code": "EM09b",
+            "title": "Image Registration under Varying Illumination: Hyper-Demons Algorithm. In: Lecture Notes in Computer Science, Proceedings of Energy Minimization Methods in Computer Vision and Pattern Recognition (EMMCVPR). Ed. by D. Cremers, Y. Boykov, A. Blake, and F. R. Schmidt. Vol. 5681. Bonn, Germany: Springer-Verlag, pp. 303–316.",
+            "year": 2009,
+            "type": "Conference Proceedings",
+            "url": "",
+            "pdf": "",
+            "bibtex": "@inproceedings(EM09b,<br> author = ' M. Ebrahimi and A. L. Martel ',<br> title = 'Image Registration under Varying Illumination: Hyper-Demons Algorithm',<br> Booktitle = 'Lecture Notes in Computer Science, Proceedings of Energy Minimization Methods in Computer Vision and Pattern Recognition (EMMCVPR)',<br> year = '2009',<br> editor = 'D. Cremers and Y. Boykov and A. Blake and F. R. Schmidt',<br> volume = '5681',<br> pages = '303-316',<br> address = 'Bonn, Germany',<br> month = 'August',<br> publisher = 'Springer-Verlag'<br>)",
+            "authors": "M. Ebrahimi, A. L. Martel",
             "visible": true,
             "peoplePageVisible": true,
             "people": [
@@ -970,40 +1022,6 @@
             ]
         },
         {
-            "id": 13,
-            "order": 35,
-            "code": "EM09b",
-            "title": "Image Registration under Varying Illumination: Hyper-Demons Algorithm. In: Lecture Notes in Computer Science, Proceedings of Energy Minimization Methods in Computer Vision and Pattern Recognition (EMMCVPR). Ed. by D. Cremers, Y. Boykov, A. Blake, and F. R. Schmidt. Vol. 5681. Bonn, Germany: Springer-Verlag, pp. 303–316.",
-            "year": 2009,
-            "type": "Conference Proceedings",
-            "url": "",
-            "pdf": "",
-            "bibtex": "@inproceedings(EM09b,<br> author = ' M. Ebrahimi and A. L. Martel ',<br> title = 'Image Registration under Varying Illumination: Hyper-Demons Algorithm',<br> Booktitle = 'Lecture Notes in Computer Science, Proceedings of Energy Minimization Methods in Computer Vision and Pattern Recognition (EMMCVPR)',<br> year = '2009',<br> editor = 'D. Cremers and Y. Boykov and A. Blake and F. R. Schmidt',<br> volume = '5681',<br> pages = '303-316',<br> address = 'Bonn, Germany',<br> month = 'August',<br> publisher = 'Springer-Verlag'<br>)",
-            "authors": "M. Ebrahimi, A. L. Martel",
-            "visible": true,
-            "peoplePageVisible": true,
-            "people": [
-                1
-            ]
-        },
-        {
-            "id": 14,
-            "order": 36,
-            "code": "EVM09",
-            "title": "Coupled Multi-Frame Super-Resolution with Diffusive Motion Model and Total Variation Regularization. In: Proceedings of the International Work-shop on Local and Non-Local Approximation in Image Processing (LNLA). Ed. by J. Astola, K. Egiazarian, and V. Katkovnik. Tampere International Center for Signal Processing. Tuusula, Finland, pp. 62–69.",
-            "year": 2009,
-            "type": "Conference Proceedings",
-            "url": "",
-            "pdf": "",
-            "bibtex": "@inproceedings(EVM09,<br> author = ' M. Ebrahimi and E. R. Vrscay and A. L. Martel ',<br> title = 'Coupled Multi-Frame Super-Resolution with Diffusive Motion Model and Total Variation Regularization',<br> Booktitle = 'Proceedings of The International Workshop on Local and Non-Local Approximation in Image Processing (LNLA)',<br> year = '2009',<br> editor = 'J. Astola and K. Egiazarian and V. Katkovnik',<br> pages = '62-69',<br> address = 'Tuusula, Finland',<br> month = 'August',<br> organization = 'Tampere International Center for Signal Processing'<br>)",
-            "authors": "M. Ebrahimi, E. R. Vrscay, and A. L. Martel",
-            "visible": true,
-            "peoplePageVisible": true,
-            "people": [
-                1
-            ]
-        },
-        {
             "id": 11,
             "order": 37,
             "code": "Ebr09b",
@@ -1014,40 +1032,6 @@
             "pdf": "",
             "bibtex": "@inproceedings(Ebr09b,<br> author = 'M. Ebrahimi',<br> title = 'Inverse Problems and Self-Similarity in Imaging',<br> booktitle = 'Interdisciplinary Workshop on Fixed-Point Algorithms for Inverse Problems in Science and Engineering, Travel sponsored by the Banff International Research for Mathematical Innovation and Discovery',<br> year = '2009',<br> month='November',<br> address = 'Banff International Research Center, Banff, Alberta, Canada'<br>)",
             "authors": "M. Ebrahimi",
-            "visible": true,
-            "peoplePageVisible": true,
-            "people": [
-                1
-            ]
-        },
-        {
-            "id": 18,
-            "order": 38,
-            "code": "Ebr08c",
-            "title": "Non-Local Approaches to Image and Video Resolution Enhancement. In: SIAM International Conference on Imaging Science. San Diego, California, USA.",
-            "year": 2008,
-            "type": "Conference Proceedings",
-            "url": "",
-            "pdf": "",
-            "bibtex": "@inproceedings(Ebr08c,<br> author = 'M. Ebrahimi',<br> title = 'Non-Local Approaches to Image and Video Resolution Enhancement',<br> booktitle = 'SIAM International Conference on Imaging Science',<br> year = '2008',<br> month='July',<br> address = 'San Diego, California, USA'<br>)",
-            "authors": "M. Ebrahimi",
-            "visible": true,
-            "peoplePageVisible": true,
-            "people": [
-                1
-            ]
-        },
-        {
-            "id": 19,
-            "order": 39,
-            "code": "EV08a",
-            "title": "Examining the Role of Scale in the Context of the Non-Local-Means Filter. In: Lecture Notes in Computer Science, Proceedings of the International Conference on Image Analysis and Recognition ICIAR, Povoa de Varzim, Portugal, pp. 170–181.",
-            "year": 2008,
-            "type": "Conference Proceedings",
-            "url": "",
-            "pdf": "",
-            "bibtex": "@inproceedings(EV08a,<br> author = ' M. Ebrahimi and E. R. Vrscay',<br> title = 'Examining the Role of Scale in the Context of the Non-Local-Means Filter',<br> Booktitle = 'Lecture Notes in Computer Science, Proceedings of The International Conference on Image Analysis and Recognition ICIAR',<br> year = '2008',<br> pages = '170-181 ',<br> address = 'Povoa de Varzim, Portugal',<br> month = 'June'<br>)",
-            "authors": "M. Ebrahimi, E. R. Vrscay",
             "visible": true,
             "peoplePageVisible": true,
             "people": [
@@ -1072,16 +1056,33 @@
             ]
         },
         {
-            "id": 16,
-            "order": 41,
-            "code": "EV08c",
-            "title": "Self-Similarity in Imaging, 20 Years after “Fractals Everywhere”. In: Proceedings of The International Workshop on Local and Non-Local Approximation in Image Processing, LNLA. Lausanne, Switzerland, pp. 165–172.",
+            "id": 18,
+            "order": 38,
+            "code": "Ebr08c",
+            "title": "Non-Local Approaches to Image and Video Resolution Enhancement. In: SIAM International Conference on Imaging Science. San Diego, California, USA.",
             "year": 2008,
             "type": "Conference Proceedings",
             "url": "",
             "pdf": "",
-            "bibtex": "@inproceedings(EV08c,<br> author = ' M. Ebrahimi and E. R. Vrscay',<br> title = ' Self-Similarity in Imaging, 20 Years after Fractals Everywhere',<br> Booktitle = 'Proceedings of The International Workshop on Local and Non-Local Approximation in Image Processing, LNLA',<br> year = '2008',<br> pages = '165-172',<br> address = 'Lausanne, Switzerland',<br> month = 'August'<br>)",
-            "authors": "M. Ebrahimi, E. R. Vrscay",
+            "bibtex": "@inproceedings(Ebr08c,<br> author = 'M. Ebrahimi',<br> title = 'Non-Local Approaches to Image and Video Resolution Enhancement',<br> booktitle = 'SIAM International Conference on Imaging Science',<br> year = '2008',<br> month='July',<br> address = 'San Diego, California, USA'<br>)",
+            "authors": "M. Ebrahimi",
+            "visible": true,
+            "peoplePageVisible": true,
+            "people": [
+                1
+            ]
+        },
+        {
+            "id": 46,
+            "order": 43,
+            "code": "EM09b",
+            "title": "Image Registration under Varying Illumination. York University Analysis Seminar. Toronto, Ontario, Canada",
+            "year": 2008,
+            "type": "Oral Presentation",
+            "url": "",
+            "pdf": "",
+            "bibtex": "@inproceedings(EM09b,<br> author = 'M. Ebrahimi',<br> title = 'Image Registration under Varying Illumination',<br> booktitle = 'York University Analysis Seminar',<br> year = '2008',<br> month='November',<br> address = 'Toronto, Ontario, Canada'<br>)",
+            "authors": "M. Ebrahimi",
             "visible": true,
             "peoplePageVisible": true,
             "people": [
@@ -1106,16 +1107,33 @@
             ]
         },
         {
-            "id": 46,
-            "order": 43,
-            "code": "EM09b",
-            "title": "Image Registration under Varying Illumination. York University Analysis Seminar. Toronto, Ontario, Canada",
+            "id": 16,
+            "order": 41,
+            "code": "EV08c",
+            "title": "Self-Similarity in Imaging, 20 Years after “Fractals Everywhere”. In: Proceedings of The International Workshop on Local and Non-Local Approximation in Image Processing, LNLA. Lausanne, Switzerland, pp. 165–172.",
             "year": 2008,
-            "type": "Oral Presentation",
+            "type": "Conference Proceedings",
             "url": "",
             "pdf": "",
-            "bibtex": "@inproceedings(EM09b,<br> author = 'M. Ebrahimi',<br> title = 'Image Registration under Varying Illumination',<br> booktitle = 'York University Analysis Seminar',<br> year = '2008',<br> month='November',<br> address = 'Toronto, Ontario, Canada'<br>)",
-            "authors": "M. Ebrahimi",
+            "bibtex": "@inproceedings(EV08c,<br> author = ' M. Ebrahimi and E. R. Vrscay',<br> title = ' Self-Similarity in Imaging, 20 Years after Fractals Everywhere',<br> Booktitle = 'Proceedings of The International Workshop on Local and Non-Local Approximation in Image Processing, LNLA',<br> year = '2008',<br> pages = '165-172',<br> address = 'Lausanne, Switzerland',<br> month = 'August'<br>)",
+            "authors": "M. Ebrahimi, E. R. Vrscay",
+            "visible": true,
+            "peoplePageVisible": true,
+            "people": [
+                1
+            ]
+        },
+        {
+            "id": 19,
+            "order": 39,
+            "code": "EV08a",
+            "title": "Examining the Role of Scale in the Context of the Non-Local-Means Filter. In: Lecture Notes in Computer Science, Proceedings of the International Conference on Image Analysis and Recognition ICIAR, Povoa de Varzim, Portugal, pp. 170–181.",
+            "year": 2008,
+            "type": "Conference Proceedings",
+            "url": "",
+            "pdf": "",
+            "bibtex": "@inproceedings(EV08a,<br> author = ' M. Ebrahimi and E. R. Vrscay',<br> title = 'Examining the Role of Scale in the Context of the Non-Local-Means Filter',<br> Booktitle = 'Lecture Notes in Computer Science, Proceedings of The International Conference on Image Analysis and Recognition ICIAR',<br> year = '2008',<br> pages = '170-181 ',<br> address = 'Povoa de Varzim, Portugal',<br> month = 'June'<br>)",
+            "authors": "M. Ebrahimi, E. R. Vrscay",
             "visible": true,
             "peoplePageVisible": true,
             "people": [
@@ -1145,9 +1163,9 @@
             "code": "EV07c",
             "title": "Solving the Inverse Problem of Image Zooming using “Self-Examples”. In: Lecture Notes in Computer Science, Proceedings of the International Conference on Image Analysis and Recognition ICIAR. Vol. 4633, pp. 117–130.",
             "year": 2007,
-            "type": "Journal Article",
+            "type": "Conference Proceedings",
             "url": "",
-            "pdf": "",
+            "pdf": "data/2AA7-iciar2007.pdf",
             "bibtex": "@inproceedings(EV07c,<br> author = ' M. Ebrahimi and E. R. Vrscay',<br> title = 'Solving the Inverse Problem of Image Zooming using Self-Examples',<br> Booktitle = 'Lecture Notes in Computer Science, Proceedings of The International Conference on Image Analysis and Recognition ICIAR',<br> year = '2007',<br> volume= '4633',<br> pages = '117-130',<br> address = 'Montreal, Canada',<br> month = 'August'<br>)",
             "authors": "M. Ebrahimi, E. R. Vrscay",
             "visible": true,
@@ -1162,45 +1180,11 @@
             "code": "EV07b",
             "title": "Regularization Schemes involving Self-similarity in Imaging Inverse Problems. In: Proceedings of Applied Inverse Problems (AIP), DOI:10.1088/1742-6596/124/1/012021, 12 pages.",
             "year": 2007,
-            "type": "Journal Article",
+            "type": "Conference Proceedings",
             "url": "",
             "pdf": "",
             "bibtex": "@inproceedings(EV07b,<br> author = 'M. Ebrahimi and E. R. Vrscay',<br> title = 'Regularization Schemes involving Self-similarity in Imaging Inverse Problems',<br> booktitle = 'Proceedings of Applied Inverse Problems (AIP), DOI:10.1088/1742-6596/124/1/012021, 12 pages',<br> year = '2007',<br> address = 'University of British Columbia, Vancouver, Canada',<br> month = 'June'<br>)",
             "authors": "M. Ebrahimi, E. R. Vrscay",
-            "visible": true,
-            "peoplePageVisible": true,
-            "people": [
-                1
-            ]
-        },
-        {
-            "id": 22,
-            "order": 47,
-            "code": "EV06a",
-            "title": "Fractal Image Coding as Projections onto Convex Sets, In: Lecture Notes in Computer Science, Proceedings of the International Conference on Image Analysis and Recognition ICIAR. Berlin, Heidelberg, pp. 493–506.",
-            "year": 2006,
-            "type": "Journal Article",
-            "url": "",
-            "pdf": "",
-            "bibtex": "@inproceedings(EV06a,<br> author = 'M. Ebrahimi and E. R. Vrscay',<br> title = 'Fractal Image Coding as Projections onto Convex Sets',<br> Booktitle = 'Lecture Notes in Computer Science, Proceedings of The International Conference on Image Analysis and Recognition ICIAR',<br> year = '2006',<br> pages = '493-506',<br> month='September',<br> address = 'Berlin, Heidelberg'<br>)",
-            "authors": "M. Ebrahimi, E. R. Vrscay",
-            "visible": true,
-            "peoplePageVisible": true,
-            "people": [
-                1
-            ]
-        },
-        {
-            "id": 42,
-            "order": 48,
-            "code": "EV06b",
-            "title": "Regularized Fractal Image Decoding. Proceedings of the Canadian Conference on Electrical and Computer Engineering CCECE. Ottawa, Canada",
-            "year": 2006,
-            "type": "Conference Proceedings",
-            "url": "",
-            "pdf": "",
-            "bibtex": "@inproceedings(mehran2,<br> author = 'M. Ebrahimi and E. R. Vrscay',<br> title = 'Regularized Fractal Image Decoding',<br> booktitle = 'Proceedings of the Canadian Conference on Electrical and Computer Engineering CCECE',<br> year = '2006',<br> pages = '1933-1938',<br> address = 'Ottawa, Canada',<br> month = 'May'<br>)",
-            "authors": "M. Ebrahimi and E. R. Vrscay",
             "visible": true,
             "peoplePageVisible": true,
             "people": [
@@ -1235,6 +1219,40 @@
             "pdf": "",
             "bibtex": "@inproceedings(Ebr06b,<br> author = 'M. Ebrahimi',<br> title = 'Regularized Fractal Image Decoding',<br> booktitle = 'CAIMS-MITACS Joint Annual Conference',<br> year = '2006',<br> month='June',<br> address = 'York University, Toronto, Ontario, Canada'<br>)",
             "authors": "M. Ebrahimi",
+            "visible": true,
+            "peoplePageVisible": true,
+            "people": [
+                1
+            ]
+        },
+        {
+            "id": 22,
+            "order": 47,
+            "code": "EV06a",
+            "title": "Fractal Image Coding as Projections onto Convex Sets, In: Lecture Notes in Computer Science, Proceedings of the International Conference on Image Analysis and Recognition ICIAR. Berlin, Heidelberg, pp. 493–506.",
+            "year": 2006,
+            "type": "Journal Article",
+            "url": "",
+            "pdf": "",
+            "bibtex": "@inproceedings(EV06a,<br> author = 'M. Ebrahimi and E. R. Vrscay',<br> title = 'Fractal Image Coding as Projections onto Convex Sets',<br> Booktitle = 'Lecture Notes in Computer Science, Proceedings of The International Conference on Image Analysis and Recognition ICIAR',<br> year = '2006',<br> pages = '493-506',<br> month='September',<br> address = 'Berlin, Heidelberg'<br>)",
+            "authors": "M. Ebrahimi, E. R. Vrscay",
+            "visible": true,
+            "peoplePageVisible": true,
+            "people": [
+                1
+            ]
+        },
+        {
+            "id": 42,
+            "order": 48,
+            "code": "EV06b",
+            "title": "Regularized Fractal Image Decoding. Proceedings of the Canadian Conference on Electrical and Computer Engineering CCECE. Ottawa, Canada",
+            "year": 2006,
+            "type": "Conference Proceedings",
+            "url": "",
+            "pdf": "",
+            "bibtex": "@inproceedings(mehran2,<br> author = 'M. Ebrahimi and E. R. Vrscay',<br> title = 'Regularized Fractal Image Decoding',<br> booktitle = 'Proceedings of the Canadian Conference on Electrical and Computer Engineering CCECE',<br> year = '2006',<br> pages = '1933-1938',<br> address = 'Ottawa, Canada',<br> month = 'May'<br>)",
+            "authors": "M. Ebrahimi and E. R. Vrscay",
             "visible": true,
             "peoplePageVisible": true,
             "people": [
