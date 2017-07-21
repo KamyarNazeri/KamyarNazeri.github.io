@@ -66,7 +66,7 @@ namespace ImagingLab.CPanel
             Publication.url = txt_url.Text;
             Publication.pdf = txt_pdf.Text;
             Publication.authors = txt_authors.Text;
-            Publication.title = txt_title.Text;
+            Publication.title = CPanelApp.JSONEncode(txt_title.Text, true);
             Publication.visible = chk_visible.Checked;
             Publication.peoplePageVisible = chk_peopleVisible.Checked;
             Publication.bibtex = CPanelApp.JSONEncode(txt_bibtex.Text, false);
