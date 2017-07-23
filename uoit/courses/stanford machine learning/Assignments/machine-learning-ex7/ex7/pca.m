@@ -7,7 +7,7 @@ function [U, S] = pca(X)
 
 [m, n] = size(X);
 
-sigma = (X' * X) / m;
-[U, S, V] = svd(sigma);
+sigma = (X' * X) / m;           % covariance matrix (n x n)
+[U, S, V] = svd(sigma);         % eigen decomposition using SVD
 
 end
