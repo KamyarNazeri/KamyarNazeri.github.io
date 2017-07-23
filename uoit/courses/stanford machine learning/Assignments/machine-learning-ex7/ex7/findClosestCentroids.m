@@ -16,11 +16,10 @@ for i=1:m
     for k=1:K
         dist = norm(row - centroids(k, :)) ^ 2;
         if(k == 1 || dist < mindist)
-            idx(i) = k;
+            idx(i) = k; 
             mindist = dist;
         end
     end
 end
 
 end
-
