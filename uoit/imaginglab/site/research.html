@@ -45,101 +45,302 @@
             <h1>Research Areas</h1>
             <h4 id="content_updated">[Updated]</h4>
             <br>
-            <span style="font-weight: bold;"></span>
-            <font size="2">
-                Broadly speaking, our research interests lie in the diverse area of <span style="font-weight: bold;">
-                    mathematical
-                    imaging
-                </span> and <span style="font-weight: bold;">
-                    inverse
-                    problems
-                </span>.
-            </font>
-            <font size="2">
-                Our long-term research objective is directed towards developing and validating efficient <span style="font-weight: bold;">
-                    numerical methodologies for solving
-                    real-world, ill-posed inverse problems
-                </span> in the field of <span style="font-weight: bold;">medical imaging</span>.
-                Some of our short- and medium-term research objectives are outlined below.<br>
+            <div id="content_selected">
+                <div>
+                    Broadly speaking, our research interests lie in the diverse area of 
+                    <span style="font-weight: bold;">mathematical imaging</span> and 
+                    <span style="font-weight: bold;">inverse problems</span>.
+                </div>
+                <div>
+                    Our long-term research objective is directed towards developing and validating efficient 
+                    <span style="font-weight: bold;">numerical methodologies for solving real-world, ill-posed inverse problems</span> 
+                    in the field of 
+                    <span style="font-weight: bold;">medical imaging</span>. 
+                    Some of our short- and medium-termresearch objectives are outlined below.
+                </div>
                 <br>
-            </font>
-            <h3>
-                <font size="2">1-Efficient numerical methodologies aimed at Computer Assisted Surgery (CAS) of the breast</font>
-            </h3>
-            <font size="2">
-                Breast cancer is the most common malignant disease among Canadian women. Breast Magnetic Resonance Imaging (MRI) is
-                frequently performed prior to breast conserving surgery in order to assess the location and extent of the lesion.
-                Ideally, the surgeon should be able to use the pre-surgery image information during surgery to guide the excision.
-                This requires the prone pre-surgical MR image to be aligned or co-registered to conform to the patient's supine position
-                on the operating table. The registration step can be modelled as an inverse problem that is ill-posed, i.e., has
-                no unique solution.<br>
-                <br> Recently, we have developed a computationally efficient registration scheme based on Thin-Plate-Splines to align
-                pre-surgical images to the operating room position using MR-visible surface markers placed before imaging. While
-                the results are promising, the next natural step is to eliminate the requirement of placing the surface markers in
-                the registration scheme. The future breast CAS technology will demand novel efficient hybrid surface-intensity based
-                registration algorithms that employ the surface information of the operating room along with the intensity information
-                of the pre-surgical images. The highly deformable nature of the breast tissue is one of the main challenges of solving
-                this ill-posed inverse problem.<br>
+
+                <br> <br>
+                <h1>Recent Activities</h1>
                 <br>
-            </font>
-            <h3>
-                <font size="2">2-Coupled approaches for analysis of Dynamic Contrast Enhanced (DCE) Magnetic Resonance Imaging (MRI)</font>
-            </h3>
-            <font size="2">
-                DCE imaging has emerged as a powerful screening tool for identifying carcinoma in high-risk populations. Accurate registration
-                of DCE images is valuable for proper identification of the lesions. Recently, we have developed a simple coupled
-                PDE approach to joint registration and intensity correction of the DCE images. In general, the contrast uptake curves
-                are results of a physical process. Motion correction of images coupled with this process is a significant step in
-                identification of malignancies. This requires defining regularization expressions that directly incorporate the underlying
-                physical process of this inverse problem.<br>
+
+                <h3>1-Efficient numerical methodologies aimed at Computer Assisted Surgery (CAS) of the breast</h3>
+                <div>
+                    Breast cancer is the most common malignant disease among Canadian women. Breast Magnetic Resonance Imaging (MRI) is frequently
+                    performed prior to breast conserving surgery in order to assess the location and extent of the lesion.
+                    Ideally, the surgeon should be able to use the pre-surgery image information during surgery to guide
+                    the excision. This requires the prone pre-surgical MR image to be aligned or co-registered to conform
+                    to the patient's supine position on the operating table. The registration step can be modelled as an
+                    inverse problem that is ill-posed, i.e., has no unique solution.<br>
+                    Recently, we have developed a computationally efficient registration scheme based on Thin-Plate-Splines
+                    to align pre-surgical images to the operating room position using MR-visible surface markers placed before
+                    imaging. While the results are promising, the next natural step is to eliminate the requirement of placing
+                    the surface markers in the registration scheme. The future breast CAS technology will demand novel efficient
+                    hybrid surface-intensity based registration algorithms that employ the surface information of the operating
+                    room along with the intensity information of the pre-surgical images. The highly deformable nature of
+                    the breast tissue is one of the main challenges of solving this ill-posed inverse problem.
+                </div>
                 <br>
-            </font>
-            <h3>
-                <font size="2">
-                    3-Image registration schemes in presence of discontinuities
-                </font>
-            </h3>
-            <font size="2">
-                In image registration, researchers generally rely on transformations to describe the alignment process relating two
-                images. However, in the clinical setting, there are many situations where the “true” deformation may have discontinuities.
-                For example, one would expect the transformation between the images of a patient before and after tumor resection
-                would contain a singularity or a hole. Previously, the problems of rips/tears have been addressed using the Total
-                Variation (TV) regularization, but this typically only works well for extremely small discontinuities. Furthermore,
-                these approaches do not at all address the clinical problems where singularities or holes are present in the true
-                deformation. Given these limitations of current approaches to image registration, an open problem is to define an
-                approach that would enable deformable registration in the presence of various types of large-scale discontinuities.
-                One potential approach is to develop a registration technique that implicitly allows topological changes in the deformation
-                field, much like the use of level sets in image segmentation allows implicitly for topological changes in region
-                boundaries.
+
+                <h3>2-Coupled approaches for analysis of Dynamic Contrast Enhanced (DCE) Magnetic Resonance Imaging (MRI)</h3>
+                <div>
+                    DCE imaging has emerged as a powerful screening tool for identifying carcinoma in high-risk populations. Accurate registration
+                    of DCE images is valuable for proper identification of the lesions. Recently, we have developed a simple
+                    coupled PDE approach to joint registration and intensity correction of the DCE images. In general, the
+                    contrast uptake curves are results of a physical process. Motion correction of images coupled with this
+                    process is a significant step in identification of malignancies. This requires defining regularization
+                    expressions that directly incorporate the underlying physical process of this inverse problem.<br>
+                    
+                </div>
                 <br>
-            </font>
-            <font size="2">
+
+                <h3>3-Image registration schemes in presence of discontinuities</h3>
+                <div>
+                    In image registration, researchers generally rely on transformations to describe the alignment process relating two images.
+                    However, in the clinical setting, there are many situations where the “true” deformation may have discontinuities.
+                    For example, one would expect the transformation between the images of a patient before and after tumor
+                    resection would contain a singularity or a hole. Previously, the problems of rips/tears have been addressed
+                    using the Total Variation (TV) regularization, but this typically only works well for extremely small
+                    discontinuities. Furthermore, these approaches do not at all address the clinical problems where singularities
+                    or holes are present in the true deformation. Given these limitations of current approaches to image
+                    registration, an open problem is to define an approach that would enable deformable registration in the
+                    presence of various types of large-scale discontinuities. One potential approach is to develop a registration
+                    technique that implicitly allows topological changes in the deformation field, much like the use of level
+                    sets in image segmentation allows implicitly for topological changes in region boundaries.
+                    <br>
+                </div>
+                <br> 
+                
+                <br> <br>
+                <h1>Past Contributions</h1>
                 <br>
-            </font>
-            <font size="2">
-                <br>
-            </font><br>
-            <br>
-            <br>
+                
+                <h3>1-Landmark-based image registration of the breast</h3>
+                <div>
+                    Breast magnetic resonance imaging (MRI) is frequently performed prior to breast conserving surgery in order to assess the
+                    location and extent of the lesion. It is, however, difficult for the surgeon to use the MR images to
+                    guide the surgery. While pre-surgical MRI is typically performed in the prone position, surgery is performed
+                    in the supine position. The breast undergoes significant distortion as a result. To overcome this restriction,
+                    supine breast MRI has been recently proposed. In most clinical MR scanners the arm of the patient has
+                    to be placed parallel to the body, whereas the arm is placed in an outstretched position during surgery.
+                    The highly deformable nature of the breast tissue and the computational time constraint are the main
+                    challenges in solving this inverse problem. We have examined a thin-plate spline registration scheme
+                    to match these two configurations using the positional information of surface markers [ESM+14] [SEH+12a]
+                    [ESPM12].
+                </div>
+                <br />
+
+                <h3>2-Intensity based approaches for medical image registration</h3>
+                <div>
+                    We developed a number of new methodologies for automated motion correction of medical images using their intensity information.
+                    Specifically, we have been working on registration algorithms aimed at motion correction of dynamic contrast-enhanced
+                    magnetic resonance images (DCE-MRI). In [EM09b] we suggested an extension of the well-known Demons image
+                    registration algorithm. Our extension allows intensity changes in images due to contrast enhancement
+                    as opposed to the Demons algorithm. This extension provides a simple registration algorithm for DCE-MRI.
+                    Furthermore, in [Ebr09a] we proposed a coupled PDE-based approach to optimize the combined image registration
+                    and intensity correction expression in an optimize-then-discretize framework. More recently in [ELM13]
+                    we have presented an efficient multi-level Gauss-Newton approach in a discretize-then-optimize paradigm.
+                    The simulated data for validation in this article was prepared by Anthony Lausch (MSc Student, co-author).
+                    Lausch’s work has also led to [LEM11]. In addition, we assisted Melissa Hill (PhD student at Sunnybrook)
+                    in registration of contrast-enhanced digital mammography images. The work was a collaboration with a
+                    group of experts in digital mammography that led to [MEL13] in Medical Physics.
+                </div>
+                <br />
+
+                <h3>3-Image zooming and super-resolution</h3>
+                <div>
+                    Recovery of a high-resolution image from a single image is called image zooming and from a set of distorted images is known
+                    as super-resolution. Image zooming and super-resolution are the other ill-posed inverse problems that
+                    we have been investigating during the course of our research. In “Solving the inverse problem of image
+                    zooming using ‘self-examples’” [EV07c] we presented a recipe to address image zooming problem based on
+                    the non-local (NL) self-similarities of an image across scales. This publication received a great deal
+                    of attention and citations. The method of “self-examples” combined the ideas of fractal-zoom with the
+                    newly developed NL-means denoising algorithm which is demonstrated to perform as a leading classical
+                    denoising method. The effectiveness of our method lies in the cross-scale regularity properties of natural
+                    images which has been considered in [EV08a]. Furthermore, to address the multi-frame super-resolution
+                    problem, we presented an algorithm in [EV08b] that does not require sub-pixel motion estimation as opposed
+                    to the common existing super-resolution algorithms. It is believed that a combined reconstruction and
+                    motion estimation is a key tool to address the superresolution problem rather than treating the two sub-problems
+                    independently. In [EVM09] [EM09c], we proposed a coupled multi-frame super-resolution approach with a
+                    non-parametric motion model. A coupled partial differential equation (PDE)-based approach was used to
+                    solve the optimization problem. Two variants of this work were also presented in [Ebr10b] [Ebr08c].
+                </div>
+                <br />
+
+                <h3>4-Inverse problems involving self-similarity</h3>
+                <div>
+                    Self-similarity is the basis of fractal image coding which was originally developed by Michael Barnsley, the influential
+                    author of Fractals Everywhere. We revisited the concept of fractal-based methods and derived a necessary
+                    and sufficient condition for the contractivity of the fractal transform operator [Ebr09]. In [LVEB09]
+                    prepared in collaboration with Barnsley and coworkers we proposed more generalized fractal transform
+                    operators in the context of measure valued images. To offer flexibility in inclusion of a-priori image
+                    constraints at the decoding stage we proposed “Fractal image coding as projections onto convex sets (POCS)”
+                    [EV06a] and “Regularization Schemes involving Self-similarity in Imaging Inverse Problems” [EV07b]. These
+                    papers provide tools to address the ill-posed inverse problem of missing fractal codes. We summarized
+                    the activity in the area of self-similarity in imaging for the past 20 years in two invited presentations
+                    [Ebr09b] [EV08c].
+                </div>
+            </div>
+            <br />
+            <br />
+
         </div>
 
-        <div id="footer" class="shadow">
-            <p>
-                <a href="http://www.uoit.ca">
-                    <img style="width: 78px; height: 25px;" longdesc="http://www.uoit.ca" title="UOIT" alt="UOIT" src="images/logo-uoit1.jpg" />
-                </a>
-                <br>
-                ©ImagingLab.ca, Dr. Mehran Ebrahimi
-            </p>
+        <div id="content" class="clearfix shadow">
+            <br />
+            <h1 style="display: inline; padding-right:15px">Selected Publications</h1>
+            <span>
+                <a href="#" id="a_year"> By Year </a>
+                |
+                <a href="#" id="a_type"> By Type </a>
+            </span>
+            <br />
+            <br />
+            <div id="content_publication"></div>
         </div>
+
     </div>
 
     <script type="text/javascript">
-        page.ready(function (data) {
-            $("#content_updated").html("[Updated " + data.updated + "]");
-        });
-    </script>
+        (function () {
+            page.ready(function (data) {
+                
+                $("#content_updated").html("[Updated " + data.updated + "]");
 
+                $('#a_year').click(function (e) {
+                    bindPublications(true);
+                    e.preventDefault();
+                });
+
+                $('#a_type').click(function (e) {
+                    bindPublications(false);
+                    e.preventDefault();
+                });
+
+                var html = $('#content_selected').html();
+
+                for (var i = 0; i < page.data.publications.length; i++) {
+                    var code = page.data.publications[i].code;
+                    if (code) {
+                        html = html.replace('[' + code + ']', '<a href="#' + code + '">[' + code + ']</a>');
+                    }
+                }
+
+                $('#content_selected').html(html);
+
+                bindPublications(true);
+
+            });
+
+
+            function bindPublications(by_year) {
+
+                var content = $('<div>');
+                var pubs = page.data.publications;
+                var types = page.data.publicationTypes;
+
+                $("a").removeClass('selected');
+                (by_year ? $('#a_year') : $('#a_type')).addClass('selected');
+
+                pubs.sort(function (a, b) {
+                    return by_year ? (b.year - a.year) : (types.indexOf(a.type) - types.indexOf(b.type));
+                });
+
+                var keys = {};
+                var groups = [];
+
+                for (var i = 0; i < pubs.length; i++) {
+                    var item = pubs[i];
+                    var key = item[by_year ? "year" : "type"];
+
+                    if (!item.visible) continue;
+
+                    if (!keys[key]) {
+                        var grp = [];
+                        grp.key = key;
+                        keys[key] = grp;
+                        groups.push(grp);
+                    }
+                    keys[key].push(item);
+                }
+
+                for (var i = 0; i < groups.length; i++) {
+                    var grp = groups[i];
+                    grp.sort(function (a, b) { return a.order - b.order });
+                    bindPublicationsGroup(content, grp.key, grp);
+                }
+
+                $('#content_publication').fadeOut('fast', function () {
+                    $(this).empty().append(content).fadeIn();
+                });
+            };
+
+
+            function bindPublicationsGroup(parent, title, items) {
+                if (items.length == 0) return;
+                var item = $('<div>');
+                var header = $('<a href="#"></a>').appendTo(item);
+                var headertext = $('<h3 class="link"> ' + title + '</h3>').appendTo(header);
+                var pubdiv = $("<div>").appendTo(item);
+                var ul = $("<ul>").css({ 'list-style': 'none' }).appendTo(pubdiv);
+                var open = true;
+
+                header.click(function (e) {
+                    open = !open;
+                    pubdiv.slideToggle();
+                    headertext.html((open ? ' ' : '» ') + title);
+                    e.preventDefault();
+                });
+
+                for (var i = 0; i < items.length; i++) {
+                    var p = items[i];
+                    var li = $('<li>').appendTo(ul);
+                    if (p.code) li.append('[<span id="' + p.code + '" style="font-weight:bold">' + p.code + '</span>] ');
+                    if (p.authors) li.append(p.authors);
+                    if (p.year) li.append(' (' + p.year + '). ');
+                    li.append(p.title);
+                    if (p.type != title) li.append(' (<span STYLE="font-style:italic; font-size: 11px">' + p.type + '</span>)');
+                    li.append('<br />');
+
+                    var links = $('<div>').appendTo(li);
+
+                    if (p.pdf) {
+                        links.append('<a href="' + p.pdf + '" target="_blank" title="PDF"> [PDF] </a>');
+                    }
+
+                    if (p.url) {
+                        links.append('<a href="' + p.url + '" target="_blank" title="URL"> [URL] </a>');
+                    }
+
+                    if (p.bibtex) {
+                        (function () {
+                            var bibtex = p.bibtex.replace(/\n/ig, "<br/>");
+                            var bibtexLink = $('<a href="javascript:void(0)" title="Bibtex"> [Bibtex] </a>').appendTo(links);
+                            var bintexContent = $('<div>').addClass('bibtex').appendTo(links);
+
+                            bibtexLink.click(function () {
+                                bintexContent.html(bibtex);
+                                bintexContent.slideToggle();
+                            });
+                        })();
+                    }
+
+                    li.append('<br />');
+                };
+
+                item.appendTo(parent);
+            }
+
+        })();
+    </script>
+    <div id="footer" class="shadow">
+        <p>
+            <a href="http://www.uoit.ca">
+                    <img style="width: 78px; height: 25px;" longdesc="http://www.uoit.ca" title="UOIT" alt="UOIT" src="images/logo-uoit1.jpg" />
+                </a>
+            <br> ©ImagingLab.ca, Dr. Mehran Ebrahimi
+        </p>
+    </div>
 </body>
 
 </html>
