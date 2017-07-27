@@ -402,13 +402,13 @@
             "id": 55,
             "order": 1,
             "code": "MSPE17",
-            "title": "Multilevel Non-Parametric Groupwise Registration in Cardiac MRI: Application to Explanted Porcine Hearts, to appear in STACOM (Statistical Atlases and Computational Modelling of the Heart) 2017, Quebec City, September 2017",
+            "title": "Multilevel Non-Parametric Groupwise Registration in Cardiac MRI: Application to Explanted Porcine Hearts, STACOM (Statistical Atlases and Computational Modelling of the Heart) 2017, Quebec City, September 2017",
             "year": 2017,
             "type": "Conference Proceedings",
             "url": "http://stacom2017.cardiacatlas.org/",
-            "pdf": "",
+            "pdf": "data/GroupwiseRegofPigHearts.pdf",
             "bibtex": "",
-            "authors": "M. Mojica and M. Sermesant and M. Pop and M. Ebrahimi",
+            "authors": "M. Mojica, M. Pop, M. Sermesant, and M. Ebrahimi",
             "visible": true,
             "peoplePageVisible": true,
             "people": [
@@ -426,7 +426,7 @@
             "url": "https://link.springer.com/article/10.1007%2Fs11548-017-1588-3",
             "pdf": "",
             "bibtex": "@inproceedings(ABE17a,<br> author = 'G. Ahmadian and S. Bohun and M. Ebrahimi',<br> title = 'Coherent Point Drift Algorithms for Breast Image Registration',<br> Booktitle = 'Proceedings of Computer Assisted Radiology and Surgery (CARS)',<br> year = '2017',<br> month='June',<br> pages='2 pages',<br> address = 'Barcelona, Spain'<br>)",
-            "authors": "G. Ahmadian and S. Bohun and M. Ebrahimi",
+            "authors": "G. Ahmadian, S. Bohun, and M. Ebrahimi",
             "visible": true,
             "peoplePageVisible": true,
             "people": [
@@ -462,7 +462,7 @@
             "url": "http://imno.ca/sites/default/files/ImNO%202017%20Full%20Program.pdf",
             "pdf": "",
             "bibtex": "@inproceedings(ABE17b,<br> author = ' G. Ahmadian and S. Bohun and M. Ebrahimi',<br> title = 'Coherent Point Drift Algorithms for Breast Image Registration',<br> Booktitle = 'Imaging Network Ontario (ImNO) symposium',<br> year = '2017',<br> address='London, Ontario, Canada',<br> month='March'<br>)",
-            "authors": "Ahmadian, G., S. Bohun, and M. Ebrahimi",
+            "authors": "G. Ahmadian, S. Bohun, and M. Ebrahimi",
             "visible": true,
             "peoplePageVisible": true,
             "people": [
@@ -542,8 +542,25 @@
             ]
         },
         {
-            "id": 23,
+            "id": 59,
             "order": 9,
+            "code": "Ng17",
+            "title": "Thin Plate Spline Image Registration in the Presence of Localized Landmark Errors, Undergraduate Thesis in Applied and Industrial Mathematics, UOIT",
+            "year": 2017,
+            "type": "BSc Thesis",
+            "url": "",
+            "pdf": "data/undergrad_thesis_eric.pdf",
+            "bibtex": "",
+            "authors": "E. Ng",
+            "visible": true,
+            "peoplePageVisible": true,
+            "people": [
+                8
+            ]
+        },
+        {
+            "id": 23,
+            "order": 10,
             "code": "ABE16",
             "title": "Evaluation of a Coherent Point Drift Algorithm for Breast Image Registration via Surface Markers, Journal of Computational Vision and Imaging Systems, Open Access,  DOI: http://dx.doi.org/10.15353/vsnl.v2i1",
             "year": 2016,
@@ -561,7 +578,7 @@
         },
         {
             "id": 56,
-            "order": 10,
+            "order": 11,
             "code": "Ma16",
             "title": "Mathematical methods for 2D-3D cardiac image registration, Master of Science (MSc), Modelling and Computational Science, UOIT",
             "year": 2016,
@@ -578,7 +595,7 @@
         },
         {
             "id": 36,
-            "order": 11,
+            "order": 12,
             "code": "ME16a",
             "title": "A Flexible 2D-3D Parametric Image Registration Algorithm for Cardiac MRI. Lecture Notes in Computer Science, Proceedings of The International Conference on Image Analysis and Recognition ICIAR. Povoa de Varzim, Portugal, 661-671",
             "year": 2016,
@@ -596,7 +613,7 @@
         },
         {
             "id": 48,
-            "order": 12,
+            "order": 13,
             "code": "MEP16a",
             "title": "Subject-specific patch-based denoising for contrast-enhanced cardiac MR images. SPIE Digital Library, proceedings of the Medical Imaging, Volume 9784, 7 pages",
             "year": 2016,
@@ -614,7 +631,7 @@
         },
         {
             "id": 47,
-            "order": 13,
+            "order": 14,
             "code": "ME16b",
             "title": "A Flexible Approach to 2D-3D Image Registration. SIAM International Conference on Imaging Science. Albuquerque, New Mexico, USA",
             "year": 2016,
@@ -632,7 +649,7 @@
         },
         {
             "id": 37,
-            "order": 14,
+            "order": 15,
             "code": "MEP16b",
             "title": "Subject-specific patch-based denoising for contrast-enhanced cardiac MR images. Imaging Network Ontario (ImNO) symposium. Toronto, Ontario, Canada",
             "year": 2016,
@@ -650,7 +667,7 @@
         },
         {
             "id": 24,
-            "order": 15,
+            "order": 16,
             "code": "NE16",
             "title": "A Discretize-then-Optimize Approach to Super-Resolution Reconstruction and Motion Estimation. In SIAM International Conference on Imaging Science, Albuquerque, New Mexico, USA",
             "year": 2016,
@@ -668,7 +685,7 @@
         },
         {
             "id": 43,
-            "order": 16,
+            "order": 17,
             "code": "Ebr16",
             "title": "Inverse Problems in Medical Image Processing. Invited speaker for the Medical Imaging Symposium, 13th Conference on Computer and Robot Vision (CRV). Victoria, BC, Canada",
             "year": 2016,
@@ -684,8 +701,25 @@
             ]
         },
         {
+            "id": 58,
+            "order": 18,
+            "code": "Le16",
+            "title": "Graph Cuts Segmentation, Undergraduate Thesis in Applied and Industrial Mathematics, UOIT",
+            "year": 2016,
+            "type": "BSc Thesis",
+            "url": "",
+            "pdf": "data/Queenie-ugrad.pdf",
+            "bibtex": "",
+            "authors": "Q. Leung",
+            "visible": true,
+            "peoplePageVisible": true,
+            "people": [
+                10
+            ]
+        },
+        {
             "id": 38,
-            "order": 17,
+            "order": 19,
             "code": "EK15",
             "title": "Deformable Image Registration and Intensity Correction of Cardiac Perfusion MRI. Lecture Notes in Computer Science, Proceedings of Statistical Atlases and Computational Modeling of the Heart (STACOM), 13-20",
             "year": 2015,
@@ -703,7 +737,7 @@
         },
         {
             "id": 44,
-            "order": 18,
+            "order": 20,
             "code": "Ebr15",
             "title": "Inverse Problems in Medical Image Processing. Invited presentation, Sunnybrook Medical Image Analysis Laboratories (SMIAL) seminar series",
             "year": 2015,
@@ -720,7 +754,7 @@
         },
         {
             "id": 45,
-            "order": 19,
+            "order": 21,
             "code": "EM15",
             "title": "Mathematical Challenges in Medical Image Registration. Applied Mathematics, Modeling and Computational Science- Canadian Applied and Industrial Mathematics Society (AMMCS-CAIMS) Congress, [Invited Speaker to the Modeling and Simulation in Medicine and Biology Minisymposium]. Waterloo, Ontario, Canada",
             "year": 2015,
@@ -738,7 +772,7 @@
         },
         {
             "id": 54,
-            "order": 20,
+            "order": 22,
             "code": "NE15a",
             "title": "A Discretize-then-Optimize Approach to Super-Resolution Reconstruction and Motion Estimation. Journal of Computational Vision and Imaging Systems Vol. 1, Open Access",
             "year": 2015,
@@ -756,7 +790,7 @@
         },
         {
             "id": 49,
-            "order": 21,
+            "order": 23,
             "code": "NE15",
             "title": "Coupled Multi-Frame Super-Resolution Reconstruction and Motion Estimation. UOIT student research showcase",
             "year": 2015,
@@ -774,7 +808,7 @@
         },
         {
             "id": 2,
-            "order": 22,
+            "order": 24,
             "code": "Ebr+14",
             "title": "Using Surface Markers for MRI Guided Breast Conserving Surgery; a Feasibility Survey. Physics in Medicine and Biology, Physics in Medicine and Biology, (59), pp. 1589–1605",
             "year": 2014,
@@ -791,7 +825,7 @@
         },
         {
             "id": 1,
-            "order": 23,
+            "order": 25,
             "code": "ELM13",
             "title": "A Gauss-Newton Approach to Joint Image Registration and Intensity Correction. Computer Methods and Programs in Biomedicine. Vol.112(3) pp. 398-406.",
             "year": 2013,
@@ -808,7 +842,7 @@
         },
         {
             "id": 3,
-            "order": 24,
+            "order": 26,
             "code": "Hil+13",
             "title": "Anatomical Noise in Contrast-Enhanced Digital Mammography. Part I. Single-Energy Imaging. Medical Physics, 40:051910.",
             "year": 2013,
@@ -825,7 +859,7 @@
         },
         {
             "id": 26,
-            "order": 25,
+            "order": 27,
             "code": "LBE+12",
             "title": "Non-rigid Registration of Abdominal DCE-MRI Data using Motion Informed Intensity Corrections",
             "year": 2012,
@@ -842,7 +876,7 @@
         },
         {
             "id": 5,
-            "order": 26,
+            "order": 28,
             "code": "Ebr+12",
             "title": "Evaluating Thin Plate Spline Registration of the Breast in Two Supine Positions. Journal of Computer Assisted Radiology and Surgery, 7(S1).",
             "year": 2012,
@@ -859,7 +893,7 @@
         },
         {
             "id": 33,
-            "order": 27,
+            "order": 29,
             "code": "Ebr12",
             "title": "Evaluating Thin Plate Spline Registration of the Breast in Two Supine Positions. AMS Sectional Meeting, Special Session on Mathematical Image Processing. Rochester Institute of Technology, Rochester, NY, USA",
             "year": 2012,
@@ -876,7 +910,7 @@
         },
         {
             "id": 4,
-            "order": 28,
+            "order": 30,
             "code": "Sie+12",
             "title": "Supine Breast MRI and Assessment of Future Clinical Applications. European Journal of Radiology, 81(S1).",
             "year": 2012,
@@ -893,7 +927,7 @@
         },
         {
             "id": 50,
-            "order": 29,
+            "order": 31,
             "code": "CE12",
             "title": "Image Registration in Presence of Discontinuities. Fields-MITACs Industrial Problem Solving Workshop on Medical Imaging, Problem Presented. York University, Toronto, Ontario, Canada",
             "year": 2012,
@@ -910,7 +944,7 @@
         },
         {
             "id": 34,
-            "order": 30,
+            "order": 32,
             "code": "Ebr11",
             "title": "Mathematical methods for breast image registration. MITACS-Fields Conference on the Mathematics of Medical Imaging. [Invited Speaker to the Special Session on Medical Imaging: Mathematical Methods and Industrial Applications]. Toronto, Ontario, Canada",
             "year": 2011,
@@ -927,7 +961,7 @@
         },
         {
             "id": 9,
-            "order": 31,
+            "order": 33,
             "code": "LEM11",
             "title": "Image Registration for Abdominal Dynamic Contrast Enhanced Magnetic Resonance Images. In Proceedings of 8th IEEE International Symposium on Biomedical Imaging (ISBI), Chicago, Illinois, USA, pp. 561–565.",
             "year": 2011,
@@ -944,7 +978,7 @@
         },
         {
             "id": 10,
-            "order": 32,
+            "order": 34,
             "code": "Ebr10b",
             "title": "A PDE Approach to Coupled Super-Resolution with Non-Parametric Motion. In: SIAM International Conference on Imaging Science, [Invited Speaker to the Mini-Symposium on Variational Approaches and PDE’s for Imaging Tasks]. Chicago, Illinois, USA.",
             "year": 2010,
@@ -961,7 +995,7 @@
         },
         {
             "id": 51,
-            "order": 33,
+            "order": 35,
             "code": "Ebr10a",
             "title": "Inverse Problems in Imaging. Sunnybrook Medical Image Analysis Laboratories (SMIAL) Seminar, Sunnybrook health Sciences Centre. Toronto, Ontario, Canada",
             "year": 2010,
@@ -978,7 +1012,7 @@
         },
         {
             "id": 6,
-            "order": 34,
+            "order": 36,
             "code": "Ebr09",
             "title": "A Necessary and Sufficient Contractivity Condition for the Fractal Transform Operator. Journal of Mathematical Imaging and Vision, Vol.35 (3), pp. 186–192.",
             "year": 2009,
@@ -995,7 +1029,7 @@
         },
         {
             "id": 7,
-            "order": 35,
+            "order": 37,
             "code": "LaT+09",
             "title": "Measure-Valued Images, Associated Fractal Transforms, and the Affine Self-Similarity of Images. SIAM Journal on Imaging Sciences, Vol.2 (2), pp. 470–507.",
             "year": 2009,
@@ -1012,7 +1046,7 @@
         },
         {
             "id": 13,
-            "order": 36,
+            "order": 38,
             "code": "EM09a",
             "title": "A General PDE Framework for Registration of Contrast Enhanced Images. In: Lecture Notes in Computer Science, Proceedings of Medical Image Computing and ComputerAssisted Intervention (MICCAI). Ed. by D. Hawkes, D. Rueckert, and G. Z. Yang. Vol. 5761. London,UK: Springer-Verlag, pp. 811–819.",
             "year": 2009,
@@ -1029,7 +1063,7 @@
         },
         {
             "id": 39,
-            "order": 37,
+            "order": 39,
             "code": "EM09b",
             "title": "A PDE Approach to Coupled Super-Resolution with Non-Parametric Motion. Lecture Notes in Computer Science, Proceedings of Energy Minimization Methods in Computer Vision and Pattern Recognition (EMMCVPR). Bonn, Germany",
             "year": 2009,
@@ -1046,7 +1080,7 @@
         },
         {
             "id": 46,
-            "order": 38,
+            "order": 40,
             "code": "EM09c",
             "title": "Image Registration under Varying Illumination. In: Lecture Notes in Computer Science, Proceedings of Energy Minimization Methods inComputer Vision and Pattern Recognition (EMMCVPR). Ed. by D. Cremers, Y. Boykov, A. Blake, andF. R. Schmidt. Vol. 5681. Bonn, Germany: Springer-Verlag, pp. 303–316.",
             "year": 2009,
@@ -1063,7 +1097,7 @@
         },
         {
             "id": 14,
-            "order": 39,
+            "order": 41,
             "code": "EVM09",
             "title": "Coupled Multi-Frame Super-Resolution with Diffusive Motion Model and Total Variation Regularization. In: Proceedings of the International Work-shop on Local and Non-Local Approximation in Image Processing (LNLA). Ed. by J. Astola, K. Egiazarian, and V. Katkovnik. Tampere International Center for Signal Processing. Tuusula, Finland, pp. 62–69.",
             "year": 2009,
@@ -1080,7 +1114,7 @@
         },
         {
             "id": 11,
-            "order": 40,
+            "order": 42,
             "code": "Ebr09",
             "title": "Inverse Problems and Self-Similarity in Imaging. In: Interdisciplinary Workshop on Fixed-Point Algorithms for Inverse Problems in Science and Engineering, Banff International Research Center, Banff, Alberta, Canada.",
             "year": 2009,
@@ -1097,7 +1131,7 @@
         },
         {
             "id": 18,
-            "order": 41,
+            "order": 43,
             "code": "Ebr08",
             "title": "Non-Local Approaches to Image and Video Resolution Enhancement. In: SIAM International Conference on Imaging Science. San Diego, California, USA.",
             "year": 2008,
@@ -1114,7 +1148,7 @@
         },
         {
             "id": 19,
-            "order": 42,
+            "order": 44,
             "code": "EV08a",
             "title": "Examining the Role of Scale in the Context of the Non-Local-Means Filter. In: Lecture Notes in Computer Science, Proceedings of the International Conference on Image Analysis and Recognition ICIAR, Povoa de Varzim, Portugal, pp. 170–181.",
             "year": 2008,
@@ -1131,7 +1165,7 @@
         },
         {
             "id": 17,
-            "order": 43,
+            "order": 45,
             "code": "EV08b",
             "title": "Multi-Frame Super-Resolution with no Explicit Motion Estimation. In: Proceedings of the International Conference on Image Processing, Computer Vision, and Pattern Recognition, IPCV. Las Vegas, Nevada, USA, pp. 455–459.",
             "year": 2008,
@@ -1148,7 +1182,7 @@
         },
         {
             "id": 16,
-            "order": 44,
+            "order": 46,
             "code": "EV08c",
             "title": "Self-Similarity in Imaging, 20 Years after “Fractals Everywhere”. In: Proceedings of The International Workshop on Local and Non-Local Approximation in Image Processing, LNLA. Lausanne, Switzerland, pp. 165–172.",
             "year": 2008,
@@ -1165,7 +1199,7 @@
         },
         {
             "id": 40,
-            "order": 45,
+            "order": 47,
             "code": "OEW08",
             "title": "Efficient Non-Local-Means Denoising using the SVD. Proceedings of The IEEE International Conference on Image Processing (ICIP). San Diego, California, USA",
             "year": 2008,
@@ -1182,7 +1216,7 @@
         },
         {
             "id": 41,
-            "order": 46,
+            "order": 48,
             "code": "EV07a",
             "title": "Nonlocal-means Single-Frame Image Zooming. Proceedings in Applied Mathematics and Mechanics (PAMM), 6th International Congress on Industrial and Applied Mathematics, ICIAM. Zurich, Switzerland",
             "year": 2007,
@@ -1199,7 +1233,7 @@
         },
         {
             "id": 20,
-            "order": 47,
+            "order": 49,
             "code": "EV07b",
             "title": "Regularization Schemes involving Self-similarity in Imaging Inverse Problems. In: Proceedings of Applied Inverse Problems (AIP), DOI:10.1088/1742-6596/124/1/012021, 12 pages.",
             "year": 2007,
@@ -1216,7 +1250,7 @@
         },
         {
             "id": 21,
-            "order": 48,
+            "order": 50,
             "code": "EV07c",
             "title": "Solving the Inverse Problem of Image Zooming using “Self-Examples”. In: Lecture Notes in Computer Science, Proceedings of the International Conference on Image Analysis and Recognition ICIAR. Vol. 4633, pp. 117–130.",
             "year": 2007,
@@ -1233,7 +1267,7 @@
         },
         {
             "id": 22,
-            "order": 49,
+            "order": 51,
             "code": "EV06a",
             "title": "Fractal Image Coding as Projections onto Convex Sets, In: Lecture Notes in Computer Science, Proceedings of the International Conference on Image Analysis and Recognition ICIAR. Berlin, Heidelberg, pp. 493–506.",
             "year": 2006,
@@ -1250,7 +1284,7 @@
         },
         {
             "id": 42,
-            "order": 50,
+            "order": 52,
             "code": "EV06b",
             "title": "Regularized Fractal Image Decoding. Proceedings of the Canadian Conference on Electrical and Computer Engineering CCECE. Ottawa, Canada",
             "year": 2006,
@@ -1267,7 +1301,7 @@
         },
         {
             "id": 52,
-            "order": 51,
+            "order": 53,
             "code": "Ebr06a",
             "title": "Generalized Fractal Image Coding using Projections onto Convex Sets. SIAM International Conference on Imaging Science. Minneapolis, Minnesota, USA",
             "year": 2006,
@@ -1284,7 +1318,7 @@
         },
         {
             "id": 53,
-            "order": 52,
+            "order": 54,
             "code": "Ebr06b",
             "title": "Regularized Fractal Image Decoding. CAIMS-MITACS Joint Annual Conference. York University, Toronto, Ontario, Canada",
             "year": 2006,
@@ -1301,7 +1335,7 @@
         },
         {
             "id": 8,
-            "order": 53,
+            "order": 55,
             "code": "Bah+03",
             "title": "Filtering Entropy , Physica D: Nonlinear Phenomena, Vol. 183(3-4), pp. 260–272.",
             "year": 2003,
