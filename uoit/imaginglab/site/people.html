@@ -160,6 +160,8 @@
                         continue;
 
                     var persoan_link = $('<a>').attr('href', '#' + fixname(person.name)).click(function (e) {
+                        e.preventDefault();
+                        e.stopPropagation();
                         bindPerson(this.person);
 
                         // save history
@@ -187,6 +189,7 @@
                 });
 
                 bindPerson(current);
+                window.history.pushState(current, "");
             };
 
 
