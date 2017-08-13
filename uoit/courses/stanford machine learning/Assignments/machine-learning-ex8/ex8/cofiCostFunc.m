@@ -18,8 +18,11 @@ Theta = reshape(params(num_movies*num_features+1:end), ...
 %        R - num_movies x num_users matrix, where R(i, j) = 1 if the 
 %            i-th movie was rated by the j-th user
             
-        
-J = sum(sum(((X * Theta' - Y) .^ 2) .* R)) / 2;
+
+cost = sum(sum(((X * Theta' - Y) .^ 2) .* R)) / 2;
+reg_theta = sum(sum(Theta .^ 2)) * lambda / 2;
+reg_X = sum(sum(X .^ 2)) * lambda / 2;  
+J = cost + reg_theta + reg_X;
 
 X_grad = ((X * Theta' - Y) .* R) * Theta;
 Theta_grad = ((X * Theta' - Y) .* R)' * X;
