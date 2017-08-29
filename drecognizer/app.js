@@ -23,6 +23,11 @@
     };
 
 
+    function sigmoid(z) {
+        return 1 / (1 + Math.exp(-z));
+    };
+
+
     function recognize() {
         // takes the image in the canvas, centers & resizes it, then puts into 10x10 px bins
         // to give a 28x28 grayscale image; then, computes class probability via neural network
@@ -33,7 +38,7 @@
         var imgData = _context.getImageData(0, 0, 280, 280);
         var grayscaleImg = imageDataToGrayscale(imgData);
         var boundingRectangle = getBoundingRectangle(grayscaleImg, 0.01);
-        var trans = centerImage(grayscaleImg);
+        var trans = getCenterOfMass(grayscaleImg);
 
 
 
@@ -86,7 +91,7 @@
         }
 
         var t2 = new Date();
-        var nnOutput = computeNeuralNetwork(nnInput, w12, bias2, w23, bias3);
+        var nnOutput = computeNeuralNetwork(nnInput, w1, bias1, w2, bias2);
         var stats = nnOutput.map((t, i) => i + ": " + (Math.round(t * 1000) / 1000)).join("<br \>");
 
         stats += '<br \><br /> NN time: ' + (new Date() - t2) + 'ms <br /> recognize time: ' + (new Date() - t1) + 'ms';
@@ -191,25 +196,25 @@
     }
 
 
-    //neural net with one hidden layer; sigmoid for hidden, softmax for output
-    function computeNeuralNetwork(data, w12, bias2, w23, bias3) {
+    // neural net with one hidden layer; sigmoid for hidden, softmax for output
+    function computeNeuralNetwork(data, w1, bias1, w2, bias2) {
         // compute layer2 output (sigmoid)
         var out2 = [];
-        for (var i = 0; i < w12.length; i++) {
-            out2[i] = bias2[i];
-            for (var j = 0; j < w12[i].length; j++) {
-                out2[i] += data[j] * w12[i][j];
+        for (var i = 0; i < w1.length; i++) {
+            out2[i] = bias1[i];
+            for (var j = 0; j < w1[i].length; j++) {
+                out2[i] += data[j] * w1[i][j];
             }
-            out2[i] = 1 / (1 + Math.exp(-out2[i]));
+            out2[i] = sigmoid(out2[i]);
         }
 
 
         //compute layer3 activation
         var out3 = [];
-        for (var i = 0; i < w23.length; i++) {
-            out3[i] = bias3[i];
-            for (var j = 0; j < w23[i].length; j++) {
-                out3[i] += out2[j] * w23[i][j];
+        for (var i = 0; i < w2.length; i++) {
+            out3[i] = bias2[i];
+            for (var j = 0; j < w2[i].length; j++) {
+                out3[i] += out2[j] * w2[i][j];
             }
         }
 
@@ -225,7 +230,7 @@
 
 
     // computes center of mass of digit
-    function centerImage(img) {
+    function getCenterOfMass(img) {
 
         // note 1 stands for black (0 white) so we have to invert.
 
@@ -234,6 +239,7 @@
         var rows = img.length;
         var columns = img[0].length;
         var sumPixels = 0;
+
         for (var y = 0; y < rows; y++) {
             for (var x = 0; x < columns; x++) {
                 var pixel = (1 - img[y][x]);
@@ -280,6 +286,9 @@
         for (var y = 0; y < imgData.height; y++) {
             grayscaleImg[y] = [];
             for (var x = 0; x < imgData.width; x++) {
+                
+                // data is stored in RGBA, need to offset 4
+
                 var offset = y * 4 * imgData.width + 4 * x;
                 var alpha = imgData.data[offset + 3];
 
@@ -289,7 +298,7 @@
                     imgData.data[offset + 2] = 255;
                 }
                 imgData.data[offset + 3] = 255;
-                grayscaleImg[y][x] = imgData.data[y * 4 * imgData.width + x * 4 + 0] / 255;
+                grayscaleImg[y][x] = imgData.data[offset] / 255;
             }
         }
         return grayscaleImg;
