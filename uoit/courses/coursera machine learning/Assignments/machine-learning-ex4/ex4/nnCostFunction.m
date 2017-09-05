@@ -71,9 +71,9 @@ for t = 1:m
     a3_t = a3(t,:)';                    % (num_labels x 1)
 
     d3_t = a3_t - Y(t,:)';                                      % (num_labels x 1) output error
-    d2_t = (Theta2' * d3_t) .* [1; sigmoidGradient(z2_t)];;     % (hidden_layer_size+1 x 1)
+    d2_t = (Theta2' * d3_t) .* [1; sigmoidGradient(z2_t)];      % (hidden_layer_size+1 x 1)
     d2_t = d2_t(2:end);                                         % taking of the bias
-
+ 
 
     %% =============== Poor Performance Implementation ===============
 
