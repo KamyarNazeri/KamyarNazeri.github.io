@@ -28,6 +28,15 @@
     };
 
 
+    function softmax(input) {
+        var max3 = Math.max(...input);
+        var nominators = input.map(t => Math.exp(t - max3));
+        var denominator = nominators.reduce((a, b) => a + b);
+        var output = nominators.map(t => t / denominator);
+        return output;
+    };
+
+
     function recognize() {
         // takes the image in the canvas, centers & resizes it, then puts into 10x10 px bins
         // to give a 28x28 grayscale image; then, computes class probability via neural network
@@ -120,7 +129,7 @@
                 var pageX = e.pageX;
                 var pageY = e.pageY;
 
-                if(e.touches && e.touches.length){
+                if (e.touches && e.touches.length) {
                     pageX = e.touches[0].pageX;
                     pageY = e.touches[0].pageY;
                 }
@@ -220,13 +229,11 @@
 
 
         // compute layer3 output (softmax)
-        var max3 = Math.max(...out3);
-        var nominators = out3.map(t => Math.exp(t - max3));
-        var denominator = nominators.reduce((a, b) => a + b);
-        var output = nominators.map(t => t / denominator);
+        var output = softmax(out3);
 
         return output;
     }
+
 
 
     // computes center of mass of digit
@@ -286,7 +293,7 @@
         for (var y = 0; y < imgData.height; y++) {
             grayscaleImg[y] = [];
             for (var x = 0; x < imgData.width; x++) {
-                
+
                 // data is stored in RGBA, need to offset 4
 
                 var offset = y * 4 * imgData.width + 4 * x;
