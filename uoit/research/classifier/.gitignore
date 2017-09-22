@@ -1,0 +1,5 @@
+*.suo
+*.ide
+*.log
+*.sln
+*.pyproj
