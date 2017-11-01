@@ -12,7 +12,7 @@ learning_rate = 0.002
 training_epochs = 10000
 display_step = 100
 n_samples = 1000
-n_training_size = int(n_samples * .7)
+n_training_size = int(n_samples * .6)
 n_noise = .1
 n_layers = [2, 1]
 

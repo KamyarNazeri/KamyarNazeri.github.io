@@ -8,13 +8,13 @@ from matplotlib.colors import ListedColormap
 
 
 #======================= global variables
-learning_rate = 0.003
-training_epochs = 20000
+learning_rate = 0.002
+training_epochs = 10000
 display_step = 500
 n_samples = 1000
-n_training_size = int(n_samples * .7)
-n_noise = .4
-n_neurons = [2, 5, 10, 20]
+n_training_size = int(n_samples * .6)
+n_noise = .1
+n_neurons = [2, 3, 5, 10]
 
 
 def logistic_model(input, layers):
@@ -73,7 +73,7 @@ for n in n_neurons:
 
 
 plt.plot([0, 1], [0, 1], color='navy', lw=2, linestyle='--')
-plt.xlim([0.0, 1.0])
+#plt.xlim([0.0, 1.0])
 plt.ylim([0.0, 1.05])
 plt.xlabel('False Positive Rate')
 plt.ylabel('True Positive Rate')
