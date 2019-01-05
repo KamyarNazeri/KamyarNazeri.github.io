@@ -966,6 +966,10 @@ article .article-metadata {
   margin-bottom: 0;
 }
 
+.article-style span {
+  font-style: normal;
+}
+
 .article-widget {
   padding-top: 1rem;
 }
@@ -999,6 +1003,8 @@ article .article-metadata {
 .media.stream-item .article-style {
   margin-top: 2px;
   font-size: 0.8rem;
+  font-style: italic;
+  color: #5d5d5d
 }
 
 .media.stream-item .stream-meta {
