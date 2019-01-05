@@ -1009,11 +1009,14 @@ article .article-metadata {
   max-width: 180px;
   height: auto;
   object-fit: cover;
+  margin-left: 20px;
 }
 
 @media screen and (max-width: 768px) {
   .media.stream-item img {
-    max-width: 120px;
+    display: none;
+    max-width: 100px;
+    margin-left: 0;
   }
 }
 
@@ -2300,8 +2303,6 @@ body.dark,
 
 .bibtex {
   display: none;
-  font-family: Verdana;
-  font-size: 11px;
   border: dashed 1px gray;
   background-color: White;
   padding: 5px;
