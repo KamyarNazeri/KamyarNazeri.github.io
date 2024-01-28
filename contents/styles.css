@@ -25,7 +25,7 @@
 html {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
-  color: rgba(0,0,0,0.8);
+  color: rgba(232, 230, 227, 0.8);
   line-height: 1.65;
 }
 @media screen and (min-width: 58em) {
@@ -39,7 +39,7 @@ body {
   font-size: 1rem;
   line-height: inherit;
   color: inherit;
-  background-color: #fff;
+  background-color: rgb(24, 26, 27);
   margin-top: 70px; /* Offset body content by navbar height. */
   padding-top: 0;
   counter-reset: captions;
@@ -90,7 +90,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 1rem;
   margin-bottom: .5rem;
   line-height: 1.25;
-  color: #313131;
+  color: rgb(201, 196, 189);
   text-rendering: optimizeLegibility;
 
   /* Ensure long words do not overflow into content. */
@@ -129,14 +129,14 @@ h6 {
 
 a,
 h3.article-title a:hover {
-  color: #2962ff;
+  color: rgb(54, 147, 255);
   text-decoration: none;
   transition: color 0.6s ease;
 }
 
 a:hover,
 a:focus {
-  color: #2962ff;
+  color: rgb(54, 147, 255);
 }
 
 img,
@@ -186,7 +186,7 @@ figcaption h4 {
 pre,
 code {
   font-family: 'Roboto Mono', monospace;
-  color: #c7254e;
+  color: rgb(221, 73, 110);
   background-color: #f9f2f4;
 }
 
@@ -501,7 +501,6 @@ a[data-fancybox] img {
 }
 
 .home-section {
-  background-color: rgb(255, 255, 255);
   padding: 110px 0 110px 0;
   animation: intro 0.3s both;
   animation-delay: 0.15s;
@@ -512,7 +511,7 @@ a[data-fancybox] img {
 }
 
 .home-section:nth-of-type(even) {
-  background-color: rgb(247, 247, 247);
+  background-color: rgb(29, 31, 32);
 }
 
 .dark .home-section {
@@ -642,14 +641,14 @@ a[data-fancybox] img {
 #profile .portrait-title h2 {
   font-size: 1.75em;
   font-weight: 300;
-  color: #000000;
+  color: rgb(232, 230, 227);
   margin: 20px 0 10px 0;
 }
 
 #profile .portrait-title h3 {
   font-size: 1.1rem;
   font-weight: 300;
-  color: rgba(0,0,0, 0.54);
+  color: rgba(232, 230, 227, 0.54);
   margin: 0px 0 10px 0;
 }
 
@@ -705,7 +704,7 @@ ul.ul-edu li .description p.course {
 
 ul.ul-edu li .description p.institution {
   font-size: 0.75rem;
-  color: rgba(0,0,0,0.6);
+  color: rgba(232, 230, 227, 0.6);
 }
 
 /*************************************************
@@ -885,7 +884,7 @@ article {
 }
 
 .article-title a {
-  color: #151515;
+  color: rgb(219, 216, 211);
   transition: color 0.6s ease;
 }
 
@@ -902,7 +901,7 @@ article {
   overflow: hidden;
   font-size: 14px;
   letter-spacing: 0.03em;
-  color: #900;
+  color: rgb(255, 97, 97);
 }
 
 .dark .article-metadata {
@@ -1004,7 +1003,7 @@ article .article-metadata {
   margin-top: 2px;
   font-size: 0.8rem;
   font-style: italic;
-  color: #5d5d5d
+  color: rgb(173, 166, 156);
 }
 
 .media.stream-item .stream-meta {
@@ -2309,8 +2308,8 @@ body.dark,
 
 .bibtex {
   display: none;
-  border: dashed 1px gray;
-  background-color: White;
+  border: dashed 1px rgb(84, 91, 94);
+  background-color: rgb(24, 26, 27);
   padding: 5px;
   text-align: left;
   white-space: pre-line;
