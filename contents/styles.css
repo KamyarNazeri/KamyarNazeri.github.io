@@ -2314,3 +2314,5 @@ body.dark,
   text-align: left;
   white-space: pre-line;
 }
+
+.fa-X:before{content:"𝕏"}
